@@ -1,11 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styled from 'styled-components'
 import { BsTwitter, BsGithub } from 'react-icons/bs'
 
+const Navbar = styled.header`
+    &.navbar{
+        background-color: #2d3748;
+        height: 3.5rem;
+        width: 100%;
+        position: fixed;
+        color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+    }
+    &.active{
+        background-color: #02358c;
+        transition: all 0.3s ease;
+    }
+`
+
 function Header() {
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        if (window.scrollY >= 50) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+    window.addEventListener('scroll', changeBackground)
     return (
         <>
-            <div
-                className='fixed w-full h-14 bg-slate-500'
+            <Navbar
+                className={navbar ? 'navbar active' : 'navbar'}
             >
                 <div
                     className='flex justify-between items-center w-full h-full px-4'
@@ -31,9 +57,9 @@ function Header() {
                         <h6>
                             Studio
                         </h6>
-                        <h7>
+                        <h6>
                             Contact
-                        </h7>
+                        </h6>
                     </div>
                     <div
                         className='flex space-x-4 items-center'
@@ -45,7 +71,7 @@ function Header() {
                         </h1>
                     </div>
                 </div>
-            </div>
+            </Navbar>
         </>
     )
 }
