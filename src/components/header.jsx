@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { BsTwitter, BsGithub } from 'react-icons/bs'
+import HeaderLink from './header-link'
 
 const Navbar = styled.header`
     &.navbar{
-        background-color: #2d3748;
-        height: 3.5rem;
+        height: 4rem;
         width: 100%;
         position: fixed;
         color: rgb(255, 255, 255);
@@ -42,24 +42,36 @@ function Header() {
                         <h1>
                             logo
                         </h1>
-                        <h2>
-                            projects
-                        </h2>
-                        <h3>
-                            blog
-                        </h3>
-                        <h4>
-                            Skills & Tools 
-                        </h4>
-                        <h5>
-                            Experience
-                        </h5>
-                        <h6>
-                            Studio
-                        </h6>
-                        <h6>
-                            Contact
-                        </h6>
+                        <HeaderLink
+                            classNames={'text-purple-400 hover:text-purple-300'}
+                            link={'#'}
+                            linkText={'Projects'}
+                        />
+                        <HeaderLink
+                            classNames={'text-purple-400 hover:text-purple-300'}
+                            link={'#'}
+                            linkText={'Blog'}
+                        />
+                        <HeaderLink
+                            classNames={'text-blue-400 hover:text-blue-300'}
+                            link={'#'}
+                            linkText={'Skills & Tools'}
+                        />
+                        <HeaderLink
+                            classNames={'text-blue-400 hover:text-blue-300'}
+                            link={'#'}
+                            linkText={'Experience'}
+                        />
+                        <HeaderLink
+                            classNames={'text-blue-400 hover:text-blue-300'}
+                            link={'#'}
+                            linkText={'Studio'}
+                        />
+                        <HeaderLink
+                            classNames={'text-blue-400 hover:text-blue-300'}
+                            link={'#'}
+                            linkText={'Contact'}
+                        />
                     </div>
                     <div
                         className='flex space-x-4 items-center'
