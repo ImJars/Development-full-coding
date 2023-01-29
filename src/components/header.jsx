@@ -12,7 +12,8 @@ const Navbar = styled.header`
         transition: all 0.3s ease;
     }
     &.active{
-        background-color: #02358c;
+        background-color: #0F172A;
+        
         transition: all 0.3s ease;
     }
 `
@@ -37,38 +38,38 @@ function Header() {
                     className='flex justify-between items-center w-full h-full px-4'
                 >
                     <div
-                        className='flex space-x-4'
+                        className='flex space-x-4 items-center'
                     >
                         <h1>
                             logo
                         </h1>
                         <HeaderLink
-                            classNames={'text-purple-400 hover:text-purple-300'}
+                            classNames={'text-text-purple hover:text-purple-300'}
                             link={'#'}
                             linkText={'Projects'}
                         />
                         <HeaderLink
-                            classNames={'text-purple-400 hover:text-purple-300'}
+                            classNames={'text-text-purple hover:text-purple-300'}
                             link={'#'}
                             linkText={'Blog'}
                         />
                         <HeaderLink
-                            classNames={'text-blue-400 hover:text-blue-300'}
+                            classNames={'text-text-blue hover:text-blue-300'}
                             link={'#'}
                             linkText={'Skills & Tools'}
                         />
                         <HeaderLink
-                            classNames={'text-blue-400 hover:text-blue-300'}
+                            classNames={'text-text-blue hover:text-blue-300'}
                             link={'#'}
                             linkText={'Experience'}
                         />
                         <HeaderLink
-                            classNames={'text-blue-400 hover:text-blue-300'}
+                            classNames={'text-text-blue hover:text-blue-300'}
                             link={'#'}
                             linkText={'Studio'}
                         />
                         <HeaderLink
-                            classNames={'text-blue-400 hover:text-blue-300'}
+                            classNames={'text-text-blue hover:text-blue-300'}
                             link={'#'}
                             linkText={'Contact'}
                         />

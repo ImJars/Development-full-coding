@@ -4,7 +4,7 @@ function HeaderLink({ classNames, link, linkText }) {
     return (
         <>
             <a 
-                className={`${ classNames } text-sm tracking-wide`}
+                className={`${ classNames } text-md font-semibold tracking-wide`}
                 href={ link }
             >
                 { linkText }
