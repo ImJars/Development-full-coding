@@ -45,32 +45,32 @@ function Header() {
                         </h1>
                         <HeaderLink
                             classNames={'text-text-purple hover:text-purple-300'}
-                            link={'#'}
+                            link={'/'}
                             linkText={'Projects'}
                         />
                         <HeaderLink
                             classNames={'text-text-purple hover:text-purple-300'}
-                            link={'#'}
+                            link={'/blog'}
                             linkText={'Blog'}
                         />
                         <HeaderLink
                             classNames={'text-text-blue hover:text-blue-300'}
-                            link={'#'}
+                            link={'/skills'}
                             linkText={'Skills & Tools'}
                         />
                         <HeaderLink
                             classNames={'text-text-blue hover:text-blue-300'}
-                            link={'#'}
+                            link={'/experience'}
                             linkText={'Experience'}
                         />
                         <HeaderLink
                             classNames={'text-text-blue hover:text-blue-300'}
-                            link={'#'}
+                            link={'/studio'}
                             linkText={'Studio'}
                         />
                         <HeaderLink
                             classNames={'text-text-blue hover:text-blue-300'}
-                            link={'#'}
+                            link={'/contact'}
                             linkText={'Contact'}
                         />
                     </div>

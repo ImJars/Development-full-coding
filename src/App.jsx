@@ -1,24 +1,23 @@
 import React from 'react'
 import Header from './components/header'
+import Home from './home'
+import Blog from './blog'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <Header />
-      <div
-        className='text-4xl text-gray-900 flex
-                  items-center justify-center h-screen
-                  w-full font-bold bg-primary'
-      >
-        React App
-      </div>
-      <div
-        className='text-4xl text-gray-900 flex
-                  items-center justify-center h-screen
-                  w-full font-bold bg-primary'
-      >
-        React Section
-      </div>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path='/' element={ <Home /> } />
+          <Route path='/blog' element={ <Blog /> } />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
