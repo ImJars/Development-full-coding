@@ -53,27 +53,36 @@ function Home() {
                             className="flex items-center mt-2 space-x-3"
                         >
                             <IconHome 
+                                classNames={'hover:text-js-icon'}
                                 icon={ <SiJavascript /> }
                             />
                             <IconHome 
+                                classNames={'hover:text-react-icon'}
                                 icon={ <SiReact /> }
                             />
                             <IconHome 
+                                classNames={'hover:text-tailwind-icon'}
                                 icon={ <SiTailwindcss /> }
                             />
                             <IconHome 
+                                classNames={'hover:text-python-icon'}
                                 icon={ <SiPython /> }
                             />
                             <IconHome 
+                                classNames={'hover:text-solidity-icon'}
                                 icon={ <SiSolidity /> }
                             />
+                            <li
+                                className="text-xl text-text-general"
+                            >
+                                <HiOutlineDotsVertical />
+                            </li>
                             <IconHome 
-                                icon={ <HiOutlineDotsVertical /> }
-                            />
-                            <IconHome 
+                                classNames={'hover:text-vs-code-icon'}
                                 icon={ <SiVisualstudiocode /> }
                             />
                             <IconHome 
+                                classNames={'hover:text-framer-icon'}
                                 icon={ <SiFramer /> }
                             />
                         </ul>
