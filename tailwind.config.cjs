@@ -14,6 +14,9 @@ module.exports = {
         "text-gray": "#64748B",
         "text-general": "#909EB2",
       },
+      maxWidth: {
+        display: '70rem',
+      },
     },
   },
   plugins: [],
