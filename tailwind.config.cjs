@@ -13,6 +13,14 @@ module.exports = {
         "text-blue": "#60A5FA",
         "text-gray": "#64748B",
         "text-general": "#909EB2",
+
+        "js-icon": "#EFD81D",
+        "react-icon": "#5ED3F3",
+        "tailwind-icon": "#36B7F0",
+        "python-icon": "#3871A1",
+        "solidity-icon": "#616161",
+        "vs-code-icon": "#127BC6",
+        "framer-icon": "#41A0EB",
       },
       maxWidth: {
         display: '70rem',

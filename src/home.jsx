@@ -9,6 +9,7 @@ import {
     SiFramer
 } from "react-icons/si";
 import { HiOutlineDotsVertical } from "react-icons/hi";
+import IconHome from "./components/icon-home";
 
 function Home() {
     return (
@@ -51,30 +52,30 @@ function Home() {
                         <ul
                             className="flex items-center mt-2 space-x-3"
                         >
-                            <li>
-                                <SiJavascript />
-                            </li>
-                            <li>
-                                <SiReact />
-                            </li>
-                            <li>
-                                <SiTailwindcss />
-                            </li>
-                            <li>
-                                <SiPython />
-                            </li>
-                            <li>
-                                <SiSolidity />
-                            </li>
-                            <li>
-                                <HiOutlineDotsVertical />
-                            </li>
-                            <li>
-                                <SiVisualstudiocode />
-                            </li>
-                            <li>
-                                <SiFramer />
-                            </li>
+                            <IconHome 
+                                icon={ <SiJavascript /> }
+                            />
+                            <IconHome 
+                                icon={ <SiReact /> }
+                            />
+                            <IconHome 
+                                icon={ <SiTailwindcss /> }
+                            />
+                            <IconHome 
+                                icon={ <SiPython /> }
+                            />
+                            <IconHome 
+                                icon={ <SiSolidity /> }
+                            />
+                            <IconHome 
+                                icon={ <HiOutlineDotsVertical /> }
+                            />
+                            <IconHome 
+                                icon={ <SiVisualstudiocode /> }
+                            />
+                            <IconHome 
+                                icon={ <SiFramer /> }
+                            />
                         </ul>
                     </div>
                 </div>
