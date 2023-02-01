@@ -1,57 +1,87 @@
-import React from 'react'
+import React from "react";
+import { 
+    SiJavascript, 
+    SiReact, 
+    SiTailwindcss, 
+    SiPython, 
+    SiSolidity,
+    SiVisualstudiocode,
+    SiFramer
+} from "react-icons/si";
+import { HiOutlineDotsVertical } from "react-icons/hi";
 
 function Home() {
     return (
         <>
-            <section
-                className='w-full h-screen flex justify-center items-center
-                            bg-primary text-white'
-            >
-                <div
-                    className='max-w-display'
-                >
+        <section
+            className="w-full h-screen flex justify-center items-center
+                                bg-primary text-white"
+        >
+            <div className="max-w-display content-between">
+                <div className="relative">
                     <div>
-                        <h1
-                            className='text-lg text-text-general'
-                        >
-                            Hi!
-                        </h1>
-                        <h2
-                            className='text-7xl font-bold mb-4'
-                        >
+                        <h1 className="text-lg text-text-general">Hi!</h1>
+                        <h2 className="text-7xl font-bold mb-4">
                             I'm&nbsp;
-                            <font className='text-text-purple'>
-                                Angel
-                            </font>
+                        <font className="text-text-purple">Angel</font>
                             &nbsp;Ramirez
                         </h2>
-                        <h3 className='text-xl text-text-general'>
+                        <h3 className="text-xl text-text-general">
                             a full-stack web developer
                         </h3>
-                        <div
-                            className='flex mt-6'
+                    </div>
+                    <div className="flex mt-6">
+                        <button
+                            className="bg-text-purple text-white
+                                                            rounded-lg px-8 py-2 font-semibold"
                         >
-                            <button
-                                className='bg-text-purple text-white
-                                            rounded-lg px-8 py-2 font-semibold'
-                            >
-                                Get in Touch
-                            </button>
-                            <h1
-                                className='flex items-center ml-4 text-text-purple 
-                                        animate-pulse'
-                            >
-                                ● Available for hire
-                            </h1>
-                        </div>
+                            Get in Touch
+                        </button>
+                        <h1
+                            className="flex items-center ml-4 text-text-purple 
+                                                        animate-pulse"
+                        >
+                            ● Available for hire
+                        </h1>
                     </div>
                     <div>
-
+                        <h1>
+                            current favorite tech stack/tools:
+                        </h1>
+                        <ul
+                            className="flex items-center mt-2 space-x-3"
+                        >
+                            <li>
+                                <SiJavascript />
+                            </li>
+                            <li>
+                                <SiReact />
+                            </li>
+                            <li>
+                                <SiTailwindcss />
+                            </li>
+                            <li>
+                                <SiPython />
+                            </li>
+                            <li>
+                                <SiSolidity />
+                            </li>
+                            <li>
+                                <HiOutlineDotsVertical />
+                            </li>
+                            <li>
+                                <SiVisualstudiocode />
+                            </li>
+                            <li>
+                                <SiFramer />
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </>
-    )
-}
+    );
+    }
 
-export default Home
+export default Home;
