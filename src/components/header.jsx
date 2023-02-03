@@ -40,9 +40,7 @@ function Header() {
                     <div
                         className='flex space-x-4 items-center'
                     >
-                        <h1>
-                            logo
-                        </h1>
+
                         <HeaderLink
                             classNames={'text-text-purple hover:text-purple-300'}
                             link={'/'}
