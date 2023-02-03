@@ -29,7 +29,7 @@ function Home() {
         <ContentWraped
             className="bg-primary text-white"
         >
-            <div
+            <section
                 className="pt-52 pb-28"
             >
                 <div className="content-wrapped">
@@ -118,7 +118,26 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section
+                className="bg-primary block -mt-16 mb-24"
+            >
+                <div
+                    className="content-wrapped"
+                >
+                    <div>
+                    <div class="border border-text-general border-opacity-25">
+                        esto es una pueba
+                    </div>
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
         </ContentWraped>
         </>
     );
