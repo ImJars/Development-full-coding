@@ -13,6 +13,10 @@ module.exports = {
         "text-blue": "#60A5FA",
         "text-gray": "#64748B",
         "text-general": "#909EB2",
+        "card": "#1E293B",
+        "card-icon-one": "#78350F",
+        "card-icon-two": "#831843",
+        "card-icon-three": "#0C4A6E",
 
         "js-icon": "#EFD81D",
         "react-icon": "#5ED3F3",

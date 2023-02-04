@@ -125,36 +125,47 @@ function Home() {
                 </div>
             </section>
             <section
-                className="bg-primary block -mt-16 mb-24"
+                className="bg-primary block -mt-16 pb-24"
             >
                 <div
                     className="content-wrapped"
                 >
-                    <div>
-                        <CardAbout 
+                    <div
+                        className="flex justify-between"
+                    >
+                        <CardAbout
+                            extraClass={ 'bg-card-icon-one' }
                             icon={ <FaProjectDiagram /> }
-                            description={ '100% projects completed' }
+                            description={ 'Clean & Intuitive' }
+                            text={ 'Keep the UI clean with a modern touch without compromising UX.' }
                         />
-                        <CardAbout 
+                        {/* <CardAbout 
+                            extraClass={ 'bg-red-500' }
                             icon={ <MdGroups /> }
                             description={ '100% satisfied clients' }
-                        />
+                        /> */}
                         <CardAbout 
+                            extraClass={ 'bg-card-icon-two' }
                             icon={ <MdVerified /> }
-                            description={ '100% positive feedback' }
+                            description={ 'Detail Oriented' }
+                            text={ 'Awareness to ease of access, UI consistency, and improved UX.' }
                         />
-                        <CardAbout 
+                        {/* <CardAbout 
+                            extraClass={ 'bg-green-500' }
                             icon={ <BsFillEmojiSmileFill /> }
                             description={ '4 years of experience' }
-                        />
+                        /> */}
                         <CardAbout 
+                            extraClass={ 'bg-card-icon-three' }
                             icon={ <BiCodeAlt /> }
-                            description={ '20000+ lines of code' }
+                            description={ 'Pretty & Optimized' }
+                            text={ 'Writing clean code is a top priority while keeping it as optimized as possible.' }
                         />
-                        <CardAbout 
+                        {/* <CardAbout 
+                            extraClass={ 'bg-cyan-500' }
                             icon={ <MdOutlineWork /> }
                             description={ '9000+ hours of work' }
-                        />
+                        /> */}
                     </div>
                 </div>
             </section>
