@@ -158,7 +158,15 @@ function Home() {
             <section
                 className="bg-primary block -mt-16 pb-24"
             >
-                <TextHome />
+                <div
+                    className="content-wrapped"
+                >
+                    <TextHome 
+                        text_one={ '― I must be willing to give ' }
+                        text_two={ ' up what I am to become ' }
+                        text_three={ ' what I will be. ―' }
+                    />
+                </div>
             </section>
         </ContentWraped>
         </>
