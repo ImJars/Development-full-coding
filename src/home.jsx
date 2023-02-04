@@ -12,6 +12,11 @@ import {
 } from "react-icons/si";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import IconHome from "./components/icon-home";
+import CardAbout from "./components/card-about";
+import { FaProjectDiagram } from 'react-icons/fa';
+import { MdGroups, MdVerified, MdOutlineWork } from 'react-icons/md';
+import { BsFillEmojiSmileFill } from 'react-icons/bs';
+import { BiCodeAlt } from 'react-icons/bi';
 
 const ContentWraped = styled.div`
     .content-wrapped{
@@ -126,15 +131,30 @@ function Home() {
                     className="content-wrapped"
                 >
                     <div>
-                    <div class="border border-text-general border-opacity-25">
-                        esto es una pueba
-                    </div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
+                        <CardAbout 
+                            icon={ <FaProjectDiagram /> }
+                            description={ '100% projects completed' }
+                        />
+                        <CardAbout 
+                            icon={ <MdGroups /> }
+                            description={ '100% satisfied clients' }
+                        />
+                        <CardAbout 
+                            icon={ <MdVerified /> }
+                            description={ '100% positive feedback' }
+                        />
+                        <CardAbout 
+                            icon={ <BsFillEmojiSmileFill /> }
+                            description={ '4 years of experience' }
+                        />
+                        <CardAbout 
+                            icon={ <BiCodeAlt /> }
+                            description={ '20000+ lines of code' }
+                        />
+                        <CardAbout 
+                            icon={ <MdOutlineWork /> }
+                            description={ '9000+ hours of work' }
+                        />
                     </div>
                 </div>
             </section>
