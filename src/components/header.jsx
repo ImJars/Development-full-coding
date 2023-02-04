@@ -10,6 +10,7 @@ const Navbar = styled.header`
         position: fixed;
         color: rgb(255, 255, 255);
         transition: all 0.3s ease;
+        z-index: 100;
     }
     &.active{
         background-color: #0F172A;
