@@ -9,13 +9,12 @@ const Navbar = styled.header`
         width: 100%;
         position: fixed;
         color: rgb(255, 255, 255);
-        transition: all 0.3s ease;
+        transition: all 0.2s ease-in-out;
         z-index: 100;
     }
     &.active{
         background-color: #0F172A;
-        
-        transition: all 0.3s ease;
+        transition: all 0.2s ease-in-out;
     }
 `
 
@@ -23,7 +22,7 @@ function Header() {
     const [navbar, setNavbar] = useState(false)
 
     const changeBackground = () => {
-        if (window.scrollY >= 50) {
+        if (window.scrollY >= 5) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -33,7 +32,7 @@ function Header() {
     return (
         <>
             <Navbar
-                className={navbar ? 'navbar active' : 'navbar'}
+                className={navbar ? 'navbar active border-b border-text-general border-opacity-10' : 'navbar border-0 border-opacity-0 border-text-general'}
             >
                 <div
                     className='flex justify-between items-center w-full h-full px-4'
