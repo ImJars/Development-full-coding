@@ -13,7 +13,6 @@ const Navbar = styled.header`
         z-index: 100;
     }
     &.active{
-        background-color: #0F172A;
         transition: all 0.2s ease-in-out;
     }
 `
@@ -32,7 +31,13 @@ function Header() {
     return (
         <>
             <Navbar
-                className={navbar ? 'navbar active border-b border-text-general border-opacity-10' : 'navbar border-0 border-opacity-0 border-text-general'}
+                className={
+                    navbar 
+                    ? 
+                    'navbar active bg-secondary/95 backdrop-blur-xs border-b border-text-general border-opacity-10' 
+                    : 
+                    'navbar border-0 border-opacity-0 border-text-general'
+                }
             >
                 <div
                     className='flex justify-between items-center w-full h-full px-4'

@@ -29,6 +29,9 @@ module.exports = {
       maxWidth: {
         display: '70rem',
       },
+      backdropBlur: {
+        xs: '5px',
+      }
     },
   },
   plugins: [],
