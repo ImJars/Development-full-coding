@@ -18,6 +18,7 @@ import { MdGroups, MdVerified, MdOutlineWork } from 'react-icons/md';
 import { BsFillEmojiSmileFill } from 'react-icons/bs';
 import { BiCodeAlt } from 'react-icons/bi';
 import TextHome from "./components/text-home";
+import SubHome from "./components/sub-home";
 
 const ContentWraped = styled.div`
     .content-wrapped{
@@ -167,6 +168,11 @@ function Home() {
                         text_three={ ' what I will be. ―' }
                     />
                 </div>
+            </section>
+            <section
+                className="bg-primary block -mt-16 pb-24"
+            >
+                <SubHome />
             </section>
         </ContentWraped>
         </>
