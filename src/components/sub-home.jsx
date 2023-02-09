@@ -1,4 +1,5 @@
 import React from 'react'
+import CardNumber from './card-number'
 
 function SubHome({ title, subtitle, text }) {
     return (
@@ -22,7 +23,7 @@ function SubHome({ title, subtitle, text }) {
                     </h3>
                 </div>
                 <div>
-
+                    <CardNumber />
                 </div>
             </div>
         </>
