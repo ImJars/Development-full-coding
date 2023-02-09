@@ -23,7 +23,26 @@ function SubHome({ title, subtitle, text }) {
                     </h3>
                 </div>
                 <div>
-                    <CardNumber />
+                    <CardNumber 
+                        number={ '1' }
+                        title={ 'Typography' }
+                        text={ 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
+                    />
+                    <CardNumber 
+                        number={ '2' }
+                        title={ 'Spacing' }
+                        text={ 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
+                    />
+                    <CardNumber 
+                        number={ '3' }
+                        title={ 'Colors' }
+                        text={ 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
+                    />
+                    <CardNumber 
+                        number={ '4' }
+                        title={ 'Effects' }
+                        text={ 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
+                    />
                 </div>
             </div>
         </>

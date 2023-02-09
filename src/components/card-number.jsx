@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CardNumber() {
+function CardNumber({ number, title, text }) {
     return (
         <>
             <div
@@ -17,7 +17,7 @@ function CardNumber() {
                         <h1
                             className='text-7xl font-bold text-text-general opacity-50'
                         >
-                            1
+                            { number }
                         </h1>
                     </div>
                     <div
@@ -26,12 +26,12 @@ function CardNumber() {
                         <h1
                             className='font-bold'
                         >
-                            Typography
+                            { title }
                         </h1>
                         <h2
                             className='text-text-general text-sm mt-1'
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            { text }
                         </h2>
                     </div>
                 </div>
