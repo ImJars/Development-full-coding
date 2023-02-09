@@ -175,7 +175,11 @@ function Home() {
                 <section
                     className="content-wrapped"
                 >
-                    <SubHome />
+                    <SubHome 
+                        title={ 'Clean & Intuitive' }
+                        subtitle={ 'Eye Catching, Modern & Minimalist Design.' }
+                        text={ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus' }
+                    />
                 </section>
             </section>
         </ContentWraped>
