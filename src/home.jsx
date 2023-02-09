@@ -172,7 +172,11 @@ function Home() {
             <section
                 className="bg-primary block -mt-16 pb-24"
             >
-                <SubHome />
+                <section
+                    className="content-wrapped"
+                >
+                    <SubHome />
+                </section>
             </section>
         </ContentWraped>
         </>
