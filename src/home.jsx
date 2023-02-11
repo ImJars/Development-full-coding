@@ -19,6 +19,8 @@ import { BsFillEmojiSmileFill } from 'react-icons/bs';
 import { BiCodeAlt } from 'react-icons/bi';
 import TextHome from "./components/home/text-home";
 import SubHome from "./components/home/sub-home";
+import Wraped from "./components/wraped";
+import Footer from "./footer";
 
 const ContentWraped = styled.div`
     .content-wrapped{
@@ -183,6 +185,15 @@ function Home() {
                         />
                     </div>
                 </section>
+            </section>
+            <section
+                className="bg-primary block mt-16 pb-24"
+            >
+                <Wraped>
+                    <Footer>
+                        
+                    </Footer>
+                </Wraped>
             </section>
         </ContentWraped>
         </>
