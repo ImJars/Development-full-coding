@@ -11,14 +11,14 @@ import {
     SiFramer
 } from "react-icons/si";
 import { HiOutlineDotsVertical } from "react-icons/hi";
-import IconHome from "./components/icon-home";
-import CardAbout from "./components/card-about";
+import IconHome from "./components/home/icon-home";
+import CardAbout from "./components/home/card-about";
 import { FaProjectDiagram } from 'react-icons/fa';
 import { MdGroups, MdVerified, MdOutlineWork } from 'react-icons/md';
 import { BsFillEmojiSmileFill } from 'react-icons/bs';
 import { BiCodeAlt } from 'react-icons/bi';
-import TextHome from "./components/text-home";
-import SubHome from "./components/sub-home";
+import TextHome from "./components/home/text-home";
+import SubHome from "./components/home/sub-home";
 
 const ContentWraped = styled.div`
     .content-wrapped{
@@ -181,9 +181,6 @@ function Home() {
                             subtitle={ 'Eye Catching, Modern & Minimalist Design.' }
                             text={ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus' }
                         />
-                    </div>
-                    <div>
-                        
                     </div>
                 </section>
             </section>

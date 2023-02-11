@@ -4,7 +4,7 @@ function CardNumber({ number, title, text }) {
     return (
         <>
             <div
-                className='bg-secondary w-1/2 flex justify-center
+                className='bg-secondary flex justify-center
                             items-center rounded-2xl py-4 mb-5
                             border border-text-general border-opacity-10'
             >
