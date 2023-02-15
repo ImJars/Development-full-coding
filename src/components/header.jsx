@@ -82,7 +82,7 @@ function Header() {
                         </div>
                         <HeaderLink
                             classNames={'text-text-purple hover:text-purple-300'}
-                            link={'/'}
+                            link={'/projects'}
                             linkText={'Projects'}
                         />
                         <HeaderLink
