@@ -31,6 +31,9 @@ module.exports = {
       },
       backdropBlur: {
         xs: '5px',
+      },
+      padding: {
+        '2.5px': '2.5px',
       }
     },
   },

@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { BsTwitter, BsGithub } from 'react-icons/bs'
 import HeaderLink from './header-link'
+import {
+    Link 
+} from 'react-router-dom'
+
 
 const Navbar = styled.header`
     &.navbar{
@@ -43,9 +47,39 @@ function Header() {
                     className='flex justify-between items-center w-full h-full px-4'
                 >
                     <div
-                        className='flex space-x-4 items-center'
+                        className='flex space-x-6 items-center'
                     >
-
+                        <div
+                            className='mr-4 flex justify-center items-center space-x-2'
+                        >
+                            <Link
+                                className='flex justify-center items-center space-x-2'
+                                to='/'
+                            >
+                                <div
+                                    className='border-2 border-text-purple rounded-lg px-2 py-2.5px
+                                                grid justify-center items-center bg-text-purple'
+                                >
+                                    <h1
+                                        className='text-white font-bold text-xs'
+                                    >
+                                        &#47;
+                                    </h1>
+                                </div>
+                                <div
+                                    className='flex text-xl font-bold tracking-wide'
+                                >
+                                    <h1>
+                                        jars
+                                    </h1>
+                                    <h2
+                                        className='text-text-purple'
+                                    >
+                                        dev
+                                    </h2>
+                                </div>
+                            </Link>
+                        </div>
                         <HeaderLink
                             classNames={'text-text-purple hover:text-purple-300'}
                             link={'/'}
