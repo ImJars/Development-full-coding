@@ -9,7 +9,9 @@ function Blog() {
                 className='bg-primary w-full h-screen text-white'
             >
                 <Wraped>
-                    <div>
+                    <div
+                        className='pb-20'
+                    >
                         <h1
                             className='text-7xl font-bold tracking-wide pt-40'
                         >
@@ -21,11 +23,15 @@ function Blog() {
                             Web development thoughts and stories.
                         </h2>
                     </div>
-                    <div>
+                    <div
+                        className='flex flex-col gap-8 md:flex-row md:gap-8 lg:gap-24'
+                    >
                         <div
                             className='md:w-64'
                         />
-                        <div>
+                        <div
+                            className='flex-1'
+                        >
                             <PinedCard 
                                 date='February 12, 2021 • English'
                                 title='Tailwind CSS: Best Practices'

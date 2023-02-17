@@ -17,6 +17,7 @@ module.exports = {
         "card-icon-one": "#78350F",
         "card-icon-two": "#831843",
         "card-icon-three": "#0C4A6E",
+        "text-white-gray": "#CBD5E1",
 
         "js-icon": "#EFD81D",
         "react-icon": "#5ED3F3",
