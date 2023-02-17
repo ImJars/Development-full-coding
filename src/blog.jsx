@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './components/blog/card'
 import PinedCard from './components/blog/pined-card'
 import Wraped from './components/wraped'
+import Footter from './footer'
 
 function Blog() {
     return (
@@ -49,6 +50,11 @@ function Blog() {
                                 description={'First impression menggunakan Next.js, Tailwind CSS, Framer Motion setelah tiga bulan.'}
                             />
                         </div>
+                    </div>
+                    <div
+                        className='mt-20'
+                    >
+                        <Footter />
                     </div>
                 </Wraped>
             </section>
