@@ -1,4 +1,5 @@
 import React from 'react'
+import PinedCard from './components/blog/pined-card'
 import Wraped from './components/wraped'
 
 function Blog() {
@@ -21,7 +22,16 @@ function Blog() {
                         </h2>
                     </div>
                     <div>
-                        
+                        <div
+                            className='md:w-64'
+                        />
+                        <div>
+                            <PinedCard 
+                                date='February 12, 2021 • English'
+                                title='Tailwind CSS: Best Practices'
+                                description='A collection of best practices for Tailwind CSS.'
+                            />
+                        </div>
                     </div>
                 </Wraped>
             </section>
