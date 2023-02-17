@@ -35,7 +35,13 @@ module.exports = {
       },
       padding: {
         '2.5px': '2.5px',
-      }
+      },
+      translate: {
+        'line': '105px',
+      },
+      fontSize: {
+        'xxs': '0.5rem',
+      },
     },
   },
   plugins: [],

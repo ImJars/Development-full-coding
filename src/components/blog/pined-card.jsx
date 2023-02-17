@@ -7,7 +7,7 @@ function PinedCard({ date, title, description }) {
     return (
         <>
             <div
-                className='border border-text-general rounded-2xl border-opacity-10'
+                className='border border-text-general rounded-2xl border-opacity-10 mb-8'
             >
                 <div
                     className='p-6 block'
@@ -35,7 +35,7 @@ function PinedCard({ date, title, description }) {
                         { title }
                     </h2>
                     <h3
-                        className='text-text-general tracking-wide text-xl'
+                        className='text-text-general tracking-wide text-lg'
                     >
                         { description }
                     </h3>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './components/blog/card'
 import PinedCard from './components/blog/pined-card'
 import Wraped from './components/wraped'
 
@@ -6,7 +7,7 @@ function Blog() {
     return (
         <>
             <section
-                className='bg-primary w-full h-screen text-white'
+                className='bg-primary w-full h-full text-white'
             >
                 <Wraped>
                     <div
@@ -36,6 +37,16 @@ function Blog() {
                                 date='February 12, 2021 • English'
                                 title='Tailwind CSS: Best Practices'
                                 description='A collection of best practices for Tailwind CSS.'
+                            />
+                            <Card 
+                                date={'January 6, 2023 • English'}
+                                title={'Tentang Next.js dan Tailwind CSS'}
+                                description={'First impression menggunakan Next.js, Tailwind CSS, Framer Motion setelah tiga bulan.'}
+                            />
+                            <Card 
+                                date={'January 6, 2023 • English'}
+                                title={'Tentang Next.js dan Tailwind CSS'}
+                                description={'First impression menggunakan Next.js, Tailwind CSS, Framer Motion setelah tiga bulan.'}
                             />
                         </div>
                     </div>
