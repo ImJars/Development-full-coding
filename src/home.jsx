@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Img from  './assets/react.svg'
 import styled from "styled-components";
 import { 
@@ -22,6 +22,9 @@ import SubHome from "./components/home/sub-home";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const ContentWraped = styled.div`
     .content-wrapped{
         margin-left: auto;
@@ -33,9 +36,96 @@ const ContentWraped = styled.div`
 `
 
 function Home() {
+
+    const { ref, inView } = useInView({
+        threshold: 0.1,
+        triggerOnce: true
+    })
+
+    const animateHi = useAnimation();
+    const animateName = useAnimation();
+    const animateJob = useAnimation();
+    const animateButton = useAnimation();
+    const animateAvailable = useAnimation();
+    const animateStack = useAnimation();
+
+    useEffect(() => {
+        if( inView ){
+            animateHi.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    type: 'spring', duration: .5, delay: 0.1
+                }
+            })
+            animateName.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    type: 'spring', duration: .5, delay: 0.2
+                }
+            })
+            animateJob.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    type: 'spring', duration: .5, delay: 0.3
+                }
+            })
+            animateButton.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    type: 'spring', duration: .5, delay: 0.4
+                }
+            })
+            animateStack.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    type: 'spring', duration: .5, delay: 0.5
+                }
+            })
+            animateAvailable.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    type: 'spring', duration: .5, delay: 2
+                }
+            })
+        }
+        if( !inView ){
+            animateHi.start({
+                x: '-100',
+                opacity: 0,
+            })
+            animateName.start({
+                x: '-100',
+                opacity: 0,
+            })
+            animateJob.start({
+                x: '-100',
+                opacity: 0,
+            })
+            animateButton.start({
+                x: '-100',
+                opacity: 0,
+            })
+            animateStack.start({
+                x: '-100',
+                opacity: 0,
+            })
+            animateAvailable.start({
+                x: '-100',
+                opacity: 0,
+            })
+        }
+    }, [inView, animateHi, animateName, animateJob, animateButton, animateStack, animateAvailable])
+    
     return (
         <>
         <ContentWraped
+            ref={ ref }
             className="bg-primary text-white"
         >
             <section
@@ -46,36 +136,55 @@ function Home() {
                         <div
                             className="relative z-10"
                         >
-                            <h1 className="text-4xl text-text-general">Hi!</h1>
-                            <h2 className="text-7xl leading-none font-bold mb-6">
+                            <motion.h1 
+                                animate={ animateHi }
+                                className="opacity-0 transform -translate-x-10 text-4xl text-text-general"
+                            >
+                                Hi!
+                            </motion.h1>
+                            <motion.h2 
+                                animate={ animateName }
+                                className="opacity-0 transform -translate-x-10 text-7xl leading-none font-bold mb-6"
+                            >
                                 I'm&nbsp;
                             <font className="text-text-purple">Angel</font>
                                 &nbsp;Ramirez,
-                            </h2>
-                            <h3 className="text-2xl text-text-general">
+                            </motion.h2>
+                            <motion.h3 
+                                animate={ animateJob }
+                                className="opacity-0 transform -translate-x-10 text-2xl text-text-general"
+                            >
                                 a full-stack web developer
-                            </h3>
+                            </motion.h3>
                         </div>
                         <div 
                             className="flex mt-8"
                         >
-                            <button
-                                className="bg-text-purple text-white
+                            <motion.button
+                                animate={ animateButton }
+                                className="opacity-0 transform -translate-x-10 bg-text-purple text-white
                                             rounded-lg px-8 py-2 font-semibold"
                             >
                                 Get in Touch
-                            </button>
-                            <h1
-                                className="flex items-center ml-4 text-text-purple 
-                                        animate-pulse"
+                            </motion.button>
+                            <motion.h1
+                                animate={ animateAvailable }
+                                className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-purple"
                             >
-                                ● Available for hire
-                            </h1>
+                                <h1
+                                    className="animate-pulse"
+                                >
+                                    ● Available for hire
+                                </h1>
+                            </motion.h1>
                         </div>
-                        <div 
-                            className="mt-36"
+                        <motion.div
+                            animate={ animateStack }
+                            className="opacity-0 transform -translate-x-10 mt-36"
                         >
-                            <h1>
+                            <h1
+                                className="text-sm font-semibold text-text-general"
+                            >
                                 current favorite tech stack/tools:
                             </h1>
                             <ul
@@ -115,7 +224,7 @@ function Home() {
                                     icon={ <SiFramer /> }
                                 />
                             </ul>
-                        </div>
+                        </motion.div>
                         <div
                             className="block absolute -top-10 right-0 z-0 overflow-hidden"
                         >
