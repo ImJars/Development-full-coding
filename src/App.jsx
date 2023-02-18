@@ -8,6 +8,7 @@ import {
   Route
 } from 'react-router-dom'
 import Projects from './projects'
+import Til from './TIL'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' element={ <Home /> } />
           <Route path='/projects' element={ <Projects /> } />
           <Route path='/blog' element={ <Blog /> } />
+          <Route path='/til' element={ <Til /> } />
         </Routes>
       </BrowserRouter>
     </>

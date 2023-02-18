@@ -91,6 +91,11 @@ function Header() {
                             linkText={'Blog'}
                         />
                         <HeaderLink
+                            classNames={'text-text-purple hover:text-purple-300'}
+                            link={'/til'}
+                            linkText={'T.I.L'}
+                        />
+                        <HeaderLink
                             classNames={'text-text-blue hover:text-blue-300'}
                             link={'/skills'}
                             linkText={'Skills & Tools'}
