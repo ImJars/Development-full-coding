@@ -171,11 +171,11 @@ function Home() {
                                 animate={ animateAvailable }
                                 className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-purple"
                             >
-                                <h1
+                                <p
                                     className="animate-pulse"
                                 >
                                     ● Available for hire
-                                </h1>
+                                </p>
                             </motion.h1>
                         </div>
                         <motion.div
