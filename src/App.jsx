@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom'
 import Projects from './projects'
 import Til from './TIL'
+import Skills from './skills'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/projects' element={ <Projects /> } />
           <Route path='/blog' element={ <Blog /> } />
           <Route path='/til' element={ <Til /> } />
+          <Route path='/skills' element={ <Skills /> } />
         </Routes>
       </BrowserRouter>
     </>
