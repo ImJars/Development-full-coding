@@ -11,6 +11,7 @@ import Projects from './projects'
 import Til from './TIL'
 import Skills from './skills'
 import Experience from './experience'
+import Studio from './studio'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/til' element={ <Til /> } />
           <Route path='/skills' element={ <Skills /> } />
           <Route path='/experience' element={ <Experience /> } />
+          <Route path='/studio' element={ <Studio /> } />
         </Routes>
       </BrowserRouter>
     </>
