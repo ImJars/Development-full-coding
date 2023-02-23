@@ -1,5 +1,6 @@
 import React from 'react'
 import Wraped from './components/wraped'
+import Footer from "./footer";
 
 function Projects() {
     return (
@@ -8,7 +9,9 @@ function Projects() {
                 className='bg-primary w-full text-white'
             >
                 <Wraped>
-                    <div>
+                    <div
+                        className='pb-40'
+                    >
                         <div>
                             <h1
                                 className='text-7xl font-bold tracking-wide pt-40'
@@ -42,16 +45,10 @@ function Projects() {
                         </div>
                     </div>
                 </Wraped>
+                <Wraped>
+                    <Footer />
+                </Wraped>
             </section>
-            <div
-                className='bg-primary flex justify-center items-center h-screen'
-            >
-                <h1
-                    className='text-4xl font-semibold tracking-wide text-text-blue'
-                >
-                    Estos son los proyectos
-                </h1>
-            </div>
         </>
     )
 }
