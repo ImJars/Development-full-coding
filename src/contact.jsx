@@ -1,4 +1,5 @@
 import React from 'react'
+import Wraped from './components/wraped'
 
 function Contact() {
   return (
