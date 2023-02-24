@@ -1,5 +1,6 @@
 import React from 'react'
 import Wraped from './components/wraped'
+import Footer from './footer'
 
 function Studio() {
   return (
@@ -26,6 +27,11 @@ function Studio() {
                     >
                         A work-from-home workspace that allows me to efficiently complete most tasks.
                     </h3>
+                </div>
+                <div
+                    className='mt-20'
+                >
+                    <Footer />
                 </div>
             </Wraped>
         </section>
