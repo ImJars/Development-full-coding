@@ -1,5 +1,6 @@
 import React from 'react'
 import Wraped from './components/wraped'
+import Footer from './footer'
 
 function Til() {
     return (
@@ -21,6 +22,11 @@ function Til() {
                         >
                             Short notes on full-stack related topics.
                         </h2>
+                    </div>
+                    <div
+                        className='mt-20'
+                    >
+                        <Footer />
                     </div>
                 </Wraped>
             </section>
