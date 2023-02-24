@@ -1,5 +1,6 @@
 import React from 'react'
 import Wraped from './components/wraped'
+import Footer from './footer'
 
 function Skills() {
   return (
@@ -26,6 +27,11 @@ function Skills() {
                     >
                         A look at all the programming languages, libraries, and tools I've worked with.
                     </h2>
+                </div>
+                <div
+                    className='mt-20'
+                >
+                    <Footer />
                 </div>
             </Wraped>
         </section>
