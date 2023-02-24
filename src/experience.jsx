@@ -1,5 +1,6 @@
 import React from 'react'
 import Wraped from './components/wraped'
+import Footer from './footer'
 
 function Experience() {
   return (
@@ -26,6 +27,11 @@ function Experience() {
                     >
                         All about my freelance, self-employed, and professional work experience.
                     </h3>
+                </div>
+                <div
+                    className='mt-20'
+                >
+                    <Footer />
                 </div>
             </Wraped>
         </section>
