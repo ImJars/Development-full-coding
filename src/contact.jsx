@@ -1,5 +1,6 @@
 import React from 'react'
 import Wraped from './components/wraped'
+import Footer from './footer'
 
 function Contact() {
   return (
@@ -26,6 +27,11 @@ function Contact() {
                     >
                         Get in touch with me anytime, through social media, e-mail, or phone number.
                     </h3>
+                </div>
+                <div
+                    className='mt-20'
+                >
+                    <Footer />
                 </div>
             </Wraped>
         </section>
