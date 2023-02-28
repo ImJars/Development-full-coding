@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { BsTwitter, BsGithub } from 'react-icons/bs'
+import { BsTwitter, BsGithub, BsGrid1X2Fill } from 'react-icons/bs'
 import HeaderLink from './header-link'
 import {
     Link 
@@ -119,11 +119,29 @@ function Header() {
                     <div
                         className='flex space-x-4 items-center'
                     >
-                        <BsTwitter />
-                        <BsGithub />
-                        <h1>
-                            Access
-                        </h1>
+                        <a
+                            href='#'
+                            className='text-lg'
+                        >
+                            <BsTwitter />
+                        </a>
+                        <a
+                            href='#'
+                            className='text-lg'
+                        >
+                            <BsGithub />
+                        </a>
+                        <button
+                            className='bg-card bg-opacity-50 py-2 px-3 rounded-xl flex space-x-2 items-center'
+                        >   <div>
+                                <BsGrid1X2Fill />
+                            </div>
+                            <h1
+                                className='text-sm'
+                            >
+                                Main Access
+                            </h1>
+                        </button>
                     </div>
                 </div>
             </Navbar>

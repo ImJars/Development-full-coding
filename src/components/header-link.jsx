@@ -8,7 +8,7 @@ function HeaderLink({ classNames, link, linkText }) {
         <>
                 <Link
                     to={ link }
-                    className={`${ classNames } text-base font-semibold`}
+                    className={`${ classNames } text-sm font-semibold`}
                 >
                     { linkText }
                 </Link>
