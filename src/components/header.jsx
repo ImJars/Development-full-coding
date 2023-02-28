@@ -119,20 +119,25 @@ function Header() {
                     <div
                         className='flex space-x-4 items-center'
                     >
-                        <a
-                            href='#'
-                            className='text-lg'
+                        <div
+                            className='flex items-center'
                         >
-                            <BsTwitter />
-                        </a>
-                        <a
-                            href='#'
-                            className='text-lg'
-                        >
-                            <BsGithub />
-                        </a>
+                            <a
+                                href='#'
+                                className='text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2'
+                            >
+                                <BsTwitter />
+                            </a>
+                            <a
+                                href='#'
+                                className='text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2'
+                            >
+                                <BsGithub />
+                            </a>
+                        </div>
                         <button
-                            className='bg-card bg-opacity-50 py-2 px-3 rounded-xl flex space-x-2 items-center'
+                            className='bg-card bg-opacity-50 py-2 px-3 rounded-xl flex space-x-2 items-center
+                                        hover:bg-opacity-100 transition-all duration-200 ease-in-out'
                         >   <div>
                                 <BsGrid1X2Fill />
                             </div>
