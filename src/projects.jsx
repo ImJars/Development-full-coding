@@ -2,7 +2,7 @@ import React from 'react'
 import CardProject from './components/projects/cardProject';
 import Wraped from './components/wraped'
 import Footer from "./footer";
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaUserFriends, FaProjectDiagram } from 'react-icons/fa'
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 
 function Projects() {
@@ -13,7 +13,7 @@ function Projects() {
             >
                 <Wraped>
                     <div
-                        className='pb-40'
+                        className='pb-20'
                     >
                         <div>
                             <h1
@@ -72,6 +72,16 @@ function Projects() {
                                 />
                                 <CardProject
                                     icon={ <BsFillCheckCircleFill /> }
+                                    title='tailwindcss-accent'
+                                    text='Add accent colors for dynamic, flexible color use in your Tailwind CSS project.'
+                                />
+                                <CardProject
+                                    icon={ <FaUserFriends /> }
+                                    title='tailwindcss-accent'
+                                    text='Add accent colors for dynamic, flexible color use in your Tailwind CSS project.'
+                                />
+                                <CardProject
+                                    icon={ <FaProjectDiagram /> }
                                     title='tailwindcss-accent'
                                     text='Add accent colors for dynamic, flexible color use in your Tailwind CSS project.'
                                 />
