@@ -38,7 +38,7 @@ function Header() {
                 className={
                     navbar 
                     ? 
-                    'navbar active bg-secondary/95 backdrop-blur-xs border-b border-text-general border-opacity-10' 
+                    'navbar active bg-secondary/90 backdrop-blur-xs border-b border-text-general border-opacity-10' 
                     : 
                     'navbar border-0 border-opacity-0 border-text-general'
                 }
