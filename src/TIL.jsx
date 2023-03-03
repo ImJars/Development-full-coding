@@ -1,4 +1,5 @@
 import React from 'react'
+import TodayComponent from './components/TIL/todayComponent'
 import Wraped from './components/wraped'
 import Footer from './footer'
 
@@ -22,6 +23,9 @@ function Til() {
                         >
                             Short notes on full-stack related topics.
                         </h2>
+                    </div>
+                    <div>
+                        <TodayComponent />
                     </div>
                     <div
                         className='mt-20'
