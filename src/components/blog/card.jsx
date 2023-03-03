@@ -1,18 +1,19 @@
 import React from 'react'
 import { MdOutlineBarChart } from 'react-icons/md'
 import { AiOutlineEllipsis, AiOutlineShareAlt } from 'react-icons/ai'
-import { BsFillTriangleFill } from 'react-icons/bs'
 
 function Card({ date, title, description, link }) {
     return (
         <>
             <div
-                className='flex space-x-5 my-10'
+                className='flex space-x-5 my-20'
             >
                 <div
                     className='border-text-general border-opacity-10 -translate-y-line border-b mt-16 w-24 block'
                 />
-                <div>
+                <div
+                    className='text-start'
+                >
                     <h1
                         className='text-text-general text-xs font-semibold mb-1'
                     >
@@ -24,7 +25,7 @@ function Card({ date, title, description, link }) {
                         { title }
                     </h2>
                     <h3
-                        className='text-text-general tracking-wide text-lg'
+                        className='text-text-general tracking-wide text-base'
                     >
                         { description }
                     </h3>
@@ -73,9 +74,7 @@ function Card({ date, title, description, link }) {
                             <h1>
                                 read more
                             </h1>
-                            <BsFillTriangleFill 
-                                className='text-xxs transform rotate-90 animate-pulse'
-                            />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3 animate-pulse"><path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path></svg>
                         </a>
                     </div>
                 </div>
