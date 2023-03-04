@@ -7,7 +7,7 @@ function Til() {
     return (
         <>
             <section
-                className='bg-primary w-full h-screen text-white'
+                className='bg-primary w-full h-full text-white'
             >
                 <Wraped>
                     <div
@@ -35,6 +35,7 @@ function Til() {
                         <div
                             className='w-2/3'
                         >
+                            <TodayComponent />
                             <TodayComponent />
                         </div>
                     </div>
