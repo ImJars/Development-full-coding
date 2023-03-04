@@ -26,6 +26,10 @@ module.exports = {
         "solidity-icon": "#616161",
         "vs-code-icon": "#127BC6",
         "framer-icon": "#41A0EB",
+
+        'update_primary': '#17181D',
+        'update_secondary': '#F21E4E',
+        'update_tertiary': '##0C0D12',
       },
       maxWidth: {
         display: '70rem',
