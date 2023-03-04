@@ -24,8 +24,19 @@ function Til() {
                             Short notes on full-stack related topics.
                         </h2>
                     </div>
-                    <div>
-                        <TodayComponent />
+                    <div
+                        className='flex w-full'
+                    >
+                        <div
+                            className='w-1/3'
+                        >
+
+                        </div>
+                        <div
+                            className='w-2/3'
+                        >
+                            <TodayComponent />
+                        </div>
                     </div>
                     <div
                         className='mt-20'
