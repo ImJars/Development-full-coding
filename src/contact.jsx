@@ -6,14 +6,14 @@ function Contact() {
   return (
     <>
         <section
-            className='bg-primary w-full h-screen text-white'
+            className='bg-update_primary w-full h-screen text-text-white-gray'
         >
             <Wraped>
                 <div
                     className='pb-20'
                 >
                     <h1
-                        className='text-text-blue text-2xl tracking-wide pt-40 font-bold'
+                        className='text-update_secondary text-2xl tracking-wide pt-40 font-bold'
                     >
                         Work
                     </h1>
