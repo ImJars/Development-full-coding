@@ -35,8 +35,24 @@ function Til() {
                         <div
                             className='w-2/3'
                         >
-                            <TodayComponent />
-                            <TodayComponent />
+                            <TodayComponent 
+                                title='React Hooks is a new addition in React'
+                                tag_1='#React'
+                                tag_2='#Hooks'
+                                tag_3='#JavaScript'
+                                description='React Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.'
+                                link_1='issue'
+                                link_2='Official Docs'
+                            />
+                            <TodayComponent 
+                                title='Tailwind CSS is a utility-first CSS framework'
+                                tag_1='#Tailwind'
+                                tag_2='#CSS'
+                                tag_3='#JavaScript'
+                                description='Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.'
+                                link_1='Credits'
+                                link_2='Official Docs'
+                            />
                         </div>
                     </div>
                     <div

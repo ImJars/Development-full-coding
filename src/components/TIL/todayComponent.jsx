@@ -1,16 +1,16 @@
 import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 
-function TodayComponent() {
+function TodayComponent({ title, tag_1, tag_2, tag_3, description, link_1, link_2 }) {
   return (
     <>
         <div
           className='py-10'
         >
             <h1
-              className='text-text-white-gray text-3xl font-bold tracking-wide mb-2'
+              className='text-text-white-gray text-4xl font-bold tracking-wide mb-2'
             >
-                nested backdrop-filter
+                { title }
             </h1>
             <div
               className='flex space-x-2'
@@ -19,26 +19,25 @@ function TodayComponent() {
                   className='text-text-purple bg-text-purple bg-opacity-10 px-2 rounded-full
                             font-light'
                 >  
-                  #tailwind
+                  { tag_1 }
                 </h1>
                 <h2
                   className='text-text-purple bg-text-purple bg-opacity-10 px-2 rounded-full
                   font-light'
                 >
-                  #pre
+                  { tag_2 }
                 </h2>
                 <h3
                   className='text-text-purple bg-text-purple bg-opacity-10 px-2 rounded-full
                   font-light'
                 >
-                  #flex
+                  { tag_3 }
                 </h3>
             </div>
             <h2
               className='text-text-general text-base tracking-wide mt-4'
             >
-              Backdrop filter tidak akan berhasil jika parent memiliki efek backdrop-filter juga.
-              Backdrop filter tidak akan berhasil jika parent memiliki efek backdrop-filter juga.
+              { description }
             </h2>
             <div
               className='flex space-x-2 mt-4 items-center'
@@ -51,7 +50,7 @@ function TodayComponent() {
                 <h1
                   className='text-lg font-light'
                 >
-                  issue
+                  { link_1 }
                 </h1>
                 <div>
                   <BiLinkExternal 
@@ -72,7 +71,7 @@ function TodayComponent() {
                 <h1
                   className='text-lg font-light'
                 >
-                  workaround
+                  { link_2 }
                 </h1>
                 <div>
                   <BiLinkExternal 
