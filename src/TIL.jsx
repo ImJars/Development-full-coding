@@ -53,6 +53,24 @@ function Til() {
                                 link_1='Credits'
                                 link_2='Official Docs'
                             />
+                            <TodayComponent 
+                                title='Javascript is a programming language'
+                                tag_1='#JavaScript'
+                                tag_2='#Programming'
+                                tag_3='#Language'
+                                description='JavaScript is a programming language that conforms to the ECMAScript specification.'
+                                link_1='Credits'
+                                link_2='Official Docs'
+                            />
+                            <TodayComponent 
+                                title='HTML is a markup language'
+                                tag_1='#HTML'
+                                tag_2='#Markup'
+                                tag_3='#Language'
+                                description='HTML is a markup language for describing web documents (web pages).'
+                                link_1='Page'
+                                link_2='Official Docs'
+                            />
                         </div>
                     </div>
                     <div
