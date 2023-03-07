@@ -32,12 +32,33 @@ function Skills() {
                     <div
                         className='border-l pl-24 border-text-general border-opacity-20'
                     >
-                        <h1>
-                            I started my career as a web developer about 7 years ago. I've tried some programming languages and tech stack, both Back-End, and Front-End.
-                        </h1>
-                        <h2>
-                            Even though the scope of web development is broad, I was very interested and focused on Front-End Development and UI/UX Design.
-                        </h2>
+                        <div
+                            className='border-b pb-14 border-text-general border-opacity-20'
+                        >
+                            <h1>
+                                I started my career as a web developer about 7 years ago. 
+                                I've tried some programming languages and tech stack, 
+                                both Back-End, and Front-End.
+                            </h1>
+                            <h2>
+                                Even though the scope of web development is broad, 
+                                I was very interested and focused on Front-End Development 
+                                and UI/UX Design.
+                            </h2>
+                        </div>
+                        <div
+                            className='mt-10'
+                        >
+                            <h1
+                                className='text-text-white-gray text-3xl font-bold tracking-wide'
+                            >
+                                Front-End Developer
+                            </h1>
+                            <h2>
+                                I love creating something that is clean and minimalistic, 
+                                attractive and has value, and of course, easy to use.
+                            </h2>
+                        </div>
                     </div>
                 </div>
                 <div
