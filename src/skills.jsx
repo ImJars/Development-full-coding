@@ -6,7 +6,7 @@ function Skills() {
   return (
     <>
         <section
-            className='bg-primary w-full h-screen text-white'
+            className='bg-primary w-full h-full text-white'
         >
             <Wraped>
                 <div
@@ -61,6 +61,34 @@ function Skills() {
                                 I love creating something that is clean and minimalistic, 
                                 attractive and has value, and of course, easy to use.
                             </h2>
+                            <div
+                                className='mt-5 text-text-general text-base tracking-wide'
+                            >
+                                <h1
+                                    className='mb-5'
+                                >
+                                    I really enjoy creating websites with rich UI components, including:
+                                </h1>
+                                <ul
+                                    className='list-disc ml-5 space-y-2'
+                                >
+                                    <li>
+                                        Web application,
+                                    </li>
+                                    <li>
+                                        Documentation pages,
+                                    </li>
+                                    <li>
+                                        CMS contents layout
+                                    </li>
+                                    <li>
+                                        Dashboard layout,
+                                    </li>
+                                    <li>
+                                        and others.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
