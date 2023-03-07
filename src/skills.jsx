@@ -33,7 +33,8 @@ function Skills() {
                         className='border-l pl-24 border-text-general border-opacity-20'
                     >
                         <div
-                            className='border-b pb-14 border-text-general border-opacity-20'
+                            className='border-b pb-14 border-text-general border-opacity-20
+                                    text-text-general text-base tracking-wide space-y-6'
                         >
                             <h1>
                                 I started my career as a web developer about 7 years ago. 
@@ -54,7 +55,9 @@ function Skills() {
                             >
                                 Front-End Developer
                             </h1>
-                            <h2>
+                            <h2
+                                className='text-text-general text-base tracking-wide mt-5'
+                            >
                                 I love creating something that is clean and minimalistic, 
                                 attractive and has value, and of course, easy to use.
                             </h2>
