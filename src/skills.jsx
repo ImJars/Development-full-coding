@@ -28,6 +28,18 @@ function Skills() {
                         A look at all the programming languages, libraries, and tools I've worked with.
                     </h2>
                 </div>
+                <div>
+                    <div
+                        className='border-l pl-24 border-text-general border-opacity-20'
+                    >
+                        <h1>
+                            I started my career as a web developer about 7 years ago. I've tried some programming languages and tech stack, both Back-End, and Front-End.
+                        </h1>
+                        <h2>
+                            Even though the scope of web development is broad, I was very interested and focused on Front-End Development and UI/UX Design.
+                        </h2>
+                    </div>
+                </div>
                 <div
                     className='mt-20'
                 >
