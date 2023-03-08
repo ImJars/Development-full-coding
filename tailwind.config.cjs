@@ -18,6 +18,7 @@ module.exports = {
         "card-icon-two": "#831843",
         "card-icon-three": "#0C4A6E",
         "text-white-gray": "#CBD5E1",
+        "table-color": "#161E31",
 
         "js-icon": "#EFD81D",
         "react-icon": "#5ED3F3",
