@@ -23,7 +23,7 @@ function Skills() {
                         Skills and Tools
                     </h1>
                     <h2
-                        className='text-text-general text-2xl tracking-wide mt-8'
+                        className='w-2/3 text-text-general text-2xl tracking-wide mt-8'
                     >
                         A look at all the programming languages, libraries, and tools I've worked with.
                     </h2>
@@ -35,7 +35,7 @@ function Skills() {
                         className='w-2/3'
                     >
                         <div
-                            className='border-l pl-24 border-text-general border-opacity-20'
+                            className='border-l pl-24 border-text-general border-opacity-20 pb-96'
                         >
                             <div
                                 className='border-b pb-14 border-text-general border-opacity-20
@@ -98,13 +98,18 @@ function Skills() {
                         </div>
                     </div>
                     <div
-                        className='w-1/4'
+                        className='-mt-48 hidden lg:block'
                     >
                         <div
-                            className='w-64'
+                            className='sticky top-24 z-[901] w-64 xl:w-[272px]'
                         >
-                            <nav>
-                                <div>
+                            <nav
+                                className='bg-secondary border border-text-general border-opacity-10 
+                                        rounded-xl'
+                            >
+                                <div
+                                    className='py-3 px-5'
+                                >
                                     <h1>
                                         Table of Contents
                                     </h1>
@@ -112,7 +117,9 @@ function Skills() {
                                 <div
                                     className='p-3 py-4'
                                 >
-                                    <ol>
+                                    <ol
+                                        className='flex flex-col gap-2'
+                                    >
                                         <li>
                                             Front-End Developer
                                         </li>
