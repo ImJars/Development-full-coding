@@ -28,67 +28,127 @@ function Skills() {
                         A look at all the programming languages, libraries, and tools I've worked with.
                     </h2>
                 </div>
-                <div>
+                <div
+                    className='flex justify-between'
+                >
                     <div
-                        className='border-l pl-24 border-text-general border-opacity-20'
+                        className='w-2/3'
                     >
                         <div
-                            className='border-b pb-14 border-text-general border-opacity-20
-                                    text-text-general text-base tracking-wide space-y-6'
+                            className='border-l pl-24 border-text-general border-opacity-20'
                         >
-                            <h1>
-                                I started my career as a web developer about 7 years ago. 
-                                I've tried some programming languages and tech stack, 
-                                both Back-End, and Front-End.
-                            </h1>
-                            <h2>
-                                Even though the scope of web development is broad, 
-                                I was very interested and focused on Front-End Development 
-                                and UI/UX Design.
-                            </h2>
-                        </div>
-                        <div
-                            className='mt-10'
-                        >
-                            <h1
-                                className='text-text-white-gray text-3xl font-bold tracking-wide'
-                            >
-                                Front-End Developer
-                            </h1>
-                            <h2
-                                className='text-text-general text-base tracking-wide mt-5'
-                            >
-                                I love creating something that is clean and minimalistic, 
-                                attractive and has value, and of course, easy to use.
-                            </h2>
                             <div
-                                className='mt-5 text-text-general text-base tracking-wide'
+                                className='border-b pb-14 border-text-general border-opacity-20
+                                        text-text-general text-base tracking-wide space-y-6'
+                            >
+                                <h1>
+                                    I started my career as a web developer about 7 years ago. 
+                                    I've tried some programming languages and tech stack, 
+                                    both Back-End, and Front-End.
+                                </h1>
+                                <h2>
+                                    Even though the scope of web development is broad, 
+                                    I was very interested and focused on Front-End Development 
+                                    and UI/UX Design.
+                                </h2>
+                            </div>
+                            <div
+                                className='mt-10'
                             >
                                 <h1
-                                    className='mb-5'
+                                    className='text-text-white-gray text-3xl font-bold tracking-wide'
                                 >
-                                    I really enjoy creating websites with rich UI components, including:
+                                    Front-End Developer
                                 </h1>
-                                <ul
-                                    className='list-disc ml-5 space-y-2'
+                                <h2
+                                    className='text-text-general text-base tracking-wide mt-5'
                                 >
-                                    <li>
-                                        Web application,
-                                    </li>
-                                    <li>
-                                        Documentation pages,
-                                    </li>
-                                    <li>
-                                        CMS contents layout
-                                    </li>
-                                    <li>
-                                        Dashboard layout,
-                                    </li>
-                                    <li>
-                                        and others.
-                                    </li>
-                                </ul>
+                                    I love creating something that is clean and minimalistic, 
+                                    attractive and has value, and of course, easy to use.
+                                </h2>
+                                <div
+                                    className='mt-5 text-text-general text-base tracking-wide'
+                                >
+                                    <h1
+                                        className='mb-5'
+                                    >
+                                        I really enjoy creating websites with rich UI components, including:
+                                    </h1>
+                                    <ul
+                                        className='list-disc ml-5 space-y-2'
+                                    >
+                                        <li>
+                                            Web application,
+                                        </li>
+                                        <li>
+                                            Documentation pages,
+                                        </li>
+                                        <li>
+                                            CMS contents layout
+                                        </li>
+                                        <li>
+                                            Dashboard layout,
+                                        </li>
+                                        <li>
+                                            and others.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div
+                        className='w-1/4'
+                    >
+                        <div
+                            className='w-64'
+                        >
+                            <nav>
+                                <div>
+                                    <h1>
+                                        Table of Contents
+                                    </h1>
+                                </div>
+                                <div
+                                    className='p-3 py-4'
+                                >
+                                    <ol>
+                                        <li>
+                                            Front-End Developer
+                                        </li>
+                                        <li>
+                                            TypeScript
+                                        </li>
+                                        <li>
+                                            React
+                                        </li>
+                                        <li>
+                                            Tailwind CSS
+                                        </li>
+                                        <li>
+                                            Framer Motion
+                                        </li>
+                                        <li>
+                                            Next.js
+                                        </li>
+                                        <li>
+                                            UI/UX Designer
+                                        </li>
+                                        <li>
+                                            Detail and Summary
+                                        </li>
+                                        <li>
+                                            Programming Languages
+                                        </li>
+                                        <li>
+                                            Technologies
+                                        </li>
+                                        <li>
+                                            Softwares and Tools
+                                        </li>
+                                    </ol>
+                                </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
