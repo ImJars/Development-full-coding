@@ -1,25 +1,25 @@
 import React from 'react'
 
-function Skill() {
+function Skill({ title, description_1, description_2 }) {
   return (
     <>
         <div
             className='mt-10'
         >
             <h1
-                className='text-xl font-bold text-text-white-gray tracking-wide'
+                className='text-2xl font-bold text-text-white-gray tracking-wide'
             >
-                TypeScript
+                { title }
             </h1>
             <h2
                 className='text-text-general tracking-wide mt-5'
             >
-                First of all, the programming language. I'm very used to using TypeScript, although website creation can be done using PHP, Python, etc.
+                { description_1 }
             </h2>
             <h3
                 className='text-text-general tracking-wide mt-5'
             >
-                The JavaScript superset—TypeScript—has accompanied me for about 5 years.
+                { description_2 }
             </h3>
         </div>
     </>

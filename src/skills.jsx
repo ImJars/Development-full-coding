@@ -105,7 +105,29 @@ function Skills() {
                                 </p>
                             </div>
                             <div>
-                                <Skill />
+                                <Skill 
+                                    title={ 'TypeScript' }
+                                    description_1={ 'First of all, the programming language. I\'m very used to using TypeScript, although website creation can be done using PHP, Python, etc.' }
+                                    description_2={ 'The JavaScript superset—TypeScript—has accompanied me for about 5 years.' }
+                                />
+                                <Skill 
+                                    title={ 'React' }
+                                    description_1={ 'I really enjoy building single page application websites and React is my go-to library.' }
+                                    description_2={ `I've been using it since 2018 (5 years) and have become quite proficient with it.` }
+                                />
+                                <Skill 
+                                    title={ 'Tailwind CSS' }
+                                    description_1={ `For now, I love using Tailwind CSS for styling, even though I've been using SCSS for a longer time (4 years).` }
+                                    description_2={ `I'm still new to Tailwind CSS, but I'm really comfortable using it and I think it's a great tool.` }
+                                />
+                                <Skill 
+                                    title={ 'Framer Motion' }
+                                    description_1={ `For animations, I am more comfortable using Framer Motion. Creating animations using JavaScript has never been as easy as using Framer Motion.` }
+                                />
+                                <Skill 
+                                    title={ 'Next.js' }
+                                    description_1={ `I've been using CRA for a few years, but since discovering Next.js, I don't think I would want to use any other web framework. It's just that good!.` }
+                                />
                             </div>
                         </div>
                     </div>
