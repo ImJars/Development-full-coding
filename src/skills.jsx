@@ -1,4 +1,5 @@
 import React from 'react'
+import Skill from './components/skills/skill'
 import Wraped from './components/wraped'
 import Footer from './footer'
 
@@ -102,6 +103,9 @@ function Skills() {
                                     But I still like to make simple website pages like landing pages. 
                                     So, what tools did I feel comfortable using during the website creation?
                                 </p>
+                            </div>
+                            <div>
+                                <Skill />
                             </div>
                         </div>
                     </div>
