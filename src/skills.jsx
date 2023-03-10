@@ -95,6 +95,14 @@ function Skills() {
                                     </ul>
                                 </div>
                             </div>
+                            <div
+                                className='text-text-general text-base tracking-wide mt-5'
+                            >
+                                <p>
+                                    But I still like to make simple website pages like landing pages. 
+                                    So, what tools did I feel comfortable using during the website creation?
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div
