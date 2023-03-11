@@ -1,4 +1,5 @@
 import React from 'react'
+import Languajes from './components/skills/languajes'
 import MainSkill from './components/skills/mainSkill'
 import Skill from './components/skills/skill'
 import Wraped from './components/wraped'
@@ -141,9 +142,36 @@ function Skills() {
                                 />
                             </div>
                             <div>
-                                <h1>
+                                <h1
+                                    className='text-text-white-gray text-2xl font-bold tracking-wide mt-10'
+                                >
                                     Programming Languages
                                 </h1>
+                                <div
+                                    className='flex flex-wrap gap-4 mt-5'
+                                >
+                                    <Languajes 
+                                        title={ 'TypeScript' }
+                                    />
+                                    <Languajes 
+                                        title={ 'JavaScript' }
+                                    />
+                                    <Languajes 
+                                        title={ 'React' }
+                                    />
+                                    <Languajes 
+                                        title={ 'HTML' }
+                                    />
+                                    <Languajes 
+                                        title={ 'Tailwind CSS' }
+                                    />
+                                    <Languajes 
+                                        title={ 'NodeJS' }
+                                    />
+                                    <Languajes 
+                                        title={ 'Solidity' }
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
