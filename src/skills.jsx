@@ -1,4 +1,5 @@
 import React from 'react'
+import MainSkill from './components/skills/mainSkill'
 import Skill from './components/skills/skill'
 import Wraped from './components/wraped'
 import Footer from './footer'
@@ -127,6 +128,16 @@ function Skills() {
                                 <Skill 
                                     title={ 'Next.js' }
                                     description_1={ `I've been using CRA for a few years, but since discovering Next.js, I don't think I would want to use any other web framework. It's just that good!.` }
+                                />
+                            </div>
+                            <div
+                                className='mt-10'
+                            >
+                                <MainSkill 
+                                    title={'UI/UX Designer'}
+                                    description_1={`Designing user interfaces is something I'm really good at and I've been a UI/UX designer from 2018 to 2021 (3 years).`}
+                                    description_2={`I'm always thinking about how to create the best possible user experience, in addition to creating visually appealing user interfaces.`}
+                                    description_3={`The biggest challenge is finding the balance between creating a great user interface and an amazing user experience.`}
                                 />
                             </div>
                         </div>
