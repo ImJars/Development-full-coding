@@ -12,7 +12,6 @@ function Languajes({ title }) {
             >
                 &#60;{ title }&#47;&#62;
             </h1>
-
         </div>
     </>
   )

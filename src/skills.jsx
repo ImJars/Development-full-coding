@@ -2,6 +2,7 @@ import React from 'react'
 import Languajes from './components/skills/languajes'
 import MainSkill from './components/skills/mainSkill'
 import Skill from './components/skills/skill'
+import Technologies from './components/skills/technologies'
 import Wraped from './components/wraped'
 import Footer from './footer'
 
@@ -178,8 +179,42 @@ function Skills() {
                                     >
                                         Technologies
                                     </h1>
-                                    <div>
-                                        
+                                    <div
+                                        className='flex flex-wrap gap-4 mt-5'
+                                    >
+                                        <Technologies 
+                                            title={ 'Next.js' }
+                                        />
+                                        <Technologies 
+                                            title={ 'Material UI' }
+                                        />
+                                        <Technologies 
+                                            title={ 'React' }
+                                        />
+                                        <Technologies 
+                                            title={ 'Framer Motion' }
+                                        />
+                                        <Technologies 
+                                            title={ 'Redux' }
+                                        />
+                                        <Technologies 
+                                            title={ 'Webpack' }
+                                        />
+                                        <Technologies 
+                                            title={ 'Backbone.js' }
+                                        />
+                                        <Technologies 
+                                            title={ 'Marionette.js' }
+                                        />
+                                        <Technologies 
+                                            title={ 'WordPress' }
+                                        />
+                                        <Technologies 
+                                            title={ 'Express' }
+                                        />
+                                        <Technologies 
+                                            title={ 'MongoDB' }
+                                        />
                                     </div>
                                 </div>
                             </div>
