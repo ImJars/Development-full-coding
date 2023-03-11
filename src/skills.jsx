@@ -140,6 +140,11 @@ function Skills() {
                                     description_3={`The biggest challenge is finding the balance between creating a great user interface and an amazing user experience.`}
                                 />
                             </div>
+                            <div>
+                                <h1>
+                                    Programming Languages
+                                </h1>
+                            </div>
                         </div>
                     </div>
                     <div
