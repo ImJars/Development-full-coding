@@ -172,6 +172,16 @@ function Skills() {
                                         title={ 'Solidity' }
                                     />
                                 </div>
+                                <div>
+                                    <h1
+                                        className='text-text-white-gray text-2xl font-bold tracking-wide mt-10'
+                                    >
+                                        Technologies
+                                    </h1>
+                                    <div>
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
