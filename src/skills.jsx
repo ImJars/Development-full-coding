@@ -222,13 +222,31 @@ function Skills() {
                                     <h1
                                         className='text-text-white-gray text-2xl font-bold tracking-wide mt-10'
                                     >
-                                        Technologies
+                                        Softwares and Tools
                                     </h1>
                                     <div
                                         className='flex flex-wrap gap-4 mt-5'
                                     >
                                         <Tools 
+                                            title={ 'VS Code' }
+                                        />
+                                        <Tools 
+                                            title={ 'Node.js' }
+                                        />
+                                        <Tools 
                                             title={ 'Git' }
+                                        />
+                                        <Tools 
+                                            title={ 'Sourcetree' }
+                                        />
+                                        <Tools 
+                                            title={ 'Figma' }
+                                        />
+                                        <Tools 
+                                            title={ 'Inkscape' }
+                                        />
+                                        <Tools 
+                                            title={ 'Photoshop' }
                                         />
                                     </div>
                                 </div>
