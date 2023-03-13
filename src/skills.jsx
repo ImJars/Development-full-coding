@@ -3,6 +3,7 @@ import Languajes from './components/skills/languajes'
 import MainSkill from './components/skills/mainSkill'
 import Skill from './components/skills/skill'
 import Technologies from './components/skills/technologies'
+import Tools from './components/skills/tools'
 import Wraped from './components/wraped'
 import Footer from './footer'
 
@@ -214,6 +215,20 @@ function Skills() {
                                         />
                                         <Technologies 
                                             title={ 'MongoDB' }
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1
+                                        className='text-text-white-gray text-2xl font-bold tracking-wide mt-10'
+                                    >
+                                        Technologies
+                                    </h1>
+                                    <div
+                                        className='flex flex-wrap gap-4 mt-5'
+                                    >
+                                        <Tools 
+                                            title={ 'Git' }
                                         />
                                     </div>
                                 </div>
