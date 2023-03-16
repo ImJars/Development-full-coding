@@ -30,7 +30,12 @@ function Experience() {
                     </h3>
                 </div>
                 <div>
-                    <Index />
+                    <Index 
+                        subtitle_1={'Self-Employed'}
+                        subtitle_2={'Freelance'}
+                        subtitle_3={'Professional Work'}
+                        subtitle_4={'What They Say'}
+                    />
                 </div>
                 <div
                     className='mt-20'
