@@ -1,4 +1,5 @@
 import React from 'react'
+import Index from './components'
 import Wraped from './components/wraped'
 import Footer from './footer'
 
@@ -27,6 +28,9 @@ function Experience() {
                     >
                         All about my freelance, self-employed, and professional work experience.
                     </h3>
+                </div>
+                <div>
+                    <Index />
                 </div>
                 <div
                     className='mt-20'
