@@ -1,5 +1,5 @@
 import React from 'react'
-import Index from './components'
+import Index from './components/experience'
 import Wraped from './components/wraped'
 import Footer from './footer'
 
