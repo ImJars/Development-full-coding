@@ -36,24 +36,51 @@ function Experience() {
                   </h1>
                 </div>
                 <div>
-                    <Content 
-                        title={"Self-employed"}
-                        company={"Hemat.id"}
-                        date={"(Jun 2022 - Jul 2022)"}
-                        description={
-                            <ol>
-                              <List 
-                                description={`Improving the UI & UX of Femicam's desktop application based on React Electron and Material UI.`}
-                              />
-                              <List 
-                                description={`Designing and creating React components for the application dashboard.`}
-                              />
-                              <List 
-                                description={`Creating an image editor using Sharp.js.`}
-                              />
-                            </ol>
-                        }
-                    />
+                  <Content
+                    title={"Self-employed"}
+                    company={"Hemat.id"}
+                    date={"(Jun 2022 - Jul 2022)"}
+                    description={
+                      <ol>
+                        <List
+                          description={`Improving the UI & UX of Femicam's desktop application based on React Electron and Material UI.`}
+                        />
+                        <List
+                          description={`Designing and creating React components for the application dashboard.`}
+                        />
+                        <List
+                          description={`Creating an image editor using Sharp.js.`}
+                        />
+                      </ol>
+                    }
+                  />
+                  <Content display={true}
+                    title={"Freelance"}
+                    company={"1928.id"}
+                    date={"(Jun 2022 - Jul 2022)"}
+                    description={
+                      <ol>
+                        <List
+                          description={`Created main site navigation (menu, footer, mobile drawer) using Tailwind CSS.`}
+                        />
+                        <List
+                          description={`Created product tiles, promotion cards, and other small components using Tailwind CSS.`}
+                        />
+                      </ol>
+                    }
+                    company_2={"Hemat.id"}
+                    date_2={"(Jun 2022 - Jul 2022)"}
+                    description_2={
+                      <ol>
+                        <List
+                          description={`Improving the UI & UX of Femicam's desktop application based on React Electron and Material UI.`}
+                        />
+                        <List
+                          description={`Designing and creating React components for the application dashboard.`}
+                        />
+                      </ol>
+                    }
+                  />
                 </div>
               </div>
             </div>
