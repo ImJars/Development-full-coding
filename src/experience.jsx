@@ -1,5 +1,6 @@
 import React from "react";
 import Index from "./components/experience";
+import Content from "./components/experience/content";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 
@@ -32,6 +33,16 @@ function Experience() {
                     2016. In 2021, I resigned from my job to focus on completing
                     college matters while taking on some freelance projects.
                   </h1>
+                </div>
+                <div>
+                    <Content 
+                        title={"Self-employed"}
+                        company={"Hemat.id"}
+                        date={"(Jun 2022 - Jul 2022)"}
+                        description={
+                            <h1>Freelance</h1>
+                        }
+                    />
                 </div>
               </div>
             </div>
