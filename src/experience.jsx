@@ -1,6 +1,7 @@
 import React from "react";
 import Index from "./components/experience";
 import Content from "./components/experience/content";
+import List from "./components/experience/list";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 
@@ -40,7 +41,17 @@ function Experience() {
                         company={"Hemat.id"}
                         date={"(Jun 2022 - Jul 2022)"}
                         description={
-                            <h1>Freelance</h1>
+                            <ol>
+                              <List 
+                                description={`Improving the UI & UX of Femicam's desktop application based on React Electron and Material UI.`}
+                              />
+                              <List 
+                                description={`Designing and creating React components for the application dashboard.`}
+                              />
+                              <List 
+                                description={`Creating an image editor using Sharp.js.`}
+                              />
+                            </ol>
                         }
                     />
                 </div>
