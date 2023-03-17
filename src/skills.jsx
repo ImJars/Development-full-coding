@@ -44,7 +44,7 @@ function Skills() {
                         >
                             <div
                                 className='border-b pb-14 border-text-general border-opacity-20
-                                        text-text-general text-base tracking-wide space-y-6'
+                                        text-text-general text-base space-y-6'
                             >
                                 <h1>
                                     I started my career as a web developer about 7 years ago. 
