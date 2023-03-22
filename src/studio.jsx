@@ -1,4 +1,5 @@
 import React from 'react'
+import IndexStudio from './components/studio/indexStudio'
 import Wraped from './components/wraped'
 import Footer from './footer'
 
@@ -23,10 +24,22 @@ function Studio() {
                         Studio
                     </h2>
                     <h3
-                        className='text-text-general text-2xl tracking-wide mt-8'
+                        className='w-2/3 text-text-general text-2xl tracking-wide mt-8'
                     >
                         A work-from-home workspace that allows me to efficiently complete most tasks.
                     </h3>
+                </div>
+                <div
+                    className='flex justify-between'
+                >
+                    <div
+                        className='w-2/3'
+                    >
+
+                    </div>
+                    <IndexStudio 
+
+                    />
                 </div>
                 <div
                     className='mt-20'
