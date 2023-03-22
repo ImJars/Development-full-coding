@@ -40,14 +40,14 @@ function Studio() {
                         Computer
                     </h1>
                   <table
-                    className="w-full table-auto border-collapse border border-text-general border-opacity-20"
+                    className="w-full rounded-xl table-auto border-separate p-2 border border-text-general border-opacity-20"
                   >
                     <thead
-                        className="bg-table-color text-text-white-gray text-sm font-bold tracking-wide"
+                        className=" text-text-white-gray text-sm font-bold tracking-wide border-b border-text-general border-opacity-20"
                     >
                       <tr>
-                        <th>Name</th>
-                        <th>Detail</th>
+                        <th className="text-start border-b border-text-general border-opacity-20">Name</th>
+                        <th className="text-start border-b border-text-general border-opacity-20">Detail</th>
                       </tr>
                     </thead>
                     <tbody>
