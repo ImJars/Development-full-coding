@@ -54,7 +54,8 @@ function Experience() {
                       </ol>
                     }
                   />
-                  <Content display={true}
+                  <Content
+                    display={true}
                     title={"Freelance"}
                     company={"1928.id"}
                     date={"(Jun 2022 - Jul 2022)"}
@@ -79,6 +80,56 @@ function Experience() {
                           description={`Designing and creating React components for the application dashboard.`}
                         />
                       </ol>
+                    }
+                  />
+                  <Content
+                    title={"Professional Work"}
+                    company={"Ciptaloka"}
+                    date={"(Jul 2016 - Jun 2021)"}
+                    description={
+                      <>
+                        <div
+                          className="space-y-6"
+                        >
+                          <p>
+                            My first and (currently) only professional work is
+                            at Ciptaloka. At Ciptaloka, I do many types of work,
+                            such as developing desktop, mobile, and web
+                            applications.
+                          </p>
+                          <p>
+                            However, my work there is primarily focused on web
+                            development, and around the last 2 years I worked
+                            there, I have learned a lot about React,
+                            particularly when creating the v2 design editor.
+                          </p>
+                          <div
+                            className="space-y-4"
+                          >
+                            <h1>
+                              Here are the details of the work I did at
+                              Ciptaloka:
+                            </h1>
+                            <ol>
+                              <List
+                                description={`Created the v2 design editor layout using React.`}
+                              />
+                              <List
+                                description={`Redesigned the website's front page from vanilla CSS to use Foundation 6.`}
+                              />
+                              <List
+                                description={`Developed interactive UI on mobile editor using Framework7, Backbone.js, and Marionette.js.`}
+                              />
+                              <List
+                                description={`Created e-mail marketing design templates using Foundation for E-mails.`}
+                              />
+                              <List
+                                description={`Customized the blog.ciptaloka.com WordPress theme to match the looks and feels of the main site.`}
+                              />
+                            </ol>
+                          </div>
+                        </div>
+                      </>
                     }
                   />
                 </div>

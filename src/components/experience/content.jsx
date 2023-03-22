@@ -10,7 +10,7 @@ function Content({ title, company, date, description, display, company_2, date_2
             {title}
           </h1>
           <div className="flex gap-1 items-center text-text-general mb-5">
-            <h2 className="font-semibold text-text-general text-base tracking-wide">
+            <h2 className="font-semibold text-text-white-gray text-base tracking-wide">
               {company}
             </h2>
             <AiOutlineMore />
