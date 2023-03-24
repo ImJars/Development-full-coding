@@ -49,24 +49,24 @@ function Studio() {
                       </thead>
                       <tbody className="text-text-general text-sm tracking-wide font-normal">
                         <tr>
-                          <td className="px-6 py-3">OS</td>
-                          <td className="px-6 py-3">Windows 11 pro</td>
+                          <td className="px-6 py-2">OS</td>
+                          <td className="px-6 py-2">Windows 11 pro</td>
                         </tr>
                         <tr>
-                          <td>Proccessor</td>
-                          <td>Intel Core i3-12100 12th Gen</td>
+                          <td className="px-6 py-2">Proccessor</td>
+                          <td className="px-6 py-2">Intel Core i3-12100 12th Gen</td>
                         </tr>
                         <tr>
-                          <td>RAM</td>
-                          <td>32GB 3600Mhz DDR4</td>
+                          <td className="px-6 py-2">RAM</td>
+                          <td className="px-6 py-2">32GB 3600Mhz DDR4</td>
                         </tr>
                         <tr>
-                          <td>GPU</td>
-                          <td>RTX 3060 12GB GDDR6</td>
+                          <td className="px-6 py-2">GPU</td>
+                          <td className="px-6 py-2">RTX 3060 12GB GDDR6</td>
                         </tr>
                         <tr>
-                          <td>Storage</td>
-                          <td>VMe M.2 1TB Gen4x4</td>
+                          <td className="px-6 py-2">Storage</td>
+                          <td className="px-6 py-2">VMe M.2 1TB Gen4x4</td>
                         </tr>
                       </tbody>
                     </table>
