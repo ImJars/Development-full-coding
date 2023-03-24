@@ -1,6 +1,7 @@
 import React from "react";
 import IndexStudio from "./components/studio/indexStudio";
 import TableComputer from "./components/studio/tableComputer";
+import TablePrimary from "./components/studio/tablePrimary";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 
@@ -43,9 +44,30 @@ function Studio() {
                     development, even for larger or heavier projects like React
                     Electron.
                   </p>
-                  <p className="text-text-general">
+                  <p className="text-text-general mt-5">
                     The 32GB of RAM also ensures that multitasking is a breeze!
                   </p>
+                </div>
+                <div className="mt-10">
+                  <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
+                    Display
+                  </h1>
+                  <p className="text-text-general">
+                    The dual monitor setup maximizes my web development
+                    workflow. I can code on one screen while previewing live on
+                    the other — no more Alt + Tab necessary for faster, more
+                    efficient work!
+                  </p>
+                  <p className="text-text-general mt-5">
+                    Need a website with extra wide breakpoint? I've got you
+                    covered with my ultrawide monitor.
+                  </p>
+                  <h1
+                    className="text-2xl font-bold text-text-white-gray tracking-wide mt-5"
+                  >
+                    Primary
+                  </h1>
+                  <TablePrimary />
                 </div>
               </div>
             </div>
