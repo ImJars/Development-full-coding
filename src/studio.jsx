@@ -31,48 +31,46 @@ function Studio() {
                     device - the computer.
                   </p>
                 </div>
-                <div
-                    className="mt-10"
-                >
-                    <h1
-                        className="text-4xl font-bold text-text-white-gray tracking-wide mb-5"
-                    >
-                        Computer
-                    </h1>
-                  <table
-                    className="w-full rounded-xl table-auto border-separate p-2 border border-text-general border-opacity-20"
-                  >
-                    <thead
-                        className=" text-text-white-gray text-sm font-bold tracking-wide border-b border-text-general border-opacity-20"
-                    >
-                      <tr>
-                        <th className="text-start border-b border-text-general border-opacity-20">Name</th>
-                        <th className="text-start border-b border-text-general border-opacity-20">Detail</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>OS</td>
-                        <td>Windows 11 pro</td>
-                      </tr>
-                      <tr>
-                        <td>Proccessor</td>
-                        <td>Intel Core i3-12100 12th Gen</td>
-                      </tr>
-                      <tr>
-                        <td>RAM</td>
-                        <td>32GB 3600Mhz DDR4</td>
-                      </tr>
-                      <tr>
-                        <td>GPU</td>
-                        <td>RTX 3060 12GB GDDR6</td>
-                      </tr>
-                      <tr>
-                        <td>Storage</td>
-                        <td>VMe M.2 1TB Gen4x4</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div className="mt-10">
+                  <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
+                    Computer
+                  </h1>
+                  <div className="relative overflow-x-auto rounded-lg border border-text-general border-opacity-10">
+                    <table className="w-full">
+                      <thead className=" text-text-white-gray text-sm font-bold tracking-wide">
+                        <tr className="border-b border-text-general border-opacity-10">
+                          <th scope="col" className="px-6 py-3 text-start">
+                            Name
+                          </th>
+                          <th scope="col" className="px-6 py-3 text-start">
+                            Detail
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-text-general text-sm tracking-wide font-normal">
+                        <tr>
+                          <td className="px-6 py-3">OS</td>
+                          <td className="px-6 py-3">Windows 11 pro</td>
+                        </tr>
+                        <tr>
+                          <td>Proccessor</td>
+                          <td>Intel Core i3-12100 12th Gen</td>
+                        </tr>
+                        <tr>
+                          <td>RAM</td>
+                          <td>32GB 3600Mhz DDR4</td>
+                        </tr>
+                        <tr>
+                          <td>GPU</td>
+                          <td>RTX 3060 12GB GDDR6</td>
+                        </tr>
+                        <tr>
+                          <td>Storage</td>
+                          <td>VMe M.2 1TB Gen4x4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
