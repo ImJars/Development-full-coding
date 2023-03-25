@@ -2,6 +2,7 @@ import React from "react";
 import IndexStudio from "./components/studio/indexStudio";
 import TableComputer from "./components/studio/tableComputer";
 import TablePrimary from "./components/studio/tablePrimary";
+import TableSecondary from "./components/studio/tableSecondary";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 
@@ -68,7 +69,14 @@ function Studio() {
                     Primary
                   </h1>
                   <TablePrimary />
+                  <h1
+                    className="text-2xl font-bold text-text-white-gray tracking-wide mt-5"
+                  >
+                    Secondary
+                  </h1>
+                  <TableSecondary />
                 </div>
+                
               </div>
             </div>
             <IndexStudio
