@@ -1,11 +1,12 @@
 import React from "react";
+import IndexContact from "./components/contact/indexContact";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 
 function Contact() {
   return (
     <>
-      <section className="bg-primary w-full h-screen text-white">
+      <section className="bg-primary w-full h-full text-white">
         <Wraped>
           <div className="pb-20">
             <h1 className="text-text-blue text-2xl tracking-wide pt-40 font-bold">
@@ -36,6 +37,10 @@ function Contact() {
                 </div>
               </div>
             </div>
+            <IndexContact 
+              subtitle_1={"Contact"}
+              subtitle_2={"Social Media"}
+            />
           </div>
           <div className="mt-20">
             <Footer />
