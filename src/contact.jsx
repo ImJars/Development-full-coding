@@ -1,5 +1,6 @@
 import React from "react";
 import IndexContact from "./components/contact/indexContact";
+import TableContact from "./components/contact/tableContact";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 
@@ -23,8 +24,9 @@ function Contact() {
           <div className="flex justify-between">
             <div className="w-2/3">
               <div className="border-l pl-24 border-text-general border-opacity-20 pb-96">
-                <div className="border-b pb-14 border-text-general border-opacity-20
-                                            text-text-general text-base space-y-6"
+                <div
+                  className="border-b pb-14 border-text-general border-opacity-20
+                              text-text-general text-base space-y-6"
                 >
                   <p className="text-text-general tracking-wide">
                     Just a friendly reminder that the information provided here
@@ -35,12 +37,17 @@ function Contact() {
                     I appreciate your understanding in using this responsibly.
                   </p>
                 </div>
+                <div
+                  className="mt-8"
+                >
+                  <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
+                    Contact
+                  </h1>
+                  <TableContact />
+                </div>
               </div>
             </div>
-            <IndexContact 
-              subtitle_1={"Contact"}
-              subtitle_2={"Social Media"}
-            />
+            <IndexContact subtitle_1={"Contact"} subtitle_2={"Social Media"} />
           </div>
           <div className="mt-20">
             <Footer />
