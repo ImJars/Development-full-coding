@@ -8,7 +8,7 @@ import { motion, useAnimation } from "framer-motion";
 
 function Blog() {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.1,
         triggerOnce: true      
     });
   const animateTitleBlog = useAnimation();
@@ -16,32 +16,32 @@ function Blog() {
 
   useEffect(() => {
     if (inView) {
-        animateTitleBlog.start({
-          x: '-100',
-          opacity: 0,
-        });
-        animateSubTitleBlog.start({
-          x: '-100',
-          opacity: 0,
-        });
-      }
-
-    if (!inView) {
       animateTitleBlog.start({
-        x: '0',
+        x: 0,
         opacity: 1,
         transition: {
             type: 'spring', duration: .5, delay: 0.1
         },
       });
         animateSubTitleBlog.start({
-            x: '0',
+            x: 0,
             opacity: 1,
             transition: {
                 type: 'spring', duration: .5, delay: 0.3
             }
         })
     }
+    if (!inView) {
+      animateTitleBlog.start({
+        x: '-100',
+        opacity: 0,
+      });
+      animateSubTitleBlog.start({
+        x: '-100',
+        opacity: 0,
+      });
+    }
+
   }, [inView, animateTitleBlog, animateSubTitleBlog]);
 
   return (
