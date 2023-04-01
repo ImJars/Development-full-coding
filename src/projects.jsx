@@ -1,14 +1,53 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CardProject from './components/projects/cardProject';
 import Wraped from './components/wraped'
 import Footer from "./footer";
 import { FaGithub, FaUserFriends, FaProjectDiagram } from 'react-icons/fa'
 import { BsFillCheckCircleFill } from 'react-icons/bs'
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 
 function Projects() {
+    const { ref, inView } = useInView({
+        threshold: 0.5      
+    });
+    const animateTitle = useAnimation();
+    const animateSubTitle = useAnimation();
+
+    useEffect(() => {
+      if (inView) {
+        animateTitle.start({
+            x: 0,
+            opacity: 1,
+            transition: {
+                type: 'spring', duration: .5, delay: 0.1
+            }
+        })
+        animateSubTitle.start({
+            x: 0,
+            opacity: 1,
+            transition: {
+                type: 'spring', duration: .5, delay: 0.3
+            }
+        })
+      }
+        if (!inView) {
+            animateTitle.start({
+                x: '-100',
+                opacity: 0,
+            })
+            animateSubTitle.start({
+                x: '-100',
+                opacity: 0,
+            })
+      }
+    }, [inView, animateTitle, animateSubTitle])
+    
+
     return (
         <>
             <section
+                ref={ ref }
                 className='bg-primary w-full text-white'
             >
                 <Wraped>
@@ -16,16 +55,18 @@ function Projects() {
                         className='pb-20'
                     >
                         <div>
-                            <h1
-                                className='text-7xl font-bold tracking-wide pt-40'
+                            <motion.h1
+                                animate={ animateTitle }
+                                className='opacity-0 transform -translate-x-10 text-7xl font-bold tracking-wide pt-40'
                             >
                                 Projects
-                            </h1>
-                            <h2
-                                className='text-text-general text-2xl tracking-wide mt-8'
+                            </motion.h1>
+                            <motion.h2
+                                animate={ animateSubTitle }
+                                className='opacity-0 transform -translate-x-10 text-text-general text-2xl tracking-wide mt-8'
                             >
                                 Showcase of my full-stack related work.
-                            </h2>
+                            </motion.h2>
                         </div>
                         <div
                             className='mt-20'
