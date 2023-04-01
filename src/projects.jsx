@@ -9,13 +9,14 @@ import { motion, useAnimation } from 'framer-motion';
 
 function Projects() {
     const { ref, inView } = useInView({
-        threshold: 0.5      
+        threshold: 0.5,
+        triggerOnce: true      
     });
     const animateTitle = useAnimation();
     const animateSubTitle = useAnimation();
 
     useEffect(() => {
-      if (inView) {
+        if (inView) {
         animateTitle.start({
             x: 0,
             opacity: 1,
@@ -30,7 +31,7 @@ function Projects() {
                 type: 'spring', duration: .5, delay: 0.3
             }
         })
-      }
+        }
         if (!inView) {
             animateTitle.start({
                 x: '-100',
@@ -40,7 +41,7 @@ function Projects() {
                 x: '-100',
                 opacity: 0,
             })
-      }
+        }
     }, [inView, animateTitle, animateSubTitle])
     
 
