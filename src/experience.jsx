@@ -1,26 +1,80 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Index from "./components/experience";
 import Content from "./components/experience/content";
 import List from "./components/experience/list";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 
 function Experience() {
+
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
+  const animateMiniTitleExperience = useAnimation();
+  const animateTitleExperience = useAnimation();
+  const animateSubtitleExperience = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animateMiniTitleExperience.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: 'spring', duration: .4, delay: 0.1
+        },
+      });
+      animateTitleExperience.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: 'spring', duration: .4, delay: 0.3
+        },
+      });
+      animateSubtitleExperience.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: 'spring', duration: .4, delay: 0.5
+        },
+      });
+    }
+
+    if (!inView) {
+      animateMiniTitleExperience.start({
+        x: '-100',
+        opacity: 0,
+      });
+      animateTitleExperience.start({
+        x: '-100',
+        pacity: 0,
+      });
+      animateSubtitleExperience.start({
+        x: '-100',
+        opacity: 0,
+      });
+    }
+  }, [inView, animateMiniTitleExperience, animateTitleExperience, animateSubtitleExperience])
+  
+
   return (
     <>
-      <section className="bg-primary w-full h-full text-white">
+      <section ref={ ref } className="bg-primary w-full h-full text-white">
         <Wraped>
           <div className="pb-20">
-            <h1 className="text-text-blue text-2xl tracking-wide pt-40 font-bold">
+            <motion.h1 animate={ animateMiniTitleExperience } className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold">
               Work
-            </h1>
-            <h2 className="text-text-white-gray text-7xl font-bold tracking-wide">
+            </motion.h1>
+            <motion.h2 animate={animateTitleExperience} className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide">
               Experience
-            </h2>
-            <h3 className="w-2/3 text-text-general text-2xl tracking-wide mt-8">
+            </motion.h2>
+            <motion.h3 animate={ animateSubtitleExperience } className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8">
               All about my freelance, self-employed, and professional work
               experience.
-            </h3>
+            </motion.h3>
           </div>
           <div className="flex justify-between">
             <div className="w-2/3 ">
