@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import IndexStudio from "./components/studio/indexStudio";
 import TableComputer from "./components/studio/tableComputer";
 import TableConferencingDevices from "./components/studio/tableConferencingDevices";
@@ -8,23 +8,75 @@ import TablePrimary from "./components/studio/tablePrimary";
 import TableSecondary from "./components/studio/tableSecondary";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Studio() {
+
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const animateMiniTitleStudio = useAnimation();
+  const animateTitleStudio = useAnimation();
+  const animateSubtitleStudio = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animateMiniTitleStudio.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: 'spring', duration: .4, delay: 0.1
+        },
+      });
+      animateTitleStudio.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: 'spring', duration: .4, delay: 0.3
+        },
+      });
+      animateSubtitleStudio.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: 'spring', duration: .4, delay: 0.5
+        },
+      });
+    }
+
+    if (!inView) {
+      animateMiniTitleStudio.start({
+        x: "-100",
+        opacity: 0,
+      });
+      animateTitleStudio.start({
+        x: "-100",
+        pacity: 0,
+      });
+      animateSubtitleStudio.start({
+        x: "-100",
+        opacity: 0,
+      });
+    }
+  }, [inView, animateMiniTitleStudio, animateTitleStudio, animateSubtitleStudio]);
+  
   return (
     <>
-      <section className="bg-primary w-full h-full text-white">
+      <section ref={ ref } className="bg-primary w-full h-full text-white">
         <Wraped>
           <div className="pb-20">
-            <h1 className="text-text-blue text-2xl tracking-wide pt-40 font-bold">
+            <motion.h1 animate={ animateMiniTitleStudio } className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold">
               Work
-            </h1>
-            <h2 className="text-text-white-gray text-7xl font-bold tracking-wide">
+            </motion.h1>
+            <motion.h2 animate={ animateTitleStudio } className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide">
               Studio
-            </h2>
-            <h3 className="w-2/3 text-text-general text-2xl tracking-wide mt-8">
+            </motion.h2>
+            <motion.h3 animate={ animateSubtitleStudio } className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8">
               A work-from-home workspace that allows me to efficiently complete
               most tasks.
-            </h3>
+            </motion.h3>
           </div>
           <div className="flex justify-between">
             <div className="w-2/3">
