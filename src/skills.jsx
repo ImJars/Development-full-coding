@@ -211,7 +211,19 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <IndexSkill />
+            <IndexSkill 
+              title_1={'Front-End Developer'}
+              subtitle_1={'TypeScript'}
+              subtitle_2={'React'}
+              subtitle_3={'Tailwind CSS'}
+              subtitle_4={'Framer Motion'}
+              subtitle_5={'Next.js'}
+              title_2={'UI/UX Designer'}
+              title_3={'Detail and Summary'}
+              subtitle_6={'Programming Languages'}
+              subtitle_7={'Technologies'}
+              subtitle_8={'Softwares and Tools'}
+            />
           </div>
           <div className="mt-20">
             <Footer />
