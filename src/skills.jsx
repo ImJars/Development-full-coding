@@ -18,60 +18,179 @@ function Skills() {
   const animateBeforeTitleSkills = useAnimation();
   const animateTitleSkills = useAnimation();
   const animateSubTitleSkills = useAnimation();
+
   useEffect(() => {
     if (inView) {
-        animateBeforeTitleSkills.start({
-            x: 0,
-            opacity: 1,
-            transition: {
-                type: 'spring', duration: .4, delay: 0.1
-            }
-        })
-        animateTitleSkills.start({
-            x: 0,
-            opacity: 1,
-            transition: {
-                type: 'spring', duration: .4, delay: 0.3
-            }
-        })
-        animateSubTitleSkills.start({
-            x: 0,
-            opacity: 1,
-            transition: {
-                type: 'spring', duration: .4, delay: 0.5
-            }
-        })
+      animateBeforeTitleSkills.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.4,
+          delay: 0.1,
+        },
+      });
+      animateTitleSkills.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.4,
+          delay: 0.3,
+        },
+      });
+      animateSubTitleSkills.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.4,
+          delay: 0.5,
+        },
+      });
+    }
+    if (!inView) {
+      animateBeforeTitleSkills.start({
+        x: "-100",
+        opacity: 0,
+      });
+      animateTitleSkills.start({
+        x: "-100",
+        opacity: 0,
+      });
+      animateSubTitleSkills.start({
+        x: "-100",
+        opacity: 0,
+      });
+    }
+  }, [
+    inView,
+    animateBeforeTitleSkills,
+    animateTitleSkills,
+    animateSubTitleSkills,
+  ]);
+
+  const { ref: refAnimate, inView: viewAnimate } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate2, inView: viewAnimate2 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate3, inView: viewAnimate3 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate4, inView: viewAnimate4 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
+  const animate1 = useAnimation();
+  const animate2 = useAnimation();
+  const animate3 = useAnimation();
+  const animate4 = useAnimation();
+
+  useEffect(() => {
+    if (viewAnimate) {
+      animate1.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate2) {
+      animate2.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate3) {
+      animate3.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate4) {
+      animate4.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
     }
 
-    if (!inView) {
-        animateBeforeTitleSkills.start({
-            x: '-100',
-            opacity: 0,
-        });
-        animateTitleSkills.start({
-            x: '-100',
-            opacity: 0,
-        });
-        animateSubTitleSkills.start({
-            x: '-100',
-            opacity: 0,
-        });
+    if (!viewAnimate) {
+      animate1.start({
+        backgroundColor: "#161E31",
+        color: "#CBD5E1",
+      });
     }
-  }, [inView, animateBeforeTitleSkills, animateTitleSkills, animateSubTitleSkills])
-  
+    if (!viewAnimate2) {
+      animate2.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+    if (!viewAnimate3) {
+      animate3.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+    if (!viewAnimate4) {
+      animate4.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+  }, [
+    viewAnimate,
+    animate1,
+    viewAnimate2,
+    animate2,
+    viewAnimate3,
+    animate3,
+    viewAnimate4,
+    animate4,
+  ]);
+
   return (
     <>
       <section ref={ref} className="bg-primary w-full h-full text-white">
         <Wraped>
           <div className="pb-20">
             <div>
-              <motion.p animate={ animateBeforeTitleSkills } className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold">
+              <motion.p
+                animate={animateBeforeTitleSkills}
+                className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold"
+              >
                 Work
               </motion.p>
-              <motion.h1 animate={ animateTitleSkills } className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide">
+              <motion.h1
+                animate={animateTitleSkills}
+                className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
+              >
                 Skills and Tools
               </motion.h1>
-              <motion.h2 animate={ animateSubTitleSkills } className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8">
+              <motion.h2
+                animate={animateSubTitleSkills}
+                className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8"
+              >
                 A look at all the programming languages, libraries, and tools
                 I've worked with.
               </motion.h2>
@@ -95,7 +214,7 @@ function Skills() {
                     UI/UX Design.
                   </h2>
                 </div>
-                <div className="mt-10">
+                <div ref={refAnimate} className="mt-10">
                   <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
                     Front-End Developer
                   </h1>
@@ -125,27 +244,33 @@ function Skills() {
                   </p>
                 </div>
                 <div>
-                  <Skill
-                    title={"TypeScript"}
-                    description_1={
-                      "First of all, the programming language. I'm very used to using TypeScript, although website creation can be done using PHP, Python, etc."
-                    }
-                    description_2={
-                      "The JavaScript superset—TypeScript—has accompanied me for about 5 years."
-                    }
-                  />
-                  <Skill
-                    title={"React"}
-                    description_1={
-                      "I really enjoy building single page application websites and React is my go-to library."
-                    }
-                    description_2={`I've been using it since 2018 (5 years) and have become quite proficient with it.`}
-                  />
-                  <Skill
-                    title={"Tailwind CSS"}
-                    description_1={`For now, I love using Tailwind CSS for styling, even though I've been using SCSS for a longer time (4 years).`}
-                    description_2={`I'm still new to Tailwind CSS, but I'm really comfortable using it and I think it's a great tool.`}
-                  />
+                  <div ref={refAnimate2}>
+                    <Skill
+                      title={"TypeScript"}
+                      description_1={
+                        "First of all, the programming language. I'm very used to using TypeScript, although website creation can be done using PHP, Python, etc."
+                      }
+                      description_2={
+                        "The JavaScript superset—TypeScript—has accompanied me for about 5 years."
+                      }
+                    />
+                  </div>
+                  <div ref={refAnimate3}>
+                    <Skill
+                      title={"React"}
+                      description_1={
+                        "I really enjoy building single page application websites and React is my go-to library."
+                      }
+                      description_2={`I've been using it since 2018 (5 years) and have become quite proficient with it.`}
+                    />
+                  </div>
+                  <div ref={refAnimate4}>
+                    <Skill
+                      title={"Tailwind CSS"}
+                      description_1={`For now, I love using Tailwind CSS for styling, even though I've been using SCSS for a longer time (4 years).`}
+                      description_2={`I'm still new to Tailwind CSS, but I'm really comfortable using it and I think it's a great tool.`}
+                    />
+                  </div>
                   <Skill
                     title={"Framer Motion"}
                     description_1={`For animations, I am more comfortable using Framer Motion. Creating animations using JavaScript has never been as easy as using Framer Motion.`}
@@ -211,18 +336,22 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <IndexSkill 
-              title_1={'Front-End Developer'}
-              subtitle_1={'TypeScript'}
-              subtitle_2={'React'}
-              subtitle_3={'Tailwind CSS'}
-              subtitle_4={'Framer Motion'}
-              subtitle_5={'Next.js'}
-              title_2={'UI/UX Designer'}
-              title_3={'Detail and Summary'}
-              subtitle_6={'Programming Languages'}
-              subtitle_7={'Technologies'}
-              subtitle_8={'Softwares and Tools'}
+            <IndexSkill
+              title_1={"Front-End Developer"}
+              subtitle_1={"TypeScript"}
+              subtitle_2={"React"}
+              subtitle_3={"Tailwind CSS"}
+              subtitle_4={"Framer Motion"}
+              subtitle_5={"Next.js"}
+              title_2={"UI/UX Designer"}
+              title_3={"Detail and Summary"}
+              subtitle_6={"Programming Languages"}
+              subtitle_7={"Technologies"}
+              subtitle_8={"Softwares and Tools"}
+              animate_1={animate1}
+              animate_2={animate2}
+              animate_3={animate3}
+              animate_4={animate4}
             />
           </div>
           <div className="mt-20">

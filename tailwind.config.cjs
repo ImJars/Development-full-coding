@@ -31,6 +31,8 @@ module.exports = {
         'update_primary': '#17181D',
         'update_secondary': '#F21E4E',
         'update_tertiary': '##0C0D12',
+
+        'table_activate': '#1D263A',
       },
       maxWidth: {
         display: '70rem',
