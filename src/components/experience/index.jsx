@@ -1,6 +1,7 @@
 import React from "react";
+import { animate, motion } from "framer-motion";
 
-function Index({ subtitle_1, subtitle_2, subtitle_3, subtitle_4 }) {
+function Index({ subtitle_1, subtitle_2, subtitle_3, subtitle_4, animate_1, animate_2, animate_3, animate_4 }) {
   return (
     <>
       <div className="-mt-48 hidden lg:block">
@@ -14,13 +15,12 @@ function Index({ subtitle_1, subtitle_2, subtitle_3, subtitle_4 }) {
                 Table of Contents
               </h1>
             </div>
-            <div className="p-3 py-4">
-              <ol className="flex flex-col gap-2 text-text-general text-sm">
-                <li className="px-5">{ subtitle_1 }</li>
-                <li className="px-5">{ subtitle_2 }</li>
-                <li className="px-5">{ subtitle_3 }</li>
-                <li className="px-5">{ subtitle_4 }</li>
-                
+            <div className="py-4">
+              <ol className="flex flex-col text-text-general text-sm">
+                <motion.li animate={animate_1} className="px-5 py-1">{ subtitle_1 }</motion.li>
+                <motion.li animate={animate_2} className="px-5 py-1">{ subtitle_2 }</motion.li>
+                <motion.li animate={animate_3} className="px-5 py-1">{ subtitle_3 }</motion.li>
+                <motion.li animate={animate_4} className="px-5 py-1">{ subtitle_4 }</motion.li>
               </ol>
             </div>
           </nav>
