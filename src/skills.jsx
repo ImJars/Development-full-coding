@@ -264,7 +264,7 @@ function Skills() {
     if (!viewAnimate7) {
       animate7.start({
         backgroundColor: "#161E31",
-        color: "#909EB2",
+        color: "#CBD5E1",
       });
     }
     if (!viewAnimate9) {
