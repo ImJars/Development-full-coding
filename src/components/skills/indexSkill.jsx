@@ -9,7 +9,6 @@ function IndexSkill({
   subtitle_4,
   subtitle_5,
   title_2,
-  title_3,
   subtitle_6,
   subtitle_7,
   subtitle_8,
@@ -17,7 +16,13 @@ function IndexSkill({
   animate_1,
   animate_2,
   animate_3,
-  animate_4
+  animate_4,
+  animate_5,
+  animate_6,
+  animate_7,
+  animate_9,
+  animate_10,
+  animate_11,
 }) {
   return (
     <>
@@ -49,17 +54,14 @@ function IndexSkill({
                 <motion.li animate={animate_4} className="px-5 py-1">
                   {subtitle_3}
                 </motion.li>
-                <li className="px-5 py-1">{subtitle_4}</li>
-                <li className="px-5 py-1">{subtitle_5}</li>
-                <li className="p-2 text-text-white-gray font-semibold">
+                <motion.li animate={animate_5} className="px-5 py-1">{subtitle_4}</motion.li>
+                <motion.li animate={animate_6} className="px-5 py-1">{subtitle_5}</motion.li>
+                <motion.li animate={animate_7} className="p-2 text-text-white-gray font-semibold">
                   {title_2}
-                </li>
-                <li className="p-2 text-text-white-gray font-semibold">
-                  {title_3}
-                </li>
-                <li className="px-5 py-1">{subtitle_6}</li>
-                <li className="px-5 py-1">{subtitle_7}</li>
-                <li className="px-5 py-1">{subtitle_8}</li>
+                </motion.li>
+                <motion.li animate={animate_9} className="px-5 py-1">{subtitle_6}</motion.li>
+                <motion.li animate={animate_10} className="px-5 py-1">{subtitle_7}</motion.li>
+                <motion.li animate={animate_11} className="px-5 py-1">{subtitle_8}</motion.li>
               </ol>
             </div>
           </nav>

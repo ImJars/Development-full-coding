@@ -70,20 +70,45 @@ function Skills() {
     animateSubTitleSkills,
   ]);
 
+  //Observer y animaciones de indexSkill
   const { ref: refAnimate, inView: viewAnimate } = useInView({
-    threshold: 0.1,
+    threshold: 0.5,
     triggerOnce: false,
   });
   const { ref: refAnimate2, inView: viewAnimate2 } = useInView({
-    threshold: 0.1,
+    threshold: 0.5,
     triggerOnce: false,
   });
   const { ref: refAnimate3, inView: viewAnimate3 } = useInView({
-    threshold: 0.1,
+    threshold: 0.5,
     triggerOnce: false,
   });
   const { ref: refAnimate4, inView: viewAnimate4 } = useInView({
-    threshold: 0.1,
+    threshold: 0.5,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate5, inView: viewAnimate5 } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate6, inView: viewAnimate6 } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate7, inView: viewAnimate7 } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate9, inView: viewAnimate9 } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate10, inView: viewAnimate10 } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
+  const { ref: refAnimate11, inView: viewAnimate11 } = useInView({
+    threshold: 0.5,
     triggerOnce: false,
   });
 
@@ -91,6 +116,12 @@ function Skills() {
   const animate2 = useAnimation();
   const animate3 = useAnimation();
   const animate4 = useAnimation();
+  const animate5 = useAnimation();
+  const animate6 = useAnimation();
+  const animate7 = useAnimation();
+  const animate9 = useAnimation();
+  const animate10 = useAnimation();
+  const animate11 = useAnimation();
 
   useEffect(() => {
     if (viewAnimate) {
@@ -133,6 +164,66 @@ function Skills() {
         },
       });
     }
+    if (viewAnimate5) {
+      animate5.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate6) {
+      animate6.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate7) {
+      animate7.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate9) {
+      animate9.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate10) {
+      animate10.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (viewAnimate11) {
+      animate11.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
 
     if (!viewAnimate) {
       animate1.start({
@@ -158,6 +249,42 @@ function Skills() {
         color: "#909EB2",
       });
     }
+    if (!viewAnimate5) {
+      animate5.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+    if (!viewAnimate6) {
+      animate6.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+    if (!viewAnimate7) {
+      animate7.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+    if (!viewAnimate9) {
+      animate9.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+    if (!viewAnimate10) {
+      animate10.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
+    if (!viewAnimate11) {
+      animate11.start({
+        backgroundColor: "#161E31",
+        color: "#909EB2",
+      });
+    }
   }, [
     viewAnimate,
     animate1,
@@ -167,6 +294,18 @@ function Skills() {
     animate3,
     viewAnimate4,
     animate4,
+    viewAnimate5,
+    animate5,
+    viewAnimate6,
+    animate6,
+    viewAnimate7,
+    animate7,
+    viewAnimate9,
+    animate9,
+    viewAnimate10,
+    animate10,
+    viewAnimate11,
+    animate11,
   ]);
 
   return (
@@ -271,16 +410,20 @@ function Skills() {
                       description_2={`I'm still new to Tailwind CSS, but I'm really comfortable using it and I think it's a great tool.`}
                     />
                   </div>
-                  <Skill
-                    title={"Framer Motion"}
-                    description_1={`For animations, I am more comfortable using Framer Motion. Creating animations using JavaScript has never been as easy as using Framer Motion.`}
-                  />
-                  <Skill
-                    title={"Next.js"}
-                    description_1={`I've been using CRA for a few years, but since discovering Next.js, I don't think I would want to use any other web framework. It's just that good!.`}
-                  />
+                  <div ref={refAnimate5}>
+                    <Skill
+                      title={"Framer Motion"}
+                      description_1={`For animations, I am more comfortable using Framer Motion. Creating animations using JavaScript has never been as easy as using Framer Motion.`}
+                    />
+                  </div>
+                  <div ref={refAnimate6}>
+                    <Skill
+                      title={"Next.js"}
+                      description_1={`I've been using CRA for a few years, but since discovering Next.js, I don't think I would want to use any other web framework. It's just that good!.`}
+                    />
+                  </div>
                 </div>
-                <div className="mt-10">
+                <div ref={refAnimate7} className="mt-10">
                   <MainSkill
                     title={"UI/UX Designer"}
                     description_1={`Designing user interfaces is something I'm really good at and I've been a UI/UX designer from 2018 to 2021 (3 years).`}
@@ -289,19 +432,21 @@ function Skills() {
                   />
                 </div>
                 <div>
-                  <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
-                    Programming Languages
-                  </h1>
-                  <div className="flex flex-wrap gap-4 mt-5">
-                    <Languajes title={"TypeScript"} />
-                    <Languajes title={"JavaScript"} />
-                    <Languajes title={"React"} />
-                    <Languajes title={"HTML"} />
-                    <Languajes title={"Tailwind CSS"} />
-                    <Languajes title={"NodeJS"} />
-                    <Languajes title={"Solidity"} />
+                  <div ref={refAnimate9}>
+                    <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
+                      Programming Languages
+                    </h1>
+                    <div className="flex flex-wrap gap-4 mt-5">
+                      <Languajes title={"TypeScript"} />
+                      <Languajes title={"JavaScript"} />
+                      <Languajes title={"React"} />
+                      <Languajes title={"HTML"} />
+                      <Languajes title={"Tailwind CSS"} />
+                      <Languajes title={"NodeJS"} />
+                      <Languajes title={"Solidity"} />
+                    </div>
                   </div>
-                  <div>
+                  <div ref={refAnimate10}>
                     <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
                       Technologies
                     </h1>
@@ -319,7 +464,7 @@ function Skills() {
                       <Technologies title={"MongoDB"} />
                     </div>
                   </div>
-                  <div>
+                  <div ref={refAnimate11}>
                     <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
                       Softwares and Tools
                     </h1>
@@ -344,7 +489,6 @@ function Skills() {
               subtitle_4={"Framer Motion"}
               subtitle_5={"Next.js"}
               title_2={"UI/UX Designer"}
-              title_3={"Detail and Summary"}
               subtitle_6={"Programming Languages"}
               subtitle_7={"Technologies"}
               subtitle_8={"Softwares and Tools"}
@@ -352,6 +496,12 @@ function Skills() {
               animate_2={animate2}
               animate_3={animate3}
               animate_4={animate4}
+              animate_5={animate5}
+              animate_6={animate6}
+              animate_7={animate7}
+              animate_9={animate9}
+              animate_10={animate10}
+              animate_11={animate11}
             />
           </div>
           <div className="mt-20">
