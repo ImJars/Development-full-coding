@@ -1,6 +1,22 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-function IndexStudio({ subtitle_1, subtitle_2, subtitle_3, subtitle_4, subtitle_5, description_1, description_2 }) {
+function IndexStudio({
+  subtitle_1,
+  subtitle_2,
+  subtitle_3,
+  subtitle_4,
+  subtitle_5,
+  description_1,
+  description_2,
+  animate_1,
+  animate_2,
+  animate_3,
+  animate_4,
+  animate_5,
+  animate_6,
+  animate_7,
+}) {
   return (
     <>
       <div className="-mt-48 hidden lg:block">
@@ -16,41 +32,42 @@ function IndexStudio({ subtitle_1, subtitle_2, subtitle_3, subtitle_4, subtitle_
             </div>
             <div className="p-3 py-4">
               <ol className="flex flex-col gap-2 text-text-general text-sm">
-                <li
-                    className='px-2 text-text-white-gray font-semibold'
+                <motion.li
+                  animate={animate_1}
+                  className="px-2 text-text-white-gray font-semibold"
                 >
-                    { subtitle_1 }
-                </li>
-                <li
-                    className='px-2 text-text-white-gray font-semibold'
+                  {subtitle_1}
+                </motion.li>
+                <motion.li
+                  animate={animate_2}
+                  className="px-2 text-text-white-gray font-semibold"
                 >
-                    { subtitle_2 }
-                </li>
-                <li
-                    className='px-5'
+                  {subtitle_2}
+                </motion.li>
+                <motion.li animate={animate_3} className="px-5">
+                  {description_1}
+                </motion.li>
+                <motion.li animate={animate_4} className="px-5">
+                  {description_2}
+                </motion.li>
+                <motion.li
+                  animate={animate_5}
+                  className="px-2 text-text-white-gray font-semibold"
                 >
-                    { description_1 }
-                </li>
-                <li
-                    className='px-5'
+                  {subtitle_3}
+                </motion.li>
+                <motion.li
+                  animate={animate_6}
+                  className="px-2 text-text-white-gray font-semibold"
                 >
-                    { description_2 }
-                </li>
-                <li
-                    className='px-2 text-text-white-gray font-semibold'
+                  {subtitle_4}
+                </motion.li>
+                <motion.li
+                  animate={animate_7}
+                  className="px-2 text-text-white-gray font-semibold"
                 >
-                    { subtitle_3 }
-                </li>
-                <li
-                    className='px-2 text-text-white-gray font-semibold'
-                >
-                    { subtitle_4 }
-                </li>
-                <li
-                    className='px-2 text-text-white-gray font-semibold'
-                >
-                    { subtitle_5 }
-                </li>
+                  {subtitle_5}
+                </motion.li>
               </ol>
             </div>
           </nav>
