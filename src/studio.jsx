@@ -62,6 +62,39 @@ function Studio() {
     }
   }, [inView, animateMiniTitleStudio, animateTitleStudio, animateSubtitleStudio]);
   
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
+  const animate1 = useAnimation();
+  const animate2 = useAnimation();
+  const animate3 = useAnimation();
+  const animate4 = useAnimation();
+  const animate5 = useAnimation();
+  const animate6 = useAnimation();
+  const animate7 = useAnimation();
+
+  useEffect(() => {
+    if (inView1) {
+      animate1.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+
+    if (!inView1) {
+      animate1.start({
+        backgroundColor: "#161E31",
+        color: "#CBD5E1",
+      });
+    }
+  }, [ inView1, animate1 ]);
+  
   return (
     <>
       <section ref={ ref } className="bg-primary w-full h-full text-white">
@@ -89,7 +122,7 @@ function Studio() {
                     device - the computer.
                   </p>
                 </div>
-                <div className="mt-10">
+                <div ref={ref1} className="mt-10">
                   <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
                     Computer
                   </h1>
@@ -159,6 +192,14 @@ function Studio() {
               subtitle_3={"Peripherals"}
               subtitle_4={"Conferencing Devices"}
               subtitle_5={"Others"}
+
+              animate_1={animate1}
+              animate_2={animate2}
+              animate_3={animate3}
+              animate_4={animate4}
+              animate_5={animate5}
+              animate_6={animate6}
+              animate_7={animate7}
             />
           </div>
           <div className="mt-20">
