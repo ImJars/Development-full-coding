@@ -1,6 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-function IndexContact({ subtitle_1, subtitle_2 }) {
+function IndexContact({ subtitle_1, subtitle_2, animate_1, animate_2 }) {
   return (
     <>
       <div className="-mt-48 hidden lg:block">
@@ -14,14 +15,14 @@ function IndexContact({ subtitle_1, subtitle_2 }) {
                 Table of Contents
               </h1>
             </div>
-            <div className="p-3 py-4">
-              <ol className="flex flex-col gap-2 text-text-general text-sm">
-                <li className="px-2 text-text-white-gray font-semibold">
+            <div className="py-4">
+              <ol className="flex flex-col text-text-general text-sm">
+                <motion.li animate={animate_1} className="p-2 text-text-white-gray font-semibold">
                   {subtitle_1}
-                </li>
-                <li className="px-2 text-text-white-gray font-semibold">
+                </motion.li>
+                <motion.li animate={animate_2} className="p-2 text-text-white-gray font-semibold">
                   {subtitle_2}
-                </li>
+                </motion.li>
               </ol>
             </div>
           </nav>
