@@ -58,7 +58,56 @@ function Contact() {
       });
     }
   }, [inView, animateMiniTitleContact, animateTitleContact, animateSubtitleContact])
+
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
   
+  const animate1 = useAnimation();
+  const animate2 = useAnimation();
+
+  useEffect(() => {
+    if (inView1) {
+      animate1.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+    if (inView2) {
+      animate2.start({
+        backgroundColor: "#1D263A",
+        color: "#60A5FA",
+        transition: {
+          type: "spring",
+          duration: 0.1,
+        },
+      });
+    }
+
+    if (!inView1) {
+      animate1.start({
+        backgroundColor: "#161E31",
+        color: "#CBD5E1",
+      });
+    }
+    if (!inView2) {
+      animate2.start({
+        backgroundColor: "#161E31",
+        color: "#CBD5E1",
+      });
+    }
+  }, [inView1, inView2, animate1, animate2])
+  
+
   return (
     <>
       <section ref={ ref } className="bg-primary w-full h-full text-white">
@@ -91,7 +140,7 @@ function Contact() {
                     I appreciate your understanding in using this responsibly.
                   </p>
                 </div>
-                <div className="mt-8 border-b border-text-general border-opacity-20 pb-10">
+                <div ref={ref1} className="mt-8 border-b border-text-general border-opacity-20 pb-10">
                   <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
                     Contact
                   </h1>
@@ -102,6 +151,7 @@ function Contact() {
                   </h1>
                 </div>
                 <div
+                  ref={ref2}
                   className="mt-10 space-y-5 text-text-general text-base tracking-wide"
                 >
                   <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
@@ -120,7 +170,12 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <IndexContact subtitle_1={"Contact"} subtitle_2={"Social Media"} />
+            <IndexContact 
+              subtitle_1={"Contact"} 
+              subtitle_2={"Social Media"} 
+              animate_1={animate1}
+              animate_2={animate2}  
+            />
           </div>
           <div className="mt-20">
             <Footer />
