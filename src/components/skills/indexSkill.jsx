@@ -45,29 +45,31 @@ function IndexSkill({
             </div>
             <div className="py-4">
               <ol className="flex flex-col text-text-general text-sm">
-                <motion.li
+                <motion.a
+                  href="#frontend"
                   animate={animate_1}
+                  whileHover={{ color: "#60A5FA" }}
                   className="p-2 text-text-white-gray font-semibold"
                 >
                   {title_1}
-                </motion.li>
-                <motion.li animate={animate_2} className="px-5 py-1">
+                </motion.a>
+                <motion.a href='#typescript' animate={animate_2} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">
                   {subtitle_1}
-                </motion.li>
-                <motion.li animate={animate_3} className="px-5 py-1">
+                </motion.a>
+                <motion.a href='#react' animate={animate_3} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">
                   {subtitle_2}
-                </motion.li>
-                <motion.li animate={animate_4} className="px-5 py-1">
+                </motion.a>
+                <motion.a href='#tailwind' animate={animate_4} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">
                   {subtitle_3}
-                </motion.li>
-                <motion.li animate={animate_5} className="px-5 py-1">{subtitle_4}</motion.li>
-                <motion.li animate={animate_6} className="px-5 py-1">{subtitle_5}</motion.li>
-                <motion.li animate={animate_7} className="p-2 text-text-white-gray font-semibold">
+                </motion.a>
+                <motion.a href='#framer' animate={animate_5} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">{subtitle_4}</motion.a>
+                <motion.a href='#nextjs' animate={animate_6} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">{subtitle_5}</motion.a>
+                <motion.a href='#uiux' animate={animate_7} whileHover={{ color: "#60A5FA" }} className="p-2 text-text-white-gray font-semibold">
                   {title_2}
-                </motion.li>
-                <motion.li animate={animate_9} className="px-5 py-1">{subtitle_6}</motion.li>
-                <motion.li animate={animate_10} className="px-5 py-1">{subtitle_7}</motion.li>
-                <motion.li animate={animate_11} className="px-5 py-1">{subtitle_8}</motion.li>
+                </motion.a>
+                <motion.a href='#programming' animate={animate_9} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">{subtitle_6}</motion.a>
+                <motion.a href='#technologies' animate={animate_10} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">{subtitle_7}</motion.a>
+                <motion.a href='#softwares' animate={animate_11} whileHover={{ color: "#60A5FA" }} className="px-5 py-1">{subtitle_8}</motion.a>
               </ol>
             </div>
           </nav>
