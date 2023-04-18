@@ -85,11 +85,16 @@ function Experience() {
     threshold: 0.5,
     triggerOnce: false,
   });
+  const { ref: refAnimateScroll, inView: viewAnimateScroll } = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
 
   const animate1 = useAnimation();
   const animate2 = useAnimation();
   const animate3 = useAnimation();
   const animate4 = useAnimation();
+  const animateScroll = useAnimation();
 
   useEffect(() => {
     if (inViewAnimate) {
@@ -132,6 +137,16 @@ function Experience() {
         },
       });
     }
+    if (viewAnimateScroll) {
+      animateScroll.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 0.4,
+        },
+      });
+    }
 
     if (!inViewAnimate) {
       animate1.start({
@@ -157,6 +172,12 @@ function Experience() {
         color: "#CBD5E1",
       });
     }
+    if (!viewAnimateScroll) {
+      animateScroll.start({
+        x: 20,
+        opacity: 0,
+      });
+    }
   }, [
     inViewAnimate,
     animate1,
@@ -166,6 +187,8 @@ function Experience() {
     animate3,
     inViewAnimate4,
     animate4,
+    viewAnimateScroll,
+    animateScroll,
   ]);
 
   return (
@@ -206,7 +229,7 @@ function Experience() {
                     college matters while taking on some freelance projects.
                   </h1>
                 </div>
-                <div>
+                <div ref={refAnimateScroll}>
                   <div ref={refAnimate}>
                     <Content
                       title={"Self-employed"}
@@ -320,6 +343,7 @@ function Experience() {
               animate_2={animate2}
               animate_3={animate3}
               animate_4={animate4}
+              animate_scroll={animateScroll}
             />
           </div>
           <div className="mt-20">
