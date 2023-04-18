@@ -193,7 +193,7 @@ function Experience() {
 
   return (
     <>
-      <section ref={ref} className="bg-primary w-full h-full text-white">
+      <section id="experience" ref={ref} className="bg-primary w-full h-full text-white">
         <Wraped>
           <div className="pb-20">
             <motion.h1
