@@ -100,6 +100,10 @@ function Studio() {
     threshold: 0.1,
     triggerOnce: false,
   });
+  const { ref: refScroll, inView: inViewScroll } = useInView({
+    threshold: 0.25,
+    triggerOnce: false,
+  });
 
   const animate1 = useAnimation();
   const animate2 = useAnimation();
@@ -108,6 +112,7 @@ function Studio() {
   const animate5 = useAnimation();
   const animate6 = useAnimation();
   const animate7 = useAnimation();
+  const animateScroll = useAnimation();
 
   useEffect(() => {
     if (inView1) {
@@ -180,6 +185,16 @@ function Studio() {
         },
       });
     }
+    if (inViewScroll) {
+      animateScroll.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 0.4,
+        },
+      });
+    }
 
     if (!inView1) {
       animate1.start({
@@ -223,6 +238,12 @@ function Studio() {
         color: "#CBD5E1",
       });
     }
+    if (!inViewScroll) {
+      animateScroll.start({
+        x: 20,
+        opacity: 0,
+      });
+    }
   }, [
     inView1,
     animate1,
@@ -238,6 +259,8 @@ function Studio() {
     animate6,
     inView7,
     animate7,
+    inViewScroll,
+    animateScroll,
   ]);
 
   return (
@@ -267,7 +290,7 @@ function Studio() {
           </div>
           <div className="flex justify-between">
             <div className="w-2/3">
-              <div className="border-l pl-24 border-text-general border-opacity-20 pb-96">
+              <div ref={refScroll} className="border-l pl-24 border-text-general border-opacity-20 pb-96">
                 <div>
                   <div className="border p-32 border-text-general border-opacity-20 mb-10" />
                   <p className="text-text-general tracking-wide">
@@ -355,6 +378,7 @@ function Studio() {
               animate_5={animate5}
               animate_6={animate6}
               animate_7={animate7}
+              animate_scroll={animateScroll}
             />
           </div>
           <div className="mt-20">
