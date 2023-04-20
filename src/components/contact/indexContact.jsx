@@ -19,7 +19,7 @@ function IndexContact({ subtitle_1, subtitle_2, animate_1, animate_2, animate_sc
                 animate={animate_scroll}
               >
                 <a
-                  href="#experience"
+                  href="#contact"
                   className="text-xs text-text-blue border border-text-blue border-opacity-20 px-2 py-1 rounded-full"
                 >
                   scroll to top

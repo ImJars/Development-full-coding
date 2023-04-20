@@ -131,7 +131,7 @@ function Contact() {
 
   return (
     <>
-      <section ref={ ref } className="bg-primary w-full h-full text-white">
+      <section id="contact" ref={ ref } className="bg-primary w-full h-full text-white">
         <Wraped>
           <div className="pb-20">
             <motion.h1 animate={ animateMiniTitleContact } className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold">
