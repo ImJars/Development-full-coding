@@ -35,7 +35,7 @@ function IndexStudio({
                 animate={animate_scroll}
               >
                 <a
-                  href="#experience"
+                  href="#studio"
                   className="text-xs text-text-blue border border-text-blue border-opacity-20 px-2 py-1 rounded-full"
                 >
                   scroll to top
