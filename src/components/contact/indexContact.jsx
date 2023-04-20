@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function IndexContact({ subtitle_1, subtitle_2, animate_1, animate_2 }) {
+function IndexContact({ subtitle_1, subtitle_2, animate_1, animate_2, animate_scroll }) {
   return (
     <>
       <div className="-mt-48 hidden lg:block">
@@ -10,10 +10,21 @@ function IndexContact({ subtitle_1, subtitle_2, animate_1, animate_2 }) {
             className="bg-table-color border border-text-general border-opacity-10 
                                         rounded-xl"
           >
-            <div className="py-3 px-5 border-b border-text-general border-opacity-10">
+            <div className="py-3 px-5 border-b border-text-general border-opacity-10 flex justify-between items-center">
               <h1 className="text-text-white-gray text-sm font-bold tracking-wide">
                 Table of Contents
               </h1>
+              <motion.div
+                className="opacity-0 transform translate-x-10"
+                animate={animate_scroll}
+              >
+                <a
+                  href="#experience"
+                  className="text-xs text-text-blue border border-text-blue border-opacity-20 px-2 py-1 rounded-full"
+                >
+                  scroll to top
+                </a>
+              </motion.div>
             </div>
             <div className="py-4">
               <ol className="flex flex-col text-text-general text-sm">
