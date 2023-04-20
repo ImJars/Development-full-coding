@@ -67,9 +67,14 @@ function Contact() {
     threshold: 0.1,
     triggerOnce: false,
   });
+  const { ref: refScroll, inView: inViewScroll } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
   
   const animate1 = useAnimation();
   const animate2 = useAnimation();
+  const animateScroll = useAnimation();
 
   useEffect(() => {
     if (inView1) {
@@ -92,6 +97,16 @@ function Contact() {
         },
       });
     }
+    if (inViewScroll) {
+      animateScroll.start({
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 0.4,
+        },
+      });
+    }
 
     if (!inView1) {
       animate1.start({
@@ -105,7 +120,13 @@ function Contact() {
         color: "#CBD5E1",
       });
     }
-  }, [inView1, inView2, animate1, animate2])
+    if (!inViewScroll) {
+      animateScroll.start({
+        x: 20,
+        opacity: 0,
+      });
+    }
+  }, [inView1, inView2, animate1, animate2, inViewScroll, animateScroll])
   
 
   return (
@@ -126,7 +147,7 @@ function Contact() {
           </div>
           <div className="flex justify-between">
             <div className="w-2/3">
-              <div className="border-l pl-24 border-text-general border-opacity-20 pb-96">
+              <div ref={refScroll} className="border-l pl-24 border-text-general border-opacity-20 pb-96">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                               text-text-general text-base space-y-6"
@@ -174,7 +195,8 @@ function Contact() {
               subtitle_1={"Contact"} 
               subtitle_2={"Social Media"} 
               animate_1={animate1}
-              animate_2={animate2}  
+              animate_2={animate2}
+              animate_scroll={animateScroll}
             />
           </div>
           <div className="mt-20">
