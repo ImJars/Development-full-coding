@@ -126,7 +126,7 @@ function Home() {
         <>
         <ContentWraped
             ref={ ref }
-            className="bg-primary text-white"
+            className="bg-primary text-white font-poppins"
         >
             <section
                 className="pt-52 pb-28"
@@ -147,7 +147,7 @@ function Home() {
                                 className="opacity-0 transform -translate-x-10 text-7xl leading-none font-bold mb-6"
                             >
                                 I'm&nbsp;
-                            <font className="text-text-purple">Angel</font>
+                            <font className="text-text-blue">Angel</font>
                                 &nbsp;Ramirez,
                             </motion.h2>
                             <motion.h3 
@@ -162,14 +162,14 @@ function Home() {
                         >
                             <motion.button
                                 animate={ animateButton }
-                                className="opacity-0 transform -translate-x-10 bg-text-purple text-white
+                                className="opacity-0 transform -translate-x-10 bg-text-blue text-white
                                             rounded-lg px-8 py-2 font-semibold"
                             >
                                 Get in Touch
                             </motion.button>
                             <motion.h1
                                 animate={ animateAvailable }
-                                className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-purple"
+                                className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-blue"
                             >
                                 <p
                                     className="animate-pulse"

@@ -49,6 +49,9 @@ module.exports = {
       fontSize: {
         'xxs': '0.5rem',
       },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
