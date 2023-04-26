@@ -44,7 +44,7 @@ function Header() {
               <Link className="flex justify-center items-center" to="/">
                 <div className="flex text-xl font-bold tracking-wide">
                     <h1 className="">&#123;&nbsp;</h1>
-                  <h1>jars</h1>
+                  <h1>jars.</h1>
                   <h2 className="text-text-purple">dev</h2>
                   <h1 className="text-text-purple">&nbsp;&#125;</h1>
                 </div>
