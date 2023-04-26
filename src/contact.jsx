@@ -68,7 +68,7 @@ function Contact() {
     triggerOnce: false,
   });
   const { ref: refScroll, inView: inViewScroll } = useInView({
-    threshold: 0.5,
+    threshold: 0.6,
     triggerOnce: false,
   });
   
@@ -147,7 +147,7 @@ function Contact() {
           </div>
           <div className="flex justify-between">
             <div className="w-2/3">
-              <div ref={refScroll} className="border-l pl-24 border-text-general border-opacity-20 pb-96">
+              <div ref={refScroll} className="border-l pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                               text-text-general text-base space-y-6"

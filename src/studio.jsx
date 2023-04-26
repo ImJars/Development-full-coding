@@ -290,7 +290,7 @@ function Studio() {
           </div>
           <div className="flex justify-between">
             <div className="w-2/3">
-              <div ref={refScroll} className="border-l pl-24 border-text-general border-opacity-20 pb-96">
+              <div ref={refScroll} className="border-l pl-24 border-text-general border-opacity-20">
                 <div>
                   <div className="border p-32 border-text-general border-opacity-20 mb-10" />
                   <p className="text-text-general tracking-wide">
