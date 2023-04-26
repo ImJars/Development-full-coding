@@ -339,8 +339,8 @@ function Skills() {
         className="bg-primary w-full h-full text-white"
       >
         <Wraped>
-          <div className="pb-20">
-            <div>
+          <div>
+            <div className="pb-20">
               <motion.p
                 animate={animateBeforeTitleSkills}
                 className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold"
@@ -364,7 +364,7 @@ function Skills() {
           </div>
           <div className="flex justify-between">
             <div className="w-2/3">
-              <div className="border-l pl-24 border-text-general border-opacity-20 pb-96">
+              <div className="border-l pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                                         text-text-general text-base space-y-6"
