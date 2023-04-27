@@ -13,9 +13,24 @@ function Footer() {
               I'm a full-stack web developer who loves to build things.
             </h2>
             <div className="flex space-x-4 text-xl">
-              <FaTwitter />
-              <FaGithub />
-              <FaLinkedin />
+              <a
+                href="#"
+                className="hover:text-text-blue hover:transition hover:duration-500"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="#"
+                className="hover:text-text-blue hover:transition hover:duration-500"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="#"
+                className="hover:text-text-blue hover:transition hover:duration-500"
+              >
+                <FaLinkedin />
+              </a>
             </div>
           </div>
           <div className="w-1/2 flex justify-between">
