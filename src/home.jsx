@@ -191,16 +191,16 @@ function Home() {
                   animate={animateAvailable}
                   className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-blue"
                 >
-                  <div className="relative text-2xl">
+                  <div className="relative text-3xl">
                     &#8226;
                     <div className="absolute top-0 ">
                       <Ping>
-                        <h1 className="text-2xl">&#8226;</h1>
+                        <h1 className="text-3xl">&#8226;</h1>
                       </Ping>
                     </div>
                   </div>
                   <span>
-                    <a href="#" className=" text-xs tracking-wider">
+                    <a href="#" className="uppercase font-bold text-xs tracking-wider">
                       &nbsp; Available for hire
                     </a>
                   </span>
