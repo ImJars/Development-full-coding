@@ -43,7 +43,7 @@ function Header() {
             <div className="mr-8 flex justify-center items-center space-x-2">
               <Link className="flex justify-center items-center" to="/">
                 <div className="flex text-xl font-bold tracking-wide">
-                    <h1 className="">&#123;&nbsp;</h1>
+                  <h1 className="">&#123;&nbsp;</h1>
                   <h1>jars.</h1>
                   <h2 className="text-text-purple">dev</h2>
                   <h1 className="text-text-purple">&nbsp;&#125;</h1>
@@ -79,26 +79,28 @@ function Header() {
                 <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path>
               </svg>
             </button>
-            <HeaderLink
-              classNames={"text-text-blue hover:text-blue-300"}
-              link={"/skills"}
-              linkText={"Skills & Tools"}
-            />
-            <HeaderLink
-              classNames={"text-text-blue hover:text-blue-300"}
-              link={"/experience"}
-              linkText={"Experience"}
-            />
-            <HeaderLink
-              classNames={"text-text-blue hover:text-blue-300"}
-              link={"/studio"}
-              linkText={"Studio"}
-            />
-            <HeaderLink
-              classNames={"text-text-blue hover:text-blue-300"}
-              link={"/contact"}
-              linkText={"Contact"}
-            />
+            <div className="space-x-6 hidden sm:block ">
+              <HeaderLink
+                classNames={"text-text-blue hover:text-blue-300"}
+                link={"/skills"}
+                linkText={"Skills & Tools"}
+              />
+              <HeaderLink
+                classNames={"text-text-blue hover:text-blue-300"}
+                link={"/experience"}
+                linkText={"Experience"}
+              />
+              <HeaderLink
+                classNames={"text-text-blue hover:text-blue-300"}
+                link={"/studio"}
+                linkText={"Studio"}
+              />
+              <HeaderLink
+                classNames={"text-text-blue hover:text-blue-300"}
+                link={"/contact"}
+                linkText={"Contact"}
+              />
+            </div>
           </div>
           <div className="flex space-x-4 items-center">
             <div className="flex items-center">
