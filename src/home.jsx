@@ -34,6 +34,16 @@ const ContentWraped = styled.div`
     padding-right: 4rem;
   }
 `;
+const Ping = styled.div`
+  animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+`;
 
 function Home() {
   const { ref, inView } = useInView({
@@ -141,17 +151,6 @@ function Home() {
     animateAvailable,
   ]);
 
-  const Ping = styled.span`
-    animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
-    @keyframes ping {
-      75%,
-      100% {
-        transform: scale(1.5);
-        opacity: 0;
-      }
-    }
-  `;
-
   return (
     <>
       <ContentWraped ref={ref} className="bg-primary text-white font-poppins">
@@ -192,7 +191,14 @@ function Home() {
                   animate={animateAvailable}
                   className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-blue"
                 >
-                  <Ping class="w-56 rounded-full bg-green-300">&#8226;</Ping>
+                  <div className="relative text-2xl">
+                    &#8226;
+                    <div className="absolute top-0 ">
+                      <Ping>
+                        <h1 className="text-2xl">&#8226;</h1>
+                      </Ping>
+                    </div>
+                  </div>
                   <span>
                     <a href="#" className=" text-xs tracking-wider">
                       &nbsp; Available for hire
