@@ -247,7 +247,7 @@ function Home() {
                   />
                 </ul>
               </motion.div>
-              <div className="block absolute -top-10 right-0 z-0 overflow-hidden">
+              <div className="hidden sm:block absolute -top-10 right-0 z-0 overflow-hidden">
                 <img className="w-80" src={Img} alt="" />
               </div>
             </div>
