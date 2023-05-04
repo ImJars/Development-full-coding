@@ -255,7 +255,7 @@ function Home() {
         </section>
         <section className="bg-primary block -mt-16 pb-24">
           <div className="content-wrapped">
-            <div className="flex justify-between">
+            <div className="flex gap-4 justify-between">
               <CardAbout
                 extraClass={"bg-card-icon-one"}
                 icon={<FaProjectDiagram />}

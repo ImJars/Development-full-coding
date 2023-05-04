@@ -4,7 +4,7 @@ function CardAbout({ extraClass, icon, description, text }) {
     return (
         <>
             <div
-                className='border border-text-general border-opacity-10
+                className='w-full border border-text-general border-opacity-10
                             py-3 px-2 rounded-3xl'
             >
                 <div
@@ -25,13 +25,13 @@ function CardAbout({ extraClass, icon, description, text }) {
                         </div>
                         <h1
                             className='text-sm text-white bg-card bg-opacity-50
-                                        pr-40 pl-11 py-2 rounded-full ml-4 font-semibold'
+                                        pr-20 pl-11 py-2 rounded-full ml-4 font-semibold'
                         >
                             { description }
                         </h1>
                     </div>
                     <div
-                        className='w-64 h-full ml-8 mt-4 flex'
+                        className='h-full ml-16 mt-4 flex'
                     >
                         <h1
                             className='text-text-general text-sm'
