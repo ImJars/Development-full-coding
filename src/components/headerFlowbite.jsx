@@ -1,5 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import styled from "styled-components";
+
+const StyleLink = styled.a`
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1px;
+  color: rgba(96, 165, 250, 1);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: rgba(96, 165, 250, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+  }
+`
 
 function HeaderFlowbite() {
   const [active, setActive] = useState(false);
@@ -64,29 +80,13 @@ function HeaderFlowbite() {
             </motion.svg>
           </button>
           <motion.div
-            animate={ animateFlowbite }
+            animate={animateFlowbite}
             className="opacity-0 absolute border-text-general border-opacity-20 top-Flowbite flex w-40 flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90"
           >
-            <a
-              className="nav-link h-8 text-xs"
-            >
-              Skills &amp; Tools
-            </a>
-            <a
-              className="nav-link h-8 text-xs"
-            >
-              Experience
-            </a>
-            <a
-              className="nav-link h-8 text-xs"
-            >
-              Studio
-            </a>
-            <a
-              className="nav-link h-8 text-xs"
-            >
-              Contact
-            </a>
+            <StyleLink className="nav-link h-8 text-xs">Skills &amp; Tools</StyleLink>
+            <StyleLink className="nav-link h-8 text-xs">Experience</StyleLink>
+            <StyleLink className="nav-link h-8 text-xs">Studio</StyleLink>
+            <StyleLink className="nav-link h-8 text-xs">Contact</StyleLink>
           </motion.div>
         </div>
       </li>
