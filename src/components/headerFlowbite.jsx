@@ -47,7 +47,7 @@ function HeaderFlowbite() {
             </motion.svg>
           </button>
           <div
-            className="border-divider-light absolute top-11 flex w-40 flex-col rounded-2xl border bg-white/70 p-2 backdrop-blur dark:border-divider-dark dark:bg-slate-900/80"
+            className="absolute border-text-general border-opacity-20 top-Flowbite flex w-40 flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90"
           >
             <a
               className="nav-link h-8 text-xs"
