@@ -27,40 +27,51 @@ function HeaderFlowbite() {
 
   return (
     <>
-      <button
-        className="text-text-blue flex items-center space-x-1 bg-text-blue bg-opacity-20
+      <li className="list-none">
+        <div>
+          <button
+            className="text-text-blue flex items-center space-x-1 bg-text-blue bg-opacity-20
                    py-2 px-4 rounded-full"
-        onClick={() => setActive(!active)}
-      >
-        <h1 className="text-sm font-semibold">Work</h1>
-        <motion.svg
-          animate={animateArrow}
-          id="arrow"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="h-3 w-3 rotate-90 sm:-rotate-0"
-        >
-          <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path>
-        </motion.svg>
-        <select className="transform left-[22%]">
-            <ol>
-                <li>
-                    Skills & Tools
-                </li>
-                <li>
-                    Experience
-                </li>
-                <li>
-                    Studio
-                </li>
-                <li>
-                    Contact
-                </li>
-            </ol>
-        </select>
-      </button>
-      
+            onClick={() => setActive(!active)}
+          >
+            <h1 className="text-sm font-semibold">Work</h1>
+            <motion.svg
+              animate={animateArrow}
+              id="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-3 w-3 rotate-90 sm:-rotate-0"
+            >
+              <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path>
+            </motion.svg>
+          </button>
+          <div
+            className="border-divider-light absolute top-11 flex w-40 flex-col rounded-2xl border bg-white/70 p-2 backdrop-blur dark:border-divider-dark dark:bg-slate-900/80"
+          >
+            <a
+              className="nav-link h-8 text-xs"
+            >
+              Skills &amp; Tools
+            </a>
+            <a
+              className="nav-link h-8 text-xs"
+            >
+              Experience
+            </a>
+            <a
+              className="nav-link h-8 text-xs"
+            >
+              Studio
+            </a>
+            <a
+              className="nav-link h-8 text-xs"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </li>
     </>
   );
 }
