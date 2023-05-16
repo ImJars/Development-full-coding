@@ -5,6 +5,7 @@ function HeaderFlowbite() {
   const [active, setActive] = useState(false);
 
   const animateArrow = useAnimation();
+  const animateFlowbite = useAnimation();
   useEffect(() => {
     if (active) {
       animateArrow.start({
@@ -14,9 +15,25 @@ function HeaderFlowbite() {
           duration: 0.5,
         },
       });
+      animateFlowbite.start({
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+        },
+      });
     } else {
       animateArrow.start({
         rotate: 0,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+        },
+      });
+      animateFlowbite.start({
+        opacity: 0,
+        y: -10,
         transition: {
           type: "spring",
           duration: 0.5,
@@ -46,8 +63,9 @@ function HeaderFlowbite() {
               <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path>
             </motion.svg>
           </button>
-          <div
-            className="absolute border-text-general border-opacity-20 top-Flowbite flex w-40 flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90"
+          <motion.div
+            animate={ animateFlowbite }
+            className="opacity-0 absolute border-text-general border-opacity-20 top-Flowbite flex w-40 flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90"
           >
             <a
               className="nav-link h-8 text-xs"
@@ -69,7 +87,7 @@ function HeaderFlowbite() {
             >
               Contact
             </a>
-          </div>
+          </motion.div>
         </div>
       </li>
     </>
