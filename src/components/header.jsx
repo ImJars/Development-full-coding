@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { BsTwitter, BsGithub, BsGrid1X2Fill } from "react-icons/bs";
+import { BsTwitter, BsGithub } from "react-icons/bs";
 import HeaderLink from "./header-link";
 import { Link } from "react-router-dom";
 import HeaderFlowbite from "./headerFlowbite";
+import MainFlowbite from "./mainFlowbite";
 
 const Navbar = styled.header`
   &.navbar {
@@ -105,16 +106,7 @@ function Header() {
                 <BsGithub />
               </a>
             </div>
-            <button
-              className="bg-card bg-opacity-50 py-2 px-3 rounded-xl flex space-x-2 items-center
-                                        hover:bg-opacity-100 transition-all duration-200 ease-in-out"
-            >
-              {" "}
-              <div>
-                <BsGrid1X2Fill />
-              </div>
-              <h1 className="text-sm">Main Access</h1>
-            </button>
+            <MainFlowbite />
           </div>
         </div>
       </Navbar>
