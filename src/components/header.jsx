@@ -68,22 +68,31 @@ function Header() {
               linkText={"T.I.L"}
             />
             <HeaderFlowbite />
-            <div className="space-x-6 hidden sm:block ">
+            <div className="space-x-3 hidden sm:flex">
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/skills"}
                 linkText={"Skills & Tools"}
               />
+              <h1 className="text-xs opacity-50 cursor-default">
+                &#8226;
+              </h1>
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/experience"}
                 linkText={"Experience"}
               />
+              <h1 className="text-xs opacity-50 cursor-default">
+                &#8226;
+              </h1>
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/studio"}
                 linkText={"Studio"}
               />
+              <h1 className="text-xs opacity-50 cursor-default">
+                &#8226;
+              </h1>
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/contact"}

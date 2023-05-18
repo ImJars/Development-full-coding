@@ -82,7 +82,7 @@ function MainFlowbite() {
                 <div className="flex flex-col gap-2">
                   <div className="px-2 text-xl font-bold">Action Center</div>
                   <div className="flex h-24 gap-4">
-                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors dark:bg-[#1d263a] bg-white dark:bg-slate-700">
+                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
                       <div>
                         <MdNightsStay className="text-xl" />
                       </div>
@@ -90,7 +90,7 @@ function MainFlowbite() {
                         Dark Mode:
                       </div>
                     </button>
-                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors dark:bg-[#1d263a] bg-white dark:bg-slate-700">
+                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
                       <div>
                         <AiFillEye className="text-xl" />
                       </div>
