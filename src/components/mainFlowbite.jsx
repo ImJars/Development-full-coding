@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { BsGrid1X2Fill } from "react-icons/bs";
 import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
+import {MdNightsStay} from "react-icons/md";
+import {AiFillEye} from "react-icons/ai";
 
 const StyleLink = styled.a`
   display: flex;
@@ -16,38 +18,38 @@ const StyleLink = styled.a`
     color: rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease-in-out;
   }
-`
+`;
 
 function MainFlowbite() {
-    const [active, setActive] = useState(false);
-    const mainFlowbite = useAnimation();
+  const [active, setActive] = useState(false);
+  const mainFlowbite = useAnimation();
 
-    function handleActive() {
-        setActive(!active);
-        console.log(active);
+  function handleActive() {
+    setActive(!active);
+    console.log(active);
+  }
+  useEffect(() => {
+    if (active === true) {
+      mainFlowbite.start({
+        visibility: "visible",
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+        },
+      });
+    } else {
+      mainFlowbite.start({
+        visibility: "hidden",
+        opacity: 0,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+        },
+      });
     }
-    useEffect(() => {
-      if (active === true) {
-        mainFlowbite.start({
-          visibility: "visible",
-          opacity: 1,
-          transition: {
-            type: "spring",
-            duration: 0.5,
-          },
-        });
-      } else {
-        mainFlowbite.start({
-          visibility: "hidden",
-          opacity: 0,
-          transition: {
-            type: "spring",
-            duration: 0.5,
-          },
-        });
-      }
-    }, [active, mainFlowbite])
-      
+  }, [active, mainFlowbite]);
+
   return (
     <>
       <li className="list-none">
@@ -65,17 +67,41 @@ function MainFlowbite() {
           </button>
           <motion.div
             animate={mainFlowbite}
-            className="inset-0 fixed invisible flex border-text-general border-opacity-20 w-full h-screen flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90"
+            className="inset-0 fixed invisible flex border-text-general border-opacity-20 w-full h-screen flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90 transition-all duration-200 ease-in-out"
           >
-            <div className="flex justify-start">
-                <button className="p-2" onClick={() => handleActive()}>
-                    X
+            <div>
+              <div className="absolute inset-x-4 top-8 flex justify-end sm:inset-x-8">
+                <button
+                  className="p-2 font-bold text-xl"
+                  onClick={() => handleActive()}
+                >
+                  X
                 </button>
+              </div>
+              <div className="fixed left-2 right-2 bottom-0 top-20 flex flex-col gap-6 sm:left-auto sm:right-6 sm:top-24 sm:w-[320px]">
+                <div className="flex flex-col gap-2">
+                  <div className="px-2 text-xl font-bold">Action Center</div>
+                  <div className="flex h-24 gap-4">
+                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors dark:bg-[#1d263a] bg-white dark:bg-slate-700">
+                      <div>
+                        <MdNightsStay className="text-xl" />
+                      </div>
+                      <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
+                        Dark Mode:
+                      </div>
+                    </button>
+                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors dark:bg-[#1d263a] bg-white dark:bg-slate-700">
+                      <div>
+                        <AiFillEye className="text-xl" />
+                      </div>
+                      <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
+                        Focus:
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <StyleLink className="nav-link h-8 text-xs">Skills &amp; Tools</StyleLink>
-            <StyleLink className="nav-link h-8 text-xs">Experience</StyleLink>
-            <StyleLink className="nav-link h-8 text-xs">Studio</StyleLink>
-            <StyleLink className="nav-link h-8 text-xs">Contact</StyleLink>
           </motion.div>
         </div>
       </li>
