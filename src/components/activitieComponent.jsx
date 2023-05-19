@@ -1,19 +1,19 @@
 import React from 'react'
 
-function ActivitieComponent() {
+function ActivitieComponent({link,title,hours,text_1,text_2_purple,text_3,text_4}) {
   return (
     <>
         <div>
-            <a href="#" className='border-divider-light block rounded-xl border p-4 text-[13px] backdrop-blur border-text-general border-opacity-20 bg-slate-900/60'>
+            <a href={link} className='border-divider-light block rounded-xl border p-4 text-[13px] backdrop-blur border-text-general border-opacity-20 bg-slate-900/60'>
                 <div className='mb-1 flex justify-between text-xs text-slate-600 dark:text-slate-400'>
-                    <span>REACTION</span>
-                    <span>2 hours ago</span>
+                    <span>{title}</span>
+                    <span>{hours}</span>
                 </div>
                 <div className='flex flex-wrap items-baseline gap-x-1'>
-                    <span>the</span>
-                    <span className='text-text-purple font-semibold'>Tentang Next.js dan Tailwind CSS 🔥</span>
-                    <span class="lowercase">BLOG POST</span>
-                    <span>got new</span>
+                    <span>{text_1}</span>
+                    <span className='text-text-purple font-semibold'>{text_2_purple}</span>
+                    <span class="lowercase">{text_3}</span>
+                    <span>{text_4}</span>
                 </div>
             </a>
         </div>

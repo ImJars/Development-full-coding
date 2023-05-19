@@ -107,7 +107,51 @@ function MainFlowbite() {
                       Recent Activities
                     </div>
                     <div className="scrollbar-hide flex flex-1 basis-0 flex-col gap-2 overflow-y-auto p-2 pb-4 sm:pb-8">
-                      <ActivitieComponent />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
                     </div>
                   </div>
                 </div>
