@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
 import { MdNightsStay } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
+import ActivitieComponent from "./activitieComponent";
 
 const StyleLink = styled.a`
   display: flex;
@@ -106,7 +107,7 @@ function MainFlowbite() {
                       Recent Activities
                     </div>
                     <div className="scrollbar-hide flex flex-1 basis-0 flex-col gap-2 overflow-y-auto p-2 pb-4 sm:pb-8">
-
+                      <ActivitieComponent />
                     </div>
                   </div>
                 </div>
