@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { BsGrid1X2Fill } from "react-icons/bs";
 import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
-import {MdNightsStay} from "react-icons/md";
-import {AiFillEye} from "react-icons/ai";
+import { MdNightsStay } from "react-icons/md";
+import { AiFillEye } from "react-icons/ai";
 
 const StyleLink = styled.a`
   display: flex;
@@ -98,6 +98,16 @@ function MainFlowbite() {
                         Focus:
                       </div>
                     </button>
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col">
+                  <div className="flex flex-1 flex-col gap-2">
+                    <div className="px-2 text-xl font-bold">
+                      Recent Activities
+                    </div>
+                    <div className="scrollbar-hide flex flex-1 basis-0 flex-col gap-2 overflow-y-auto p-2 pb-4 sm:pb-8">
+
+                    </div>
                   </div>
                 </div>
               </div>
