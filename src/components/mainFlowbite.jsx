@@ -142,6 +142,83 @@ function MainFlowbite() {
                   </div>
                 </div>
               </div>
+              <div className="fixed left-2 right-2 bottom-0 top-20 flex flex-col gap-6 sm:left-6 sm:top-24 sm:w-[320px]">
+                <div className="flex flex-col gap-2">
+                  <div className="px-2 text-xl font-bold">Action Center</div>
+                  <div className="flex h-24 gap-4">
+                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
+                      <div>
+                        <MdNightsStay className="text-xl" />
+                      </div>
+                      <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
+                        Dark Mode:
+                      </div>
+                    </button>
+                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
+                      <div>
+                        <AiFillEye className="text-xl" />
+                      </div>
+                      <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
+                        Focus:
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col">
+                  <div className="flex flex-1 flex-col gap-2">
+                    <div className="px-2 text-xl font-bold">
+                      Recent Activities
+                    </div>
+                    <div className="scrollbar-hide flex flex-1 basis-0 flex-col gap-2 overflow-y-auto p-2 pb-4 sm:pb-8">
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                      <ActivitieComponent 
+                        link={"https://www.google.com"}
+                        title={'REACTION'}
+                        hours={'2 hours ago'}
+                        text_1={'the'}
+                        text_2_purple={'Tentang Next.js dan Tailwind CSS 🔥'}
+                        text_3={'BLOG POST'}
+                        text_4={'got new'}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

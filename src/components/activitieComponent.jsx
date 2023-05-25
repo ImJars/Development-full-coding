@@ -12,7 +12,7 @@ function ActivitieComponent({link,title,hours,text_1,text_2_purple,text_3,text_4
                 <div className='flex flex-wrap items-baseline gap-x-1'>
                     <span>{text_1}</span>
                     <span className='text-text-purple font-semibold'>{text_2_purple}</span>
-                    <span class="lowercase">{text_3}</span>
+                    <span className="lowercase">{text_3}</span>
                     <span>{text_4}</span>
                 </div>
             </a>
