@@ -1,26 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { BsGrid1X2Fill } from "react-icons/bs";
 import { motion, useAnimation } from "framer-motion";
-import styled from "styled-components";
 import { MdNightsStay } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
 import ActivitieComponent from "./activitieComponent";
 import { AiOutlineClose } from "react-icons/ai";
-
-const StyleLink = styled.a`
-  display: flex;
-  align-items: center;
-  padding: 0.6rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1px;
-  color: rgba(96, 165, 250, 1);
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background-color: rgba(96, 165, 250, 0.1);
-    color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease-in-out;
-  }
-`;
 
 function MainFlowbite() {
   const [active, setActive] = useState(false);
@@ -69,7 +53,7 @@ function MainFlowbite() {
           </button>
           <motion.div
             animate={mainFlowbite}
-            className="inset-0 fixed invisible flex border-text-general border-opacity-20 w-full h-screen flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90 transition-all duration-200 ease-in-out"
+            className="inset-0 fixed invisible flex w-full h-screen flex-col p-3 backdrop-blur bg-secondary/90 transition-all duration-200 ease-in-out"
           >
             <div>
               <div className="absolute inset-x-4 top-8 flex justify-end sm:inset-x-8">
