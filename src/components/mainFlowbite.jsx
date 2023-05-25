@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { MdNightsStay } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
 import ActivitieComponent from "./activitieComponent";
+import { AiOutlineClose } from "react-icons/ai";
 
 const StyleLink = styled.a`
   display: flex;
@@ -73,10 +74,11 @@ function MainFlowbite() {
             <div>
               <div className="absolute inset-x-4 top-8 flex justify-end sm:inset-x-8">
                 <button
-                  className="p-2 font-bold text-xl"
+                  className="p-2 font-bold text-xl rounded-xl bg-text-general bg-opacity-10 hover:bg-opacity-25 transition-all duration-200 ease-in-out"
+
                   onClick={() => handleActive()}
                 >
-                  X
+                  <AiOutlineClose />
                 </button>
               </div>
               <div className="fixed left-2 right-2 bottom-0 top-20 flex flex-col gap-6 sm:left-auto sm:right-6 sm:top-24 sm:w-[320px]">
