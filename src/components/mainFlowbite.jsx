@@ -142,7 +142,7 @@ function MainFlowbite() {
                   </div>
                 </div>
               </div>
-              <div className="fixed left-2 right-2 bottom-0 top-20 flex flex-col gap-6 sm:left-6 sm:top-24 sm:w-[320px]">
+              <div className="fixed left-2 right-2 bottom-0 top-3/4 flex flex-col gap-6 sm:left-6 sm:top-24 sm:w-[320px]">
                 <div className="flex flex-col gap-2">
                   <div className="px-2 text-xl font-bold">Action Center</div>
                   <div className="flex h-24 gap-4">
