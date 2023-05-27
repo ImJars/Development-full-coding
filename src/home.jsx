@@ -166,7 +166,7 @@ function Home() {
                 </motion.h1>
                 <motion.h2
                   animate={animateName}
-                  className="opacity-0 transform -translate-x-10 text-7xl leading-none font-bold mb-6"
+                  className="opacity-0 transform -translate-x-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-none font-bold mb-6"
                 >
                   I'm&nbsp;
                   <font className="text-text-blue">Angel</font>
