@@ -68,7 +68,7 @@ function Header() {
               linkText={"T.I.L"}
             />
             <HeaderFlowbite />
-            <div className="space-x-3 hidden sm:flex">
+            <div className="space-x-3 hidden xl:flex">
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/skills"}
