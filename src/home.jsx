@@ -14,8 +14,7 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 import IconHome from "./components/home/icon-home";
 import CardAbout from "./components/home/card-about";
 import { FaProjectDiagram } from "react-icons/fa";
-import { MdGroups, MdVerified, MdOutlineWork } from "react-icons/md";
-import { BsFillEmojiSmileFill } from "react-icons/bs";
+import { MdVerified } from "react-icons/md";
 import { BiCodeAlt } from "react-icons/bi";
 import TextHome from "./components/home/text-home";
 import SubHome from "./components/home/sub-home";
@@ -44,6 +43,12 @@ const Ping = styled.div`
     }
   }
 `;
+
+const Cards = styled.div`
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+  gap: 20px;
+`
 
 function Home() {
   const { ref, inView } = useInView({
