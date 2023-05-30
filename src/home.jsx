@@ -260,7 +260,7 @@ function Home() {
         </section>
         <section className="bg-primary block -mt-16 pb-24">
           <div className="content-wrapped">
-            <div className="flex gap-4 justify-between">
+            <Cards>
               <CardAbout
                 extraClass={"bg-card-icon-one"}
                 icon={<FaProjectDiagram />}
@@ -285,7 +285,7 @@ function Home() {
                   "Writing clean code is a top priority while keeping it as optimized as possible."
                 }
               />
-            </div>
+            </Cards>
           </div>
         </section>
         <section className="bg-primary block -mt-16 pb-24">
