@@ -33,6 +33,10 @@ module.exports = {
         'update_tertiary': '##0C0D12',
 
         'table_activate': '#1D263A',
+
+        'primary-ter': '#0E101C',
+        'secondary-ter': '#FFFEFF',
+        'tertiary-ter': '#38BCD0',
       },
       maxWidth: {
         display: '70rem',
