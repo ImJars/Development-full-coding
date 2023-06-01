@@ -158,7 +158,7 @@ function Home() {
 
   return (
     <>
-      <ContentWraped ref={ref} className="bg-primary text-white font-poppins">
+      <ContentWraped ref={ref} className="bg-primary-ter text-white font-poppins">
         <section className="pt-52 pb-28">
           <div className="content-wrapped">
             <div className="relative">
