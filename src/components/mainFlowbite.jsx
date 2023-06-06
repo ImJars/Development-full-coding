@@ -13,8 +13,8 @@ function MainFlowbite() {
 
   function handleActive() {
     setActive(!active);
-    console.log(active);
   }
+
   useEffect(() => {
     if (active === true) {
       mainFlowbite.start({
@@ -54,6 +54,7 @@ function MainFlowbite() {
           </button>
           <motion.div
             animate={mainFlowbite}
+            onClick={scrollTo(0, 0)}
             className="inset-0 fixed invisible flex w-full min-h-screen flex-col p-3 backdrop-blur bg-secondary/90 transition-all duration-200 ease-in-out"
           >
             <div>
