@@ -181,7 +181,7 @@ function Home() {
               <TitleSection className="relative z-10">
                 <motion.h1
                   animate={animateHi}
-                  className="opacity-0 transform -translate-x-10 text-text-general"
+                  className="greeting opacity-0 transform -translate-x-10 text-text-general"
                 >
                   Hi!
                 </motion.h1>
@@ -189,7 +189,7 @@ function Home() {
                   animate={animateName}
                   className="opacity-0 transform -translate-x-10 leading-none font-bold mb-6"
                 >
-                  <h2>
+                  <h2 className="name">
                     I'm&nbsp;
                     <font className="text-text-blue">Angel</font>
                     &nbsp;Ramirez,
@@ -197,7 +197,7 @@ function Home() {
                 </motion.div>
                 <motion.h3
                   animate={animateJob}
-                  className="opacity-0 transform -translate-x-10 tracking-wide text-text-general"
+                  className="job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
                 >
                   a full-stack web developer
                 </motion.h3>
