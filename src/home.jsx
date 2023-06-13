@@ -33,6 +33,11 @@ const ContentWraped = styled.div`
     padding-right: 4rem;
   }
 `;
+
+const H2Title = styled.h2`
+  font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+`;
+
 const Ping = styled.div`
   animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
   @keyframes ping {
@@ -46,9 +51,9 @@ const Ping = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-`
+`;
 
 function Home() {
   const { ref, inView } = useInView({
@@ -158,7 +163,10 @@ function Home() {
 
   return (
     <>
-      <ContentWraped ref={ref} className="bg-primary-ter text-white font-poppins">
+      <ContentWraped
+        ref={ref}
+        className="bg-primary-ter text-white font-poppins"
+      >
         <section className="pt-52 pb-28">
           <div className="content-wrapped">
             <div className="relative">
@@ -169,14 +177,16 @@ function Home() {
                 >
                   Hi!
                 </motion.h1>
-                <motion.h2
+                <motion.div
                   animate={animateName}
-                  className="opacity-0 transform -translate-x-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-none font-bold mb-6"
+                  className="opacity-0 transform -translate-x-10 leading-none font-bold mb-6"
                 >
-                  I'm&nbsp;
-                  <font className="text-text-blue">Angel</font>
-                  &nbsp;Ramirez,
-                </motion.h2>
+                  <H2Title>
+                    I'm&nbsp;
+                    <font className="text-text-blue">Angel</font>
+                    &nbsp;Ramirez,
+                  </H2Title>
+                </motion.div>
                 <motion.h3
                   animate={animateJob}
                   className="opacity-0 transform -translate-x-10 text-xl tracking-wide text-text-general"
@@ -205,7 +215,10 @@ function Home() {
                     </div>
                   </div>
                   <span>
-                    <a href="#" className="uppercase font-bold text-xs tracking-wider">
+                    <a
+                      href="#"
+                      className="uppercase font-bold text-xs tracking-wider"
+                    >
                       &nbsp; Available for hire
                     </a>
                   </span>
