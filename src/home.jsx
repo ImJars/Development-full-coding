@@ -34,9 +34,17 @@ const ContentWraped = styled.div`
   }
 `;
 
-const H2Title = styled.h2`
-  font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
-`;
+const TitleSection = styled.div`
+  .greeting {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+  .name {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+  .job {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+`
 
 const Ping = styled.div`
   animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
@@ -170,10 +178,10 @@ function Home() {
         <section className="pt-52 pb-28">
           <div className="content-wrapped">
             <div className="relative">
-              <div className="relative z-10">
+              <TitleSection className="relative z-10">
                 <motion.h1
                   animate={animateHi}
-                  className="opacity-0 transform -translate-x-10 text-4xl text-text-general"
+                  className="opacity-0 transform -translate-x-10 text-text-general"
                 >
                   Hi!
                 </motion.h1>
@@ -181,19 +189,19 @@ function Home() {
                   animate={animateName}
                   className="opacity-0 transform -translate-x-10 leading-none font-bold mb-6"
                 >
-                  <H2Title>
+                  <h2>
                     I'm&nbsp;
                     <font className="text-text-blue">Angel</font>
                     &nbsp;Ramirez,
-                  </H2Title>
+                  </h2>
                 </motion.div>
                 <motion.h3
                   animate={animateJob}
-                  className="opacity-0 transform -translate-x-10 text-xl tracking-wide text-text-general"
+                  className="opacity-0 transform -translate-x-10 tracking-wide text-text-general"
                 >
                   a full-stack web developer
                 </motion.h3>
-              </div>
+              </TitleSection>
               <div className="flex mt-8">
                 <motion.button
                   animate={animateButton}
