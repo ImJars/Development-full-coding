@@ -36,13 +36,13 @@ const ContentWraped = styled.div`
 
 const TitleSection = styled.div`
   .greeting {
-    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+    font-size: clamp(0.75rem, 0.4524rem + 1.1905vw, 1.25rem);
   }
   .name {
     font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
   }
   .job {
-    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+    font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
   }
 `
 
