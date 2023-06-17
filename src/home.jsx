@@ -179,7 +179,7 @@ function Home() {
     <>
       <ContentWraped
         ref={ref}
-        className="bg-primary-ter text-white font-poppins"
+        className="bg-primary text-white font-poppins"
       >
         <section className="pt-52 pb-28">
           <div className="content-wrapped">
