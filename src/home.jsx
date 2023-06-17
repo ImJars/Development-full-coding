@@ -56,6 +56,9 @@ const Ping = styled.div`
     }
   }
 `;
+const Available = styled.a`
+  font-size: clamp(0.5rem, 0.3512rem + 0.5952vw, 0.75rem);
+`
 
 const Cards = styled.div`
   display: grid;
@@ -222,13 +225,13 @@ function Home() {
                       </Ping>
                     </div>
                   </div>
-                  <span>
-                    <a
+                  <span className="flex">
+                    <Available
                       href="#"
                       className="uppercase font-bold text-xs tracking-wider"
                     >
                       &nbsp; Available for hire
-                    </a>
+                    </Available>
                   </span>
                 </motion.div>
               </div>
