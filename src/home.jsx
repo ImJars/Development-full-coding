@@ -59,6 +59,9 @@ const Ping = styled.div`
 const Available = styled.a`
   font-size: clamp(0.5rem, 0.3512rem + 0.5952vw, 0.75rem);
 `
+const Buttonned = styled.div`
+  font-size: clamp(0.625rem, 0.4762rem + 0.5952vw, 0.875rem);
+`
 
 const Cards = styled.div`
   display: grid;
@@ -209,9 +212,11 @@ function Home() {
                 <motion.button
                   animate={animateButton}
                   className="opacity-0 transform -translate-x-10 bg-text-blue text-white
-                                            rounded-lg px-8 py-2 font-semibold"
+                                            rounded-lg px-8 py-2 font-semibold text-sm"
                 >
-                  Get in Touch
+                  <Buttonned className="font-outfit">
+                    Get in Touch
+                  </Buttonned>
                 </motion.button>
                 <motion.div
                   animate={animateAvailable}
@@ -228,7 +233,7 @@ function Home() {
                   <span className="flex">
                     <Available
                       href="#"
-                      className="uppercase font-bold text-xs tracking-wider"
+                      className="uppercase font-outfit font-bold text-xs tracking-wider"
                     >
                       &nbsp; Available for hire
                     </Available>
