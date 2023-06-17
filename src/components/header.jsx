@@ -42,9 +42,9 @@ function Header() {
       >
         <div className="flex justify-between items-center w-full h-full px-10">
           <div className="flex space-x-6 items-center">
-            <div className="mr-8 flex justify-center items-center space-x-2">
+            <div className="sm:mr-8 flex justify-center items-center">
               <Link className="flex justify-center items-center" to="/">
-                <div className="flex text-xl font-bold tracking-wide">
+                <div className="flex sm:text-xl font-bold tracking-wide">
                   <h1 className="">&#123;&nbsp;</h1>
                   <h1>jars.</h1>
                   <h2 className="text-text-purple">dev</h2>
