@@ -101,7 +101,7 @@ function Header() {
             </div>
           </div>
           <div className="flex space-x-4 items-center">
-            <div className="flex items-center">
+            <div className="hidden items-center sm:flex">
               <a
                 href="#"
                 className="text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2"
