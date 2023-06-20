@@ -44,11 +44,16 @@ function Header() {
           <div className="flex space-x-6 items-center">
             <div className="sm:mr-8 flex justify-center items-center">
               <Link className="flex justify-center items-center" to="/">
-                <div className="flex sm:text-xl font-bold tracking-wide">
-                  <h1 className="">&#123;&nbsp;</h1>
-                  <h1>jars.</h1>
-                  <h2 className="text-text-purple">dev</h2>
-                  <h1 className="text-text-purple">&nbsp;&#125;</h1>
+                <div className="flex sm:text-xl font-bold tracking-wide space-x-1 ">
+                  <div className="px-2 bg-text-purple rounded-lg">
+                    <h1>&#47;</h1>
+                  </div>
+                  <div className=" hidden sm:block">
+                    <div className="flex">
+                    <h1>&nbsp;jars</h1>
+                    <h2 className="text-text-purple">dev</h2>
+                    </div>
+                  </div>
                 </div>
               </Link>
             </div>
@@ -74,25 +79,19 @@ function Header() {
                 link={"/skills"}
                 linkText={"Skills & Tools"}
               />
-              <h1 className="text-xs opacity-50 cursor-default">
-                &#8226;
-              </h1>
+              <h1 className="text-xs opacity-50 cursor-default">&#8226;</h1>
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/experience"}
                 linkText={"Experience"}
               />
-              <h1 className="text-xs opacity-50 cursor-default">
-                &#8226;
-              </h1>
+              <h1 className="text-xs opacity-50 cursor-default">&#8226;</h1>
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/studio"}
                 linkText={"Studio"}
               />
-              <h1 className="text-xs opacity-50 cursor-default">
-                &#8226;
-              </h1>
+              <h1 className="text-xs opacity-50 cursor-default">&#8226;</h1>
               <HeaderLink
                 classNames={"text-text-blue hover:text-blue-300"}
                 link={"/contact"}
