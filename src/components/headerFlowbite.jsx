@@ -67,7 +67,7 @@ function HeaderFlowbite() {
                    py-2 px-4 rounded-full"
             onClick={() => setActive(!active)}
           >
-            <h1 className="text-sm font-semibold">Work</h1>
+            <h1 className="text-xs font-semibold">Work</h1>
             <motion.svg
               animate={animateArrow}
               id="arrow"
