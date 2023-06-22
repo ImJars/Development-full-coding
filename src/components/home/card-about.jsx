@@ -18,14 +18,14 @@ function CardAbout({ extraClass, icon, description, text }) {
                                         items-center rounded-full absolute left-1` }
                         >
                             <h1
-                                className='text-xl'
+                                className='text-md sm:text-xl'
                             >
                                 { icon }
                             </h1>
                         </div>
                         <h1
-                            className='text-sm text-white bg-card bg-opacity-50
-                                        pr-32 pl-11 py-2 rounded-full ml-4 font-semibold'
+                            className='text-xs block text-white bg-card bg-opacity-50
+                                        pr-32 pl-11 py-2 rounded-full ml-4 font-medium'
                         >
                             { description }
                         </h1>
@@ -34,7 +34,7 @@ function CardAbout({ extraClass, icon, description, text }) {
                         className='h-full ml-16 mt-4 flex'
                     >
                         <h1
-                            className='text-text-general text-sm'
+                            className='text-text-general text-xs sm:text-sm'
                         >
                             { text }
                         </h1>
