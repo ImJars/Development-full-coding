@@ -247,7 +247,7 @@ function Home() {
                 <h1 className="text-xs tracking-wider text-text-general">
                   Current favorite tech stack/tools:
                 </h1>
-                <ul className="flex items-center mt-4 space-x-3">
+                <ul className="flex items-center mt-4 space-x-2 sm:space-x-3">
                   <IconHome
                     classNames={"hover:text-js-icon"}
                     icon={<SiJavascript />}
