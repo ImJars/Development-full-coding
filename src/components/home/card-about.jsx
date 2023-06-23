@@ -25,7 +25,7 @@ function CardAbout({ extraClass, icon, description, text }) {
                         </div>
                         <h1
                             className='text-xs block text-white bg-card bg-opacity-50
-                                        pr-32 pl-11 py-2 rounded-full ml-4 font-medium'
+                                        pr-20 pl-9 py-2 rounded-full ml-4 font-medium'
                         >
                             { description }
                         </h1>
