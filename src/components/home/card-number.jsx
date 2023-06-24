@@ -24,12 +24,12 @@ function CardNumber({ number, title, text }) {
                         className=''
                     >
                         <h1
-                            className='font-bold'
+                            className='font-semibold sm:font-bold'
                         >
                             { title }
                         </h1>
                         <h2
-                            className='text-text-general text-sm mt-1'
+                            className='text-text-general text-xs sm:text-sm mt-1'
                         >
                             { text }
                         </h2>
