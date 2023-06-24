@@ -21,10 +21,10 @@ function SubHome({ title, subtitle, text }) {
                     { text }
                 </h3>
                 <div
-                    className='flex'
+                    className='sm:flex'
                 >
                     <div
-                        className='w-1/2'
+                        className='sm:w-1/2'
                     >
                         <CardNumber 
                             number={ '1' }
@@ -48,7 +48,7 @@ function SubHome({ title, subtitle, text }) {
                         />
                     </div>
                     <div
-                        className='w-1/2 flex justify-center items-center'
+                        className='sm:w-1/2 flex justify-center items-center'
                     >
                         <h1
                             className='font-bold text-xl text-text-purple'
