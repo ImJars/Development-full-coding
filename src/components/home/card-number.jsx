@@ -12,10 +12,10 @@ function CardNumber({ number, title, text }) {
                     className='flex items-center'
                 >
                     <div
-                        className='mr-10'
+                        className='mr-5 sm:mr-10'
                     >
                         <h1
-                            className='text-7xl font-bold text-text-general opacity-50'
+                            className='text-5xl sm:text-7xl font-bold text-text-general opacity-50'
                         >
                             { number }
                         </h1>
