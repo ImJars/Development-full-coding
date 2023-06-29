@@ -64,10 +64,10 @@ function Footer() {
         </div>
         <div className="border-t border-text-general border-opacity-20 mt-8">
           <div className="flex justify-between mt-5">
-            <h1 className="text-text-general font-semibold text-xs">
-              ©2021, Angel Ramirez
+            <h1 className="text-text-general text-xs">
+              © 2021, Angel Ramirez
             </h1>
-            <h2 className="text-text-general font-semibold text-xs">
+            <h2 className="text-text-general text-xs">
               see the recent update on GitHub
             </h2>
           </div>
