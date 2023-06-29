@@ -8,8 +8,8 @@ function Footer() {
       <div className="flex flex-col font-poppins">
         <div className="flex justify-between">
           <div className="w-1/2 ">
-            <h1 className="text-text-general font-semibold mb-4">About me</h1>
-            <h2 className="text-text-general mb-4 text-sm">
+            <h1 className="text-text-general text-xs sm:text-sm font-semibold mb-4">About me</h1>
+            <h2 className="text-text-general mb-4 text-xs sm:text-sm">
               I'm a full-stack web developer who loves to build things.
             </h2>
             <div className="flex space-x-4 text-xl">
@@ -35,7 +35,7 @@ function Footer() {
           </div>
           <div className="w-1/2 flex justify-between">
             <div>
-              <h1 className="text-text-general font-semibold mb-4">Work</h1>
+              <h1 className="text-text-general text-xs sm:text-sm font-semibold mb-4">Work</h1>
               <FooterLink link={"#"} text={"Contact"} />
               <FooterLink link={"#"} text={"Experience"} />
               <FooterLink
@@ -47,13 +47,13 @@ function Footer() {
               <FooterLink link={"#"} text={"Studio"} />
             </div>
             <div>
-              <h1 className="text-text-general font-semibold mb-4">Learn</h1>
+              <h1 className="text-text-general text-xs sm:text-sm font-semibold mb-4">Learn</h1>
               <FooterLink link={"#"} text={"Docs"} />
               <FooterLink link={"#"} text={"Personal Blog"} />
               <FooterLink link={"#"} text={"T.I.L"} />
             </div>
             <div>
-              <h1 className="text-text-general font-semibold mb-4">
+              <h1 className="text-text-general text-xs sm:text-sm font-semibold mb-4">
                 This Site
               </h1>
               <FooterLink link={"#"} text={"Design Concept"} />

@@ -7,7 +7,7 @@ function FooterLink({ link, classNames, text }) {
                 href={ link }
             >
                 <h1
-                    className={`${ classNames } font-poppins text-sm mb-2 tracking-wider`}
+                    className={`${ classNames } font-poppins text-xs sm:text-sm mb-2`}
                 >
                     { text }
                 </h1>
