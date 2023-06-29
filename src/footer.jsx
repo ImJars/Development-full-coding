@@ -7,7 +7,7 @@ function Footer() {
     <>
       <div className="flex flex-col font-poppins">
         <div className="flex justify-between">
-          <div className="w-1/2 ">
+          <div className="w-1/4 ">
             <h1 className="text-text-general text-xs sm:text-sm font-semibold mb-4">About me</h1>
             <h2 className="text-text-general mb-4 text-xs sm:text-sm">
               I'm a full-stack web developer who loves to build things.
@@ -33,7 +33,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="w-1/2 flex justify-between">
+          <div className="w-3/4 mx-10 flex justify-between">
             <div>
               <h1 className="text-text-general text-xs sm:text-sm font-semibold mb-4">Work</h1>
               <FooterLink link={"#"} text={"Contact"} />
