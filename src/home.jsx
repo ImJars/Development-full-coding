@@ -339,12 +339,10 @@ function Home() {
             </div>
           </section>
         </section>
-        <section className="bg-primary block pb-24">
-          <Wraped>
-            <Footer></Footer>
-          </Wraped>
-        </section>
       </ContentWraped>
+      <section className="bg-primary block pb-24">
+        <Footer></Footer>
+      </section>
     </>
   );
 }
