@@ -54,7 +54,8 @@ function MainFlowbite() {
           </button>
           <motion.div
             animate={mainFlowbite}
-            onClick={scrollTo(0, 0)}
+            // Arreglar el scroll cuando se abre el menu
+            // onClick={scrollTo(0, 0)}
             className="inset-0 fixed invisible flex w-full min-h-screen flex-col p-3 backdrop-blur bg-secondary/90 transition-all duration-200 ease-in-out"
           >
             <div>
@@ -70,7 +71,7 @@ function MainFlowbite() {
                 <div className="flex flex-col gap-2">
                   <div className="px-2 text-xl font-bold">Action Center</div>
                   <div className="flex h-24 gap-4">
-                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
+                    <button className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
                       <div>
                         <MdNightsStay className="text-xl" />
                       </div>
@@ -78,7 +79,7 @@ function MainFlowbite() {
                         Dark Mode:
                       </div>
                     </button>
-                    <button className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
+                    <button className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
                       <div>
                         <AiFillEye className="text-xl" />
                       </div>
@@ -93,7 +94,7 @@ function MainFlowbite() {
                     <div className="px-2 text-xl font-bold">
                       Recent Activities
                     </div>
-                    <div className="scrollbar-hide flex flex-1 basis-0 flex-col gap-2 overflow-y-auto p-2 pb-4 sm:pb-8">
+                    <div className="scrollbar-hide flex flex-1 basis-0 flex-col gap-2 p-2 pb-4 sm:pb-8">
                       <ActivitieComponent
                         link={"https://www.google.com"}
                         title={"REACTION"}
@@ -149,7 +150,7 @@ function MainFlowbite() {
                 </div>
                 <div className="flex flex-1 flex-col">
                   <div className="flex flex-1 flex-col gap-2">
-                    <div className="flex flex-1 basis-0 flex-col gap-2 overflow-y-auto p-2 pb-4 sm:pb-8">
+                    <div className="flex flex-1 basis-0 flex-col gap-2 p-2 pb-4 sm:pb-8">
                       <div>
                         <a
                           href="https://www.google.com"
