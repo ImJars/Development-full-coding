@@ -18,7 +18,7 @@ import { MdVerified } from "react-icons/md";
 import { BiCodeAlt } from "react-icons/bi";
 import TextHome from "./components/home/text-home";
 import SubHome from "./components/home/sub-home";
-import Wraped from "./components/wraped";
+import FooterWraped from "./components/footerWraped";
 import Footer from "./footer";
 
 import { motion, useAnimation } from "framer-motion";
@@ -341,7 +341,9 @@ function Home() {
         </section>
       </ContentWraped>
       <section className="bg-primary block pb-24">
-        <Footer></Footer>
+        <FooterWraped>
+          <Footer />
+        </FooterWraped>
       </section>
     </>
   );
