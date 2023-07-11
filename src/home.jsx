@@ -25,16 +25,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HomeWraped from "./components/homeWraped";
 
-const ContentWraped = styled.div`
-  .content-wrapped {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-`;
-
 const TitleSection = styled.div`
   .greeting {
     font-size: clamp(0.75rem, 0.4524rem + 1.1905vw, 1.25rem);
@@ -46,7 +36,6 @@ const TitleSection = styled.div`
     font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
   }
 `
-
 const Ping = styled.div`
   animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
   @keyframes ping {
@@ -189,7 +178,7 @@ function Home() {
               <TitleSection className="relative z-10">
                 <motion.h1
                   animate={animateHi}
-                  className="font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
+                  className="ml-5 sm:ml-0 font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
                 >
                   Hi!
                 </motion.h1>
@@ -197,7 +186,7 @@ function Home() {
                   animate={animateName}
                   className="font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
                 >
-                  <h2 className="name">
+                  <h2 className="name ml-5 sm:ml-0">
                     I'm&nbsp;
                     <font className="text-text-blue">Angel</font>
                     &nbsp;Ramirez,
@@ -205,7 +194,7 @@ function Home() {
                 </motion.div>
                 <motion.h3
                   animate={animateJob}
-                  className="font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
+                  className="ml-5 sm:ml-0 font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
                 >
                   a full-stack web developer
                 </motion.h3>
@@ -213,8 +202,8 @@ function Home() {
               <div className="flex mt-8">
                 <motion.button
                   animate={animateButton}
-                  className="opacity-0 transform -translate-x-10 bg-text-blue text-white
-                                            rounded-lg px-8 py-2 font-semibold text-sm"
+                  className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 bg-text-blue text-white
+                                            rounded-lg px-4 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
                 >
                   <Buttonned className="font-outfit">
                     Get in Touch
@@ -244,7 +233,7 @@ function Home() {
               </div>
               <motion.div
                 animate={animateStack}
-                className="opacity-0 transform -translate-x-10 mt-36"
+                className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 mt-36"
               >
                 <h1 className="text-xs tracking-wider text-text-general">
                   Current favorite tech stack/tools:
