@@ -19,7 +19,7 @@ const HomeResponsiveWraped = styled.section`
 function HomeWraped({ children }) {
     return (
         <>
-            <HomeResponsiveWraped>
+            <HomeResponsiveWraped className='bg-primary text-white font-poppins'>
                 { children }
             </HomeResponsiveWraped>
         </>

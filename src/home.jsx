@@ -23,6 +23,7 @@ import Footer from "./footer";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import HomeWraped from "./components/homeWraped";
 
 const ContentWraped = styled.div`
   .content-wrapped {
@@ -177,7 +178,8 @@ function Home() {
 
   return (
     <>
-      <ContentWraped
+      <HomeWraped>
+      <div
         ref={ref}
         className="bg-primary text-white font-poppins"
       >
@@ -339,7 +341,8 @@ function Home() {
             </div>
           </section>
         </section>
-      </ContentWraped>
+      </div>
+      </HomeWraped>
       <section className="bg-primary block pb-24">
         <FooterWraped>
           <Footer />
