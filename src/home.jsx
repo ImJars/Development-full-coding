@@ -24,6 +24,7 @@ import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HomeWraped from "./components/homeWraped";
+import CardHome from "./components/home/card-home";
 
 const TitleSection = styled.div`
   .greeting {
@@ -305,6 +306,7 @@ function Home() {
                   "Writing clean code is a top priority while keeping it as optimized as possible."
                 }
               />
+              <CardHome />
             </Cards>
           </div>
         </section>
