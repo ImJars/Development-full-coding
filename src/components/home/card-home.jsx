@@ -1,6 +1,6 @@
 import React from "react";
 
-function CardHome({ icon, title, description }) {
+function CardHome({ extraClassIcon, icon, title, description }) {
   return (
     <>
       <div className="font-poppins border-text-general relative z-10 flex-1 rounded-2xl border border-opacity-10 border-divider-dark bg-slate-900">
@@ -9,7 +9,7 @@ function CardHome({ icon, title, description }) {
         <div className="-mt-0.5">
           <div className="mt-4 mr-2 ml-4 flex items-center gap-6 rounded-full bg-slate-800">
             <div className="-m-2">
-              <div className="rounded-full p-3.5 bg-amber-900 text-lg">
+              <div className={` ${ extraClassIcon } rounded-full p-3.5 text-lg`}>
                 { icon }
               </div>
             </div>

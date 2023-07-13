@@ -307,9 +307,22 @@ function Home() {
                 }
               />
               <CardHome 
+                extraClassIcon={"bg-card-icon-one"}
                 icon={<FaProjectDiagram />}
                 title={"Clean & Intuitive"}
                 description={"Keep the UI clean with a modern touch without compromising UX."}
+              />
+              <CardHome 
+                extraClassIcon={"bg-card-icon-two"}
+                icon={<MdVerified />}
+                title={"Detail Oriented"}
+                description={"Awareness to ease of access, UI consistency, and improved UX."}
+              />
+              <CardHome 
+                extraClassIcon={"bg-card-icon-three"}
+                icon={<BiCodeAlt />}
+                title={"Pretty & Optimized"}
+                description={"Writing clean code is a top priority while keeping it as optimized as possible."}
               />
             </Cards>
           </div>
