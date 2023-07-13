@@ -306,7 +306,11 @@ function Home() {
                   "Writing clean code is a top priority while keeping it as optimized as possible."
                 }
               />
-              <CardHome />
+              <CardHome 
+                icon={<FaProjectDiagram />}
+                title={"Clean & Intuitive"}
+                description={"Keep the UI clean with a modern touch without compromising UX."}
+              />
             </Cards>
           </div>
         </section>
