@@ -12,7 +12,6 @@ import {
 } from "react-icons/si";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import IconHome from "./components/home/icon-home";
-import CardAbout from "./components/home/card-about";
 import { FaProjectDiagram } from "react-icons/fa";
 import { MdVerified } from "react-icons/md";
 import { BiCodeAlt } from "react-icons/bi";
@@ -282,30 +281,6 @@ function Home() {
         <section className="bg-primary block -mt-16 pb-24">
           <div className="content-wrapped">
             <Cards>
-              <CardAbout
-                extraClass={"bg-card-icon-one"}
-                icon={<FaProjectDiagram />}
-                description={"Clean & Intuitive"}
-                text={
-                  "Keep the UI clean with a modern touch without compromising UX."
-                }
-              />
-              <CardAbout
-                extraClass={"bg-card-icon-two"}
-                icon={<MdVerified />}
-                description={"Detail Oriented"}
-                text={
-                  "Awareness to ease of access, UI consistency, and improved UX."
-                }
-              />
-              <CardAbout
-                extraClass={"bg-card-icon-three"}
-                icon={<BiCodeAlt />}
-                description={"Pretty & Optimized"}
-                text={
-                  "Writing clean code is a top priority while keeping it as optimized as possible."
-                }
-              />
               <CardHome 
                 extraClassIcon={"bg-card-icon-one"}
                 icon={<FaProjectDiagram />}
