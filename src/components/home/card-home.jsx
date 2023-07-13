@@ -7,9 +7,9 @@ function CardHome() {
         <div className="border-text-general border-opacity-10 absolute inset-x-0 inset-y-8 z-[-1] border-t border-divider-dark"></div>
         <div className="border-text-general border-opacity-10 absolute inset-y-0 inset-x-8 z-[-1] border-l border-divider-dark"></div>
         <div className="-mt-0.5">
-          <div className="mt-4 mr-2 ml-4 flex items-center gap-6 rounded-full bg-slate-100 dark:bg-slate-800">
+          <div className="mt-4 mr-2 ml-4 flex items-center gap-6 rounded-full bg-slate-800">
             <div className="-m-2">
-              <div className="rounded-full bg-amber-300 p-3.5 dark:bg-amber-900">
+              <div className="rounded-full p-3.5 bg-amber-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -20,12 +20,12 @@ function CardHome() {
                 </svg>
               </div>
             </div>
-            <div className="truncate py-2 pr-4 text-sm font-bold text-slate-700 dark:text-slate-300">
+            <div className="truncate py-2 pr-4 text-sm font-bold text-slate-300">
               Clean &amp; Intuitive
             </div>
           </div>
         </div>
-        <div className="p-4 pl-12 text-sm text-slate-600 dark:text-slate-400">
+        <div className="p-4 pl-12 text-xs sm:text-sm text-text-general">
           Keep the UI clean with a modern touch without compromising UX.
         </div>
       </div>
