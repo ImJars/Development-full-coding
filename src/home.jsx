@@ -25,6 +25,13 @@ import { useInView } from "react-intersection-observer";
 import HomeWraped from "./components/homeWraped";
 import CardHome from "./components/home/card-home";
 
+const HomeSection = styled.section`
+  padding-top: 13rem;
+  padding-bottom: 7rem;
+  .content-wrapped {
+    max-width: 1152px;
+  }
+`;
 const TitleSection = styled.div`
   .greeting {
     font-size: clamp(0.75rem, 0.4524rem + 1.1905vw, 1.25rem);
@@ -35,7 +42,7 @@ const TitleSection = styled.div`
   .job {
     font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
   }
-`
+`;
 const Ping = styled.div`
   animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
   @keyframes ping {
@@ -48,10 +55,10 @@ const Ping = styled.div`
 `;
 const Available = styled.a`
   font-size: clamp(0.5rem, 0.3512rem + 0.5952vw, 0.75rem);
-`
+`;
 const Buttonned = styled.div`
   font-size: clamp(0.625rem, 0.4762rem + 0.5952vw, 0.875rem);
-`
+`;
 
 const Cards = styled.div`
   display: grid;
@@ -168,163 +175,164 @@ function Home() {
   return (
     <>
       <HomeWraped>
-      <div
-        ref={ref}
-        className="bg-primary text-white font-poppins"
-      >
-        <section className="pt-52 pb-28">
-          <div className="content-wrapped">
-            <div className="relative">
-              <TitleSection className="relative z-10">
-                <motion.h1
-                  animate={animateHi}
-                  className="ml-5 sm:ml-0 font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
-                >
-                  Hi!
-                </motion.h1>
-                <motion.div
-                  animate={animateName}
-                  className="font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
-                >
-                  <h2 className="name ml-5 sm:ml-0">
-                    I'm&nbsp;
-                    <font className="text-text-blue">Angel</font>
-                    &nbsp;Ramirez,
-                  </h2>
-                </motion.div>
-                <motion.h3
-                  animate={animateJob}
-                  className="ml-5 sm:ml-0 font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
-                >
-                  a full-stack web developer
-                </motion.h3>
-              </TitleSection>
-              <div className="flex mt-8">
-                <motion.button
-                  animate={animateButton}
-                  className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 bg-text-blue text-white
+        <div ref={ref} className="bg-primary text-white font-poppins">
+          <HomeSection>
+            <div className="content-wrapped block mx-auto">
+              <div className="relative">
+                <TitleSection className="relative z-10">
+                  <motion.h1
+                    animate={animateHi}
+                    className="ml-5 sm:ml-0 font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
+                  >
+                    Hi!
+                  </motion.h1>
+                  <motion.div
+                    animate={animateName}
+                    className="font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
+                  >
+                    <h2 className="name ml-5 sm:ml-0">
+                      I'm&nbsp;
+                      <font className="text-text-blue">Angel</font>
+                      &nbsp;Ramirez,
+                    </h2>
+                  </motion.div>
+                  <motion.h3
+                    animate={animateJob}
+                    className="ml-5 sm:ml-0 font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
+                  >
+                    a full-stack web developer
+                  </motion.h3>
+                </TitleSection>
+                <div className="flex mt-8">
+                  <motion.button
+                    animate={animateButton}
+                    className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 bg-text-blue text-white
                                             rounded-lg px-4 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
-                >
-                  <Buttonned className="font-outfit">
-                    Get in Touch
-                  </Buttonned>
-                </motion.button>
-                <motion.div
-                  animate={animateAvailable}
-                  className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-blue"
-                >
-                  <div className="relative text-3xl">
-                    &#8226;
-                    <div className="absolute top-0 ">
-                      <Ping>
-                        <h1 className="text-3xl">&#8226;</h1>
-                      </Ping>
+                  >
+                    <Buttonned className="font-outfit">Get in Touch</Buttonned>
+                  </motion.button>
+                  <motion.div
+                    animate={animateAvailable}
+                    className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-blue"
+                  >
+                    <div className="relative text-3xl">
+                      &#8226;
+                      <div className="absolute top-0 ">
+                        <Ping>
+                          <h1 className="text-3xl">&#8226;</h1>
+                        </Ping>
+                      </div>
                     </div>
-                  </div>
-                  <span className="flex">
-                    <Available
-                      href="#"
-                      className="uppercase font-outfit font-bold text-xs tracking-wider"
-                    >
-                      &nbsp; Available for hire
-                    </Available>
-                  </span>
+                    <span className="flex">
+                      <Available
+                        href="#"
+                        className="uppercase font-outfit font-bold text-xs tracking-wider"
+                      >
+                        &nbsp; Available for hire
+                      </Available>
+                    </span>
+                  </motion.div>
+                </div>
+                <motion.div
+                  animate={animateStack}
+                  className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 mt-36"
+                >
+                  <h1 className="text-xs tracking-wider text-text-general">
+                    Current favorite tech stack/tools:
+                  </h1>
+                  <ul className="flex items-center mt-4 space-x-2 sm:space-x-3">
+                    <IconHome
+                      classNames={"hover:text-js-icon"}
+                      icon={<SiJavascript />}
+                    />
+                    <IconHome
+                      classNames={"hover:text-react-icon"}
+                      icon={<SiReact />}
+                    />
+                    <IconHome
+                      classNames={"hover:text-tailwind-icon"}
+                      icon={<SiTailwindcss />}
+                    />
+                    <IconHome
+                      classNames={"hover:text-python-icon"}
+                      icon={<SiPython />}
+                    />
+                    <IconHome
+                      classNames={"hover:text-solidity-icon"}
+                      icon={<SiSolidity />}
+                    />
+                    <li className="text-xl text-text-general">
+                      <HiOutlineDotsVertical />
+                    </li>
+                    <IconHome
+                      classNames={"hover:text-vs-code-icon"}
+                      icon={<SiVisualstudiocode />}
+                    />
+                    <IconHome
+                      classNames={"hover:text-framer-icon"}
+                      icon={<SiFramer />}
+                    />
+                  </ul>
                 </motion.div>
-              </div>
-              <motion.div
-                animate={animateStack}
-                className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 mt-36"
-              >
-                <h1 className="text-xs tracking-wider text-text-general">
-                  Current favorite tech stack/tools:
-                </h1>
-                <ul className="flex items-center mt-4 space-x-2 sm:space-x-3">
-                  <IconHome
-                    classNames={"hover:text-js-icon"}
-                    icon={<SiJavascript />}
-                  />
-                  <IconHome
-                    classNames={"hover:text-react-icon"}
-                    icon={<SiReact />}
-                  />
-                  <IconHome
-                    classNames={"hover:text-tailwind-icon"}
-                    icon={<SiTailwindcss />}
-                  />
-                  <IconHome
-                    classNames={"hover:text-python-icon"}
-                    icon={<SiPython />}
-                  />
-                  <IconHome
-                    classNames={"hover:text-solidity-icon"}
-                    icon={<SiSolidity />}
-                  />
-                  <li className="text-xl text-text-general">
-                    <HiOutlineDotsVertical />
-                  </li>
-                  <IconHome
-                    classNames={"hover:text-vs-code-icon"}
-                    icon={<SiVisualstudiocode />}
-                  />
-                  <IconHome
-                    classNames={"hover:text-framer-icon"}
-                    icon={<SiFramer />}
-                  />
-                </ul>
-              </motion.div>
-              <div className="hidden sm:block absolute -top-10 right-0 z-0">
-                <img className="w-80" src={Img} alt="" />
+                <div className="hidden sm:block absolute -top-10 right-0 z-0">
+                  <img className="w-80" src={Img} alt="" />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section className="bg-primary block -mt-16 pb-24">
-          <div className="content-wrapped">
-            <Cards>
-              <CardHome 
-                extraClassIcon={"bg-card-icon-one"}
-                icon={<FaProjectDiagram />}
-                title={"Clean & Intuitive"}
-                description={"Keep the UI clean with a modern touch without compromising UX."}
-              />
-              <CardHome 
-                extraClassIcon={"bg-card-icon-two"}
-                icon={<MdVerified />}
-                title={"Detail Oriented"}
-                description={"Awareness to ease of access, UI consistency, and improved UX."}
-              />
-              <CardHome 
-                extraClassIcon={"bg-card-icon-three"}
-                icon={<BiCodeAlt />}
-                title={"Pretty & Optimized"}
-                description={"Writing clean code is a top priority while keeping it as optimized as possible."}
-              />
-            </Cards>
-          </div>
-        </section>
-        <section className="bg-primary block -mt-16 pb-24">
-          <div className="content-wrapped">
-            <TextHome
-              text_one={"― I must be willing to give "}
-              text_two={" up what I am to become "}
-              text_three={" what I will be. ―"}
-            />
-          </div>
-        </section>
-        <section className="bg-primary block -mt-16 pb-24">
-          <section className="content-wrapped">
-            <div>
-              <SubHome
-                title={"Clean & Intuitive"}
-                subtitle={"Eye Catching, Modern & Minimalist Design."}
-                text={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus"
-                }
+          </HomeSection>
+          <section className="bg-primary block -mt-16 pb-24">
+            <div className="content-wrapped">
+              <Cards>
+                <CardHome
+                  extraClassIcon={"bg-card-icon-one"}
+                  icon={<FaProjectDiagram />}
+                  title={"Clean & Intuitive"}
+                  description={
+                    "Keep the UI clean with a modern touch without compromising UX."
+                  }
+                />
+                <CardHome
+                  extraClassIcon={"bg-card-icon-two"}
+                  icon={<MdVerified />}
+                  title={"Detail Oriented"}
+                  description={
+                    "Awareness to ease of access, UI consistency, and improved UX."
+                  }
+                />
+                <CardHome
+                  extraClassIcon={"bg-card-icon-three"}
+                  icon={<BiCodeAlt />}
+                  title={"Pretty & Optimized"}
+                  description={
+                    "Writing clean code is a top priority while keeping it as optimized as possible."
+                  }
+                />
+              </Cards>
+            </div>
+          </section>
+          <section className="bg-primary block -mt-16 pb-24">
+            <div className="content-wrapped">
+              <TextHome
+                text_one={"― I must be willing to give "}
+                text_two={" up what I am to become "}
+                text_three={" what I will be. ―"}
               />
             </div>
           </section>
-        </section>
-      </div>
+          <section className="bg-primary block -mt-16 pb-24">
+            <section className="content-wrapped">
+              <div>
+                <SubHome
+                  title={"Clean & Intuitive"}
+                  subtitle={"Eye Catching, Modern & Minimalist Design."}
+                  text={
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus"
+                  }
+                />
+              </div>
+            </section>
+          </section>
+        </div>
       </HomeWraped>
       <section className="bg-primary block pb-24">
         <FooterWraped>
