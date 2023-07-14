@@ -26,8 +26,7 @@ import HomeWraped from "./components/homeWraped";
 import CardHome from "./components/home/card-home";
 
 const HomeSection = styled.section`
-  padding-top: 13rem;
-  padding-bottom: 7rem;
+display: block;
   .content-wrapped {
     max-width: 1152px;
   }
@@ -177,7 +176,7 @@ function Home() {
       <HomeWraped>
         <div ref={ref} className="bg-primary text-white font-poppins">
           <HomeSection>
-            <div className="content-wrapped block mx-auto">
+            <div className="content-wrapped block mx-auto pt-52 pb-28">
               <div className="relative">
                 <TitleSection className="relative z-10">
                   <motion.h1
@@ -280,8 +279,8 @@ function Home() {
               </div>
             </div>
           </HomeSection>
-          <section className="bg-primary block -mt-16 pb-24">
-            <div className="content-wrapped">
+          <HomeSection className="-mt-10 pb-24 mx-5 sm:mx-0">
+            <div className="content-wrapped block mx-auto">
               <Cards>
                 <CardHome
                   extraClassIcon={"bg-card-icon-one"}
@@ -309,7 +308,7 @@ function Home() {
                 />
               </Cards>
             </div>
-          </section>
+          </HomeSection>
           <section className="bg-primary block -mt-16 pb-24">
             <div className="content-wrapped">
               <TextHome
