@@ -1,30 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 
-function TextHome({ text_one, text_two, text_three }) {
+const Texto = styled.span`
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4rem);
+`
+
+function TextHome({ text }) {
     return (
         <>
             <div
-                className='flex justify-center items-center py-10'
+                className='flex justify-center items-center py-10 text-center'
             >
-                <span
-                    className='flex flex-col items-center space-y-2'
-                >
-                    <span
-                        className='font-semibold text-2xl sm:text-6xl text-text-general'
-                    >
-                        { text_one }
-                    </span>
-                    <span
-                        className='font-semibold text-2xl sm:text-6xl text-text-general'
-                    >
-                        { text_two }
-                    </span>
-                    <span
-                        className='font-semibold text-2xl sm:text-6xl text-text-general'
-                    >
-                        { text_three }
-                    </span>
-                </span>
+                <Texto>
+                    { text }
+                </Texto>
             </div>
         </>
     )

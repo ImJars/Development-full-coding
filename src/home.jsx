@@ -309,15 +309,13 @@ function Home() {
               </Cards>
             </div>
           </HomeSection>
-          <section className="bg-primary block -mt-16 pb-24">
-            <div className="content-wrapped">
+          <HomeSection className="-mt-16 pb-24 mx-5 sm:mx-0">
+            <div className="content-wrapped mx-auto">
               <TextHome
-                text_one={"― I must be willing to give "}
-                text_two={" up what I am to become "}
-                text_three={" what I will be. ―"}
+                text={'A person with a new idea is a crank until the idea succeedsS'}
               />
             </div>
-          </section>
+          </HomeSection>
           <section className="bg-primary block -mt-16 pb-24">
             <section className="content-wrapped">
               <div>
