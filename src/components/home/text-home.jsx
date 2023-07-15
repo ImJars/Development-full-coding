@@ -10,11 +10,11 @@ function TextHome({ text }) {
     <>
       <div className="flex justify-center items-center py-10 text-center">
         <Texto className="font-poppins font-semibold italic text-text-white-gray text-opacity-50">
-          <font className="text-7xl text-text-general opacity-100">
+          <font className="text-text-general opacity-100">
             &#8220;&nbsp;
           </font>
           {text}
-          <font className="text-7xl text-text-general opacity-100">
+          <font className="text-text-general opacity-100">
             &nbsp;&#8221;
           </font>
         </Texto>

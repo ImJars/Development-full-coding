@@ -306,6 +306,14 @@ function Home() {
                     "Writing clean code is a top priority while keeping it as optimized as possible."
                   }
                 />
+                <CardHome
+                  extraClassIcon={"bg-text-blue"}
+                  icon={<BiCodeAlt />}
+                  title={"Pretty & Optimized"}
+                  description={
+                    "Writing clean code is a top priority while keeping it as optimized as possible."
+                  }
+                />
               </Cards>
             </div>
           </HomeSection>
