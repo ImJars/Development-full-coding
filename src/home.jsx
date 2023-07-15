@@ -312,7 +312,7 @@ function Home() {
           <HomeSection className="-mt-16 pb-24 mx-5 sm:mx-0">
             <div className="content-wrapped mx-auto">
               <TextHome
-                text={'A person with a new idea is a crank until the idea succeedsS'}
+                text={'A person with a new idea is a crank until the idea succeeds'}
               />
             </div>
           </HomeSection>
