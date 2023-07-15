@@ -324,8 +324,8 @@ function Home() {
               />
             </div>
           </HomeSection>
-          <section className="bg-primary block -mt-16 pb-24">
-            <section className="content-wrapped">
+          <HomeSection className="-mt-16 pb-24 mx-5 sm:mx-0">
+            <section className="content-wrapped mx-auto">
               <div>
                 <SubHome
                   title={"Clean & Intuitive"}
@@ -336,7 +336,7 @@ function Home() {
                 />
               </div>
             </section>
-          </section>
+          </HomeSection>
         </div>
       </HomeWraped>
       <section className="bg-primary block pb-24">
