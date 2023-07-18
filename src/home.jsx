@@ -339,7 +339,7 @@ function Home() {
           </HomeSection>
         </div>
       </HomeWraped>
-      <section className="bg-primary block pb-5">
+      <section className="bg-primary border-t border-opacity-20 border-text-general mx-auto">
         <FooterWraped>
           <Footer />
         </FooterWraped>

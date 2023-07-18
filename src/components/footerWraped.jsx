@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const FooterContentWraped = styled.section`
   @media (max-width: 639px) {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: .5rem;
     padding-right: .5rem;
   }
@@ -19,7 +19,7 @@ const FooterContentWraped = styled.section`
 function FooterWraped({ children }) {
   return (
     <>
-      <FooterContentWraped>{children}</FooterContentWraped>
+      <FooterContentWraped className="mt-5 mx-auto">{children}</FooterContentWraped>
     </>
   );
 }

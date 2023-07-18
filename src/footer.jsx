@@ -5,7 +5,7 @@ import FooterLink from "./components/footer/footerLinks";
 function Footer() {
   return (
     <>
-      <div className="flex flex-col font-poppins text-text-general">
+      <div className="flex mx-auto flex-col font-poppins text-text-general">
         <div className="flex justify-between">
           <div className="w-1/4 mr-5">
             <h1 className="text-text-general text-xs sm:text-sm font-semibold mb-4">About me</h1>
