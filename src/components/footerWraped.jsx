@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const FooterContentWraped = styled.section`
   @media (max-width: 639px) {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
     padding-left: .5rem;
     padding-right: .5rem;
   }
