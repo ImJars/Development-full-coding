@@ -40,8 +40,8 @@ function Header() {
             : "navbar border-0 border-opacity-0 border-text-general"
         }
       >
-        <div className="flex justify-between items-center w-full h-full px-10">
-          <div className="flex space-x-6 items-center">
+        <div className="flex justify-between items-center w-full h-full mx-auto px-5">
+          <div className="flex space-x-4 sm:space-x-6 items-center">
             <div className="sm:mr-8 flex justify-center items-center">
               <Link className="flex justify-center items-center" to="/">
                 <div className="flex sm:text-xl font-bold tracking-wide space-x-1 ">
