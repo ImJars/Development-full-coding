@@ -57,7 +57,9 @@ module.exports = {
         spin: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       },
       inset: {
+        'Flowbite-0': '0px',
         'Flowbite': '70px',
+        'Flowbite-2': '250px',
       }
     },
   },

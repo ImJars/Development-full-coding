@@ -15,7 +15,7 @@ const StyleLink = styled.a`
     color: rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease-in-out;
   }
-`
+`;
 
 function HeaderFlowbite() {
   const [active, setActive] = useState(false);
@@ -81,12 +81,16 @@ function HeaderFlowbite() {
           </button>
           <motion.div
             animate={animateFlowbite}
-            className="opacity-0 absolute border-text-general border-opacity-20 top-Flowbite flex w-40 flex-col rounded-2xl border p-3 backdrop-blur bg-secondary/90"
+            className="opacity-0 absolute border-text-general border-opacity-20 top-16 flex w-[150px] flex-col rounded-2xl border p-2 bg-secondary/95"
           >
-            <StyleLink className="nav-link h-8 text-xs">Skills &amp; Tools</StyleLink>
-            <StyleLink className="nav-link h-8 text-xs">Experience</StyleLink>
-            <StyleLink className="nav-link h-8 text-xs">Studio</StyleLink>
-            <StyleLink className="nav-link h-8 text-xs">Contact</StyleLink>
+            <div className="">
+              <StyleLink className="nav-link h-8 text-xs">
+                Skills &amp; Tools
+              </StyleLink>
+              <StyleLink className="nav-link h-8 text-xs">Experience</StyleLink>
+              <StyleLink className="nav-link h-8 text-xs">Studio</StyleLink>
+              <StyleLink className="nav-link h-8 text-xs">Contact</StyleLink>
+            </div>
           </motion.div>
         </div>
       </li>
