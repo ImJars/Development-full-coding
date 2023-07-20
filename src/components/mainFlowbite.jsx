@@ -122,29 +122,11 @@ function MainFlowbite() {
                         text_3={"BLOG POST"}
                         text_4={"got new"}
                       />
-                      <ActivitieComponent
-                        link={"https://www.google.com"}
-                        title={"REACTION"}
-                        hours={"2 hours ago"}
-                        text_1={"the"}
-                        text_2_purple={"Tentang Next.js dan Tailwind CSS 🔥"}
-                        text_3={"BLOG POST"}
-                        text_4={"got new"}
-                      />
-                      <ActivitieComponent
-                        link={"https://www.google.com"}
-                        title={"REACTION"}
-                        hours={"2 hours ago"}
-                        text_1={"the"}
-                        text_2_purple={"Tentang Next.js dan Tailwind CSS 🔥"}
-                        text_3={"BLOG POST"}
-                        text_4={"got new"}
-                      />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="fixed left-2 right-2 bottom-0 top-3/4 flex flex-col gap-6 sm:left-6 sm:top-24 sm:w-[320px]">
+              <div className="fixed left-2 right-2 bottom-0 top-2/3 flex flex-col gap-6 sm:left-6 sm:top-24 sm:w-[320px]">
                 <div className="flex flex-col gap-2">
                   <div className="px-2 text-xl font-bold">Note / Notice</div>
                 </div>
