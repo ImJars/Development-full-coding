@@ -16,15 +16,15 @@ function SubHome({ title, subtitle, text }) {
                     { subtitle }
                 </h2>
                 <h3
-                    className='sm:w-1/2 text-xs sm:text-base text-text-general mb-5'
+                    className='text-xs sm:text-base text-text-general mb-5'
                 >
                     { text }
                 </h3>
                 <div
-                    className='sm:flex'
+                    className='flex justify-center'
                 >
                     <div
-                        className='sm:w-1/2'
+                        className='flex gap-5'
                     >
                         <CardNumber 
                             number={ '1' }
@@ -46,15 +46,6 @@ function SubHome({ title, subtitle, text }) {
                             title={ 'Effects' }
                             text={ 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
                         />
-                    </div>
-                    <div
-                        className='sm:w-1/2 flex justify-center items-center'
-                    >
-                        <h1
-                            className='font-bold text-xl text-text-purple'
-                        >
-                            Example designed with Tailwind CSS
-                        </h1>
                     </div>
                 </div>
             </div>

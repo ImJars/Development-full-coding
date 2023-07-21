@@ -26,7 +26,7 @@ import HomeWraped from "./components/homeWraped";
 import CardHome from "./components/home/card-home";
 
 const HomeSection = styled.section`
-display: block;
+  display: block;
   .content-wrapped {
     max-width: 1152px;
   }
@@ -320,7 +320,9 @@ function Home() {
           <HomeSection className="-mt-16 pb-24 mx-5 sm:mx-0">
             <div className="content-wrapped mx-auto">
               <TextHome
-                text={'A person with a new idea is a crank until the idea succeeds'}
+                text={
+                  "A person with a new idea is a crank until the idea succeeds"
+                }
               />
             </div>
           </HomeSection>
@@ -331,7 +333,7 @@ function Home() {
                   title={"Clean & Intuitive"}
                   subtitle={"Eye Catching, Modern & Minimalist Design."}
                   text={
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus"
                   }
                 />
               </div>

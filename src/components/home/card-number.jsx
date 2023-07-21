@@ -9,10 +9,10 @@ function CardNumber({ number, title, text }) {
                             border border-text-general border-opacity-10'
             >
                 <div
-                    className='flex items-center'
+                    className='flex flex-col items-center justify-center'
                 >
                     <div
-                        className='mr-5 sm:mr-10'
+                        className='flex justify-center items-center'
                     >
                         <h1
                             className='text-5xl sm:text-7xl font-bold text-text-general opacity-50'
@@ -21,7 +21,7 @@ function CardNumber({ number, title, text }) {
                         </h1>
                     </div>
                     <div
-                        className=''
+                        className='flex flex-col items-center justify-center'
                     >
                         <h1
                             className='font-semibold sm:font-bold'
@@ -29,7 +29,7 @@ function CardNumber({ number, title, text }) {
                             { title }
                         </h1>
                         <h2
-                            className='text-text-general text-xs sm:text-sm mt-1'
+                            className='text-text-general text-xs sm:text-sm mt-1 text-center'
                         >
                             { text }
                         </h2>
