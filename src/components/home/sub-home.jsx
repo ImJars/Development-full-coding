@@ -6,17 +6,17 @@ function SubHome({ title, subtitle, text }) {
         <>
             <div>
                 <h1
-                    className='text-lg font-bold text-text-purple mb-2'
+                    className='text-xs sm:text-lg font-bold text-text-purple mb-1'
                 >
                     { title }
                 </h1>
                 <h2
-                    className='text-3xl sm:text-4xl font-bold mb-5'
+                    className='text-xl sm:text-3xl font-bold mb-2'
                 >
                     { subtitle }
                 </h2>
                 <h3
-                    className='sm:w-1/2 text-sm sm:text-base text-text-general mb-5'
+                    className='sm:w-1/2 text-xs sm:text-base text-text-general mb-5'
                 >
                     { text }
                 </h3>
