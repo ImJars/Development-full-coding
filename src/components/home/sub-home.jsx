@@ -16,7 +16,7 @@ function SubHome({ title, subtitle, text }) {
                     { subtitle }
                 </h2>
                 <h3
-                    className='text-xs sm:text-base text-text-general mb-5'
+                    className='text-xs sm:text-base text-text-general mb-14'
                 >
                     { text }
                 </h3>
@@ -24,7 +24,7 @@ function SubHome({ title, subtitle, text }) {
                     className='flex justify-center'
                 >
                     <div
-                        className='flex gap-5'
+                        className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0 '
                     >
                         <CardNumber 
                             number={ '1' }
