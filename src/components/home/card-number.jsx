@@ -15,7 +15,7 @@ function CardNumber({ number, title, text }) {
                         className='flex justify-center items-center'
                     >
                         <h1
-                            className='text-5xl sm:text-7xl font-bold text-text-general opacity-50'
+                            className='text-3xl sm:text-7xl font-bold text-text-general opacity-50'
                         >
                             { number }
                         </h1>
@@ -24,12 +24,12 @@ function CardNumber({ number, title, text }) {
                         className='flex flex-col items-center justify-center'
                     >
                         <h1
-                            className='font-semibold sm:font-bold'
+                            className='font-semibold sm:font-bold text-xs sm:text-base mt-2'
                         >
                             { title }
                         </h1>
                         <h2
-                            className='text-text-general text-xs sm:text-sm mt-1 text-center'
+                            className='text-text-general text-xs sm:text-sm mt-2 text-center'
                         >
                             { text }
                         </h2>
