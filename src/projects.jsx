@@ -6,6 +6,13 @@ import { FaGithub, FaUserFriends, FaProjectDiagram } from 'react-icons/fa'
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
+import styled from 'styled-components';
+
+const TitleSection = styled.div`
+    .Title-Name{
+        font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+    }
+`
 
 function Projects() {
     const { ref, inView } = useInView({
@@ -55,10 +62,10 @@ function Projects() {
                     <div
                         className='pb-20'
                     >
-                        <div>
+                        <TitleSection>
                             <motion.h1
                                 animate={ animateTitle }
-                                className='opacity-0 transform -translate-x-10 text-7xl font-bold tracking-wide pt-40'
+                                className='Title-Name opacity-0 transform -translate-x-10 text-7xl font-bold tracking-wide pt-40'
                             >
                                 Projects
                             </motion.h1>
@@ -68,7 +75,7 @@ function Projects() {
                             >
                                 Showcase of my full-stack related work.
                             </motion.h2>
-                        </div>
+                        </TitleSection>
                         <div
                             className='mt-20'
                         >
