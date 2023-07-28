@@ -12,6 +12,9 @@ const TitleSection = styled.div`
     .Title-Name{
         font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
     }
+    .Subtitle-Text{
+        font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
+    }
 `
 
 function Projects() {
@@ -71,7 +74,7 @@ function Projects() {
                             </motion.h1>
                             <motion.h2
                                 animate={ animateSubTitle }
-                                className='opacity-0 transform -translate-x-10 text-text-general text-2xl tracking-wide mt-8'
+                                className='Subtitle-Text opacity-0 transform -translate-x-10 text-text-general text-2xl tracking-wide mt-8'
                             >
                                 Showcase of my full-stack related work.
                             </motion.h2>
