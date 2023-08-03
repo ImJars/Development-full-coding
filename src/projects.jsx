@@ -22,6 +22,9 @@ const TitleSection = styled.div`
   .Subtitle-Text {
     font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
   }
+  .dynamic-text{
+    font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
+  }
 `;
 
 function Projects() {
@@ -91,17 +94,17 @@ function Projects() {
             </div>
             <div className="mt-20 content-wrapped block mx-auto">
               <TitleSection className="mx-5 sm:mx-0">
-                <h1 className="text-sm text-text-purple font-bold tracking-wide mb-4">
+                <h1 className="text-sm text-text-purple font-bold tracking-wide mb-1">
                   tailwindcss-accent
                 </h1>
-                <h2 className="text-4xl font-bold tracking-wide">
+                <h2 className="dynamic-text font-bold tracking-wide">
                   The dynamic accent colors.
                 </h2>
-                <h3 className="text-text-general tracking-wide mt-5 w-1/2">
+                <h3 className="text-text-general text-sm sm:text-base mt-1 sm:w-1/2">
                   Add accent colors for dynamic, flexible color use in your
                   Tailwind CSS project.
                 </h3>
-                <button className="mt-5 bg-text-purple text-white px-8 py-3 rounded-full bg-opacity-10">
+                <button className="mt-4 bg-text-purple text-white px-8 py-3 rounded-full bg-opacity-10">
                   <a
                     href="#"
                     className="flex items-center text-sm text-text-purple font-semibold space-x-1"
