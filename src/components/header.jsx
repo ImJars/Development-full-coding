@@ -50,8 +50,8 @@ function Header() {
                   </div>
                   <div className=" hidden sm:block">
                     <div className="flex">
-                    <h1>&nbsp;jars</h1>
-                    <h2 className="text-text-purple">dev</h2>
+                      <h1>&nbsp;jars</h1>
+                      <h2 className="text-text-purple">dev</h2>
                     </div>
                   </div>
                 </div>
@@ -103,10 +103,16 @@ function Header() {
             <div className="hidden items-center sm:flex">
               <a
                 href="#"
+                className="text-xl hover:bg-card hover:bg-opacity-50 rounded-xl px-3 py-1"
+              >
+                𝕏
+              </a>
+              {/* <a
+                href="#"
                 className="text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2"
               >
                 <BsTwitter />
-              </a>
+              </a> */}
               <a
                 href="#"
                 className="text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2"
