@@ -7,7 +7,6 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
-import HomeWraped from "./components/homeWraped";
 
 const ProjectSection = styled.section`
   display: block;
@@ -27,7 +26,7 @@ const TitleSection = styled.div`
 
 function Projects() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
     triggerOnce: true,
   });
   const animateTitle = useAnimation();
@@ -68,15 +67,14 @@ function Projects() {
 
   return (
     <>
-      <HomeWraped>
-        <section ref={ref} className="bg-primary w-full text-white">
-          <ProjectSection className="pb-20">
+      <Wraped>
+        <section ref={ref} className="bg-primary w-full h-full text-white">
+          <ProjectSection className="pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <div className="relative">
-                <TitleSection className=" mx-5 sm:mx-0">
+                <TitleSection className="mx-5 sm:mx-0">
                   <motion.h1
                     animate={animateTitle}
-                    className="Title-Name opacity-0 transform -translate-x-10 text-7xl font-bold tracking-wide pt-40"
+                    className="bg-primary Title-Name opacity-0 transform -translate-x-10 text-7xl font-bold tracking-wide"
                   >
                     Projects
                   </motion.h1>
@@ -88,7 +86,6 @@ function Projects() {
                   </motion.h2>
                 </TitleSection>
               </div>
-            </div>
             <div className="mt-20">
               <h1 className="text-sm text-text-purple font-bold tracking-wide mb-4">
                 tailwindcss-accent
@@ -149,7 +146,7 @@ function Projects() {
             <Footer />
           </Wraped>
         </section>
-      </HomeWraped>
+      </Wraped>
     </>
   );
 }
