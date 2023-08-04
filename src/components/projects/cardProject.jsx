@@ -6,16 +6,15 @@ function CardProject({ icon, title, text }) {
         <div
             className='bg-secondary flex justify-center
                         items-center rounded-2xl p-5 mb-5
-                        border border-text-general border-opacity-10'
+                        border border-text-general border-opacity-10 font-poppins'
         >
             <div
                 className='flex items-center'
             >
                 <div
-                    className='mr-10 ml-4'
-                >
+                    className='mr-4'                >
                     <h1
-                        className='text-7xl font-bold text-text-general opacity-50'
+                        className='text-6xl font-bold text-text-general opacity-50'
                     >
                         { icon }
                     </h1>
@@ -24,12 +23,12 @@ function CardProject({ icon, title, text }) {
                     className=''
                 >
                     <h1
-                        className='font-bold'
+                        className='font-bold xl:text-sm'
                     >
                         { title }
                     </h1>
                     <h2
-                        className='text-text-general text-sm mt-1'
+                        className='text-text-general text-xs mt-1'
                     >
                         { text }
                     </h2>

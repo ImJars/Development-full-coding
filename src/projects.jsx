@@ -75,7 +75,7 @@ function Projects() {
           ref={ref}
           className="bg-primary w-full h-full text-white font-poppins"
         >
-          <ProjectSection className="pb-20 pt-40">
+          <ProjectSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-5 sm:mx-0">
                 <motion.h1
