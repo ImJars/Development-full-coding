@@ -22,7 +22,7 @@ const TitleSection = styled.div`
   .Subtitle-Text {
     font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
   }
-  .dynamic-text{
+  .dynamic-text {
     font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
   }
 `;
@@ -123,33 +123,34 @@ function Projects() {
               </TitleSection>
             </div>
           </ProjectSection>
-          <div>
-            <div>
-              <div className="w-1/2">
-                <CardProject
-                  icon={<FaGithub />}
-                  title="tailwindcss-accent"
-                  text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
-                />
-                <CardProject
-                  icon={<BsFillCheckCircleFill />}
-                  title="tailwindcss-accent"
-                  text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
-                />
-                <CardProject
-                  icon={<FaUserFriends />}
-                  title="tailwindcss-accent"
-                  text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
-                />
-                <CardProject
-                  icon={<FaProjectDiagram />}
-                  title="tailwindcss-accent"
-                  text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
-                />
-              </div>
-              <div></div>
+          <ProjectSection>
+            <div className="mb-20 content-wrapped block mx-auto">
+              <TitleSection className="mx-5 sm:mx-0">
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-4 gap-y-0">
+                  <CardProject
+                    icon={<FaGithub />}
+                    title="tailwindcss-accent"
+                    text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+                  />
+                  <CardProject
+                    icon={<BsFillCheckCircleFill />}
+                    title="tailwindcss-accent"
+                    text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+                  />
+                  <CardProject
+                    icon={<FaUserFriends />}
+                    title="tailwindcss-accent"
+                    text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+                  />
+                  <CardProject
+                    icon={<FaProjectDiagram />}
+                    title="tailwindcss-accent"
+                    text="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+                  />
+                </div>
+              </TitleSection>
             </div>
-          </div>
+          </ProjectSection>
           <Wraped>
             <Footer />
           </Wraped>
