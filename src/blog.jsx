@@ -89,44 +89,48 @@ function Blog() {
               </TitleSection>
             </div>
           </BlogSection>
-          <div className="flex flex-col gap-8 md:flex-row md:gap-8 lg:gap-24">
-            <div className="md:w-64" />
-            <div className="flex-1">
-              <PinedCard
-                date="February 12, 2021 • English"
-                title="Tailwind CSS: Best Practices"
-                description="A collection of best practices for Tailwind CSS."
-              />
-              <Card
-                date={"January 6, 2023 • English"}
-                title={"Tentang Next.js dan Tailwind CSS"}
-                description={
-                  "First impression menggunakan Next.js, Tailwind CSS, Framer Motion setelah tiga bulan."
-                }
-              />
-              <Card
-                date={"January 6, 2023 • English"}
-                title={"Javascript: The Good Parts"}
-                description={
-                  "Javascript is a good language. It is the best language. It is the only language in the world"
-                }
-              />
-              <Card
-                date={"January 6, 2023 • English"}
-                title={"React hooks vs. class components"}
-                description={
-                  "React hooks are a new addition in React 16.8. They let you use state and other React"
-                }
-              />
-              <Card
-                date={"January 6, 2023 • English"}
-                title={"Tailwind CSS vs. Bootstrap"}
-                description={
-                  "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces."
-                }
-              />
+          <BlogSection>
+            <div className="mb-20 content-wrapped block mx-auto">
+              <TitleSection className="mx-5 sm:mx-0 flex">
+                <div className="md:w-1/3" />
+                <div className="flex-1">
+                  <PinedCard
+                    date="February 12, 2021 • English"
+                    title="Tailwind CSS: Best Practices"
+                    description="A collection of best practices for Tailwind CSS."
+                  />
+                  <Card
+                    date={"January 6, 2023 • English"}
+                    title={"Tentang Next.js dan Tailwind CSS"}
+                    description={
+                      "First impression menggunakan Next.js, Tailwind CSS, Framer Motion setelah tiga bulan."
+                    }
+                  />
+                  <Card
+                    date={"January 6, 2023 • English"}
+                    title={"Javascript: The Good Parts"}
+                    description={
+                      "Javascript is a good language. It is the best language. It is the only language in the world"
+                    }
+                  />
+                  <Card
+                    date={"January 6, 2023 • English"}
+                    title={"React hooks vs. class components"}
+                    description={
+                      "React hooks are a new addition in React 16.8. They let you use state and other React"
+                    }
+                  />
+                  <Card
+                    date={"January 6, 2023 • English"}
+                    title={"Tailwind CSS vs. Bootstrap"}
+                    description={
+                      "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces."
+                    }
+                  />
+                </div>
+              </TitleSection>
             </div>
-          </div>
+          </BlogSection>
           <div className="mt-20">
             <Footter />
           </div>
