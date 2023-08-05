@@ -7,7 +7,7 @@ function PinedCard({ date, title, description }) {
     return (
         <>
             <div
-                className='border border-text-general rounded-2xl border-opacity-10 mb-8'
+                className='border font-poppins border-text-general rounded-2xl border-opacity-10 mb-8'
             >
                 <div
                     className='p-6 block'
@@ -16,10 +16,10 @@ function PinedCard({ date, title, description }) {
                         className='flex space-x-2 items-center mb-4 text-text-purple'
                     >
                         <BsPinFill 
-                            className='text-xl'
+                            className='text-lg sm:text-xl transform -rotate-45'
                         />
                         <h1
-                            className='font-semibold'
+                            className='font-bold text-base sm:text-lg'
                         >
                             Pinned Post
                         </h1>
@@ -30,17 +30,17 @@ function PinedCard({ date, title, description }) {
                         { date }
                     </h1>
                     <h2
-                        className='text-text-white-gray text-2xl font-bold mb-2 tracking-wide'
+                        className='block text-text-white-gray text-lg sm:text-2xl font-bold mb-2 tracking-wide'
                     >
                         { title }
                     </h2>
                     <h3
-                        className='text-text-general tracking-wide text-lg'
+                        className='block text-text-general tracking-wide text-sm sm:text-lg'
                     >
                         { description }
                     </h3>
                     <div
-                        className='flex space-x-2 items-center mt-2'
+                        className='flex space-x-2 items-center mt-4'
                     >   
                         <div
                             className='flex items-center text-text-general text-xs space-x-1'
