@@ -5,12 +5,32 @@ import Wraped from "./components/wraped";
 import Footter from "./footer";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import styled from "styled-components";
+
+const BlogSection = styled.section`
+  display: block;
+  .content-wrapped {
+    max-width: 1152px;
+  }
+`;
+
+const TitleSection = styled.div`
+  .Title-Name {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+  .Subtitle-Text {
+    font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
+  }
+  .dynamic-text {
+    font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
+  }
+`;
 
 function Blog() {
-    const { ref, inView } = useInView({
-        threshold: 0.1,
-        triggerOnce: true      
-    });
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
   const animateTitleBlog = useAnimation();
   const animateSubTitleBlog = useAnimation();
 
@@ -20,50 +40,55 @@ function Blog() {
         x: 0,
         opacity: 1,
         transition: {
-            type: 'spring', duration: .5, delay: 0.1
+          type: "spring",
+          duration: 0.5,
+          delay: 0.1,
         },
       });
-        animateSubTitleBlog.start({
-            x: 0,
-            opacity: 1,
-            transition: {
-                type: 'spring', duration: .5, delay: 0.3
-            }
-        })
+      animateSubTitleBlog.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+          delay: 0.3,
+        },
+      });
     }
     if (!inView) {
       animateTitleBlog.start({
-        x: '-100',
+        x: "-100",
         opacity: 0,
       });
       animateSubTitleBlog.start({
-        x: '-100',
+        x: "-100",
         opacity: 0,
       });
     }
-
   }, [inView, animateTitleBlog, animateSubTitleBlog]);
 
   return (
     <>
-      <section ref={ref} className="bg-primary w-full h-full text-white">
-        <Wraped>
-          <div className="pb-20">
-            <div>
-              <motion.h1
-                animate={animateTitleBlog}
-                className="opacity-0 transform -translate-x-10 text-7xl font-bold tracking-wide pt-40"
-              >
-                Personal Blog
-              </motion.h1>
-              <motion.h2
-                animate={animateSubTitleBlog}
-                className="opacity-0 transform -translate-x-10 text-text-general text-2xl tracking-wide mt-8"
-              >
-                Web development thoughts and stories.
-              </motion.h2>
+      <Wraped>
+        <section ref={ref} className="bg-primary w-full h-full text-white">
+          <BlogSection className="pb-10 sm:pb-20 pt-40">
+            <div className="content-wrapped block mx-auto">
+              <TitleSection className="mx-5 sm:mx-0">
+                <motion.h1
+                  animate={animateTitleBlog}
+                  className="Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide"
+                >
+                  Personal Blog
+                </motion.h1>
+                <motion.h2
+                  animate={animateSubTitleBlog}
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-general tracking-wide sm:mt-5"
+                >
+                  Web development thoughts and stories.
+                </motion.h2>
+              </TitleSection>
             </div>
-          </div>
+          </BlogSection>
           <div className="flex flex-col gap-8 md:flex-row md:gap-8 lg:gap-24">
             <div className="md:w-64" />
             <div className="flex-1">
@@ -105,8 +130,8 @@ function Blog() {
           <div className="mt-20">
             <Footter />
           </div>
-        </Wraped>
-      </section>
+        </section>
+      </Wraped>
     </>
   );
 }
