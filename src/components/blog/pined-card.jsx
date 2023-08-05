@@ -30,7 +30,7 @@ function PinedCard({ date, title, description }) {
                         { date }
                     </h1>
                     <h2
-                        className='block text-text-white-gray text-lg sm:text-2xl font-bold mb-2 tracking-wide'
+                        className='block text-text-white-gray text-lg sm:text-2xl font-bold mb-2 sm:tracking-wide'
                     >
                         { title }
                     </h2>

@@ -9,28 +9,28 @@ function Card({ date, title, description, link }) {
                 className='flex space-x-5 my-20'
             >
                 <div
-                    className='border-text-general border-opacity-10 -translate-y-line border-b mt-16 w-24 block'
+                    className='hidden sm:block border-text-general border-opacity-10 -translate-y-line border-b mt-16 w-24'
                 />
                 <div
                     className='text-start'
                 >
                     <h1
-                        className='text-text-general text-xs font-semibold mb-1'
+                        className='text-text-general text-xs font-semibold'
                     >
                         { date }
                     </h1>
                     <h2
-                        className='text-text-white-gray text-2xl font-bold mb-2 tracking-wide'
+                        className='block text-text-white-gray text-lg sm:text-2xl font-bold mb-2 sm:tracking-wide'
                     >
                         { title }
                     </h2>
                     <h3
-                        className='text-text-general tracking-wide text-base'
+                        className='block text-text-general tracking-wide text-sm sm:text-lg'
                     >
                         { description }
                     </h3>
                     <div
-                        className='flex space-x-2 items-center mt-2'
+                        className='flex space-x-2 items-center mt-4'
                     >   
                         <div
                             className='flex items-center text-text-general text-xs space-x-1'
