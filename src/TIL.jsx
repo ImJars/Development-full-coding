@@ -4,6 +4,25 @@ import Wraped from "./components/wraped";
 import Footer from "./footer";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import styled from "styled-components";
+
+const TilSection = styled.section`
+  display: block;
+  .content-wrapped {
+    max-width: 1152px;
+  }
+`;
+const TilSectionTitle = styled.div`
+  .Title-Name {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+  .Subtitle-Text {
+    font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
+  }
+  .dynamic-text {
+    font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
+  }
+`;
 
 function Til() {
   const { ref, inView } = useInView({
@@ -16,47 +35,59 @@ function Til() {
 
   useEffect(() => {
     if (inView) {
-        animateTitleTIL.start({
-            x: 0,
-            opacity: 1,
-            transition: {
-                type: 'spring', duration: .5, delay: 0.1
-            }
-        })
-        animateSubTitleTIL.start({
-            x: 0,
-            opacity: 1,
-            transition: {
-                type: 'spring', duration: .5, delay: 0.3
-            }
-        })
+      animateTitleTIL.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+          delay: 0.1,
+        },
+      });
+      animateSubTitleTIL.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+          delay: 0.3,
+        },
+      });
     }
     if (!inView) {
-        animateTitleTIL.start({
-            x: '-100',
-            opacity: 0,
-        })
-        animateSubTitleTIL.start({
-            x: '-100',
-            opacity: 0,
-        })
+      animateTitleTIL.start({
+        x: "-100",
+        opacity: 0,
+      });
+      animateSubTitleTIL.start({
+        x: "-100",
+        opacity: 0,
+      });
     }
-  }, [inView, animateTitleTIL, animateSubTitleTIL])
-  
+  }, [inView, animateTitleTIL, animateSubTitleTIL]);
+
   return (
     <>
-      <section ref={ref} className="bg-primary w-full h-full text-white">
-        <Wraped>
-          <div className="pb-20">
-            <div>
-              <motion.h1 animate={ animateTitleTIL } className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide pt-40">
-                Today I Learned
-              </motion.h1>
-              <motion.h2 animate={ animateSubTitleTIL } className="opacity-0 transform -translate-x-10 text-text-general text-2xl tracking-wide mt-8">
-                Short notes on full-stack related topics.
-              </motion.h2>
+      <Wraped>
+        <section ref={ref} className="bg-primary w-full h-full text-white">
+          <TilSection className="pb-10 sm:pb-20 pt-40">
+            <div className="content-wrapped block mx-auto">
+              <TilSectionTitle className="mx-5 sm:mx-0">
+                <motion.h1
+                  animate={animateTitleTIL}
+                  className="text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide"
+                >
+                  Today I Learned
+                </motion.h1>
+                <motion.h2
+                  animate={animateSubTitleTIL}
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-general tracking-wide sm:mt-5"
+                >
+                  Short notes on full-stack related topics.
+                </motion.h2>
+              </TilSectionTitle>
             </div>
-          </div>
+          </TilSection>
           <div className="flex w-full">
             <div className="w-1/3"></div>
             <div className="w-2/3">
@@ -101,8 +132,8 @@ function Til() {
           <div className="mt-20">
             <Footer />
           </div>
-        </Wraped>
-      </section>
+        </section>
+      </Wraped>
     </>
   );
 }
