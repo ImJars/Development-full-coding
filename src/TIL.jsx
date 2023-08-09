@@ -88,47 +88,51 @@ function Til() {
               </TilSectionTitle>
             </div>
           </TilSection>
-          <div className="flex w-full">
-            <div className="w-1/3"></div>
-            <div className="w-2/3">
-              <TodayComponent
-                title="React Hooks is a new addition in React"
-                tag_1="#React"
-                tag_2="#Hooks"
-                tag_3="#JavaScript"
-                description="React Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class."
-                link_1="issue"
-                link_2="Official Docs"
-              />
-              <TodayComponent
-                title="Tailwind CSS is a utility-first CSS framework"
-                tag_1="#Tailwind"
-                tag_2="#CSS"
-                tag_3="#JavaScript"
-                description="Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces."
-                link_1="Credits"
-                link_2="Official Docs"
-              />
-              <TodayComponent
-                title="Javascript is a programming language"
-                tag_1="#JavaScript"
-                tag_2="#Programming"
-                tag_3="#Language"
-                description="JavaScript is a programming language that conforms to the ECMAScript specification."
-                link_1="Credits"
-                link_2="Official Docs"
-              />
-              <TodayComponent
-                title="HTML is a markup language"
-                tag_1="#HTML"
-                tag_2="#Markup"
-                tag_3="#Language"
-                description="HTML is a markup language for describing web documents (web pages)."
-                link_1="Page"
-                link_2="Official Docs"
-              />
+          <TilSection>
+            <div className="mb-20 content-wrapped block mx-auto">
+              <TilSectionTitle className="mx-5 sm:mx-0 flex">
+                <div className="md:w-1/3"></div>
+                <div className="flex-1">
+                  <TodayComponent
+                    title="React Hooks is a new addition in React"
+                    tag_1="#React"
+                    tag_2="#Hooks"
+                    tag_3="#JavaScript"
+                    description="React Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class."
+                    link_1="issue"
+                    link_2="Official Docs"
+                  />
+                  <TodayComponent
+                    title="Tailwind CSS is a utility-first CSS framework"
+                    tag_1="#Tailwind"
+                    tag_2="#CSS"
+                    tag_3="#JavaScript"
+                    description="Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces."
+                    link_1="Credits"
+                    link_2="Official Docs"
+                  />
+                  <TodayComponent
+                    title="Javascript is a programming language"
+                    tag_1="#JavaScript"
+                    tag_2="#Programming"
+                    tag_3="#Language"
+                    description="JavaScript is a programming language that conforms to the ECMAScript specification."
+                    link_1="Credits"
+                    link_2="Official Docs"
+                  />
+                  <TodayComponent
+                    title="HTML is a markup language"
+                    tag_1="#HTML"
+                    tag_2="#Markup"
+                    tag_3="#Language"
+                    description="HTML is a markup language for describing web documents (web pages)."
+                    link_1="Page"
+                    link_2="Official Docs"
+                  />
+                </div>
+              </TilSectionTitle>
             </div>
-          </div>
+          </TilSection>
           <div className="mt-20">
             <Footer />
           </div>
