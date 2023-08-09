@@ -80,7 +80,7 @@ function Projects() {
               <TitleSection className="mx-5 sm:mx-0">
                 <motion.h1
                   animate={animateTitle}
-                  className="bg-primary Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide mb-2"
+                  className="bg-primary text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide mb-2"
                 >
                   Projects
                 </motion.h1>

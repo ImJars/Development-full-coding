@@ -76,7 +76,7 @@ function Blog() {
               <TitleSection className="mx-5 sm:mx-0">
                 <motion.h1
                   animate={animateTitleBlog}
-                  className="Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide"
+                  className="text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide"
                 >
                   Personal Blog
                 </motion.h1>

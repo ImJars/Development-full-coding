@@ -187,12 +187,12 @@ function Home() {
                   </motion.h1>
                   <motion.div
                     animate={animateName}
-                    className="font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
+                    className="text-text-white-gray font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
                   >
                     <h2 className="name ml-5 sm:ml-0">
                       I'm&nbsp;
                       <font className="text-text-blue">Angel</font>
-                      &nbsp;Ramirez,
+                      &nbsp;Ramirez
                     </h2>
                   </motion.div>
                   <motion.h3
