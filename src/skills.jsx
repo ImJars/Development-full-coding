@@ -18,6 +18,18 @@ const SkillSection = styled.section`
   }
 `;
 
+const SkillsSectionTitle = styled.div`
+  .Title-Name {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+  .Subtitle-Text {
+    font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
+  }
+  .dynamic-text {
+    font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
+  }
+`;
+
 function Skills() {
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -349,27 +361,27 @@ function Skills() {
         >
           <SkillSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <div className="pb-20 mx-5 sm:mx-0">
+              <SkillsSectionTitle className="pb-20 mx-5 sm:mx-0">
                 <motion.p
                   animate={animateBeforeTitleSkills}
-                  className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
                 >
                   Work
                 </motion.p>
                 <motion.h1
                   animate={animateTitleSkills}
-                  className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
+                  className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
                 >
                   Skills and Tools
                 </motion.h1>
                 <motion.h2
                   animate={animateSubTitleSkills}
-                  className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8"
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-2/3 text-text-general tracking-wide mt-8"
                 >
                   A look at all the programming languages, libraries, and tools
                   I've worked with.
                 </motion.h2>
-              </div>
+              </SkillsSectionTitle>
             </div>
           </SkillSection>
 
