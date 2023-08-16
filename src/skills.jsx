@@ -388,21 +388,25 @@ function Skills() {
           <div className="flex justify-between">
             <div className="w-2/3">
               <div className="border-l pl-24 border-text-general border-opacity-20 pb-20">
-                <div
+                <SkillSection
                   className="border-b pb-14 border-text-general border-opacity-20
                                         text-text-general text-base space-y-6"
                 >
-                  <h1>
-                    I started my career as a web developer about 7 years ago.
-                    I've tried some programming languages and tech stack, both
-                    Back-End, and Front-End.
-                  </h1>
-                  <h2>
-                    Even though the scope of web development is broad, I was
-                    very interested and focused on Front-End Development and
-                    UI/UX Design.
-                  </h2>
-                </div>
+                  <div className="content-wrapped block mx-auto">
+                    <SkillsSectionTitle className="pb-20 mx-5 sm:mx-0">
+                      <h1>
+                        I started my career as a web developer about 7 years
+                        ago. I've tried some programming languages and tech
+                        stack, both Back-End, and Front-End.
+                      </h1>
+                      <h2>
+                        Even though the scope of web development is broad, I was
+                        very interested and focused on Front-End Development and
+                        UI/UX Design.
+                      </h2>
+                    </SkillsSectionTitle>
+                  </div>
+                </SkillSection>
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate} className="mt-10">
                     <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
