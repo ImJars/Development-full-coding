@@ -6,6 +6,25 @@ import Wraped from "./components/wraped";
 import Footer from "./footer";
 import { useInView } from "react-intersection-observer";
 import { animate, motion, useAnimation } from "framer-motion";
+import styled from "styled-components";
+
+const ExperienceSection = styled.section`
+  display: block;
+  .content-wrapped {
+    max-width: 1152px;
+  }
+`;
+const TitleSection = styled.div`
+  .Title-Name {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+  .Subtitle-Text {
+    font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
+  }
+  .dynamic-text {
+    font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
+  }
+`;
 
 function Experience() {
   const { ref, inView } = useInView({
@@ -193,29 +212,37 @@ function Experience() {
 
   return (
     <>
-      <section id="experience" ref={ref} className="bg-primary w-full h-full text-white">
-        <Wraped>
-          <div className="pb-20">
-            <motion.h1
-              animate={animateMiniTitleExperience}
-              className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold"
-            >
-              Work
-            </motion.h1>
-            <motion.h2
-              animate={animateTitleExperience}
-              className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
-            >
-              Experience
-            </motion.h2>
-            <motion.h3
-              animate={animateSubtitleExperience}
-              className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8"
-            >
-              All about my freelance, self-employed, and professional work
-              experience.
-            </motion.h3>
-          </div>
+      <Wraped>
+        <section
+          id="experience"
+          ref={ref}
+          className="bg-primary w-full h-full text-white"
+        >
+          <ExperienceSection className="pb-10 sm:pb-20 pt-40">
+            <div className="content-wrapped block mx-auto">
+              <TitleSection  className="mx-5 sm:mx-0">
+                <motion.h1
+                  animate={animateMiniTitleExperience}
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
+                >
+                  Work
+                </motion.h1>
+                <motion.h2
+                  animate={animateTitleExperience}
+                  className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
+                >
+                  Experience
+                </motion.h2>
+                <motion.h3
+                  animate={animateSubtitleExperience}
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
+                >
+                  All about my freelance, self-employed, and professional work
+                  experience.
+                </motion.h3>
+              </TitleSection>
+            </div>
+          </ExperienceSection>
           <div className="flex justify-between">
             <div className="w-2/3 ">
               <div className="border-l pl-24 border-text-general border-opacity-20 pb-20">
@@ -349,8 +376,8 @@ function Experience() {
           <div className="mt-20">
             <Footer />
           </div>
-        </Wraped>
-      </section>
+        </section>
+      </Wraped>
     </>
   );
 }

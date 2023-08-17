@@ -376,7 +376,7 @@ function Skills() {
                 </motion.h1>
                 <motion.h2
                   animate={animateSubTitleSkills}
-                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-2/3 text-text-general tracking-wide mt-4 sm:mt-8"
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
                 >
                   A look at all the programming languages, libraries, and tools
                   I've worked with.
