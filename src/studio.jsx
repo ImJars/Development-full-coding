@@ -284,33 +284,37 @@ function Studio() {
 
   return (
     <>
-      <section
-        id="studio"
-        ref={ref}
-        className="bg-primary w-full h-full text-white"
-      >
-        <Wraped>
-          <div className="pb-20">
-            <motion.h1
-              animate={animateMiniTitleStudio}
-              className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold"
-            >
-              Work
-            </motion.h1>
-            <motion.h2
-              animate={animateTitleStudio}
-              className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
-            >
-              Studio
-            </motion.h2>
-            <motion.h3
-              animate={animateSubtitleStudio}
-              className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8"
-            >
-              A work-from-home workspace that allows me to efficiently complete
-              most tasks.
-            </motion.h3>
-          </div>
+      <Wraped>
+        <section
+          id="studio"
+          ref={ref}
+          className="bg-primary w-full h-full text-white"
+        >
+          <StudioSection className="pb-10 sm:pb-20 pt-40">
+            <div className="content-wrapped block mx-auto">
+              <TitleSection className="mx-5 sm:mx-0">
+                <motion.h1
+                  animate={animateMiniTitleStudio}
+                  className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold"
+                >
+                  Work
+                </motion.h1>
+                <motion.h2
+                  animate={animateTitleStudio}
+                  className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
+                >
+                  Studio
+                </motion.h2>
+                <motion.h3
+                  animate={animateSubtitleStudio}
+                  className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8"
+                >
+                  A work-from-home workspace that allows me to efficiently
+                  complete most tasks.
+                </motion.h3>
+              </TitleSection>
+            </div>
+          </StudioSection>
           <div className="flex justify-between">
             <div className="w-2/3">
               <div
@@ -410,8 +414,8 @@ function Studio() {
           <div className="mt-20">
             <Footer />
           </div>
-        </Wraped>
-      </section>
+        </section>
+      </Wraped>
     </>
   );
 }
