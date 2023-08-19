@@ -6,6 +6,25 @@ import Wraped from "./components/wraped";
 import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import styled from "styled-components";
+
+const ContactSection = styled.section`
+  display: block;
+  .content-wrapped {
+    max-width: 1152px;
+  }
+`;
+const TitleSection = styled.div`
+  .Title-Name {
+    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+  }
+  .Subtitle-Text {
+    font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
+  }
+  .dynamic-text {
+    font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
+  }
+`
 
 function Contact() {
 
