@@ -24,10 +24,9 @@ const TitleSection = styled.div`
   .dynamic-text {
     font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
   }
-`
+`;
 
 function Contact() {
-
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -43,21 +42,27 @@ function Contact() {
         opacity: 1,
         x: 0,
         transition: {
-          type: 'spring', duration: .4, delay: 0.1
+          type: "spring",
+          duration: 0.4,
+          delay: 0.1,
         },
       });
       animateTitleContact.start({
         opacity: 1,
         x: 0,
         transition: {
-          type: 'spring', duration: .4, delay: 0.3
+          type: "spring",
+          duration: 0.4,
+          delay: 0.3,
         },
       });
       animateSubtitleContact.start({
         opacity: 1,
         x: 0,
         transition: {
-          type: 'spring', duration: .4, delay: 0.5
+          type: "spring",
+          duration: 0.4,
+          delay: 0.5,
         },
       });
     }
@@ -76,7 +81,12 @@ function Contact() {
         opacity: 0,
       });
     }
-  }, [inView, animateMiniTitleContact, animateTitleContact, animateSubtitleContact])
+  }, [
+    inView,
+    animateMiniTitleContact,
+    animateTitleContact,
+    animateSubtitleContact,
+  ]);
 
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.1,
@@ -90,7 +100,7 @@ function Contact() {
     threshold: 0.6,
     triggerOnce: false,
   });
-  
+
   const animate1 = useAnimation();
   const animate2 = useAnimation();
   const animateScroll = useAnimation();
@@ -145,28 +155,47 @@ function Contact() {
         opacity: 0,
       });
     }
-  }, [inView1, inView2, animate1, animate2, inViewScroll, animateScroll])
-  
+  }, [inView1, inView2, animate1, animate2, inViewScroll, animateScroll]);
 
   return (
     <>
-      <section id="contact" ref={ ref } className="bg-primary w-full h-full text-white">
-        <Wraped>
-          <div className="pb-20">
-            <motion.h1 animate={ animateMiniTitleContact } className="opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide pt-40 font-bold">
-              Work
-            </motion.h1>
-            <motion.h2 animate={ animateTitleContact } className="opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide">
-              Contact
-            </motion.h2>
-            <motion.h3 animate={ animateSubtitleContact } className="opacity-0 transform -translate-x-10 w-2/3 text-text-general text-2xl tracking-wide mt-8">
-              Get in touch with me anytime, through social media, e-mail, or
-              phone number.
-            </motion.h3>
-          </div>
+      <Wraped>
+        <section
+          id="contact"
+          ref={ref}
+          className="bg-primary w-full h-full text-white"
+        >
+          <ContactSection className="pb-10 sm:pb-20 pt-40">
+            <div className="content-wrapped block mx-auto">
+              <TitleSection className="mx-5 sm:mx-0">
+                <motion.h1
+                  animate={animateMiniTitleContact}
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
+                >
+                  Work
+                </motion.h1>
+                <motion.h2
+                  animate={animateTitleContact}
+                  className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
+                >
+                  Contact
+                </motion.h2>
+                <motion.h3
+                  animate={animateSubtitleContact}
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
+                >
+                  Get in touch with me anytime, through social media, e-mail, or
+                  phone number.
+                </motion.h3>
+              </TitleSection>
+            </div>
+          </ContactSection>
           <div className="flex justify-between">
             <div className="w-2/3">
-              <div ref={refScroll} className="border-l pl-24 border-text-general border-opacity-20 pb-20">
+              <div
+                ref={refScroll}
+                className="border-l pl-24 border-text-general border-opacity-20 pb-20"
+              >
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                               text-text-general text-base space-y-6"
@@ -180,7 +209,10 @@ function Contact() {
                     I appreciate your understanding in using this responsibly.
                   </p>
                 </div>
-                <div ref={ref1} className="mt-8 border-b border-text-general border-opacity-20 pb-10">
+                <div
+                  ref={ref1}
+                  className="mt-8 border-b border-text-general border-opacity-20 pb-10"
+                >
                   <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
                     Contact
                   </h1>
@@ -210,9 +242,9 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <IndexContact 
-              subtitle_1={"Contact"} 
-              subtitle_2={"Social Media"} 
+            <IndexContact
+              subtitle_1={"Contact"}
+              subtitle_2={"Social Media"}
               animate_1={animate1}
               animate_2={animate2}
               animate_scroll={animateScroll}
@@ -221,8 +253,8 @@ function Contact() {
           <div className="mt-20">
             <Footer />
           </div>
-        </Wraped>
-      </section>
+        </section>
+      </Wraped>
     </>
   );
 }
