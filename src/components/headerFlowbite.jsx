@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const StyleLink = styled.a`
+const StyleLink = styled.div`
   display: flex;
   align-items: center;
   padding: 0.6rem;
@@ -84,12 +85,22 @@ function HeaderFlowbite() {
             className="opacity-0 absolute border-text-general border-opacity-20 top-16 flex w-[150px] flex-col rounded-2xl border p-2 bg-secondary/95"
           >
             <div className="">
-              <StyleLink className="nav-link h-8 text-xs">
-                Skills &amp; Tools
-              </StyleLink>
-              <StyleLink className="nav-link h-8 text-xs">Experience</StyleLink>
-              <StyleLink className="nav-link h-8 text-xs">Studio</StyleLink>
-              <StyleLink className="nav-link h-8 text-xs">Contact</StyleLink>
+              <Link to={"/skills"}>
+                <StyleLink className="nav-link h-8 text-xs">
+                  Skills &amp; Tools
+                </StyleLink>
+              </Link>
+              <Link to={"/experience"}>
+                <StyleLink className="nav-link h-8 text-xs">
+                  Experience
+                </StyleLink>
+              </Link>
+              <Link to={"/studio"}>
+                <StyleLink className="nav-link h-8 text-xs">Studio</StyleLink>
+              </Link>
+              <Link to={"/contact"}>
+                <StyleLink className="nav-link h-8 text-xs">Contact</StyleLink>
+              </Link>
             </div>
           </motion.div>
         </div>
