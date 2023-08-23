@@ -47,8 +47,8 @@ function Services() {
               </div>
             </ServicesSection>
             <ServicesSection>
-              <div className="content-wrapped block mx-auto">
-                <div className="mx-5 sm:mx-0 border-l pl-24 border-text-general border-opacity-20">
+              <div className="content-wrapped mx-auto flex space-x-14">
+                <div className="mx-5 sm:mx-0 border-l pl-24 border-text-general border-opacity-10">
                   <p className="text-text-general tracking-wide">
                     One of the most important things for me when working from
                     home is having the right tools. So, let's start with my main
@@ -82,19 +82,17 @@ function Services() {
                   </h1>
                   <TablePrimary />
                 </div>
+                <IndexStudio
+                  subtitle_1={"Computer"}
+                  subtitle_2={"Display"}
+                  description_1={"Primary"}
+                  description_2={"Secondary"}
+                  subtitle_3={"Peripherals"}
+                  subtitle_4={"Conferencing Devices"}
+                  subtitle_5={"Others"}
+                />
               </div>
             </ServicesSection>
-          </div>
-          <div>
-            <IndexStudio
-              subtitle_1={"Computer"}
-              subtitle_2={"Display"}
-              description_1={"Primary"}
-              description_2={"Secondary"}
-              subtitle_3={"Peripherals"}
-              subtitle_4={"Conferencing Devices"}
-              subtitle_5={"Others"}
-            />
           </div>
         </section>
       </Wraped>
