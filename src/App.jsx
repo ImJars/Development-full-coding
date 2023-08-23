@@ -13,6 +13,7 @@ import Skills from './skills'
 import Experience from './experience'
 import Studio from './studio'
 import Contact from './contact'
+import Services from './services'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/experience' element={ <Experience /> } />
           <Route path='/studio' element={ <Studio /> } />
           <Route path='/contact' element={ <Contact /> } />
+          <Route path='/services' element={ <Services /> } />
         </Routes>
       </BrowserRouter>
     </>

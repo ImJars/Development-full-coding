@@ -97,6 +97,12 @@ function Header() {
                 link={"/contact"}
                 linkText={"Contact"}
               />
+              <h1 className="text-xs opacity-50 cursor-default">&#8226;</h1>
+              <HeaderLink
+                classNames={"text-text-blue hover:text-blue-300 hidden sm:block"}
+                link={"/services"}
+                linkText={"Services"}
+              />
             </div>
           </div>
           <div className="flex space-x-4 items-center">
