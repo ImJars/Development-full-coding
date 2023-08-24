@@ -386,7 +386,7 @@ function Skills() {
           </SkillSection>
           <SkillSection>
             <div className="content-wrapped mx-auto flex space-x-14">
-              <div className="border-l pl-24 border-text-general border-opacity-20 pb-20">
+              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                                         text-text-general text-base space-y-6"
