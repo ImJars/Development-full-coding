@@ -384,9 +384,8 @@ function Skills() {
               </SkillsSectionTitle>
             </div>
           </SkillSection>
-
-          <div className="flex justify-between">
-            <div className="w-2/3">
+          <SkillSection>
+            <div className="content-wrapped mx-auto flex space-x-14">
               <div className="border-l pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
@@ -532,8 +531,7 @@ function Skills() {
                   </div>
                 </div>
               </div>
-            </div>
-            <IndexSkill
+              <IndexSkill
               title_1={"Front-End Developer"}
               subtitle_1={"TypeScript"}
               subtitle_2={"React"}
@@ -556,7 +554,8 @@ function Skills() {
               animate_11={animate11}
               animate_scroll={animateScroll}
             />
-          </div>
+            </div>
+          </SkillSection>
           <div className="mt-20">
             <Footer />
           </div>
