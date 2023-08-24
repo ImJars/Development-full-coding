@@ -220,7 +220,7 @@ function Experience() {
         >
           <ExperienceSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TitleSection  className="mx-5 sm:mx-0">
+              <TitleSection className="mx-5 sm:mx-0">
                 <motion.h1
                   animate={animateMiniTitleExperience}
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
@@ -243,8 +243,8 @@ function Experience() {
               </TitleSection>
             </div>
           </ExperienceSection>
-          <div className="flex justify-between">
-            <div className="w-2/3 ">
+          <ExperienceSection>
+            <div className="content-wrapped mx-auto flex space-x-14">
               <div className="border-l pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
@@ -360,19 +360,19 @@ function Experience() {
                   </div>
                 </div>
               </div>
+              <Index
+                subtitle_1={"Self-Employed"}
+                subtitle_2={"Freelance"}
+                subtitle_3={"Professional Work"}
+                subtitle_4={"What They Say"}
+                animate_1={animate1}
+                animate_2={animate2}
+                animate_3={animate3}
+                animate_4={animate4}
+                animate_scroll={animateScroll}
+              />
             </div>
-            <Index
-              subtitle_1={"Self-Employed"}
-              subtitle_2={"Freelance"}
-              subtitle_3={"Professional Work"}
-              subtitle_4={"What They Say"}
-              animate_1={animate1}
-              animate_2={animate2}
-              animate_3={animate3}
-              animate_4={animate4}
-              animate_scroll={animateScroll}
-            />
-          </div>
+          </ExperienceSection>
           <div className="mt-20">
             <Footer />
           </div>
