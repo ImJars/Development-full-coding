@@ -319,10 +319,10 @@ function Studio() {
             <div className="content-wrapped mx-auto flex space-x-14">
               <div
                 ref={refScroll}
-                className="border-l pl-24 border-text-general border-opacity-20"
+                className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20"
               >
                 <div>
-                  <div className="border p-32 border-text-general border-opacity-20 mb-10" />
+                  <div className="mt-5 border p-32 border-text-general border-opacity-20 mb-10" />
                   <p className="text-text-general tracking-wide">
                     One of the most important things for me when working from
                     home is having the right tools. So, let's start with my main
