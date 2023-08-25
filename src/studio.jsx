@@ -315,8 +315,8 @@ function Studio() {
               </TitleSection>
             </div>
           </StudioSection>
-          <div className="flex justify-between">
-            <div className="w-2/3">
+          <StudioSection>
+            <div className="content-wrapped mx-auto flex space-x-14">
               <div
                 ref={refScroll}
                 className="border-l pl-24 border-text-general border-opacity-20"
@@ -392,25 +392,25 @@ function Studio() {
                   </div>
                 </div>
               </div>
+              <IndexStudio
+                subtitle_1={"Computer"}
+                subtitle_2={"Display"}
+                description_1={"Primary"}
+                description_2={"Secondary"}
+                subtitle_3={"Peripherals"}
+                subtitle_4={"Conferencing Devices"}
+                subtitle_5={"Others"}
+                animate_1={animate1}
+                animate_2={animate2}
+                animate_3={animate3}
+                animate_4={animate4}
+                animate_5={animate5}
+                animate_6={animate6}
+                animate_7={animate7}
+                animate_scroll={animateScroll}
+              />
             </div>
-            <IndexStudio
-              subtitle_1={"Computer"}
-              subtitle_2={"Display"}
-              description_1={"Primary"}
-              description_2={"Secondary"}
-              subtitle_3={"Peripherals"}
-              subtitle_4={"Conferencing Devices"}
-              subtitle_5={"Others"}
-              animate_1={animate1}
-              animate_2={animate2}
-              animate_3={animate3}
-              animate_4={animate4}
-              animate_5={animate5}
-              animate_6={animate6}
-              animate_7={animate7}
-              animate_scroll={animateScroll}
-            />
-          </div>
+          </StudioSection>
           <div className="mt-20">
             <Footer />
           </div>
