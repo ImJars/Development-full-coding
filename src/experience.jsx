@@ -245,12 +245,12 @@ function Experience() {
           </ExperienceSection>
           <ExperienceSection>
             <div className="content-wrapped mx-auto flex space-x-14">
-              <div className="border-l pl-24 border-text-general border-opacity-20 pb-20">
+              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                                             text-text-general text-base space-y-6"
                 >
-                  <h1>
+                  <h1 className="mt-5">
                     I started my professional career as a web developer around
                     2016. In 2021, I resigned from my job to focus on completing
                     college matters while taking on some freelance projects.

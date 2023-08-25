@@ -20,8 +20,8 @@ function Index({
             className="bg-table-color border border-text-general border-opacity-10 
                                         rounded-xl"
           >
-            <div className="py-3 px-5 border-b border-text-general border-opacity-10 flex justify-between items-center">
-              <h1 className="text-text-white-gray text-sm font-bold tracking-wide">
+            <div className="py-3 px-4 border-b border-text-general border-opacity-10 flex justify-between items-center">
+              <h1 className="text-text-white-gray text-xs xl:text-sm font-bold tracking-wide">
                 Table of Contents
               </h1>
               <motion.div
