@@ -86,20 +86,36 @@ function HeaderFlowbite() {
           >
             <div className="">
               <Link to={"/skills"}>
-                <StyleLink className="nav-link h-8 text-xs">
+                <StyleLink
+                  className="nav-link h-8 text-xs"
+                  onClick={() => setActive(!active)}
+                >
                   Skills &amp; Tools
                 </StyleLink>
               </Link>
               <Link to={"/experience"}>
-                <StyleLink className="nav-link h-8 text-xs">
+                <StyleLink
+                  className="nav-link h-8 text-xs"
+                  onClick={() => setActive(!active)}
+                >
                   Experience
                 </StyleLink>
               </Link>
               <Link to={"/studio"}>
-                <StyleLink className="nav-link h-8 text-xs">Studio</StyleLink>
+                <StyleLink
+                  className="nav-link h-8 text-xs"
+                  onClick={() => setActive(!active)}
+                >
+                  Studio
+                </StyleLink>
               </Link>
               <Link to={"/contact"}>
-                <StyleLink className="nav-link h-8 text-xs">Contact</StyleLink>
+                <StyleLink
+                  className="nav-link h-8 text-xs"
+                  onClick={() => setActive(!active)}
+                >
+                  Contact
+                </StyleLink>
               </Link>
             </div>
           </motion.div>
