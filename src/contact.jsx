@@ -194,13 +194,13 @@ function Contact() {
             <div className="content-wrapped mx-auto flex space-x-14">
               <div
                 ref={refScroll}
-                className="border-l pl-24 border-text-general border-opacity-20 pb-20"
+                className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-20"
               >
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                               text-text-general text-base space-y-6"
                 >
-                  <p className="text-text-general tracking-wide">
+                  <p className="mt-5 text-text-general tracking-wide w-full h-full">
                     Just a friendly reminder that the information provided here
                     is for business purposes only. If you have any questions,
                     feel free to chat with me directly on my social media.
