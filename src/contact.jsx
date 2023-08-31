@@ -190,8 +190,8 @@ function Contact() {
               </TitleSection>
             </div>
           </ContactSection>
-          <div className="flex justify-between">
-            <div className="w-2/3">
+          <ContactSection>
+            <div className="content-wrapped mx-auto flex space-x-14">
               <div
                 ref={refScroll}
                 className="border-l pl-24 border-text-general border-opacity-20 pb-20"
@@ -241,15 +241,15 @@ function Contact() {
                   <TableSocialMedia />
                 </div>
               </div>
+              <IndexContact
+                subtitle_1={"Contact"}
+                subtitle_2={"Social Media"}
+                animate_1={animate1}
+                animate_2={animate2}
+                animate_scroll={animateScroll}
+              />
             </div>
-            <IndexContact
-              subtitle_1={"Contact"}
-              subtitle_2={"Social Media"}
-              animate_1={animate1}
-              animate_2={animate2}
-              animate_scroll={animateScroll}
-            />
-          </div>
+          </ContactSection>
           <div className="mt-20">
             <Footer />
           </div>
