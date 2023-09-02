@@ -65,7 +65,7 @@ function HeaderFlowbite() {
         <div>
           <button
             className="text-text-blue flex items-center space-x-1 bg-text-blue bg-opacity-20
-                   py-2 px-4 rounded-full"
+                   py-2 px-4 rounded-full pointer-events-auto xl:pointer-events-none"
             onClick={() => setActive(!active)}
           >
             <h1 className="text-xs font-semibold">Work</h1>
