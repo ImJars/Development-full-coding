@@ -72,7 +72,7 @@ function Til() {
         <section ref={ref} className="bg-primary w-full h-full text-white">
           <TilSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TilSectionTitle className="mx-5 sm:mx-0">
+              <TilSectionTitle className="mx-1 sm:mx-0">
                 <motion.h1
                   animate={animateTitleTIL}
                   className="text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide"
@@ -90,7 +90,7 @@ function Til() {
           </TilSection>
           <TilSection>
             <div className="mb-20 content-wrapped block mx-auto">
-              <TilSectionTitle className="mx-5 sm:mx-0 flex">
+              <TilSectionTitle className="mx-1 sm:mx-0 flex">
                 <div className="md:w-1/3"></div>
                 <div className="flex-1">
                   <TodayComponent
