@@ -77,7 +77,7 @@ function Projects() {
         >
           <ProjectSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TitleSection className="mx-5 sm:mx-0">
+              <TitleSection className="mx-1 sm:mx-0">
                 <motion.h1
                   animate={animateTitle}
                   className="bg-primary text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide mb-2"
@@ -93,7 +93,7 @@ function Projects() {
               </TitleSection>
             </div>
             <div className="mt-20 content-wrapped block mx-auto">
-              <TitleSection className="mx-5 sm:mx-0">
+              <TitleSection className="mx-1 sm:mx-0">
                 <h1 className="text-xs sm:text-sm text-text-purple font-bold tracking-wide mb-1">
                   tailwindcss-accent
                 </h1>
@@ -125,7 +125,7 @@ function Projects() {
           </ProjectSection>
           <ProjectSection>
             <div className="mb-20 content-wrapped block mx-auto">
-              <TitleSection className="mx-5 sm:mx-0">
+              <TitleSection className="mx-1 sm:mx-0">
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-4 gap-y-0">
                   <CardProject
                     icon={<FaGithub />}
