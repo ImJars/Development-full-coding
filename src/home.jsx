@@ -175,13 +175,13 @@ function Home() {
     <>
       <HomeWraped>
         <div ref={ref} className="bg-primary text-white font-poppins">
-          <HomeSection>
+          <HomeSection className="mx-1 sm:mx-0">
             <div className="content-wrapped block mx-auto pt-52 pb-28">
               <div className="relative">
                 <TitleSection className="relative z-10">
                   <motion.h1
                     animate={animateHi}
-                    className="ml-5 sm:ml-0 font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
+                    className="ml-0 font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
                   >
                     Hi!
                   </motion.h1>
@@ -189,7 +189,7 @@ function Home() {
                     animate={animateName}
                     className="text-text-white-gray font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
                   >
-                    <h2 className="name ml-5 sm:ml-0">
+                    <h2 className="name ml-0">
                       I'm&nbsp;
                       <font className="text-text-blue">Angel</font>
                       &nbsp;Ramirez
@@ -197,7 +197,7 @@ function Home() {
                   </motion.div>
                   <motion.h3
                     animate={animateJob}
-                    className="ml-5 sm:ml-0 font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
+                    className="ml-0 font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
                   >
                     a full-stack web developer
                   </motion.h3>
@@ -205,7 +205,7 @@ function Home() {
                 <div className="flex mt-8">
                   <motion.button
                     animate={animateButton}
-                    className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 bg-text-blue text-white
+                    className="ml-0 opacity-0 transform -translate-x-10 bg-text-blue text-white
                                             rounded-lg px-4 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
                   >
                     <Buttonned className="font-outfit">Get in Touch</Buttonned>
@@ -234,7 +234,7 @@ function Home() {
                 </div>
                 <motion.div
                   animate={animateStack}
-                  className="ml-5 sm:ml-0 opacity-0 transform -translate-x-10 mt-36"
+                  className=":ml-0 opacity-0 transform -translate-x-10 mt-36"
                 >
                   <h1 className="text-xs tracking-wider text-text-general">
                     Current favorite tech stack/tools:
@@ -279,7 +279,7 @@ function Home() {
               </div>
             </div>
           </HomeSection>
-          <HomeSection className="-mt-10 pb-24 mx-5 sm:mx-0">
+          <HomeSection className="-mt-10 pb-24 mx-1 sm:mx-0">
             <div className="content-wrapped block mx-auto">
               <Cards>
                 <CardHome
@@ -317,7 +317,7 @@ function Home() {
               </Cards>
             </div>
           </HomeSection>
-          <HomeSection className="-mt-16 pb-24 mx-5 sm:mx-0">
+          <HomeSection className="-mt-16 pb-24 mx-1 sm:mx-0">
             <div className="content-wrapped mx-auto">
               <TextHome
                 text={
@@ -326,7 +326,7 @@ function Home() {
               />
             </div>
           </HomeSection>
-          <HomeSection className="-mt-16 pb-24 mx-5 sm:mx-0">
+          <HomeSection className="-mt-16 pb-24 mx-1 sm:mx-0">
             <section className="content-wrapped mx-auto">
               <div>
                 <SubHome
