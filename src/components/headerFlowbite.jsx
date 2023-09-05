@@ -82,7 +82,7 @@ function HeaderFlowbite() {
           </button>
           <motion.div
             animate={animateFlowbite}
-            className="opacity-0 absolute border-text-general border-opacity-20 top-16 flex w-[150px] flex-col rounded-2xl border p-2 bg-secondary/95"
+            className="opacity-0 absolute border-text-general border-opacity-20 top-16 flex w-[150px] flex-col rounded-2xl border p-2 bg-secondary/95 xl:hidden"
           >
             <div className="">
               <Link to={"/skills"}>
