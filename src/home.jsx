@@ -36,7 +36,7 @@ const TitleSection = styled.div`
     font-size: clamp(0.75rem, 0.4524rem + 1.1905vw, 1.25rem);
   }
   .name {
-    font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
+    font-size: clamp(2.25rem, 1.05rem + 4.8vw, 4.5rem);
   }
   .job {
     font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
