@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Img from "./assets/react.svg";
 import styled from "styled-components";
 import {
@@ -20,8 +20,7 @@ import SubHome from "./components/home/sub-home";
 import FooterWraped from "./components/footerWraped";
 import Footer from "./footer";
 
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import HomeWraped from "./components/homeWraped";
 import CardHome from "./components/home/card-home";
 
@@ -127,121 +126,16 @@ const fadeInAnimationVariants = {
 };
 
 function Home() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
-
-  const animateHi = useAnimation();
-  const animateName = useAnimation();
-  const animateJob = useAnimation();
-  const animateButton = useAnimation();
-  const animateAvailable = useAnimation();
-  const animateStack = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animateHi.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.1,
-        },
-      });
-      animateName.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.2,
-        },
-      });
-      animateJob.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.3,
-        },
-      });
-      animateButton.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.4,
-        },
-      });
-      animateStack.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.5,
-        },
-      });
-      animateAvailable.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 2,
-        },
-      });
-    }
-    if (!inView) {
-      animateHi.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateName.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateJob.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateButton.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateStack.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateAvailable.start({
-        x: "-100",
-        opacity: 0,
-      });
-    }
-  }, [
-    inView,
-    animateHi,
-    animateName,
-    animateJob,
-    animateButton,
-    animateStack,
-    animateAvailable,
-  ]);
-
   return (
     <>
       <HomeWraped>
-        <div ref={ref} className="bg-primary text-white font-poppins">
+        <div className="bg-primary text-white font-poppins">
           <HomeSection className="mx-1 sm:mx-0">
             <div className="content-wrapped block mx-auto pt-52 pb-28">
               <div className="relative">
                 <TitleSection className="relative z-10">
                   <motion.h1
-                    className="ml-0 font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
+                    className="font-outfit greeting text-text-general"
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate_Hi"
@@ -252,26 +146,25 @@ function Home() {
                     Hi!
                   </motion.h1>
                   <motion.div
-                    className="text-text-white-gray font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
+                    className="text-text-white-gray font-outfit leading-none font-bold mb-2"
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate"
+                    whileInView="animate_Name"
                     viewport={{
                       once: true,
                     }}
                   >
-                    <h2 className="name ml-0">
+                    <h2 className="name">
                       I'm&nbsp;
                       <font className="text-text-blue">Angel</font>
                       &nbsp;Ramirez
                     </h2>
                   </motion.div>
                   <motion.h3
-                    //animate={animateJob}
-                    className="ml-0 font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
+                    className="font-outfit job text-text-general"
                     variants={fadeInAnimationVariants}
                     initial="initial"
-                    whileInView="animate2"
+                    whileInView="animate_Subtitle"
                     viewport={{
                       once: true,
                     }}
@@ -281,15 +174,24 @@ function Home() {
                 </TitleSection>
                 <div className="flex mt-8">
                   <motion.button
-                    animate={animateButton}
-                    className="ml-0 opacity-0 transform -translate-x-10 bg-text-blue text-white
-                                            rounded-lg px-4 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
+                    className=" bg-text-blue text-white rounded-lg px-5 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate_Button"
+                    viewport={{
+                      once: true,
+                    }}
                   >
                     <Buttonned className="font-outfit">Get in Touch</Buttonned>
                   </motion.button>
                   <motion.div
-                    animate={animateAvailable}
-                    className="opacity-0 transform -translate-x-10 flex items-center ml-4 text-text-blue"
+                    className="flex items-center ml-4 text-text-blue"
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate_Pinned"
+                    viewport={{
+                      once: true,
+                    }}
                   >
                     <div className="relative text-3xl">
                       &#8226;
@@ -310,8 +212,13 @@ function Home() {
                   </motion.div>
                 </div>
                 <motion.div
-                  animate={animateStack}
-                  className=":ml-0 opacity-0 transform -translate-x-10 mt-36"
+                  className="mt-36"
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Stack"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   <h1 className="text-xs tracking-wider text-text-general">
                     Current favorite tech stack/tools:
