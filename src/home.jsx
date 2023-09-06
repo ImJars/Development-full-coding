@@ -70,7 +70,16 @@ const fadeInAnimationVariants = {
     opacity: 0,
     x: -100,
   },
-  animate: {
+  animate_Hi: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.5,
+      delay: 0.1,
+    },
+  },
+  animate_Name: {
     opacity: 1,
     x: 0,
     transition: {
@@ -79,13 +88,40 @@ const fadeInAnimationVariants = {
       delay: 0.2,
     },
   },
-  animate2: {
+  animate_Subtitle: {
     opacity: 1,
     x: 0,
     transition: {
       type: "spring",
       duration: 0.5,
       delay: 0.3,
+    },
+  },
+  animate_Button: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.5,
+      delay: 0.4,
+    },
+  },
+  animate_Stack: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.5,
+      delay: 0.5,
+    },
+  },
+  animate_Pinned: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.5,
+      delay: 2,
     },
   },
 };
@@ -205,13 +241,17 @@ function Home() {
               <div className="relative">
                 <TitleSection className="relative z-10">
                   <motion.h1
-                    animate={animateHi}
                     className="ml-0 font-outfit greeting opacity-0 transform -translate-x-10 text-text-general"
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate_Hi"
+                    viewport={{
+                      once: true,
+                    }}
                   >
                     Hi!
                   </motion.h1>
                   <motion.div
-                    // animate={animateName}
                     className="text-text-white-gray font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
                     variants={fadeInAnimationVariants}
                     initial="initial"
