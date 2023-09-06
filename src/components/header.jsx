@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { BsTwitter, BsGithub } from "react-icons/bs";
+import {BsGithub } from "react-icons/bs";
 import HeaderLink from "./header-link";
 import { Link } from "react-router-dom";
 import HeaderFlowbite from "./headerFlowbite";
 import MainFlowbite from "./mainFlowbite";
+import { motion } from "framer-motion";
 
 const Navbar = styled.header`
   &.navbar {
@@ -20,7 +21,7 @@ const Navbar = styled.header`
   }
 `;
 
-function Header() {
+function Header({ animateIcon }) {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -44,10 +45,10 @@ function Header() {
           <div className="flex space-x-4 sm:space-x-6 items-center">
             <div className="sm:mr-8 flex justify-center items-center">
               <Link className="flex justify-center items-center" to="/">
-                <div className="flex sm:text-xl font-bold tracking-wide space-x-1 ">
-                  <div className="px-2 bg-text-purple rounded-lg">
+                <div className="flex sm:text-xl font-bold space-x-1 ">
+                  <motion.div animate={animateIcon} className="px-2 bg-text-purple rounded-lg border border-white border-opacity-10">
                     <h1>&#47;</h1>
-                  </div>
+                  </motion.div>
                   <div className=" hidden sm:block">
                     <div className="flex">
                       <h1>&nbsp;jars</h1>
@@ -58,42 +59,42 @@ function Header() {
               </Link>
             </div>
             <HeaderLink
-              classNames={"text-text-purple hover:text-purple-300"}
+              classNames={"text-text-purple hover:text-purple-300 focus:text-purple-300"}
               link={"/projects"}
               linkText={"Projects"}
             />
             <HeaderLink
-              classNames={"text-text-purple hover:text-purple-300"}
+              classNames={"text-text-purple hover:text-purple-300 focus:text-purple-300"}
               link={"/blog"}
               linkText={"Blog"}
             />
             <HeaderLink
-              classNames={"text-text-purple hover:text-purple-300"}
+              classNames={"text-text-purple hover:text-purple-300 focus:text-purple-300"}
               link={"/til"}
               linkText={"T.I.L"}
             />
             <HeaderFlowbite />
             <div className="space-x-3 hidden xl:flex">
               <HeaderLink
-                classNames={"text-text-blue hover:text-blue-300"}
+                classNames={"text-text-blue hover:text-blue-300 focus:text-blue-300"}
                 link={"/skills"}
                 linkText={"Skills & Tools"}
               />
               <h1 className="text-xs opacity-50 cursor-default">&#8226;</h1>
               <HeaderLink
-                classNames={"text-text-blue hover:text-blue-300"}
+                classNames={"text-text-blue hover:text-blue-300 focus:text-blue-300"}
                 link={"/experience"}
                 linkText={"Experience"}
               />
               <h1 className="text-xs opacity-50 cursor-default">&#8226;</h1>
               <HeaderLink
-                classNames={"text-text-blue hover:text-blue-300"}
+                classNames={"text-text-blue hover:text-blue-300 focus:text-blue-300"}
                 link={"/studio"}
                 linkText={"Studio"}
               />
               <h1 className="text-xs opacity-50 cursor-default">&#8226;</h1>
               <HeaderLink
-                classNames={"text-text-blue hover:text-blue-300"}
+                classNames={"text-text-blue hover:text-blue-300 focus:text-blue-300"}
                 link={"/contact"}
                 linkText={"Contact"}
               />
