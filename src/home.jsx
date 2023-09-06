@@ -65,6 +65,31 @@ const Cards = styled.div`
   gap: 20px;
 `;
 
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    x: -100,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.5,
+      delay: 0.2,
+    },
+  },
+  animate2: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 0.5,
+      delay: 0.3,
+    },
+  },
+};
+
 function Home() {
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -186,8 +211,14 @@ function Home() {
                     Hi!
                   </motion.h1>
                   <motion.div
-                    animate={animateName}
+                    // animate={animateName}
                     className="text-text-white-gray font-outfit opacity-0 transform -translate-x-10 leading-none font-bold mb-2"
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                      once: true,
+                    }}
                   >
                     <h2 className="name ml-0">
                       I'm&nbsp;
@@ -196,8 +227,14 @@ function Home() {
                     </h2>
                   </motion.div>
                   <motion.h3
-                    animate={animateJob}
+                    //animate={animateJob}
                     className="ml-0 font-outfit job opacity-0 transform -translate-x-10 tracking-wide text-text-general"
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate2"
+                    viewport={{
+                      once: true,
+                    }}
                   >
                     a full-stack web developer
                   </motion.h3>
