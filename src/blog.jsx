@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Card from "./components/blog/card";
 import PinedCard from "./components/blog/pined-card";
 import Wraped from "./components/wraped";
 import Footter from "./footer";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const BlogSection = styled.section`
@@ -27,46 +26,6 @@ const TitleSection = styled.div`
 `;
 
 function Blog() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
-  const animateTitleBlog = useAnimation();
-  const animateSubTitleBlog = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animateTitleBlog.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.1,
-        },
-      });
-      animateSubTitleBlog.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.3,
-        },
-      });
-    }
-    if (!inView) {
-      animateTitleBlog.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateSubTitleBlog.start({
-        x: "-100",
-        opacity: 0,
-      });
-    }
-  }, [inView, animateTitleBlog, animateSubTitleBlog]);
-
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -91,11 +50,10 @@ function Blog() {
       },
     },
   };
-
   return (
     <>
       <Wraped>
-        <section ref={ref} className="bg-primary w-full h-full text-white">
+        <section className="bg-primary w-full h-full text-white">
           <BlogSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
