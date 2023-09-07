@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CardProject from "./components/projects/cardProject";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 import { FaGithub, FaUserFriends, FaProjectDiagram } from "react-icons/fa";
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const ProjectSection = styled.section`
@@ -28,46 +27,6 @@ const TitleSection = styled.div`
 `;
 
 function Projects() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
-  const animateTitle = useAnimation();
-  const animateSubTitle = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animateTitle.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.1,
-        },
-      });
-      animateSubTitle.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.3,
-        },
-      });
-    }
-    if (!inView) {
-      animateTitle.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateSubTitle.start({
-        x: "-100",
-        opacity: 0,
-      });
-    }
-  }, [inView, animateTitle, animateSubTitle]);
-
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -92,12 +51,10 @@ function Projects() {
       },
     },
   };
-
   return (
     <>
       <Wraped>
         <section
-          ref={ref}
           className="bg-primary w-full h-full text-white font-poppins"
         >
           <ProjectSection className="pb-10 sm:pb-20 pt-40">
