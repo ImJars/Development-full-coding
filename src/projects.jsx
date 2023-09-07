@@ -68,6 +68,31 @@ function Projects() {
     }
   }, [inView, animateTitle, animateSubTitle]);
 
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate_Title: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.2,
+      },
+    },
+    animate_Subtitle: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.3,
+      },
+    },
+  };
+
   return (
     <>
       <Wraped>
@@ -79,14 +104,24 @@ function Projects() {
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
                 <motion.h1
-                  animate={animateTitle}
                   className="bg-primary text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide mb-2"
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Title"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   Projects
                 </motion.h1>
                 <motion.h2
-                  animate={animateSubTitle}
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-general text-xs sm:text-2xl sm:mt-5"
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Subtitle"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   Showcase of my full-stack related work.
                 </motion.h2>
