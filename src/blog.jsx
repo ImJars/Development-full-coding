@@ -67,6 +67,31 @@ function Blog() {
     }
   }, [inView, animateTitleBlog, animateSubTitleBlog]);
 
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate_Title: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.2,
+      },
+    },
+    animate_Subtitle: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.3,
+      },
+    },
+  };
+
   return (
     <>
       <Wraped>
@@ -75,14 +100,24 @@ function Blog() {
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
                 <motion.h1
-                  animate={animateTitleBlog}
                   className="text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide"
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Title"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   Personal Blog
                 </motion.h1>
                 <motion.h2
-                  animate={animateSubTitleBlog}
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-general tracking-wide sm:mt-5"
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Subtitle"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   Web development thoughts and stories.
                 </motion.h2>
