@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import TodayComponent from "./components/TIL/todayComponent";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const TilSection = styled.section`
@@ -25,47 +24,6 @@ const TilSectionTitle = styled.div`
 `;
 
 function Til() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
-
-  const animateTitleTIL = useAnimation();
-  const animateSubTitleTIL = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animateTitleTIL.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.1,
-        },
-      });
-      animateSubTitleTIL.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.5,
-          delay: 0.3,
-        },
-      });
-    }
-    if (!inView) {
-      animateTitleTIL.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateSubTitleTIL.start({
-        x: "-100",
-        opacity: 0,
-      });
-    }
-  }, [inView, animateTitleTIL, animateSubTitleTIL]);
-
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -94,7 +52,7 @@ function Til() {
   return (
     <>
       <Wraped>
-        <section ref={ref} className="bg-primary w-full h-full text-white">
+        <section className="bg-primary w-full h-full text-white">
           <TilSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TilSectionTitle className="mx-1 sm:mx-0">
