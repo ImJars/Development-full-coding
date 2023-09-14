@@ -31,65 +31,6 @@ const SkillsSectionTitle = styled.div`
 `;
 
 function Skills() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: false,
-  });
-  const animateBeforeTitleSkills = useAnimation();
-  const animateTitleSkills = useAnimation();
-  const animateSubTitleSkills = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animateBeforeTitleSkills.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.1,
-        },
-      });
-      animateTitleSkills.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.3,
-        },
-      });
-      animateSubTitleSkills.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.5,
-        },
-      });
-    }
-    if (!inView) {
-      animateBeforeTitleSkills.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateTitleSkills.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateSubTitleSkills.start({
-        x: "-100",
-        opacity: 0,
-      });
-    }
-  }, [
-    inView,
-    animateBeforeTitleSkills,
-    animateTitleSkills,
-    animateSubTitleSkills,
-  ]);
-
   //Observer y animaciones de indexSkill
   const { ref: refAnimate, inView: viewAnimate } = useInView({
     threshold: 0.5,
@@ -350,8 +291,6 @@ function Skills() {
     animateScroll,
     viewAnimateScroll,
   ]);
-
-
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
@@ -389,11 +328,7 @@ function Skills() {
   return (
     <>
       <Wraped>
-        <section
-          id="skills"
-          ref={ref}
-          className="bg-primary w-full h-full text-white"
-        >
+        <section id="skills" className="bg-primary w-full h-full text-white">
           <SkillSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <SkillsSectionTitle className="pb-20 mx-5 sm:mx-0">
@@ -409,7 +344,8 @@ function Skills() {
                   Work
                 </motion.p>
                 <motion.h1
-                  className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"variants={fadeInAnimationVariants}
+                  className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
+                  variants={fadeInAnimationVariants}
                   initial="initial"
                   whileInView="animate_Title"
                   viewport={{
@@ -419,7 +355,8 @@ function Skills() {
                   Skills and Tools
                 </motion.h1>
                 <motion.h2
-                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"variants={fadeInAnimationVariants}
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
+                  variants={fadeInAnimationVariants}
                   initial="initial"
                   whileInView="animate_Subtitle"
                   viewport={{
@@ -580,28 +517,28 @@ function Skills() {
                 </div>
               </div>
               <IndexSkill
-              title_1={"Front-End Developer"}
-              subtitle_1={"TypeScript"}
-              subtitle_2={"React"}
-              subtitle_3={"Tailwind CSS"}
-              subtitle_4={"Framer Motion"}
-              subtitle_5={"Next.js"}
-              title_2={"UI/UX Designer"}
-              subtitle_6={"Programming Languages"}
-              subtitle_7={"Technologies"}
-              subtitle_8={"Softwares and Tools"}
-              animate_1={animate1}
-              animate_2={animate2}
-              animate_3={animate3}
-              animate_4={animate4}
-              animate_5={animate5}
-              animate_6={animate6}
-              animate_7={animate7}
-              animate_9={animate9}
-              animate_10={animate10}
-              animate_11={animate11}
-              animate_scroll={animateScroll}
-            />
+                title_1={"Front-End Developer"}
+                subtitle_1={"TypeScript"}
+                subtitle_2={"React"}
+                subtitle_3={"Tailwind CSS"}
+                subtitle_4={"Framer Motion"}
+                subtitle_5={"Next.js"}
+                title_2={"UI/UX Designer"}
+                subtitle_6={"Programming Languages"}
+                subtitle_7={"Technologies"}
+                subtitle_8={"Softwares and Tools"}
+                animate_1={animate1}
+                animate_2={animate2}
+                animate_3={animate3}
+                animate_4={animate4}
+                animate_5={animate5}
+                animate_6={animate6}
+                animate_7={animate7}
+                animate_9={animate9}
+                animate_10={animate10}
+                animate_11={animate11}
+                animate_scroll={animateScroll}
+              />
             </div>
           </SkillSection>
           <div className="mt-20">
