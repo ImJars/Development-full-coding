@@ -351,6 +351,41 @@ function Skills() {
     viewAnimateScroll,
   ]);
 
+
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate_Before_Title: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.2,
+      },
+    },
+    animate_Title: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.3,
+      },
+    },
+    animate_Subtitle: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.4,
+      },
+    },
+  };
+
   return (
     <>
       <Wraped>
@@ -363,20 +398,33 @@ function Skills() {
             <div className="content-wrapped block mx-auto">
               <SkillsSectionTitle className="pb-20 mx-5 sm:mx-0">
                 <motion.p
-                  animate={animateBeforeTitleSkills}
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Before_Title"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   Work
                 </motion.p>
                 <motion.h1
-                  animate={animateTitleSkills}
-                  className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
+                  className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Title"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   Skills and Tools
                 </motion.h1>
                 <motion.h2
-                  animate={animateSubTitleSkills}
-                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate_Subtitle"
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   A look at all the programming languages, libraries, and tools
                   I've worked with.
