@@ -4,6 +4,7 @@ import IndexStudio from "./components/studio/indexStudio";
 import styled from "styled-components";
 import TableComputer from "./components/studio/tableComputer";
 import TablePrimary from "./components/studio/tablePrimary";
+import { motion } from "framer-motion";
 
 const ServicesSection = styled.section`
   display: block;
@@ -25,6 +26,40 @@ const TitleSection = styled.div`
 `;
 
 function Services() {
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate_Before_Title: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.2,
+      },
+    },
+    animate_Title: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.3,
+      },
+    },
+    animate_Subtitle: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+        delay: 0.4,
+      },
+    },
+  };
+
   return (
     <>
       <Wraped>
@@ -33,9 +68,17 @@ function Services() {
             <ServicesSection className="pb-10 sm:pb-20 pt-40">
               <div className="content-wrapped block mx-auto">
                 <TitleSection className="mx-5 sm:mx-0">
-                  <h1 className="Subtitle-Text text-text-blue text-2xl tracking-wide font-bold">
+                  <motion.h1
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate_Before_Title"
+                    viewport={{
+                      threshold: 0.5,
+                    }}
+                    className="Subtitle-Text text-text-blue text-2xl tracking-wide font-bold"
+                  >
                     Work
-                  </h1>
+                  </motion.h1>
                   <h2 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                     Services
                   </h2>
@@ -90,6 +133,14 @@ function Services() {
                   subtitle_3={"Peripherals"}
                   subtitle_4={"Conferencing Devices"}
                   subtitle_5={"Others"}
+
+                  animate_1={"animate_Computer"}
+                  animate_2={"animate_Display"}
+                  animate_3={"animate_Primary"}
+                  animate_4={"animate_Secondary"}
+                  animate_5={"animate_Peripherals"}
+                  animate_6={"animate_Conferencing"}
+                  animate_7={"animate_Others"}
                 />
               </div>
             </ServicesSection>
