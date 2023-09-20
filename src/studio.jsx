@@ -31,65 +31,6 @@ const TitleSection = styled.div`
 `;
 
 function Studio() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: false,
-  });
-  const animateMiniTitleStudio = useAnimation();
-  const animateTitleStudio = useAnimation();
-  const animateSubtitleStudio = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animateMiniTitleStudio.start({
-        opacity: 1,
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.1,
-        },
-      });
-      animateTitleStudio.start({
-        opacity: 1,
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.3,
-        },
-      });
-      animateSubtitleStudio.start({
-        opacity: 1,
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.5,
-        },
-      });
-    }
-
-    if (!inView) {
-      animateMiniTitleStudio.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateTitleStudio.start({
-        x: "-100",
-        pacity: 0,
-      });
-      animateSubtitleStudio.start({
-        x: "-100",
-        opacity: 0,
-      });
-    }
-  }, [
-    inView,
-    animateMiniTitleStudio,
-    animateTitleStudio,
-    animateSubtitleStudio,
-  ]);
 
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.1,
@@ -321,7 +262,6 @@ function Studio() {
       <Wraped>
         <section
           id="studio"
-          ref={ref}
           className="bg-primary w-full h-full text-white"
         >
           <StudioSection className="pb-10 sm:pb-20 pt-40">
