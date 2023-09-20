@@ -5,7 +5,7 @@ import List from "./components/experience/list";
 import Wraped from "./components/wraped";
 import Footer from "./footer";
 import { useInView } from "react-intersection-observer";
-import { animate, motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
 
 const ExperienceSection = styled.section`
@@ -27,66 +27,6 @@ const TitleSection = styled.div`
 `;
 
 function Experience() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: false,
-  });
-
-  const animateMiniTitleExperience = useAnimation();
-  const animateTitleExperience = useAnimation();
-  const animateSubtitleExperience = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animateMiniTitleExperience.start({
-        opacity: 1,
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.1,
-        },
-      });
-      animateTitleExperience.start({
-        opacity: 1,
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.3,
-        },
-      });
-      animateSubtitleExperience.start({
-        opacity: 1,
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 0.4,
-          delay: 0.5,
-        },
-      });
-    }
-
-    if (!inView) {
-      animateMiniTitleExperience.start({
-        x: "-100",
-        opacity: 0,
-      });
-      animateTitleExperience.start({
-        x: "-100",
-        pacity: 0,
-      });
-      animateSubtitleExperience.start({
-        x: "-100",
-        opacity: 0,
-      });
-    }
-  }, [
-    inView,
-    animateMiniTitleExperience,
-    animateTitleExperience,
-    animateSubtitleExperience,
-  ]);
 
   const { ref: refAnimate, inView: inViewAnimate } = useInView({
     threshold: 0.5,
@@ -249,7 +189,6 @@ function Experience() {
       <Wraped>
         <section
           id="experience"
-          ref={ref}
           className="bg-primary w-full h-full text-white"
         >
           <ExperienceSection className="pb-10 sm:pb-20 pt-40">
