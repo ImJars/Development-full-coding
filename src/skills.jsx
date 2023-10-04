@@ -90,106 +90,52 @@ function Skills() {
   const animateScroll = useAnimation();
 
   useEffect(() => {
-    if (viewAnimate) {
-      animate1.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
+    const animationViews = [
+      viewAnimate,
+      viewAnimate2,
+      viewAnimate3,
+      viewAnimate4,
+      viewAnimate5,
+      viewAnimate6,
+      viewAnimate7,
+      viewAnimate9,
+      viewAnimate10,
+      viewAnimate11,
+    ];
+
+    const animations = [
+      animate1,
+      animate2,
+      animate3,
+      animate4,
+      animate5,
+      animate6,
+      animate7,
+      animate9,
+      animate10,
+      animate11,
+    ];
+
+    for (let i = 0; i < animations.length; i++) {
+      const animation = animations[i];
+      const view = animationViews[i];
+      if (view) {
+        animation.start({
+          backgroundColor: "#1D263A",
+          color: "#60A5FA",
+          transition: {
+            type: "spring",
+            duration: 0.1,
+          },
+        });
+      } else {
+        animation.start({
+          backgroundColor: "#161E31",
+          color: "#909EB2",
+        });
+      }
     }
-    if (viewAnimate2) {
-      animate2.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate3) {
-      animate3.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate4) {
-      animate4.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate5) {
-      animate5.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate6) {
-      animate6.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate7) {
-      animate7.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate9) {
-      animate9.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate10) {
-      animate10.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (viewAnimate11) {
-      animate11.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
+
     if (viewAnimateScroll) {
       animateScroll.start({
         opacity: 1,
@@ -199,69 +145,7 @@ function Skills() {
           duration: 0.4,
         },
       });
-    }
-
-    if (!viewAnimate) {
-      animate1.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!viewAnimate2) {
-      animate2.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimate3) {
-      animate3.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimate4) {
-      animate4.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimate5) {
-      animate5.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimate6) {
-      animate6.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimate7) {
-      animate7.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!viewAnimate9) {
-      animate9.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimate10) {
-      animate10.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimate11) {
-      animate11.start({
-        backgroundColor: "#161E31",
-        color: "#909EB2",
-      });
-    }
-    if (!viewAnimateScroll) {
+    } else {
       animateScroll.start({
         x: 20,
         opacity: 0,
@@ -269,28 +153,29 @@ function Skills() {
     }
   }, [
     viewAnimate,
-    animate1,
     viewAnimate2,
-    animate2,
     viewAnimate3,
-    animate3,
     viewAnimate4,
-    animate4,
     viewAnimate5,
-    animate5,
     viewAnimate6,
-    animate6,
     viewAnimate7,
-    animate7,
     viewAnimate9,
-    animate9,
     viewAnimate10,
-    animate10,
     viewAnimate11,
+    animate1,
+    animate2,
+    animate3,
+    animate4,
+    animate5,
+    animate6,
+    animate7,
+    animate9,
+    animate10,
     animate11,
     animateScroll,
     viewAnimateScroll,
   ]);
+
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
