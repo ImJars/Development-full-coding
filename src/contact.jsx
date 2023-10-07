@@ -106,26 +106,29 @@ function Contact() {
   const animateScroll = useAnimation();
 
   useEffect(() => {
-    if (inView1) {
-      animate1.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
+    const animationViews = [inView1, inView2];
+
+    const animations = [animate1, animate2];
+    for (let i = 0; i < animations.length; i++) {
+      const animation = animations[i];
+      const view = animationViews[i];
+      if (view) {
+        animation.start({
+          backgroundColor: "#1D263A",
+          color: "#60A5FA",
+          transition: {
+            type: "spring",
+            duration: 0.1,
+          },
+        });
+      } else {
+        animation.start({
+          backgroundColor: "#161E31",
+          color: "#909EB2",
+        });
+      }
     }
-    if (inView2) {
-      animate2.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
+
     if (inViewScroll) {
       animateScroll.start({
         opacity: 1,
@@ -135,21 +138,7 @@ function Contact() {
           duration: 0.4,
         },
       });
-    }
-
-    if (!inView1) {
-      animate1.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inView2) {
-      animate2.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inViewScroll) {
+    } else {
       animateScroll.start({
         x: 20,
         opacity: 0,
