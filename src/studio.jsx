@@ -31,7 +31,6 @@ const TitleSection = styled.div`
 `;
 
 function Studio() {
-
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -75,76 +74,45 @@ function Studio() {
   const animateScroll = useAnimation();
 
   useEffect(() => {
-    if (inView1) {
-      animate1.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
+    const animationViews = [
+      inView1,
+      inView2,
+      inView3,
+      inView4,
+      inView5,
+      inView6,
+      inView7,
+    ];
+
+    const animations = [
+      animate1,
+      animate2,
+      animate3,
+      animate4,
+      animate5,
+      animate6,
+      animate7,
+    ];
+    for (let i = 0; i < animations.length; i++) {
+      const animation = animations[i];
+      const view = animationViews[i];
+      if (view) {
+        animation.start({
+          backgroundColor: "#1D263A",
+          color: "#60A5FA",
+          transition: {
+            type: "spring",
+            duration: 0.1,
+          },
+        });
+      } else {
+        animation.start({
+          backgroundColor: "#161E31",
+          color: "#909EB2",
+        });
+      }
     }
-    if (inView2) {
-      animate2.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inView3) {
-      animate3.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inView4) {
-      animate4.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inView5) {
-      animate5.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inView6) {
-      animate6.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inView7) {
-      animate7.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
+
     if (inViewScroll) {
       animateScroll.start({
         opacity: 1,
@@ -154,51 +122,7 @@ function Studio() {
           duration: 0.4,
         },
       });
-    }
-
-    if (!inView1) {
-      animate1.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inView2) {
-      animate2.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inView3) {
-      animate3.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inView4) {
-      animate4.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inView5) {
-      animate5.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inView6) {
-      animate6.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inView7) {
-      animate7.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inViewScroll) {
+    } else {
       animateScroll.start({
         x: 20,
         opacity: 0,
@@ -260,10 +184,7 @@ function Studio() {
   return (
     <>
       <Wraped>
-        <section
-          id="studio"
-          className="bg-primary w-full h-full text-white"
-        >
+        <section id="studio" className="bg-primary w-full h-full text-white">
           <StudioSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-5 sm:mx-0">
