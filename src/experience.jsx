@@ -27,7 +27,6 @@ const TitleSection = styled.div`
 `;
 
 function Experience() {
-
   const { ref: refAnimate, inView: inViewAnimate } = useInView({
     threshold: 0.5,
     triggerOnce: false,
@@ -56,45 +55,33 @@ function Experience() {
   const animateScroll = useAnimation();
 
   useEffect(() => {
-    if (inViewAnimate) {
-      animate1.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inViewAnimate2) {
-      animate2.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inViewAnimate3) {
-      animate3.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
-    }
-    if (inViewAnimate4) {
-      animate4.start({
-        backgroundColor: "#1D263A",
-        color: "#60A5FA",
-        transition: {
-          type: "spring",
-          duration: 0.1,
-        },
-      });
+    const animationViews = [
+      inViewAnimate,
+      inViewAnimate2,
+      inViewAnimate3,
+      inViewAnimate4,
+    ];
+
+    const animations = [animate1, animate2, animate3, animate4];
+
+    for (let i = 0; i < animations.length; i++) {
+      const animation = animations[i];
+      const view = animationViews[i];
+      if (view) {
+        animation.start({
+          backgroundColor: "#1D263A",
+          color: "#60A5FA",
+          transition: {
+            type: "spring",
+            duration: 0.1,
+          },
+        });
+      } else {
+        animation.start({
+          backgroundColor: "#161E31",
+          color: "#909EB2",
+        });
+      }
     }
     if (viewAnimateScroll) {
       animateScroll.start({
@@ -105,33 +92,7 @@ function Experience() {
           duration: 0.4,
         },
       });
-    }
-
-    if (!inViewAnimate) {
-      animate1.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inViewAnimate2) {
-      animate2.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inViewAnimate3) {
-      animate3.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!inViewAnimate4) {
-      animate4.start({
-        backgroundColor: "#161E31",
-        color: "#CBD5E1",
-      });
-    }
-    if (!viewAnimateScroll) {
+    } else {
       animateScroll.start({
         x: 20,
         opacity: 0,
