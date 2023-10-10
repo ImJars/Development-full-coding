@@ -13,7 +13,6 @@ import Skills from './skills'
 import Experience from './experience'
 import Studio from './studio'
 import Contact from './contact'
-import Services from './services'
 import { useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
@@ -56,7 +55,6 @@ function App() {
           <Route path='/experience' element={ <Experience /> } />
           <Route path='/studio' element={ <Studio /> } />
           <Route path='/contact' element={ <Contact /> } />
-          <Route path='/services' element={ <Services /> } />
         </Routes>
       </BrowserRouter>
     </>
