@@ -270,7 +270,7 @@ function Home({refHome}) {
                   icon={<FaProjectDiagram />}
                   title={"Clean & Intuitive"}
                   description={
-                    "Keep the UI clean with a modern touch without compromising UX."
+                    "Especialista en Desarrollo de Software enfocado en la eficiencia y calidad"
                   }
                 />
                 <CardHome
@@ -278,7 +278,7 @@ function Home({refHome}) {
                   icon={<MdVerified />}
                   title={"Detail Oriented"}
                   description={
-                    "Awareness to ease of access, UI consistency, and improved UX."
+                    "Apasionado por la ingeniería de software y la optimización de procesos "
                   }
                 />
                 <CardHome
@@ -286,15 +286,7 @@ function Home({refHome}) {
                   icon={<BiCodeAlt />}
                   title={"Pretty & Optimized"}
                   description={
-                    "Writing clean code is a top priority while keeping it as optimized as possible."
-                  }
-                />
-                <CardHome
-                  extraClassIcon={"bg-text-blue"}
-                  icon={<BiCodeAlt />}
-                  title={"Pretty & Optimized"}
-                  description={
-                    "Writing clean code is a top priority while keeping it as optimized as possible."
+                    "Liderando equipos de desarrollo para proyectos exitosos"
                   }
                 />
               </Cards>
