@@ -124,7 +124,6 @@ const fadeInAnimationVariants = {
     },
   },
 };
-
 function Home({refHome}) {
   return (
     <>
@@ -169,7 +168,7 @@ function Home({refHome}) {
                       once: true,
                     }}
                   >
-                    a full-stack web developer
+                    Constructor Digital: Edificando el Mundo a través del Desarrollo de Software
                   </motion.h3>
                 </TitleSection>
                 <div className="flex mt-8">
