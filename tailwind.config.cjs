@@ -53,6 +53,7 @@ module.exports = {
         'poppins': ['Poppins', 'sans-serif'],
         'outfit': ['Outfit', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
       },
       animate: {
         spin: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
