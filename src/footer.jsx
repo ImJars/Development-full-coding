@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import FooterLink from "./components/footer/footerLinks";
 
 function Footer() {
@@ -15,21 +15,27 @@ function Footer() {
             <div className="flex space-x-4 text-xl">
               <a
                 href="#"
-                className="hover:text-text-blue hover:transition hover:duration-500"
+                className="hover:text-text-blue hover:transition hover:duration-500 flex"
               >
-                <FaTwitter />
+                𝕏
               </a>
               <a
                 href="#"
-                className="hover:text-text-blue hover:transition hover:duration-500"
+                className="hover:text-text-blue hover:transition hover:duration-500 flex items-center"
               >
-                <FaGithub />
+                <FiInstagram />
               </a>
               <a
                 href="#"
-                className="hover:text-text-blue hover:transition hover:duration-500"
+                className="hover:text-text-blue hover:transition hover:duration-500 flex items-center"
               >
-                <FaLinkedin />
+                <FiGithub />
+              </a>
+              <a
+                href="#"
+                className="hover:text-text-blue hover:transition hover:duration-500 flex items-center"
+              >
+                <FiLinkedin />
               </a>
             </div>
           </div>
