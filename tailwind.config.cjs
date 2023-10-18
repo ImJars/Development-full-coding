@@ -54,6 +54,7 @@ module.exports = {
         'outfit': ['Outfit', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'lato': ['Lato', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
       animate: {
         spin: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
