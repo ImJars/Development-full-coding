@@ -12,9 +12,9 @@ import {
 } from "react-icons/si";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import IconHome from "./components/home/icon-home";
-import { FaProjectDiagram } from "react-icons/fa";
-import { MdVerified } from "react-icons/md";
-import { BiCodeAlt } from "react-icons/bi";
+import { RiHomeGearFill } from "react-icons/ri";
+import { HiUser } from "react-icons/hi";
+import { AiFillStar } from "react-icons/ai";
 import TextHome from "./components/home/text-home";
 import SubHome from "./components/home/sub-home";
 import FooterWraped from "./components/footerWraped";
@@ -267,7 +267,7 @@ function Home({refHome}) {
               <Cards>
                 <CardHome
                   extraClassIcon={"bg-card-icon-one"}
-                  icon={<FaProjectDiagram />}
+                  icon={<HiUser />}
                   title={"Clean & Intuitive"}
                   description={
                     "Especialista en Desarrollo de Software enfocado en la eficiencia y calidad"
@@ -275,7 +275,7 @@ function Home({refHome}) {
                 />
                 <CardHome
                   extraClassIcon={"bg-card-icon-two"}
-                  icon={<MdVerified />}
+                  icon={<RiHomeGearFill />}
                   title={"Detail Oriented"}
                   description={
                     "Apasionado por la ingeniería de software y la optimización de procesos "
@@ -283,7 +283,7 @@ function Home({refHome}) {
                 />
                 <CardHome
                   extraClassIcon={"bg-card-icon-three"}
-                  icon={<BiCodeAlt />}
+                  icon={<AiFillStar />}
                   title={"Pretty & Optimized"}
                   description={
                     "Liderando equipos de desarrollo para proyectos exitosos"
