@@ -181,7 +181,7 @@ function Home({refHome}) {
                       once: true,
                     }}
                   >
-                    <Buttonned className="font-outfit">Get in Touch</Buttonned>
+                    <Buttonned className="font-outfit">Descargar CV</Buttonned>
                   </motion.button>
                   <motion.div
                     className="flex items-center ml-4 text-text-blue"
@@ -205,7 +205,7 @@ function Home({refHome}) {
                         href="#"
                         className="uppercase font-outfit font-bold text-xs tracking-wider"
                       >
-                        &nbsp; Available for hire
+                        &nbsp; Disponible aqui
                       </Available>
                     </span>
                   </motion.div>
@@ -220,7 +220,7 @@ function Home({refHome}) {
                   }}
                 >
                   <h1 className="text-xs tracking-wider text-text-general">
-                    Current favorite tech stack/tools:
+                  Herramientas tecnológicas favoritas:
                   </h1>
                   <ul className="flex items-center mt-4 space-x-2 sm:space-x-3">
                     <IconHome
@@ -296,7 +296,7 @@ function Home({refHome}) {
             <div className="content-wrapped mx-auto">
               <TextHome
                 text={
-                  "A person with a new idea is a crank until the idea succeeds"
+                  "Una persona con una idea nueva es un loco hasta que la idea triunfa."
                 }
               />
             </div>
