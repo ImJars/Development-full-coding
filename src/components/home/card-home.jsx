@@ -9,17 +9,17 @@ function CardHome({ extraClassIcon, icon, title, description }) {
         <div className="-mt-0.5">
           <div className="mt-4 mr-2 ml-4 flex items-center gap-6 rounded-full bg-slate-800">
             <div className="-m-2">
-              <div className={` ${ extraClassIcon } rounded-full p-3.5 text-lg`}>
-                { icon }
+              <div className={` ${extraClassIcon} rounded-full p-2.5`}>
+                <h1 className="text-2xl">{icon}</h1>
               </div>
             </div>
             <div className="truncate py-2 pr-4 text-sm font-semibold text-slate-300">
-              { title }
+              {title}
             </div>
           </div>
         </div>
         <div className="p-4 pl-12 text-xs sm:text-sm text-text-general">
-          { description }
+          {description}
         </div>
       </div>
     </>

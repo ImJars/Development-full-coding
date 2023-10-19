@@ -268,7 +268,7 @@ function Home({refHome}) {
                 <CardHome
                   extraClassIcon={"bg-card-icon-one"}
                   icon={<HiUser />}
-                  title={"Clean & Intuitive"}
+                  title={"Conocimiento & Experiencia"}
                   description={
                     "Especialista en Desarrollo de Software enfocado en la eficiencia y calidad"
                   }
@@ -276,7 +276,7 @@ function Home({refHome}) {
                 <CardHome
                   extraClassIcon={"bg-card-icon-two"}
                   icon={<RiHomeGearFill />}
-                  title={"Detail Oriented"}
+                  title={"Innovación & Creatividad"}
                   description={
                     "Apasionado por la ingeniería de software y la optimización de procesos "
                   }
@@ -284,7 +284,7 @@ function Home({refHome}) {
                 <CardHome
                   extraClassIcon={"bg-card-icon-three"}
                   icon={<AiFillStar />}
-                  title={"Pretty & Optimized"}
+                  title={"Compromiso & Responsabilidad"}
                   description={
                     "Liderando equipos de desarrollo para proyectos exitosos"
                   }
