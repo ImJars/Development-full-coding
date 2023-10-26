@@ -3,6 +3,7 @@ import { BsGrid1X2Fill } from "react-icons/bs";
 import { motion, useAnimation } from "framer-motion";
 import { MdNightsStay } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
+import { BsFillSunFill } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import ActivitieComponent from "./activitieComponent";
 import { AiOutlineClose } from "react-icons/ai";
@@ -10,6 +11,12 @@ import { AiOutlineClose } from "react-icons/ai";
 function MainFlowbite() {
   const [active, setActive] = useState(false);
   const mainFlowbite = useAnimation();
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  function handleDarkMode() {
+    setDarkMode(!darkMode);
+  }
 
   function handleActive() {
     setActive(!active);
@@ -71,9 +78,11 @@ function MainFlowbite() {
                 <div className="flex flex-col gap-2">
                   <div className="px-2 text-xl font-bold">Action Center</div>
                   <div className="flex h-24 gap-4">
-                    <button className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
+                    <button onClick={() => handleDarkMode() } className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
                       <div>
-                        <MdNightsStay className="text-xl" />
+                        {
+                          darkMode ? <BsFillSunFill className="text-xl" /> : <MdNightsStay className="text-xl" />
+                        }
                       </div>
                       <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
                         Dark Mode:
