@@ -78,11 +78,22 @@ function MainFlowbite() {
                 <div className="flex flex-col gap-2">
                   <div className="px-2 text-xl font-bold">Action Center</div>
                   <div className="flex h-24 gap-4">
-                    <button onClick={() => handleDarkMode() } className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
+                    <button
+                      onClick={() => handleDarkMode()}
+                      className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-white dark:bg-slate-700"
+                    >
                       <div>
-                        {
-                          darkMode ? <><MdNightsStay className="text-xl absolute opacity-0 transition-all duration-500 ease-in-out" /><BsFillSunFill className="text-xl absolute opacity-100 transition-all duration-500 ease-in-out" /></> : <><MdNightsStay className="text-xl absolute opacity-100 transition-all duration-500 ease-in-out" /><BsFillSunFill className="text-xl absolute opacity-0 transition-all duration-500 ease-in-out" /></>
-                        }
+                        {darkMode ? (
+                          <>
+                            <MdNightsStay className="text-xl absolute opacity-0 transition-all duration-500 ease-in-out" />
+                            <BsFillSunFill className="text-xl absolute opacity-100 transition-all duration-500 ease-in-out" />
+                          </>
+                        ) : (
+                          <>
+                            <MdNightsStay className="text-xl absolute opacity-100 transition-all duration-500 ease-in-out" />
+                            <BsFillSunFill className="text-xl absolute opacity-0 transition-all duration-500 ease-in-out" />
+                          </>
+                        )}
                       </div>
                       <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
                         Dark Mode:
@@ -149,10 +160,13 @@ function MainFlowbite() {
                         >
                           <div className="mb-1 flex justify-between text-xs text-slate-600 dark:text-slate-400">
                             <span className="text-sm">Curse of Javascript</span>
-                            <span >22 hours ago</span>
+                            <span>22 hours ago</span>
                           </div>
                           <div className="flex flex-wrap items-baseline gap-x-1">
-                            <span>Estare realizando un curso de React y Tailwind CSS en las proximas semanas</span>
+                            <span>
+                              Estare realizando un curso de React y Tailwind CSS
+                              en las proximas semanas
+                            </span>
                           </div>
                           <div className="mt-1 flex justify-end text-text-general text-sm">
                             <BiLinkExternal />
