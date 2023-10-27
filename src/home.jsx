@@ -124,7 +124,7 @@ const fadeInAnimationVariants = {
     },
   },
 };
-function Home({refHome}) {
+function Home({ refHome }) {
   return (
     <>
       <HomeWraped>
@@ -168,21 +168,31 @@ function Home({refHome}) {
                       once: true,
                     }}
                   >
-                    Constructor Digital: Edificando el Mundo a través del Desarrollo de Software
+                    Constructor Digital: Edificando el Mundo a través del
+                    Desarrollo de Software
                   </motion.h3>
                 </TitleSection>
                 <div className="flex mt-8">
-                  <motion.button
-                    className=" bg-text-blue text-white rounded-lg px-5 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
-                    variants={fadeInAnimationVariants}
-                    initial="initial"
-                    whileInView="animate_Button"
-                    viewport={{
-                      once: true,
-                    }}
+                  <a 
+                    href="cv.pdf"
+                    // download="cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Buttonned className="font-outfit">Descargar CV</Buttonned>
-                  </motion.button>
+                    <motion.button
+                      className=" bg-text-blue text-white rounded-lg px-5 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
+                      variants={fadeInAnimationVariants}
+                      initial="initial"
+                      whileInView="animate_Button"
+                      viewport={{
+                        once: true,
+                      }}
+                    >
+                      <Buttonned className="font-outfit">
+                        Descargar CV
+                      </Buttonned>
+                    </motion.button>
+                  </a>
                   <motion.div
                     className="flex items-center ml-4 text-text-blue"
                     variants={fadeInAnimationVariants}
@@ -220,7 +230,7 @@ function Home({refHome}) {
                   }}
                 >
                   <h1 className="text-xs tracking-wider text-text-general">
-                  Herramientas tecnológicas favoritas:
+                    Herramientas tecnológicas favoritas:
                   </h1>
                   <ul className="flex items-center mt-4 space-x-2 sm:space-x-3">
                     <IconHome
