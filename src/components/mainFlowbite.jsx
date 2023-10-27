@@ -81,7 +81,7 @@ function MainFlowbite() {
                     <button onClick={() => handleDarkMode() } className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-white dark:bg-slate-700">
                       <div>
                         {
-                          darkMode ? <BsFillSunFill className="text-xl" /> : <MdNightsStay className="text-xl" />
+                          darkMode ? <><MdNightsStay className="text-xl absolute opacity-0 transition-all duration-500 ease-in-out" /><BsFillSunFill className="text-xl absolute opacity-100 transition-all duration-500 ease-in-out" /></> : <><MdNightsStay className="text-xl absolute opacity-100 transition-all duration-500 ease-in-out" /><BsFillSunFill className="text-xl absolute opacity-0 transition-all duration-500 ease-in-out" /></>
                         }
                       </div>
                       <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
