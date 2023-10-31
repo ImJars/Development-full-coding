@@ -315,10 +315,11 @@ function Home({ refHome }) {
             <section className="content-wrapped mx-auto">
               <div>
                 <SubHome
-                  title={"Clean & Intuitive"}
-                  subtitle={"Eye Catching, Modern & Minimalist Design."}
+                  title={"Hola!"}
+                  subtitleOne={"Mi nombre es"}
+                  subtitleTwo={"Angel Ramirez"}
                   text={
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sed lacinia ultrices, nunc lectus"
+                    "Y me gusta la tecnología! Disfruto creando aplicaciones, páginas y desarrollando software. Comencé a programar en VSA y Javascript en 2014 en la escuela secundaria. En el 2017 comencé en la ingeniería de software y comencé con proyectos profesionales en la universidad junto con algunas empresas, me gustó tanto que sigo implementando y aprendiendo nuevas tecnologías para mis desarrollos."
                   }
                 />
               </div>
