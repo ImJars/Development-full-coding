@@ -1,9 +1,9 @@
 import React from "react";
 import CardNumber from "./card-number";
-import { FaProjectDiagram } from "react-icons/fa";
+import { FaProjectDiagram, FaUsers } from "react-icons/fa";
 import { IoIosHappy } from "react-icons/io";
 import { AiFillCode } from "react-icons/ai";
-import { MdWork } from "react-icons/md";
+import { MdWork, MdVerified } from "react-icons/md";
 function SubHome({ title, subtitleOne, subtitleTwo, text }) {
   return (
     <>
@@ -25,12 +25,12 @@ function SubHome({ title, subtitleOne, subtitleTwo, text }) {
               title={"100% Proyectos completados"}
             />
             <CardNumber
-              number={<IoIosHappy />}
-              title={"+3 Años de Experiencia"}
+              number={<FaUsers />}
+              title={"100% Clientes satisfechos"}
             />
             <CardNumber
-              number={<IoIosHappy />}
-              title={"+3 Años de Experiencia"}
+              number={<MdVerified />}
+              title={"100% Feedback positivo"}
             />
             <CardNumber
               number={<IoIosHappy />}
