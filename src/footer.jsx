@@ -71,7 +71,7 @@ function Footer() {
         <div className="border-t border-text-general border-opacity-20 mt-8">
           <div className="flex justify-between mt-5">
             <h1 className="text-text-general text-xs">
-              © 2021, Angel Ramirez
+              © {new Date().getFullYear()}, Angel Ramirez
             </h1>
             <h2 className="text-text-general text-xs">
               see the recent update on GitHub
