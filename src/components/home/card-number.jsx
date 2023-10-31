@@ -5,7 +5,7 @@ function CardNumber({ number, title, text }) {
         <>
             <div
                 className='bg-secondary flex justify-center
-                            items-center rounded-2xl py-4 mb-5
+                            items-center rounded-2xl py-8
                             border border-text-general border-opacity-10'
             >
                 <div
@@ -24,15 +24,10 @@ function CardNumber({ number, title, text }) {
                         className='flex flex-col items-center justify-center'
                     >
                         <h1
-                            className='font-semibold sm:font-bold text-xs sm:text-base mt-2'
+                            className='font-medium text-xs sm:text-sm mt-2 mx-2'
                         >
                             { title }
                         </h1>
-                        <h2
-                            className='text-text-general text-xs sm:text-sm mt-2 text-center'
-                        >
-                            { text }
-                        </h2>
                     </div>
                 </div>
             </div>

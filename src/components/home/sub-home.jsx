@@ -1,6 +1,9 @@
 import React from "react";
 import CardNumber from "./card-number";
-
+import { FaProjectDiagram } from "react-icons/fa";
+import { IoIosHappy } from "react-icons/io";
+import { AiFillCode } from "react-icons/ai";
+import { MdWork } from "react-icons/md";
 function SubHome({ title, subtitleOne, subtitleTwo, text }) {
   return (
     <>
@@ -16,26 +19,30 @@ function SubHome({ title, subtitleOne, subtitleTwo, text }) {
         </div>
         <h3 className="text-sm sm:text-base text-text-general mb-14">{text}</h3>
         <div className="flex justify-center">
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0 ">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-4 ">
             <CardNumber
-              number={"1"}
-              title={"Typography"}
-              text={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+              number={<FaProjectDiagram />}
+              title={"100% Proyectos completados"}
             />
             <CardNumber
-              number={"2"}
-              title={"Spacing"}
-              text={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+              number={<IoIosHappy />}
+              title={"+3 Años de Experiencia"}
             />
             <CardNumber
-              number={"3"}
-              title={"Colors"}
-              text={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+              number={<IoIosHappy />}
+              title={"+3 Años de Experiencia"}
             />
             <CardNumber
-              number={"4"}
-              title={"Effects"}
-              text={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+              number={<IoIosHappy />}
+              title={"+3 Años de Experiencia"}
+            />
+            <CardNumber
+              number={<AiFillCode />}
+              title={"+50000 lineas de codigo"}
+            />
+            <CardNumber
+              number={<MdWork />}
+              title={"+2000 horas de trabajo"}
             />
           </div>
         </div>
