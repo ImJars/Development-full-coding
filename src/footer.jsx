@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import FooterLink from "./components/footer/footerLinks";
+import FooterIcons from "./components/footer/footerIcons";
 
 const FooterSection = styled.section`
   display: block;
@@ -16,13 +17,30 @@ function Footer() {
       <footer className="bg-primary text-white font-poppins">
         <FooterSection className="mx-1 sm:mx-0">
           <div className="content-wrapped block mx-auto">
+            <div className="flex justify-end space-x-5 text-2xl">
+              <FooterIcons
+                classNames={""}
+                link={"https://github.com/ImJars"}
+                children={<FiGithub />}
+              />
+              <FooterIcons
+                classNames={""}
+                link={"https://www.linkedin.com/in/imjars/"}
+                children={<FiLinkedin />}
+              />
+              <FooterIcons
+                classNames={""}
+                link={"https://www.instagram.com/jars.little/"}
+                children={<FiInstagram />}
+              />
+              <FooterIcons
+                classNames={""}
+                link={"https://twitter.com/Im_Jars"}
+                children={"𝕏"}
+              />
+            </div>
             <div>
-              <div>
-                <h1 className="text-white hover:text-gray-300 bg-primary">
-                  hola
-                </h1>
-              </div>
-              <div></div>
+
             </div>
           </div>
         </FooterSection>
