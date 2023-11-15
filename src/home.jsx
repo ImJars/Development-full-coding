@@ -326,12 +326,10 @@ function Home({ refHome }) {
             </section>
           </HomeSection>
         </div>
-      </HomeWraped>
-      <section className="bg-primary border-t border-opacity-20 border-text-general mx-auto">
         <FooterWraped>
           <Footer />
         </FooterWraped>
-      </section>
+      </HomeWraped>
     </>
   );
 }

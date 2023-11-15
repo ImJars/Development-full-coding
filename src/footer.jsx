@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
-import FooterLink from "./components/footer/footerLinks";
+// import FooterLink from "./components/footer/footerLinks";
 import FooterIcons from "./components/footer/footerIcons";
 
 const FooterSection = styled.section`
