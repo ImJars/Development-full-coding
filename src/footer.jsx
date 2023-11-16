@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
-// import FooterLink from "./components/footer/footerLinks";
+import FooterLink from "./components/footer/footerLinks";
 import FooterIcons from "./components/footer/footerIcons";
 
 const FooterSection = styled.section`
@@ -40,16 +40,39 @@ function Footer() {
                   children={"𝕏"}
                 />
               </div>
-              <div className="flex">
+              <div className="flex space-x-10">
                 <div className="w-1/3">
-                  <h1>
-                    About Me
-                  </h1>
+                  <div>
+                    <h1>
+                      About me
+                    </h1>
+                    <h1>
+                      Jars Little: Aprendiz de Ingeniero de Software
+                    </h1>
+                    <h1>
+                      Constructor Digital: Edificando el Mundo a través del Desarrollo de Software
+                    </h1>
+                  </div>
                 </div>
                 <div className="w-2/3">
-                  <h1>
-                    Links
-                  </h1>
+                  <div>
+                    <FooterLink 
+                      text={"Home"}
+                      link={"/"}
+                    />
+                    <FooterLink 
+                      text={"Projects"}
+                      link={"/projects"}
+                    />
+                    <FooterLink 
+                      text={"Blog"}
+                      link={"/blog"}
+                    />
+                    <FooterLink 
+                      text={"T.I.L."}
+                      link={"/til"}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
