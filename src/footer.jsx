@@ -40,38 +40,31 @@ function Footer() {
                   children={"𝕏"}
                 />
               </div>
-              <div className="flex space-x-10">
+              <div className="flex space-x-10 mt-8">
                 <div className="w-1/3">
                   <div>
+                    <h1>About me</h1>
+                    <h1>Jars Little: Aprendiz de Ingeniero de Software</h1>
                     <h1>
-                      About me
-                    </h1>
-                    <h1>
-                      Jars Little: Aprendiz de Ingeniero de Software
-                    </h1>
-                    <h1>
-                      Constructor Digital: Edificando el Mundo a través del Desarrollo de Software
+                      Constructor Digital: Edificando el Mundo a través del
+                      Desarrollo de Software
                     </h1>
                   </div>
                 </div>
                 <div className="w-2/3">
-                  <div>
-                    <FooterLink 
-                      text={"Home"}
-                      link={"/"}
-                    />
-                    <FooterLink 
-                      text={"Projects"}
-                      link={"/projects"}
-                    />
-                    <FooterLink 
-                      text={"Blog"}
-                      link={"/blog"}
-                    />
-                    <FooterLink 
-                      text={"T.I.L."}
-                      link={"/til"}
-                    />
+                  <div className="flex space-x-40">
+                    <div>
+                      <FooterLink text={"Home"} link={"/"} />
+                      <FooterLink text={"Projects"} link={"/projects"} />
+                      <FooterLink text={"Blog"} link={"/blog"} />
+                      <FooterLink text={"T.I.L."} link={"/til"} />
+                    </div>
+                    <div>
+                      <FooterLink text={"Skills & Tools"} link={"/skills"} />
+                      <FooterLink text={"Experience"} link={"/experience"} />
+                      <FooterLink text={"Studio"} link={"/studio"} />
+                      <FooterLink text={"Contact"} link={"/contact"} />
+                    </div>
                   </div>
                 </div>
               </div>
