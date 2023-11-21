@@ -5,6 +5,7 @@ function FooterLink({ link, classNames, text }) {
         <>
             <a 
                 href={ link }
+                className='flex justify-center items-center'
             >
                 <h1
                     className={`${ classNames } font-poppins text-xs sm:text-sm mb-2`}
