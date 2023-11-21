@@ -1,19 +1,17 @@
-import React from 'react'
-import {
-    Link 
-} from 'react-router-dom'
+import React from "react";
 
-function HeaderLink({ classNames, link, linkText }) {
-    return (
-        <>
-                <Link
-                    to={ link }
-                    className={`${ classNames } font-poppins text-xs tracking-wider font-semibold`}
-                >
-                    { linkText }
-                </Link>
-        </>
-    )
+function HeaderLink({ classNames, headerLink, linkText }) {
+  return (
+    <>
+      <a href={headerLink}>
+        <span
+          className={`${classNames} font-poppins text-xs tracking-wider font-semibold`}
+        >
+          {linkText}
+        </span>
+      </a>
+    </>
+  );
 }
 
-export default HeaderLink
+export default HeaderLink;
