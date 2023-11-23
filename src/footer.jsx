@@ -85,7 +85,7 @@ function Footer() {
               <div className="flex justify-center items-center">
                 <div>
                   <h1 className="text-xs text-text-white-gray">
-                    © Angel Ramirez 2023, Todos los derechos reservados.
+                    © Angel Ramirez { new Date().getFullYear() }, Todos los derechos reservados.
                   </h1>
                 </div>
               </div>
