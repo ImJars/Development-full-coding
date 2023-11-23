@@ -19,7 +19,16 @@ function Footer() {
           <div className="content-wrapped block mx-auto">
             <div>
               <div>
-
+                <h1 className="text-2xl font-bold">Contacto</h1>
+                <div>
+                  <h1 className="text-text-white-gray text-sm mt-2">
+                    Si desea ponerse en contacto conmigo, puede enviarme un
+                    correo electrónico a{" "}
+                    <a
+                      href="mailto:"
+                    />
+                    </h1>
+                </div>
               </div>
               <div className="flex justify-between space-x-10 mt-8">
                 <div className="w-1/3">
