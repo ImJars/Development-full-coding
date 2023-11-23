@@ -59,7 +59,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between">
+            <div className="bg-primary flex justify-between pb-10 pt-32">
               <div className="flex justify-end space-x-5 text-2xl">
                 <FooterIcons
                   classNames={""}
