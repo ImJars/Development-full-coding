@@ -21,19 +21,19 @@ function Footer() {
               <div>
                 <h1 className="text-2xl font-bold">Contacto</h1>
                 <div>
-                  <h1 className="text-text-white-gray text-sm mt-2">
+                  <h1 className="text-text-white-gray text-sm mt-2 w-2/3 sm:w-1/3">
                     Si desea ponerse en contacto conmigo, puede enviarme un
                     correo electrónico a <a href="mailto:" />
                   </h1>
                 </div>
               </div>
-              <div className="flex justify-between space-x-10 mt-8">
-                <div className="w-1/3">
+              <div className="flex justify-between sm:space-x-10 mt-6">
+                <div className="w-1/2 sm:w-1/3 flex justify-start items-center">
                   <div>
                     <a href="/" className="flex items-center">
                       <div className="flex sm:text-xl font-bold space-x-1 ">
-                        <div className=" hidden sm:block">
-                          <div className="flex">
+                        <div className="block">
+                          <div className="flex text-3xl">
                             <h1>&nbsp;Jars</h1>
                             <h2 className="text-text-purple">dev</h2>
                           </div>
@@ -42,7 +42,7 @@ function Footer() {
                     </a>
                   </div>
                 </div>
-                <div className="w-2/3">
+                <div className="w-1/2 sm:w-2/3">
                   <div className="grid grid-cols-1 sm:grid-cols-2">
                     <div>
                       <FooterLink text={"Home"} link={"/"} />
@@ -60,8 +60,8 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="bg-primary flex justify-between pb-10 pt-32">
-              <div className="flex justify-end space-x-5 text-2xl">
+            <div className="bg-primary flex flex-col sm:flex-row justify-between pb-10 pt-20">
+              <div className="flex justify-center sm:justify-end space-x-5 text-2xl mb-4 sm:mb-0">
                 <FooterIcons
                   classNames={""}
                   link={"https://github.com/ImJars"}

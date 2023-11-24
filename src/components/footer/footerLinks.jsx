@@ -5,10 +5,10 @@ function FooterLink({ link, classNames, text }) {
         <>
             <a 
                 href={ link }
-                className='flex justify-end items-center'
+                className='flex justify-center sm:justify-end sm:items-center mt-1 sm:mt-0'
             >
                 <h1
-                    className={`${ classNames } font-poppins text-xs sm:text-sm mb-2`}
+                    className={`${ classNames } font-poppins text-sm sm:text-sm mb-2`}
                 >
                     { text }
                 </h1>
