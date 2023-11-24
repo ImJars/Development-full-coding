@@ -40,17 +40,17 @@ function Header({ animateIcon }) {
             : "navbar border-0 border-opacity-0 border-text-general"
         }
       >
-        <div className="flex justify-between items-center w-full h-full mx-auto px-2">
-          <div className="flex space-x-4 sm:space-x-6 items-center">
+        <div className="flex font-poppins justify-between items-center w-full h-full mx-auto px-2">
+          <div className="flex space-x-4 sm:space-x-5 items-center">
             <div className="sm:mr-8 flex justify-center items-center">
               <a href="/" className="flex justify-center items-center">
-                <div className="flex sm:text-xl font-bold space-x-1 ">
-                  <motion.div animate={animateIcon} className="px-2 bg-text-purple rounded-lg border border-white border-opacity-10">
-                    <h1>&#47;</h1>
+                <div className="flex sm:text-xl font-bold space-x-0.5 ">
+                  <motion.div animate={animateIcon} className="px-2 bg-text-purple rounded-lg border border-white border-opacity-10 flex justify-center items-center">
+                    <h1 className="font-bold text-base pt-0.5 px-0.5">&#47;</h1>
                   </motion.div>
                   <div className=" hidden sm:block">
                     <div className="flex">
-                      <h1>&nbsp;jars</h1>
+                      <h1 className="font-bold">&nbsp;Jars</h1>
                       <h2 className="text-text-purple">dev</h2>
                     </div>
                   </div>

@@ -23,22 +23,23 @@ function Footer() {
                 <div>
                   <h1 className="text-text-white-gray text-sm mt-2">
                     Si desea ponerse en contacto conmigo, puede enviarme un
-                    correo electrónico a{" "}
-                    <a
-                      href="mailto:"
-                    />
-                    </h1>
+                    correo electrónico a <a href="mailto:" />
+                  </h1>
                 </div>
               </div>
               <div className="flex justify-between space-x-10 mt-8">
                 <div className="w-1/3">
                   <div>
-                    <h1 className="text-text-purple font-bold">About me</h1>
-                    <div className="h-1 w-6 bg-text-blue rounded-full" />
-                    <h1 className="text-text-white-gray text-sm mt-2">
-                      Soy un desarrollador de ingeniería de software con un
-                      enfoque meticuloso en la calidad y eficiencia del código.
-                    </h1>
+                    <a href="/" className="flex items-center">
+                      <div className="flex sm:text-xl font-bold space-x-1 ">
+                        <div className=" hidden sm:block">
+                          <div className="flex">
+                            <h1>&nbsp;Jars</h1>
+                            <h2 className="text-text-purple">dev</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div className="w-2/3">
@@ -85,7 +86,8 @@ function Footer() {
               <div className="flex justify-center items-center">
                 <div>
                   <h1 className="text-xs text-text-white-gray">
-                    © Angel Ramirez { new Date().getFullYear() }, Todos los derechos reservados.
+                    © Angel Ramirez {new Date().getFullYear()}, Todos los
+                    derechos reservados.
                   </h1>
                 </div>
               </div>
