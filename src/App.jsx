@@ -22,6 +22,7 @@ function App() {
     triggerOnce: false,
   });
   const animateIcon = useAnimation()
+  const animateDiagon = useAnimation()
 
   useEffect(() => {
     if (inViewHome) {
@@ -29,13 +30,23 @@ function App() {
         background: "#8B5CF6",
         transition: {
           type: "spring",
-          duration: 0.5,
+          duration: 0.1,
+        },
+      });
+      animateDiagon.start({
+        color: "#ffffff",
+        transition: {
+          type: "spring",
+          duration: 0.1,
         },
       });
     }
     if (!inViewHome) {
       animateIcon.start({
         background: '#0F172A',
+      });
+      animateDiagon.start({
+        color: "#8B5CF6",
       });
     }
   }, [inViewHome])
@@ -45,6 +56,7 @@ function App() {
       <BrowserRouter>
         <Header 
           animateIcon={animateIcon}
+          animateDiagon={animateDiagon}
         />
         <Routes>
           <Route exact path='/' element={ <Home refHome={refHome}/> } />

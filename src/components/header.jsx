@@ -20,7 +20,7 @@ const Navbar = styled.header`
   }
 `;
 
-function Header({ animateIcon }) {
+function Header({ animateIcon, animateDiagon }) {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -45,8 +45,8 @@ function Header({ animateIcon }) {
             <div className="sm:mr-8 flex justify-center items-center">
               <a href="/" className="flex justify-center items-center">
                 <div className="flex sm:text-xl font-bold space-x-0.5 ">
-                  <motion.div animate={animateIcon} className="px-2 bg-text-purple rounded-lg border border-white border-opacity-10 flex justify-center items-center">
-                    <h1 className="font-bold text-base pt-0.5 px-0.5">&#47;</h1>
+                  <motion.div animate={animateIcon} className="px-2 bg-text-purple rounded-lg border-2 border-text-purple flex justify-center items-center">
+                    <motion.h1 animate={animateDiagon} className="font-bold text-xs pt-0.5 px-0.5">&#47;</motion.h1>
                   </motion.div>
                   <div className=" hidden sm:block">
                     <div className="flex">
