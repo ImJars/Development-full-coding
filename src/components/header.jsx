@@ -12,11 +12,11 @@ const Navbar = styled.header`
     width: 100%;
     position: fixed;
     color: rgb(255, 255, 255);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 100;
   }
   &.active {
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 `;
 

@@ -33,7 +33,7 @@ function Footer() {
                     <a href="/" className="flex items-center">
                       <div className="flex sm:text-xl font-bold space-x-1 ">
                         <div className="block">
-                          <div className="flex text-3xl">
+                          <div className="flex text-2xl">
                             <h1>&nbsp;Jars</h1>
                             <h2 className="text-text-purple">dev</h2>
                           </div>
