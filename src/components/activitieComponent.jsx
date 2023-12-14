@@ -4,7 +4,7 @@ function ActivitieComponent({link,title,hours,text_1,text_2_purple,text_3,text_4
   return (
     <>
         <div>
-            <a href={link} className='border-divider-light block rounded-xl border p-4 text-[13px] backdrop-blur border-text-general border-opacity-20 bg-slate-900/60'>
+            <a href={link} className='border-divider-light block rounded-xl border p-4 text-[11px] sm:text-[13px] backdrop-blur border-text-general border-opacity-20 bg-slate-900/60'>
                 <div className='mb-1 flex justify-between text-xs text-slate-600 dark:text-slate-400'>
                     <span>{title}</span>
                     <span>{hours}</span>
