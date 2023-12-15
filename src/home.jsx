@@ -128,7 +128,7 @@ function Home({ refHome }) {
   return (
     <>
       <HomeWraped>
-        <div ref={refHome} className="bg-primary text-white font-poppins">
+        <div ref={refHome} className="text-white font-poppins">
           <HomeSection className="mx-1 sm:mx-0">
             <div className="content-wrapped block mx-auto pt-52 pb-28">
               <div className="relative">
