@@ -46,7 +46,7 @@ function Header({ animateIcon, animateDiagon }) {
               <a href="/" className="flex justify-center items-center">
                 <div className="flex sm:text-xl font-bold space-x-0.5 ">
                   <motion.div animate={animateIcon} className="px-2 bg-text-purple rounded-lg border-2 border-text-purple flex justify-center items-center">
-                    <motion.h1 animate={animateDiagon} className="font-bold text-xs pt-0.5 px-0.5">&#47;</motion.h1>
+                    <motion.h1 animate={animateDiagon} className="font-bold text-xs py-1 px-0.5 sm:pt-0.5 sm:px-0.5 mt-0.5">&#47;</motion.h1>
                   </motion.div>
                   <div className=" hidden sm:block">
                     <div className="flex">
