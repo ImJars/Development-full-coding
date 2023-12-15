@@ -4,6 +4,7 @@ import Wraped from "./components/wraped";
 import Footer from "./footer";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import FooterWraped from "./components/footerWraped";
 
 const TilSection = styled.section`
   display: block;
@@ -52,7 +53,7 @@ function Til() {
   return (
     <>
       <Wraped>
-        <section className="bg-primary w-full h-full text-white">
+        <section className="w-full h-full text-white">
           <TilSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TilSectionTitle className="mx-1 sm:mx-0">
@@ -126,9 +127,9 @@ function Til() {
               </TilSectionTitle>
             </div>
           </TilSection>
-          <div className="mt-20">
+          <FooterWraped className="mt-20">
             <Footer />
-          </div>
+          </FooterWraped>
         </section>
       </Wraped>
     </>
