@@ -14,7 +14,7 @@ const FooterSection = styled.section`
 function Footer() {
   return (
     <>
-      <footer className="bg-primary text-white font-poppins">
+      <footer className="text-white font-poppins">
         <FooterSection className="mx-1 sm:mx-0">
           <div className="content-wrapped block mx-auto">
             <div>
@@ -60,7 +60,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="bg-primary flex flex-col sm:flex-row justify-between pb-10 pt-20">
+            <div className="flex flex-col sm:flex-row justify-between pb-10 pt-20">
               <div className="flex justify-center sm:justify-end space-x-5 text-2xl mb-4 sm:mb-0">
                 <FooterIcons
                   classNames={""}

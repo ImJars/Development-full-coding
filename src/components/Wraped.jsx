@@ -2,6 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const ContentWraped = styled.section`
+  background: rgb(12, 18, 34);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 18, 34, 1) 0%,
+    rgba(15, 23, 42, 1) 50%,
+    rgba(12, 18, 34, 1) 100%
+  );
   @media (max-width: 639px) {
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +26,9 @@ const ContentWraped = styled.section`
 function Wraped({ children }) {
   return (
     <>
-      <ContentWraped className='bg-primary text-white font-poppins'>{children}</ContentWraped>
+      <ContentWraped className="text-white font-poppins">
+        {children}
+      </ContentWraped>
     </>
   );
 }

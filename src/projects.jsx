@@ -6,6 +6,7 @@ import { FaGithub, FaUserFriends, FaProjectDiagram } from "react-icons/fa";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import FooterWraped from "./components/footerWraped";
 
 const ProjectSection = styled.section`
   display: block;
@@ -54,14 +55,12 @@ function Projects() {
   return (
     <>
       <Wraped>
-        <section
-          className="bg-primary w-full h-full text-white font-poppins"
-        >
+        <section className="w-full h-full text-white font-poppins">
           <ProjectSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
                 <motion.h1
-                  className="bg-primary text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide mb-2"
+                  className="text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide mb-2"
                   variants={fadeInAnimationVariants}
                   initial="initial"
                   whileInView="animate_Title"
@@ -143,9 +142,9 @@ function Projects() {
               </TitleSection>
             </div>
           </ProjectSection>
-          <Wraped>
+          <FooterWraped>
             <Footer />
-          </Wraped>
+          </FooterWraped>
         </section>
       </Wraped>
     </>
