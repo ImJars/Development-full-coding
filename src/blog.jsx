@@ -5,6 +5,7 @@ import Wraped from "./components/wraped";
 import Footter from "./footer";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import FooterWraped from "./components/footerWraped";
 
 const BlogSection = styled.section`
   display: block;
@@ -53,7 +54,7 @@ function Blog() {
   return (
     <>
       <Wraped>
-        <section className="bg-primary w-full h-full text-white">
+        <section className="w-full h-full text-white">
           <BlogSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
@@ -124,9 +125,9 @@ function Blog() {
               </TitleSection>
             </div>
           </BlogSection>
-          <div className="mt-20">
+          <FooterWraped className="mt-20">
             <Footter />
-          </div>
+          </FooterWraped>
         </section>
       </Wraped>
     </>
