@@ -158,12 +158,12 @@ function Home({ refHome }) {
                   >
                     <h2 className="name">
                       I'm&nbsp;
-                      <font className="text-text-blue">Angel</font>
+                      <font className="text-text-purple">Angel</font>
                       &nbsp;Ramirez
                     </h2>
                   </motion.div>
                   <motion.h3
-                    className="font-outfit job text-text-general"
+                    className="font-outfit job text-text-general w-1/2"
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate_Subtitle"
@@ -171,7 +171,7 @@ function Home({ refHome }) {
                       once: true,
                     }}
                   >
-                    Constructor Digital: Edificando el Mundo a través del
+                    <font className="font-bold text-text-white-gray">Constructor Digital:</font> Edificando el Mundo a través del
                     Desarrollo de Software
                   </motion.h3>
                 </TitleSection>
@@ -183,7 +183,7 @@ function Home({ refHome }) {
                     rel="noopener noreferrer"
                   >
                     <motion.button
-                      className=" bg-text-blue text-white rounded-lg px-5 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
+                      className=" bg-text-purple text-white rounded-lg px-5 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
                       variants={fadeInAnimationVariants}
                       initial="initial"
                       whileInView="animate_Button"
@@ -197,7 +197,7 @@ function Home({ refHome }) {
                     </motion.button>
                   </a>
                   <motion.div
-                    className="flex items-center ml-4 text-text-blue"
+                    className="flex items-center ml-4 text-text-white-gray"
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate_Pinned"
