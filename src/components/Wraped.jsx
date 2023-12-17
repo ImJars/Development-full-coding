@@ -26,7 +26,7 @@ const ContentWraped = styled.section`
 function Wraped({ children }) {
   return (
     <>
-      <ContentWraped className="text-white font-poppins">
+      <ContentWraped className="w-full w-fulltext-white font-poppins">
         {children}
       </ContentWraped>
     </>
