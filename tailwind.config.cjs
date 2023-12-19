@@ -20,6 +20,8 @@ module.exports = {
         "text-white-gray": "#CBD5E1",
         "table-color": "#161E31",
 
+        "header-purple": "#9C82EA",
+
         "js-icon": "#EFD81D",
         "react-icon": "#5ED3F3",
         "tailwind-icon": "#36B7F0",
@@ -64,6 +66,9 @@ module.exports = {
         'Flowbite-0': '0px',
         'Flowbite': '70px',
         'Flowbite-2': '250px',
+      },
+      width: {
+        '1920px': '120rem',
       }
     },
   },
