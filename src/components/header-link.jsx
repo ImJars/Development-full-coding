@@ -8,7 +8,7 @@ function HeaderLink({ classNames, headerLink, linkText }) {
         className="flex justify-center items-center"
     >
         <span
-          className={`${classNames} font-poppins text-xs tracking-wider font-semibold`}
+          className={`${classNames} font-poppins text-xs tracking-wider font-normal`}
         >
           {linkText}
         </span>

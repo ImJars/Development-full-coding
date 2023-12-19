@@ -11,17 +11,18 @@ const Navbar = styled.header`
     height: 4rem;
     width: 100%;
     max-width: 1920px;
+    padding-top: 2px;
     margin-right: auto;
     margin-left: auto;
     position: fixed;
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     z-index: 100;
   }
   &.active {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 `;
 
@@ -38,7 +39,7 @@ function Header({ animateIcon, animateDiagon }) {
   window.addEventListener("scroll", changeBackground);
   return (
     <>
-      <div className="flex justify-center pt-2 bg-primary">
+      <div className="flex justify-center bg-primary">
         <Navbar
           className={
             navbar
@@ -46,7 +47,7 @@ function Header({ animateIcon, animateDiagon }) {
               : "navbar border-0 border-opacity-0 border-text-general"
           }
         >
-          <div className="w-full flex justify-between font-poppins items-center mx-auto px-2">
+          <div className="w-full flex justify-between font-poppins items-center px-2 md:px-4 pt-4 pb-2">
             <div className="flex space-x-3 items-center">
               <div className="sm:mr-8 flex justify-center items-center">
                 <a href="/" className="flex justify-center items-center">
