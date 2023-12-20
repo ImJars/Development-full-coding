@@ -150,7 +150,7 @@ function Experience() {
       <Wraped>
         <section
           id="experience"
-          className="bg-primary w-full h-full text-white"
+          className="w-full h-full text-white"
         >
           <ExperienceSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
