@@ -213,7 +213,7 @@ function Skills() {
   return (
     <>
       <Wraped>
-        <section id="skills" className="bg-primary w-full h-full text-white">
+        <section id="skills" className="w-full h-full text-white">
           <SkillSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <SkillsSectionTitle className="pb-20 mx-5 sm:mx-0">
