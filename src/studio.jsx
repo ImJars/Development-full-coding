@@ -184,7 +184,7 @@ function Studio() {
   return (
     <>
       <Wraped>
-        <section id="studio" className="bg-primary w-full h-full text-white">
+        <section id="studio" className="w-full h-full text-white">
           <StudioSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-5 sm:mx-0">
