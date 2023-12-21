@@ -33,7 +33,7 @@ function Footer() {
                     <a href="/" className="flex items-center">
                       <div className="flex sm:text-xl font-bold space-x-1 ">
                         <div className="block">
-                          <div className="flex text-2xl">
+                          <div className=" font-outfit flex text-2xl">
                             <h1>&nbsp;Jars</h1>
                             <h2 className="text-text-purple">dev</h2>
                           </div>
@@ -60,7 +60,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row justify-between pb-10 pt-20">
+            <div className="flex flex-col sm:flex-row justify-between pb-10 pt-5 mt-10 border-t border-opacity-20 border-text-white-gray">
               <div className="flex justify-center sm:justify-end space-x-5 text-2xl mb-4 sm:mb-0">
                 <FooterIcons
                   classNames={""}
