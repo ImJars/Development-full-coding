@@ -6,7 +6,9 @@ const HomeResponsiveWraped = styled.section`
   background: linear-gradient(
     0deg,
     rgba(12, 18, 34, 1) 0%,
+    rgba(15, 23, 42, 1) 40%,
     rgba(15, 23, 42, 1) 50%,
+    rgba(15, 23, 42, 1) 60%,
     rgba(12, 18, 34, 1) 100%
   );
   @media (max-width: 639px) {
