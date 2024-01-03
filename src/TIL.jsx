@@ -66,10 +66,10 @@ function Til() {
                     once: true,
                   }}
                 >
-                  Today I Learned
+                  Hoy aprendí
                 </motion.h1>
                 <motion.h2
-                  className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-general tracking-wide sm:mt-5"
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-general tracking-wide sm:mt-2"
                   variants={fadeInAnimationVariants}
                   initial="initial"
                   whileInView="animate_Subtitle"
@@ -77,7 +77,7 @@ function Til() {
                     once: true,
                   }}
                 >
-                  Short notes on full-stack related topics.
+                  Notas breves sobre temas relacionados con el full-stack.
                 </motion.h2>
               </TilSectionTitle>
             </div>
