@@ -145,7 +145,7 @@ function Home({ refHome }) {
                       once: true,
                     }}
                   >
-                    Hi!
+                    Hola!
                   </motion.h1>
                   <motion.div
                     className="text-text-white-gray font-outfit leading-none font-bold mb-2"
@@ -157,7 +157,7 @@ function Home({ refHome }) {
                     }}
                   >
                     <h2 className="name">
-                      I'm&nbsp;
+                      Soy &nbsp;
                       <font className="text-text-purple">Angel</font>
                       &nbsp;Ramirez
                     </h2>
