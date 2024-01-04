@@ -226,7 +226,7 @@ function Skills() {
                     once: true,
                   }}
                 >
-                  Work
+                  Trabajo
                 </motion.p>
                 <motion.h1
                   className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
@@ -237,7 +237,7 @@ function Skills() {
                     once: true,
                   }}
                 >
-                  Skills and Tools
+                  Habilidades y herramientas
                 </motion.h1>
                 <motion.h2
                   className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
@@ -248,8 +248,8 @@ function Skills() {
                     once: true,
                   }}
                 >
-                  A look at all the programming languages, libraries, and tools
-                  I've worked with.
+                  Un vistazo a todos los lenguajes de programación, bibliotecas
+                  y herramientas con los que he trabajado.
                 </motion.h2>
               </SkillsSectionTitle>
             </div>
