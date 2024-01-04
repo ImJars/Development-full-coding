@@ -148,10 +148,7 @@ function Experience() {
   return (
     <>
       <Wraped>
-        <section
-          id="experience"
-          className="w-full h-full text-white"
-        >
+        <section id="experience" className="w-full h-full text-white">
           <ExperienceSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-5 sm:mx-0">
@@ -164,7 +161,7 @@ function Experience() {
                     once: true,
                   }}
                 >
-                  Work
+                  Trabajo
                 </motion.h1>
                 <motion.h2
                   className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
@@ -175,7 +172,7 @@ function Experience() {
                     once: true,
                   }}
                 >
-                  Experience
+                  Experiencia
                 </motion.h2>
                 <motion.h3
                   className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
@@ -186,8 +183,8 @@ function Experience() {
                     once: true,
                   }}
                 >
-                  All about my freelance, self-employed, and professional work
-                  experience.
+                  Todo sobre mi experiencia laboral freelance, autónomo y
+                  profesional.
                 </motion.h3>
               </TitleSection>
             </div>
