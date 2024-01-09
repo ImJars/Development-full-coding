@@ -149,11 +149,7 @@ function Contact() {
   return (
     <>
       <Wraped>
-        <section
-          id="contact"
-          ref={ref}
-          className="w-full h-full text-white"
-        >
+        <section id="contact" ref={ref} className="w-full h-full text-white">
           <ContactSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-5 sm:mx-0">
@@ -161,20 +157,20 @@ function Contact() {
                   animate={animateMiniTitleContact}
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
                 >
-                  Work
+                  Trabajo
                 </motion.h1>
                 <motion.h2
                   animate={animateTitleContact}
                   className="Title-Name opacity-0 transform -translate-x-10 text-text-white-gray text-7xl font-bold tracking-wide"
                 >
-                  Contact
+                  Contacto
                 </motion.h2>
                 <motion.h3
                   animate={animateSubtitleContact}
                   className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
                 >
-                  Get in touch with me anytime, through social media, e-mail, or
-                  phone number.
+                  Ponte en contacto conmigo en cualquier momento, a través de
+                  las redes sociales, correo electrónico o número de teléfono.
                 </motion.h3>
               </TitleSection>
             </div>
