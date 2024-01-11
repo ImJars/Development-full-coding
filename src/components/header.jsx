@@ -77,7 +77,7 @@ function Header({ animateIcon, animateDiagon }) {
                   "text-header-purple hover:text-purple-300 focus:text-purple-300"
                 }
                 headerLink={"/projects"}
-                linkText={"Projects"}
+                linkText={"Proyectos"}
               />
               <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
               <HeaderLink
@@ -93,7 +93,7 @@ function Header({ animateIcon, animateDiagon }) {
                   "text-header-purple hover:text-purple-300 focus:text-purple-300"
                 }
                 headerLink={"/til"}
-                linkText={"T.I.L"}
+                linkText={"Aprendizaje"}
               />
               <HeaderFlowbite />
               <div className="space-x-3 hidden xl:flex">
@@ -102,7 +102,7 @@ function Header({ animateIcon, animateDiagon }) {
                     "text-text-blue hover:text-blue-300 focus:text-blue-300"
                   }
                   headerLink={"/skills"}
-                  linkText={"Skills & Tools"}
+                  linkText={"Habilidades"}
                 />
                 <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
                 <HeaderLink
@@ -110,7 +110,7 @@ function Header({ animateIcon, animateDiagon }) {
                     "text-text-blue hover:text-blue-300 focus:text-blue-300"
                   }
                   headerLink={"/experience"}
-                  linkText={"Experience"}
+                  linkText={"Experiencia"}
                 />
                 <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
                 <HeaderLink
@@ -118,7 +118,7 @@ function Header({ animateIcon, animateDiagon }) {
                     "text-text-blue hover:text-blue-300 focus:text-blue-300"
                   }
                   headerLink={"/studio"}
-                  linkText={"Studio"}
+                  linkText={"Estudio"}
                 />
                 <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
                 <HeaderLink
@@ -126,7 +126,7 @@ function Header({ animateIcon, animateDiagon }) {
                     "text-text-blue hover:text-blue-300 focus:text-blue-300"
                   }
                   headerLink={"/contact"}
-                  linkText={"Contact"}
+                  linkText={"Contacto"}
                 />
               </div>
             </div>
