@@ -319,7 +319,11 @@ function Home({ refHome }) {
                   subtitleOne={"Mi nombre es"}
                   subtitleTwo={"Angel Ramirez"}
                   text={
-                    "Y me gusta la tecnología! Disfruto creando aplicaciones, páginas y desarrollando software. Comencé a programar en VSA y Javascript en 2014 en la escuela secundaria. En el 2017 comencé en la ingeniería de software y comencé con proyectos profesionales en la universidad junto con algunas empresas, me gustó tanto que sigo implementando y aprendiendo nuevas tecnologías para mis desarrollos."
+                    "Y soy un desarrollador de ingeniería de software con más de 3 años de experiencia, a lo " +
+                    "largo de mi carrera me he especializado en el desarrollo de aplicaciones y software " +
+                    "empresarial, así como soluciones de alta calidad. He tenido la oportunidad de trabajar con " +
+                    "una amplia variedad de tecnologías y lenguajes de programación, lo que me ha permitido " +
+                    "adaptarme a diversas demandas tecnológicas."
                   }
                 />
               </div>
