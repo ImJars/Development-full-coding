@@ -57,7 +57,7 @@ function MainFlowbite() {
             <div>
               <BsGrid1X2Fill />
             </div>
-            <h1 className="text-sm hidden sm:block">Main Access</h1>
+            <h1 className="text-sm hidden sm:block">Menu principal</h1>
           </button>
           <motion.div
             animate={mainFlowbite}
