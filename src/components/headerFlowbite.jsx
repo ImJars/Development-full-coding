@@ -89,7 +89,7 @@ function HeaderFlowbite() {
                   className="nav-link h-8 text-xs"
                   onClick={() => setActive(!active)}
                 >
-                  Skills &amp; Tools
+                  Habilidades
                 </StyleLink>
               </a>
               <a href={"/experience"}>
@@ -97,7 +97,7 @@ function HeaderFlowbite() {
                   className="nav-link h-8 text-xs"
                   onClick={() => setActive(!active)}
                 >
-                  Experience
+                  Experiencia
                 </StyleLink>
               </a>
               <a href={"/studio"}>
@@ -105,7 +105,7 @@ function HeaderFlowbite() {
                   className="nav-link h-8 text-xs"
                   onClick={() => setActive(!active)}
                 >
-                  Studio
+                  Estudio
                 </StyleLink>
               </a>
               <a href={"/contact"}>
@@ -113,7 +113,7 @@ function HeaderFlowbite() {
                   className="nav-link h-8 text-xs"
                   onClick={() => setActive(!active)}
                 >
-                  Contact
+                  Contacto
                 </StyleLink>
               </a>
             </div>
