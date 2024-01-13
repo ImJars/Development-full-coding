@@ -177,7 +177,7 @@ function Home({ refHome }) {
                 </TitleSection>
                 <div className="flex mt-8">
                   <a 
-                    href="cv.pdf"
+                    href="Angel_Ramirez_CV.pdf"
                     // download="cv.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
