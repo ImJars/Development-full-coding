@@ -79,7 +79,7 @@ function Footer() {
                 />
                 <FooterIcons
                   classNames={""}
-                  link={"https://twitter.com/Im_Jars"}
+                  link={"https://x.com/Im_Jars"}
                   children={"𝕏"}
                 />
               </div>
