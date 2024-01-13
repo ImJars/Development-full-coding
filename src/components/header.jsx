@@ -133,7 +133,7 @@ function Header({ animateIcon, animateDiagon }) {
             <div className="flex space-x-4 items-center">
               <div className="hidden items-center sm:flex">
                 <a
-                  href="#"
+                  href="https://x.com/Im_Jars"
                   className="text-xl hover:bg-card hover:bg-opacity-50 rounded-xl px-3 py-1"
                 >
                   𝕏
@@ -145,7 +145,7 @@ function Header({ animateIcon, animateDiagon }) {
                 <BsTwitter />
               </a> */}
                 <a
-                  href="#"
+                  href="https://github.com/ImJars"
                   className="text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2"
                 >
                   <BsGithub />
