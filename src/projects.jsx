@@ -86,10 +86,10 @@ function Projects() {
             <div className="mt-20 content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
                 <h1 className="text-xs sm:text-sm text-text-purple font-bold tracking-wide mb-1">
-                  Diseñador TailwindCSS
+                  Interfaces de usuario basadas en TailwindCSS
                 </h1>
                 <h2 className="dynamic-text font-bold tracking-wide">
-                  The dynamic accent colors.
+                  Software intuitivo es atractivo para los usuarios
                 </h2>
                 <h3 className="text-text-general text-sm sm:text-base mt-1 sm:w-1/2">
                   Add accent colors for dynamic, flexible color use in your
