@@ -86,7 +86,7 @@ function Projects() {
             <div className="mt-20 content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
                 <h1 className="text-xs sm:text-sm text-text-purple font-bold tracking-wide mb-1">
-                  tailwindcss-accent
+                  Diseñador TailwindCSS
                 </h1>
                 <h2 className="dynamic-text font-bold tracking-wide">
                   The dynamic accent colors.
