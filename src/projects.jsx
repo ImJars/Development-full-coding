@@ -92,8 +92,12 @@ function Projects() {
                   Software intuitivo es atractivo para los usuarios
                 </h2>
                 <h3 className="text-text-general text-sm sm:text-base mt-1 sm:w-1/2">
-                  Add accent colors for dynamic, flexible color use in your
-                  Tailwind CSS project.
+                  El desarrollo de software es un proceso complejo que requiere
+                  de un equipo de trabajo con habilidades y conocimientos
+                  específicos. En mi caso, ultimamente me he especializado en el desarrollo de
+                  interfaces de usuario basadas en TailwindCSS, un framework de
+                  CSS que permite crear interfaces de usuario de forma rápida y
+                  eficiente.
                 </h3>
                 <button className="mt-4 bg-text-purple text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full bg-opacity-10">
                   <a
