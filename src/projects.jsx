@@ -101,7 +101,9 @@ function Projects() {
                 </h3>
                 <button className="mt-4 bg-text-purple text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full bg-opacity-10">
                   <a
-                    href="#"
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center text-xs sm:text-sm text-text-purple font-semibold space-x-1"
                   >
                     <h1>learn more</h1>
