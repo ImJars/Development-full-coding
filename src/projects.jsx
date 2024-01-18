@@ -7,6 +7,7 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import FooterWraped from "./components/footerWraped";
+import SoftwareProject from "./components/projects/softwareProject";
 
 const ProjectSection = styled.section`
   display: block;
@@ -121,6 +122,9 @@ function Projects() {
             </div>
           </ProjectSection>
           <ProjectSection>
+            <div>
+              <SoftwareProject />
+            </div>
             <div className="mb-20 content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-4 gap-y-0">
