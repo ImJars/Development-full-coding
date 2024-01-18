@@ -122,7 +122,7 @@ function Projects() {
             </div>
           </ProjectSection>
           <ProjectSection>
-            <div>
+            <div className="mb-20 content-wrapped block mx-auto">
               <SoftwareProject />
             </div>
             <div className="mb-20 content-wrapped block mx-auto">
