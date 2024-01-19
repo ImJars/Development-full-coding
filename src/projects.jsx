@@ -124,6 +124,11 @@ function Projects() {
           <ProjectSection>
             <div className="mb-20 content-wrapped block mx-auto">
               <SoftwareProject />
+              <SoftwareProject />
+              <SoftwareProject />
+              <SoftwareProject />
+              <SoftwareProject />
+              <SoftwareProject />
             </div>
             <div className="mb-20 content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
