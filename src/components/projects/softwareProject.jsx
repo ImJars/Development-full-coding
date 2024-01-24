@@ -4,7 +4,7 @@ import { FaFolderOpen } from "react-icons/fa";
 function SoftwareProject() {
   return (
     <>
-      <div className="border border-text-general border-opacity-10 rounded-xl font-poppins">
+      <div className="border bg-card border-text-general border-opacity-10 rounded-xl font-poppins">
         <div className="p-5">
           <div>
             <div className="flex flex-col items-center space-x-4">
