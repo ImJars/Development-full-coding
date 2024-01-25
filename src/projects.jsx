@@ -124,7 +124,9 @@ function Projects() {
           <ProjectSection>
             <div className="mb-20 content-wrapped block mx-auto">
               <div className="grid grid-cols-3 gap-4">
-                <SoftwareProject />
+                <SoftwareProject 
+                  link_page={"/project_page"}
+                />
                 <SoftwareProject />
                 <SoftwareProject />
                 <SoftwareProject />

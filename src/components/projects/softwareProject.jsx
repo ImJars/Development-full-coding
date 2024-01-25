@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaFolderOpen } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
-function SoftwareProject() {
+function SoftwareProject({ link_page }) {
   const [active, setActive] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ function SoftwareProject() {
                   </h1>
                 </div>
                 <div>
-                  <a href="#">
+                  <a href={link_page}>
                     <FiGithub className="text-xl text-text-white-gray" />
                   </a>
                 </div>

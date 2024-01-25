@@ -28,8 +28,11 @@ const ContentWraped = styled.section`
 function Wraped({ children }) {
   return (
     <>
-      <ContentWraped className="w-full w-fulltext-white font-poppins">
+      <ContentWraped className="text-white font-poppins">
+      {/* <img src="background.svg" className="object-contain w-full h-screen relative" alt=""/> */}
+        {/* <div className="absolute top-0 left-1/8 flex"> */}
         {children}
+        {/* </div> */}
       </ContentWraped>
     </>
   );

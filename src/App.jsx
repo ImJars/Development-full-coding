@@ -15,6 +15,7 @@ import Studio from './studio'
 import Contact from './contact'
 import { useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import PageProject from './components/projects/project_page.jsx'
 
 function App() {
   const { ref: refHome, inView: inViewHome } = useInView({
@@ -67,6 +68,9 @@ function App() {
           <Route path='/experience' element={ <Experience /> } />
           <Route path='/studio' element={ <Studio /> } />
           <Route path='/contact' element={ <Contact /> } />
+
+          {/* Links to the projects: */}
+          <Route path='/project_page' element={ <PageProject/> } />
         </Routes>
       </BrowserRouter>
     </>
