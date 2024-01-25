@@ -4,11 +4,26 @@ import Wraped from "../wraped";
 
 const ProjectSection = styled.section`
   display: block;
+  background-image: linear-gradient(#6e47ff 1px, transparent 1px), linear-gradient(to right, #6e47ff 1px, transparent 0.5px);
+background-size: 14px 14px;
+background-color: rgba(71, 212, 255, 0);
   .content-wrapped {
     max-width: 1152px;
   }
 `;
-
+const BackgroundSection = styled.div`
+  width: 100%;
+  height:100%;
+  background: rgb(12, 18, 34);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 18, 34, 1) 0%,
+    rgba(15, 23, 42, 1) 40%,
+    rgba(15, 23, 42, 1) 50%,
+    rgba(15, 23, 42, 1) 60%,
+    rgba(12, 18, 34, 1) 100%
+  );
+`;
 const TitleSection = styled.div`
   .Title-Name {
     font-size: clamp(1.875rem, 0.3125rem + 6.25vw, 4.5rem);
@@ -24,11 +39,12 @@ const TitleSection = styled.div`
 function PageProject() {
   return (
     <>
-      <Wraped>
-        <section className="w-full h-screen text-white">
+      <BackgroundSection className="static">
+        <img className="static min-w-fit object-cover w-full h-full stroke-1 stroke-text-purple fill-text-purple" src="background.svg" alt="" />
+        <section className="absolute top-0 w-full h-full text-white">
           <ProjectSection>
-            <div className="content-wrapped block mx-auto">
-              <TitleSection className="mx-5 sm:mx-0 flex justify-center pt-40">
+            <div className="content-wrapped block mx-auto pt-40">
+              <TitleSection className="mx-5 sm:mx-0 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                   Jarsdev Website
                 </h1>
@@ -36,7 +52,7 @@ function PageProject() {
             </div>
           </ProjectSection>
         </section>
-      </Wraped>
+      </BackgroundSection>
     </>
   );
 }
