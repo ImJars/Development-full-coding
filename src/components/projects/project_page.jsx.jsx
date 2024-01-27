@@ -10,7 +10,7 @@ const ProjectSection = styled.section`
 `;
 const BackgroundSection = styled.div`
   width: 100%;
-  height:100%;
+  height: 100%;
   background: rgb(12, 18, 34);
   background: linear-gradient(
     0deg,
@@ -37,7 +37,16 @@ function PageProject() {
   return (
     <>
       <BackgroundSection className="static">
-        <img className="static min-w-full object-cover bg-repeat w-full h-full stroke-text-purple fill-text-purple" src="background.svg" alt="" />
+        <img
+          className="static min-w-full object-cover w-full h-screen stroke-text-purple fill-text-purple"
+          src="background.svg"
+          alt=""
+        />
+        <img
+          className="static min-w-full object-cover w-full h-screen stroke-text-purple fill-text-purple"
+          src="background.svg"
+          alt=""
+        />
         <section className="absolute top-0 w-full h-full text-white">
           <ProjectSection>
             <div className="content-wrapped block mx-auto pt-40">
@@ -46,6 +55,47 @@ function PageProject() {
                   Jarsdev Website
                 </h1>
               </TitleSection>
+              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20">
+                <div>
+                  <div className="mt-5 border p-32 border-text-general border-opacity-20 mb-10 shadow-lg shadow-indigo-500/50" />
+                  <p className="text-text-general tracking-wide">
+                    One of the most important things for me when working from
+                    home is having the right tools. So, let's start with my main
+                    device - the computer.
+                  </p>
+                </div>
+                <div className="mt-10">
+                  <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
+                    Computer
+                  </h1>
+                  <p className="text-text-general">
+                    This computer may not have the latest specs, but it runs
+                    incredibly fast and smooth! It's perfect for web
+                    development, even for larger or heavier projects like React
+                    Electron.
+                  </p>
+                  <p className="text-text-general mt-5">
+                    The 32GB of RAM also ensures that multitasking is a breeze!
+                  </p>
+                </div>
+                <div className="mt-10">
+                  <div>
+                    <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
+                      Display
+                    </h1>
+                    <p className="text-text-general">
+                      The dual monitor setup maximizes my web development
+                      workflow. I can code on one screen while previewing live
+                      on the other — no more Alt + Tab necessary for faster,
+                      more efficient work!
+                    </p>
+                    <p className="text-text-general mt-5">
+                      Need a website with extra wide breakpoint? I've got you
+                      covered with my ultrawide monitor.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </ProjectSection>
         </section>
