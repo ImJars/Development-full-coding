@@ -4,9 +4,6 @@ import Wraped from "../wraped";
 
 const ProjectSection = styled.section`
   display: block;
-  background-image: linear-gradient(#6e47ff 1px, transparent 1px), linear-gradient(to right, #6e47ff 1px, transparent 0.5px);
-background-size: 14px 14px;
-background-color: rgba(71, 212, 255, 0);
   .content-wrapped {
     max-width: 1152px;
   }
@@ -40,7 +37,7 @@ function PageProject() {
   return (
     <>
       <BackgroundSection className="static">
-        <img className="static min-w-fit object-cover w-full h-full stroke-1 stroke-text-purple fill-text-purple" src="background.svg" alt="" />
+        <img className="static min-w-full object-cover bg-repeat w-full h-full stroke-text-purple fill-text-purple" src="background.svg" alt="" />
         <section className="absolute top-0 w-full h-full text-white">
           <ProjectSection>
             <div className="content-wrapped block mx-auto pt-40">
