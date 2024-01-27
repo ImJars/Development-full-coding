@@ -49,16 +49,26 @@ function PageProject() {
         />
         <section className="absolute top-0 w-full h-full text-white">
           <ProjectSection>
-            <div className="content-wrapped block mx-auto pt-40">
-              <TitleSection className="mx-5 sm:mx-0 flex justify-center">
+            <div className="content-wrapped block mx-auto pt-32">
+              <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                   Jarsdev Website
                 </h1>
               </TitleSection>
               <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20">
                 <div>
-                  <div className="mt-5 border p-32 border-text-general border-opacity-20 mb-10 shadow-lg shadow-indigo-500/50" />
-                  <p className="text-text-general tracking-wide">
+                  <p className="text-text-general my-8">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, hic perspiciatis quidem natus quod temporibus maiores reprehenderit harum in sequi dolore non, quasi quas voluptate expedita deserunt ipsam sit. Eos.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ex nisi laborum reprehenderit ipsum porro, ratione cupiditate, aspernatur error necessitatibus omnis, earum at blanditiis ut eveniet? Quisquam, voluptatem. Non, magni!
+                  </p>
+                  <div className="flex justify-center my-8">
+                    <img
+                      src="legacyier-express.png"
+                      alt="img_legacyier-express"
+                      className="w-2/3 shadow-2xl shadow-text-purple/50"
+                    />
+                  </div>
+                  <p className="text-text-general tracking-wide my-8">
                     One of the most important things for me when working from
                     home is having the right tools. So, let's start with my main
                     device - the computer.
