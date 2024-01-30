@@ -9,8 +9,7 @@ const ProjectSection = styled.section`
   }
 `;
 const BackgroundSection = styled.div`
-  width: 100%;
-  height: 100%;
+  height: 2000px;
   background: rgb(12, 18, 34);
   background: linear-gradient(
     0deg,
@@ -20,6 +19,9 @@ const BackgroundSection = styled.div`
     rgba(15, 23, 42, 1) 60%,
     rgba(12, 18, 34, 1) 100%
   );
+  mask-image: linear-gradient(to bottom, tranparent 50%, black 80%);
+  -webkit-mask-image: linear-gradient(to bottom, tranparent 50%, black 80%);
+  stroke-opacity: 0.5;
 `;
 const TitleSection = styled.div`
   .Title-Name {
@@ -33,27 +35,12 @@ const TitleSection = styled.div`
   }
 `;
 
-const ImageStyle = styled.div`
-  mask-image: linear-gradient(to bottom, tranparent 50%, black 80%);
-  -webkit-mask-image: linear-gradient(to bottom, tranparent 50%, black 80%);
-`
-
 function PageProject() {
   return (
     <>
-      <BackgroundSection className="static">
-        <img
-          className="static min-w-full object-cover w-full h-screen stroke-text-purple fill-text-purple"
-          src="background.svg"
-          alt=""
-        />
-        <img
-          className="static min-w-full object-cover w-full h-screen stroke-text-purple fill-text-purple"
-          src="background.svg"
-          alt=""
-        />
-        <ImageStyle
-          className="w-full h-screen inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
+      <BackgroundSection className="relative">
+        <div
+          className="w-full h-full static inset-0 bg-[bottom_1px_center]"
           style={{ backgroundImage: "url('descarga.svg')" }}
         />
         <section className="absolute top-0 w-full h-full text-white">
