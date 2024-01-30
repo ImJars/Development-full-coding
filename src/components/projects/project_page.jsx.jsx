@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Wraped from "../wraped";
 
 const ProjectSection = styled.section`
   display: block;
@@ -45,15 +44,15 @@ function PageProject() {
         />
         <section className="absolute top-0 w-full h-full text-white">
           <ProjectSection>
-            <div className="content-wrapped block mx-auto pt-32">
+            <div className="content-wrapped block mx-auto pt-20 sm:pt-32">
               <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                   Jarsdev Website
                 </h1>
               </TitleSection>
-              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20">
+              <div className="border-l px-5 md:pl-24 border-text-general border-opacity-20">
                 <div>
-                  <p className="text-text-general my-8">
+                  <p className="text-text-general my-8 text-justify sm:text-left">
                     Jarsdev es uno de los ultimos proyectos en los que he trabajado, es un proyecto que me ha encantado hacer. Este proyecto es un sitio web personal construido desde cero que me permite mostrar mis habilidades y proyectos a futuros empleadores y clientes.
                     Cada vez mejorando y enfocandome en la experiencia de usuario, eficiencia, tecnologias empleadas y sobre todo que sea atrayente para el usuario. Poniendo en practica uno de mis verdaderos objetivos que es la simplicidad pero con un toque de elegancia.
                   </p>
