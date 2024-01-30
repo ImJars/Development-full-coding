@@ -54,15 +54,21 @@ function PageProject() {
               <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20">
                 <div>
                   <p className="text-text-general my-8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, hic perspiciatis quidem natus quod temporibus maiores reprehenderit harum in sequi dolore non, quasi quas voluptate expedita deserunt ipsam sit. Eos.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ex nisi laborum reprehenderit ipsum porro, ratione cupiditate, aspernatur error necessitatibus omnis, earum at blanditiis ut eveniet? Quisquam, voluptatem. Non, magni!
+                    Jarsdev es uno de los ultimos proyectos en los que he trabajado, es un proyecto que me ha encantado hacer. Este proyecto es un sitio web personal construido desde cero que me permite mostrar mis habilidades y proyectos a futuros empleadores y clientes.
+                    Cada vez mejorando y enfocandome en la experiencia de usuario, eficiencia, tecnologias empleadas y sobre todo que sea atrayente para el usuario. Poniendo en practica uno de mis verdaderos objetivos que es la simplicidad pero con un toque de elegancia.
                   </p>
-                  <div className="flex justify-center my-8">
+                  <p className="text-text-general my-8">
+                  Este proyecto fue inspirado en el dicho de Bill Gates: "Si tu negocio no está en internet, tu negocio no existe", y es por eso que decidí crear este sitio web para mostrar al mundo lo que puedo hacer y lo que puedo ofrecer, aunque lo más importante es para que las personas puedan encontrarme y contactarme.
+                  </p>
+                  <div className="flex flex-col justify-center my-8">
                     <img
                       src="legacyier-express.png"
                       alt="img_legacyier-express"
-                      className="w-2/3 shadow-2xl shadow-text-purple/50"
+                      className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
                     />
+                    <p className="flex justify-center text-xs text-text-white-gray">
+                      p. Pagina de Inicio de sitio web Jarsdev
+                    </p>
                   </div>
                   <p className="text-text-general tracking-wide my-8">
                     One of the most important things for me when working from
