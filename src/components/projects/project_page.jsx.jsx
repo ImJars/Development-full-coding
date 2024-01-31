@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Languajes from "../skills/languajes";
+import Footer from "../../footer";
 
 const ProjectSection = styled.section`
   display: block;
@@ -53,11 +55,15 @@ function PageProject() {
               <div className="border-l px-5 md:pl-24 border-text-general border-opacity-20">
                 <div>
                   <p className="text-text-general my-8 text-justify sm:text-left">
-                    Jarsdev es uno de los ultimos proyectos en los que he trabajado, es un proyecto que me ha encantado hacer. Este proyecto es un sitio web personal construido desde cero que me permite mostrar mis habilidades y proyectos a futuros empleadores y clientes.
-                    Cada vez mejorando y enfocandome en la experiencia de usuario, eficiencia, tecnologias empleadas y sobre todo que sea atrayente para el usuario. Poniendo en practica uno de mis verdaderos objetivos que es la simplicidad pero con un toque de elegancia.
-                  </p>
-                  <p className="text-text-general my-8">
-                  Este proyecto fue inspirado en el dicho de Bill Gates: "Si tu negocio no está en internet, tu negocio no existe", y es por eso que decidí crear este sitio web para mostrar al mundo lo que puedo hacer y lo que puedo ofrecer, aunque lo más importante es para que las personas puedan encontrarme y contactarme.
+                    Jarsdev es uno de los ultimos proyectos en los que he
+                    trabajado, es un proyecto que me ha encantado hacer. Este
+                    proyecto es un sitio web personal construido desde cero que
+                    me permite mostrar mis habilidades y proyectos a futuros
+                    empleadores y clientes. Cada vez mejorando y enfocandome en
+                    la experiencia de usuario, eficiencia, tecnologias empleadas
+                    y sobre todo que sea atrayente para el usuario. Poniendo en
+                    practica uno de mis verdaderos objetivos que es la
+                    simplicidad pero con un toque de elegancia.
                   </p>
                   <div className="flex flex-col justify-center my-8">
                     <img
@@ -69,44 +75,36 @@ function PageProject() {
                       p. Pagina de Inicio de sitio web Jarsdev
                     </p>
                   </div>
+                  <p className="text-text-general my-8">
+                    Este proyecto fue inspirado en el dicho de Bill Gates: "Si
+                    tu negocio no está en internet, tu negocio no existe", y es
+                    por eso que decidí crear este sitio web para mostrar al
+                    mundo lo que puedo hacer y lo que puedo ofrecer, aunque lo
+                    más importante es para que las personas puedan encontrarme y
+                    contactarme.
+                  </p>
                   <p className="text-text-general tracking-wide my-8">
-                    One of the most important things for me when working from
-                    home is having the right tools. So, let's start with my main
-                    device - the computer.
+                    Algunas de las tecnologias utilizadas en este proyecto
+                    son:
                   </p>
-                </div>
-                <div className="mt-10">
-                  <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
-                    Computer
-                  </h1>
-                  <p className="text-text-general">
-                    This computer may not have the latest specs, but it runs
-                    incredibly fast and smooth! It's perfect for web
-                    development, even for larger or heavier projects like React
-                    Electron.
-                  </p>
-                  <p className="text-text-general mt-5">
-                    The 32GB of RAM also ensures that multitasking is a breeze!
-                  </p>
-                </div>
-                <div className="mt-10">
-                  <div>
-                    <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
-                      Display
-                    </h1>
-                    <p className="text-text-general">
-                      The dual monitor setup maximizes my web development
-                      workflow. I can code on one screen while previewing live
-                      on the other — no more Alt + Tab necessary for faster,
-                      more efficient work!
-                    </p>
-                    <p className="text-text-general mt-5">
-                      Need a website with extra wide breakpoint? I've got you
-                      covered with my ultrawide monitor.
-                    </p>
+                  <div className="flex flex-wrap gap-4 mt-5">
+                    <Languajes title="HTML5" />
+                    <Languajes title="TailwindCSS" />
+                    <Languajes title="StyledComponents" />
+                    <Languajes title="JavaScript" />
+                    <Languajes title="ReactJS" />
+                    <Languajes title="Vite" />
+                    <Languajes title="Framer Motion" />
+                    <Languajes title="React Router" />
+                    <Languajes title="React Icons" />
+                    <Languajes title="VSCode" />
+                    <Languajes title="Git / Github" />
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="mt-40">
+              <Footer />
             </div>
           </ProjectSection>
         </section>
