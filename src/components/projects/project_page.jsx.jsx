@@ -10,7 +10,8 @@ const ProjectSection = styled.section`
   }
 `;
 const BackgroundSection = styled.div`
-  height: 2000px;
+  width: 100%;
+  height: 100vh;
   background: rgb(12, 18, 34);
   background: linear-gradient(
     0deg,
