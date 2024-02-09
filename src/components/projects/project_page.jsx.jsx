@@ -52,7 +52,7 @@ function PageProject() {
                   Jarsdev Website
                 </h1>
               </TitleSection>
-              <div className="border-l px-5 md:pl-24 border-text-general border-opacity-20">
+              <div className="border-l px-5 py-20 md:pl-24 border-text-general border-opacity-20">
                 <div>
                   <p className="text-text-general my-8 text-justify sm:text-left">
                     Jarsdev es uno de los ultimos proyectos en los que he
