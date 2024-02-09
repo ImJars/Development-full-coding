@@ -103,7 +103,7 @@ function PageProject() {
                 </div>
               </div>
             </div>
-            <div className="mt-40">
+            <div className="mt-80">
               <Footer />
             </div>
           </ProjectSection>
