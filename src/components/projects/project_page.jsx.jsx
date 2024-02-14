@@ -4,14 +4,22 @@ import Languajes from "../skills/languajes";
 import Footer from "../../footer";
 
 const ProjectSection = styled.section`
-  display: block;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .content-wrapped {
     max-width: 1152px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
   }
 `;
 const BackgroundSection = styled.div`
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 0;
   background: rgb(12, 18, 34);
   background: linear-gradient(
     0deg,
@@ -21,9 +29,15 @@ const BackgroundSection = styled.div`
     rgba(15, 23, 42, 1) 60%,
     rgba(12, 18, 34, 1) 100%
   );
-  mask-image: linear-gradient(to bottom, tranparent 50%, black 80%);
-  -webkit-mask-image: linear-gradient(to bottom, tranparent 50%, black 80%);
-  stroke-opacity: 0.5;
+  .background-cuad{
+    background-image: url("descarga.svg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3199;
+}
 `;
 const TitleSection = styled.div`
   .Title-Name {
@@ -40,20 +54,19 @@ const TitleSection = styled.div`
 function PageProject() {
   return (
     <>
-      <BackgroundSection className="relative">
+      <BackgroundSection>
         <div
-          className="w-full h-full static inset-0 bg-[bottom_1px_center]"
-          style={{ backgroundImage: "url('descarga.svg')" }}
+          className="background-cuad"
         />
-        <section className="absolute top-0 w-full h-full text-white">
+        <section className=" text-white">
           <ProjectSection>
-            <div className="content-wrapped block mx-auto pt-20 sm:pt-32">
+            <div className="content-wrapped pt-20 sm:pt-32">
               <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                   Jarsdev Website
                 </h1>
               </TitleSection>
-              <div className="border-l px-5 py-20 md:pl-24 border-text-general border-opacity-20">
+              <div className="border-l px-5 pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div>
                   <p className="text-text-general my-8 text-justify sm:text-left">
                     Jarsdev es uno de los ultimos proyectos en los que he
@@ -104,10 +117,10 @@ function PageProject() {
                 </div>
               </div>
             </div>
-            <div className="mt-80">
-              <Footer />
-            </div>
           </ProjectSection>
+          <div className="pt-40">
+            <Footer />
+          </div>
         </section>
       </BackgroundSection>
     </>
