@@ -1,5 +1,4 @@
 import React from "react";
-import Img from "./assets/react.svg";
 import styled from "styled-components";
 import {
   SiJavascript,
@@ -128,7 +127,7 @@ function Home({ refHome }) {
   return (
     <>
       <HomeWraped>
-        <div ref={refHome} className="static text-white font-poppins">
+        <div ref={refHome} className="static text-white font-poppins z-10">
           <HomeSection className="mx-1 sm:mx-0">
           <div className="flex justify-end">
             <img className="absolute object-cover w-3/5 sm:w-2/5 xl:w-2/6 transform top-40 xl:top-20" src="cube.png" alt="" />

@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const HomeResponsiveWraped = styled.section`
+width: auto;
+  height: auto;
+  position: relative;
+  z-index: 0;
   background: rgb(12, 18, 34);
   background: linear-gradient(
     0deg,
@@ -11,17 +15,14 @@ const HomeResponsiveWraped = styled.section`
     rgba(15, 23, 42, 1) 60%,
     rgba(12, 18, 34, 1) 100%
   );
-  @media (max-width: 639px) {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  @media (min-width: 640px) {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .background-cuad {
+    background-image: url("descarga.svg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3199;
   }
 `;
 
@@ -29,6 +30,7 @@ function HomeWraped({ children }) {
   return (
     <>
       <HomeResponsiveWraped className="text-white font-poppins">
+        <div className="background-cuad" />
         {children}
       </HomeResponsiveWraped>
     </>
