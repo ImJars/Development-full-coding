@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const ContentWraped = styled.section`
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 0;
   background: rgb(12, 18, 34);
   background: linear-gradient(
     0deg,
@@ -11,17 +15,14 @@ const ContentWraped = styled.section`
     rgba(15, 23, 42, 1) 60%,
     rgba(12, 18, 34, 1) 100%
   );
-  @media (max-width: 639px) {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  @media (min-width: 640px) {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .background-cuad {
+    background-image: url("descarga.svg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+    opacity: 0.3199;
   }
 `;
 
@@ -29,10 +30,8 @@ function Wraped({ children }) {
   return (
     <>
       <ContentWraped className="text-white font-poppins">
-      {/* <img src="background.svg" className="object-contain w-full h-screen relative" alt=""/> */}
-        {/* <div className="absolute top-0 left-1/8 flex"> */}
+        <div className="background-cuad" />
         {children}
-        {/* </div> */}
       </ContentWraped>
     </>
   );

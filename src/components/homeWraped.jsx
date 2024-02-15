@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const HomeResponsiveWraped = styled.section`
-width: auto;
+  width: auto;
   height: auto;
   position: relative;
   z-index: 0;
@@ -21,7 +21,7 @@ width: auto;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: -10;
     opacity: 0.3199;
   }
 `;
