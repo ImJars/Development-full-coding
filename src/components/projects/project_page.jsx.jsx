@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Languajes from "../skills/languajes";
 import Footer from "../../footer";
+import { MdOutlineKeyboardBackspace } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const ProjectSection = styled.section`
   display: inline-block;
@@ -29,7 +31,7 @@ const BackgroundSection = styled.div`
     rgba(15, 23, 42, 1) 60%,
     rgba(12, 18, 34, 1) 100%
   );
-  .background-cuad{
+  .background-cuad {
     background-image: url("descarga.svg");
     background-repeat: repeat;
     width: 100%;
@@ -37,7 +39,7 @@ const BackgroundSection = styled.div`
     position: absolute;
     z-index: 1;
     opacity: 0.3199;
-}
+  }
 `;
 const TitleSection = styled.div`
   .Title-Name {
@@ -52,15 +54,19 @@ const TitleSection = styled.div`
 `;
 
 function PageProject() {
+  const navigate = useNavigate();
   return (
     <>
       <BackgroundSection>
-        <div
-          className="background-cuad"
-        />
+        <div className="background-cuad" />
         <section className=" text-white">
           <ProjectSection>
             <div className="content-wrapped pt-20 sm:pt-32">
+              <div className="flex">
+                <button onClick={() => navigate(-1)} className="">
+                  <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
+                </button>
+              </div>
               <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                   Jarsdev Website
@@ -98,8 +104,7 @@ function PageProject() {
                     contactarme.
                   </p>
                   <p className="text-text-general tracking-wide my-8">
-                    Algunas de las tecnologias utilizadas en este proyecto
-                    son:
+                    Algunas de las tecnologias utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
                     <Languajes title="HTML5" />
