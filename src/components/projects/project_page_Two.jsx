@@ -53,7 +53,7 @@ const TitleSection = styled.div`
   }
 `;
 
-function ProjectPageTwo() {
+function PageProjectTwo() {
   const navigate = useNavigate();
   return (
     <>
@@ -132,4 +132,4 @@ function ProjectPageTwo() {
   );
 }
 
-export default ProjectPageTwo;
+export default PageProjectTwo;

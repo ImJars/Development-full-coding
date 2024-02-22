@@ -17,6 +17,7 @@ import { useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import PageProject from './components/projects/project_page.jsx'
 import PageProjectTwo from './components/projects/project_page_Two.jsx'
+import PageProjectThree from './components/projects/project_page_Three.jsx'
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
           {/* Links to the projects: */}
           <Route path='/project_page' element={ <PageProject/> } />
           <Route path='/project_page_Two' element={ <PageProjectTwo/> } />
+          <Route path='/project_page_Three' element={ <PageProjectThree/> } />
         </Routes>
       </BrowserRouter>
     </>
