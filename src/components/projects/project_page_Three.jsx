@@ -69,7 +69,7 @@ function PageProjectThree() {
               </div>
               <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
-                  LegacyierExpress
+                  Proyecto CMO
                 </h1>
               </TitleSection>
               <div className="border-l px-5 pb-28 md:pl-24 border-text-general border-opacity-20">
