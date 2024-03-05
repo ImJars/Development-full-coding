@@ -18,6 +18,7 @@ import { useInView } from 'react-intersection-observer'
 import PageProject from './components/projects/project_page.jsx'
 import PageProjectTwo from './components/projects/project_page_Two.jsx'
 import PageProjectThree from './components/projects/project_page_Three.jsx'
+import PageProjectFour from './components/projects/project_page_Four.jsx'
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
           <Route path='/project_page' element={ <PageProject/> } />
           <Route path='/project_page_Two' element={ <PageProjectTwo/> } />
           <Route path='/project_page_Three' element={ <PageProjectThree/> } />
+          <Route path='/project_page_Four' element={ <PageProjectFour /> } />
         </Routes>
       </BrowserRouter>
     </>

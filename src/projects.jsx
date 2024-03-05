@@ -133,7 +133,9 @@ function Projects() {
                 <SoftwareProject 
                   link_page={"/project_page_Three"}
                 />
-                <SoftwareProject />
+                <SoftwareProject 
+                  link_page={"/project_page_Four"}
+                />
                 <SoftwareProject />
                 <SoftwareProject />
               </div>
