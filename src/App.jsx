@@ -20,7 +20,7 @@ import PageProjectTwo from './components/projects/project_page_Two.jsx'
 import PageProjectThree from './components/projects/project_page_Three.jsx'
 import PageProjectFour from './components/projects/project_page_Four.jsx'
 import PageProjectFive from './components/projects/project_page_Five.jsx'
-
+import PageProjectSix from './components/projects/project_page_Six.jsx'
 
 function App() {
   const { ref: refHome, inView: inViewHome } = useInView({
@@ -80,6 +80,7 @@ function App() {
           <Route path='/project_page_Three' element={ <PageProjectThree/> } />
           <Route path='/project_page_Four' element={ <PageProjectFour /> } />
           <Route path='/project_page_Five' element={ <PageProjectFive /> } />
+          <Route path='/project_page_Six' element={ <PageProjectSix /> } />
         </Routes>
       </BrowserRouter>
     </>

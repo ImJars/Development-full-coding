@@ -139,7 +139,9 @@ function Projects() {
                 <SoftwareProject 
                   link_page={"/project_page_Five"}
                 />
-                <SoftwareProject />
+                <SoftwareProject 
+                  link_page={"/project_page_Six"}
+                />
               </div>
             </div>
             <div className="mb-20 content-wrapped block mx-auto">
