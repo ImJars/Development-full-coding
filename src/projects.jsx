@@ -142,6 +142,12 @@ function Projects() {
                 <SoftwareProject 
                   link_page={"/project_page_Six"}
                 />
+
+                <a href="/pagePrincipal" className=" py-1 px-4 border rounded-lg bg-text-blue">
+                  <button>
+                    Prueba
+                  </button>
+                </a>
               </div>
             </div>
             <div className="mb-20 content-wrapped block mx-auto">
