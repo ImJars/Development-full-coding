@@ -7,7 +7,7 @@ function PinedCard({ date, title, description }) {
     return (
         <>
             <div
-                className='border font-poppins border-text-general rounded-2xl border-opacity-10 mb-8'
+                className='border font-poppins border-text-general rounded-2xl border-opacity-10 mb-8 bg-slate-900'
             >
                 <div
                     className='p-6 block'

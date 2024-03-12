@@ -86,7 +86,7 @@ function Blog() {
           <BlogSection>
             <div className="mb-20 content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0 flex">
-                <div className="md:w-1/3" />
+                <div className="md:w-1/3 border-l border-text-general border-opacity-20" />
                 <div className="flex-1">
                   <PinedCard
                     date="February 12, 2021 • English"
