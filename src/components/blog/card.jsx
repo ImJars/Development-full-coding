@@ -20,12 +20,12 @@ function Card({ date, title, description, link }) {
                         { date }
                     </h1>
                     <h2
-                        className='block text-text-white-gray text-lg sm:text-2xl font-bold mb-2 sm:tracking-wide'
+                        className='block text-text-white-gray text-lg sm:text-3xl font-bold mb-1 sm:tracking-wide'
                     >
                         { title }
                     </h2>
                     <h3
-                        className='block text-text-general tracking-wide text-sm sm:text-lg'
+                        className='block text-text-general text-sm sm:text-base'
                     >
                         { description }
                     </h3>
