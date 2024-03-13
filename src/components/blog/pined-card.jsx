@@ -13,13 +13,13 @@ function PinedCard({ date, title, description }) {
                     className='p-6 block'
                 >
                     <div
-                        className='flex space-x-2 items-center mb-4 text-text-purple'
+                        className='flex space-x-2 items-center mb-3 text-text-purple'
                     >
                         <BsPinFill 
                             className='text-lg sm:text-xl transform -rotate-45'
                         />
                         <h1
-                            className='font-bold text-base sm:text-lg'
+                            className='font-bold text-base'
                         >
                             Pinned Post
                         </h1>
@@ -30,12 +30,12 @@ function PinedCard({ date, title, description }) {
                         { date }
                     </h1>
                     <h2
-                        className='block text-text-white-gray text-lg sm:text-2xl font-bold mb-2 sm:tracking-wide'
+                        className='block text-text-white-gray text-lg sm:text-3xl font-bold mb-1 sm:tracking-wide'
                     >
                         { title }
                     </h2>
                     <h3
-                        className='block text-text-general tracking-wide text-sm sm:text-lg'
+                        className='block text-text-general text-sm sm:text-base'
                     >
                         { description }
                     </h3>

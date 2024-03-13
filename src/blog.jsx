@@ -91,7 +91,7 @@ function Blog() {
                   <PinedCard
                     date="February 12, 2021 • English"
                     title="Tailwind CSS: Best Practices"
-                    description="A collection of best practices for Tailwind CSS."
+                    description="Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.  It is a highly customizable low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override."
                   />
                   <Card
                     date={"January 6, 2023 • English"}
