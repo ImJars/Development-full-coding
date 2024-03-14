@@ -12,7 +12,7 @@ function Card({ date, title, description, link }) {
                     className='hidden sm:block border-text-general border-opacity-10 -translate-y-line border-b mt-16 w-24'
                 />
                 <div
-                    className='text-start'
+                    className='px-4 py-6 hover:bg-slate-900 hover:scale-[101%] text-start hover:shadow-xl transition-all duration-300 ease-in-out hover:border-text-white-gray border-text-white-gray hover:rounded-2xl rounded-2xl hover:border-opacity-10 border-opacity-0 hover:border border'
                 >
                     <h1
                         className='text-text-general text-xs font-semibold'
