@@ -88,11 +88,13 @@ function Blog() {
               <TitleSection className="mx-1 sm:mx-0 flex">
                 <div className="md:w-1/3 border-l border-text-general border-opacity-20" />
                 <div className="flex-1">
-                  <PinedCard
-                    date="February 12, 2021 • English"
-                    title="Tailwind CSS: Best Practices"
-                    description="Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.  It is a highly customizable low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override."
-                  />
+                  <a href="/blog-page-one">
+                    <PinedCard
+                      date="February 12, 2021 • English"
+                      title="Tailwind CSS: Best Practices"
+                      description="Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.  It is a highly customizable low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override."
+                    />
+                  </a>
                   <Card
                     date={"January 6, 2023 • English"}
                     title={"Tentang Next.js dan Tailwind CSS"}

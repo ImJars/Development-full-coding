@@ -7,7 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function PinedCard({ date, title, description }) {
   return (
     <>
-      <a href="#" className="group">
+      <section className="group">
         <div className="border font-poppins border-text-general rounded-2xl border-opacity-10 mb-8 bg-slate-900 group-hover:scale-[101%] group-hover:shadow-xl transition-all duration-300 ease-in-out">
           <div className="p-6 block">
             <div className="flex space-x-2 items-center mb-3 text-text-purple group-hover:text-text-blue justify-between transition-all duration-300 ease-in-out">
@@ -45,7 +45,7 @@ function PinedCard({ date, title, description }) {
             </div>
           </div>
         </div>
-      </a>
+      </section>
     </>
   );
 }

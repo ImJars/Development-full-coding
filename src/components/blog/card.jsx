@@ -6,7 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function Card({ date, title, description, link }) {
   return (
     <>
-      <a href="#" className="group">
+      <section className="group">
         <div className="flex space-x-5 my-8">
           <div className="hidden sm:block justify-end border-text-general border-opacity-20 -translate-y-line border-b w-20 group-hover:w-24 transition-all duration-300 ease-in-out" />
           <div className="px-10 py-8 hover:bg-slate-900 group-hover:scale-[101%] text-start group-hover:shadow-xl transition-all duration-300 ease-in-out group-hover:border-text-white-gray border-text-white-gray group-hover:rounded-2xl rounded-2xl group-hover:border-opacity-10 border-opacity-0 group-hover:border border">
@@ -55,7 +55,7 @@ function Card({ date, title, description, link }) {
             </div>
           </div>
         </div>
-      </a>
+      </section>
     </>
   );
 }

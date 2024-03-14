@@ -24,6 +24,8 @@ import PageProjectSix from './components/projects/project_page_Six.jsx'
 
 import PagePrincipal from './components/projects/pagePrincipal.jsx'
 
+import BlogPageOne from './components/blog/blog-page-one.jsx'
+
 function App() {
   const { ref: refHome, inView: inViewHome } = useInView({
     threshold: 0.2,
@@ -85,6 +87,10 @@ function App() {
           <Route path='/project_page_Six' element={ <PageProjectSix /> } />
 
           <Route path='/pagePrincipal' element={ <PagePrincipal /> } />
+
+          {/* Links to the Blog */}
+          <Route path='/blog-page-one' element={ <BlogPageOne /> } />
+
         </Routes>
       </BrowserRouter>
     </>
