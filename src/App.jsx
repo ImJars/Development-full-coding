@@ -53,7 +53,7 @@ function App() {
     }
     if (!inViewHome) {
       animateIcon.start({
-        background: '#0F172A',
+        background: 'transparent',
       });
       animateDiagon.start({
         color: "#8B5CF6",
