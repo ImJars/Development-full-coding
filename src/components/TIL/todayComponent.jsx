@@ -29,37 +29,37 @@ function TodayComponent({
       <TilSectionTitle>
         <div className="py-10 font-poppins">
           <div className="flex">
-            <div className="flex justify-center items-center space-x-1">
-              <BsCheck2Square className="text-base sm:text-xl text-text-white-gray" />
-              <h1 className="Subtitle-Text text-text-white-gray text-lg sm:text-3xl font-bold sm:tracking-wide">
+            <div className="flex justify-center items-center space-x-2">
+              <BsCheck2Square className="text-base sm:text-2xl text-text-white-gray" />
+              <h1 className="Subtitle-Text text-text-white-gray text-lg sm:text-4xl font-bold">
                 {title}
               </h1>
             </div>
           </div>
           <div className="flex space-x-2">
             <h1
-              className="text-text-purple text-xs sm:text-base flex justify-center items-center bg-text-purple bg-opacity-10 px-2 rounded-full
-                            font-light"
+              className="text-text-purple text-xs flex justify-center items-center bg-text-purple bg-opacity-10 px-2 rounded-full
+                            font-light underline"
             >
               {tag_1}
             </h1>
             <h2
-              className="text-text-purple text-xs sm:text-base flex justify-center items-center bg-text-purple bg-opacity-10 px-2 rounded-full
-                  font-light"
+              className="text-text-purple text-xs flex justify-center items-center bg-text-purple bg-opacity-10 px-2 rounded-full
+                  font-light underline"
             >
               {tag_2}
             </h2>
             <h3
-              className="text-text-purple text-xs sm:text-base flex justify-center items-center bg-text-purple bg-opacity-10 px-2 rounded-full
-                  font-light"
+              className="text-text-purple text-xs flex justify-center items-center bg-text-purple bg-opacity-10 px-2 rounded-full
+                  font-light underline"
             >
               {tag_3}
             </h3>
           </div>
-          <h2 className="text-text-general text-sm sm:text-lg mt-2">
+          <h2 className="text-text-general text-sm sm:text-lg mt-1">
             {description}
           </h2>
-          <div className="flex space-x-2 mt-2 sm:mt-4 items-center">
+          <div className="flex space-x-2 mt-2 sm:mt-2 items-center">
             <a
               className="text-text-purple flex space-x-1 items-center hover:text-text-white-gray hover:text-opacity-95
                           transition duration-200 ease-in-out"

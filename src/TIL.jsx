@@ -123,6 +123,33 @@ function Til() {
                     link_1="Page"
                     link_2="Official Docs"
                   />
+                  <TodayComponent
+                    title="React Hooks is a new addition in React"
+                    tag_1="#React"
+                    tag_2="#Hooks"
+                    tag_3="#Language"
+                    description="HTML is a markup language for describing web documents (web pages). React Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class."
+                    link_1="Page"
+                    link_2="Official Docs"
+                  />
+                  <TodayComponent
+                    title="Tailwind CSS is a utility-first CSS framework"
+                    tag_1="#HTML"
+                    tag_2="#Markup"
+                    tag_3="#Language"
+                    description="Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces."
+                    link_1="Page"
+                    link_2="Official Docs"
+                  />
+                  <TodayComponent
+                    title="Javascript is a programming language in the world"
+                    tag_1="#HTML"
+                    tag_2="#Markup"
+                    tag_3="#Language"
+                    description="Javascript is a programming language that conforms to the ECMAScript specification. It is the best language in the world."
+                    link_1="Page"
+                    link_2="Official Docs"
+                  />
                 </div>
               </TilSectionTitle>
             </div>
