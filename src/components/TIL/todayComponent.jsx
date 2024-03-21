@@ -23,6 +23,8 @@ function TodayComponent({
   description,
   link_1,
   link_2,
+  link1,
+  link2,
 }) {
   return (
     <>
@@ -63,7 +65,9 @@ function TodayComponent({
             <a
               className="text-text-purple flex space-x-1 items-center hover:text-text-white-gray hover:text-opacity-95
                           transition duration-200 ease-in-out"
-              href="#"
+              href={link1}
+              target="_blank"
+              rel="noreferrer"
             >
               <h1 className="text-sm sm:text-base font-light">{link_1}</h1>
               <div>
@@ -74,7 +78,9 @@ function TodayComponent({
             <a
               className="text-text-purple  flex space-x-1 items-center hover:text-text-white-gray hover:text-opacity-95
                           transition duration-200 ease-in-out"
-              href="#"
+              href={link2}
+              target="_blank"
+              rel="noreferrer"
             >
               <h1 className="text-sm sm:text-base font-light">{link_2}</h1>
               <div>

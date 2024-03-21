@@ -95,6 +95,8 @@ function Til() {
                     description="React Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class."
                     link_1="issue"
                     link_2="Official Docs"
+                    link1={'WWW.OfficialDocs.com'}
+                    link2={'WWW.OfficialDocs.com'}
                   />
                   <TodayComponent
                     title="Tailwind CSS is a utility-first CSS framework"
