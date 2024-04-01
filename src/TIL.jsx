@@ -88,24 +88,26 @@ function Til() {
                 <div className="md:w-1/3 border-l border-text-general border-opacity-20"></div>
                 <div className="flex-1">
                   <TodayComponent
-                    title="React Hooks is a new addition in React"
-                    tag_1="#React"
-                    tag_2="#Hooks"
-                    tag_3="#JavaScript"
-                    description="React Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class."
-                    link_1="issue"
-                    link_2="Official Docs"
-                    link1={'WWW.OfficialDocs.com'}
-                    link2={'WWW.OfficialDocs.com'}
+                    title="Typescript en poco tiempo y de forma sencilla"
+                    tag_1="#Javascript"
+                    tag_2="#Typescript"
+                    tag_3="#Aprendizaje"
+                    description="Curso de Typescript, donde aprendo todo lo más relevante de este super lenguaje, que le da todo ese poder a JavaScript. Typescript es un superconjunto de JavaScript que añade tipado estático y objetos basados en clases."
+                    link_1="Udemy"
+                    link_2="Manuel Muñoz"
+                    link1={'https://www.udemy.com/'}
+                    link2={'https://www.udemy.com/user/manuel-munoz-mir-2/'}
                   />
                   <TodayComponent
-                    title="Tailwind CSS is a utility-first CSS framework"
-                    tag_1="#Tailwind"
-                    tag_2="#CSS"
-                    tag_3="#JavaScript"
-                    description="Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces."
-                    link_1="Credits"
-                    link_2="Official Docs"
+                    title="Pagina web personal con React y Tailwind CSS ━ 2023"
+                    tag_1="#ReactJS"
+                    tag_2="#TailwindCSS"
+                    tag_3="#Personal"
+                    description="El desarrollo de mi página web personal, donde muestro mis habilidades y proyectos. Utilizando ReactJS y Tailwind CSS, dos tecnologías que me encantan. Siendo esta la actualizacion de la pagina web personal principal."
+                    link_1="Boceto Principal"
+                    link_2="Actualizacion"
+                    link1={'https://elegant-kitten-f26e46.netlify.app/'}
+                    link2={'/'}
                   />
                   <TodayComponent
                     title="Javascript is a programming language"
