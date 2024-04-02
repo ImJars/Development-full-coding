@@ -131,7 +131,7 @@ function Projects() {
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
                   skill_4={'Firebase'}
-                  link_page={"/project_page"}
+                  projectLink={"/project_page"}
                 />
                 <SoftwareProject
                   title={'Legacyier Express'}
@@ -140,7 +140,7 @@ function Projects() {
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
                   skill_4={'Firebase'}
-                  link_page={"/project_page_Two"}
+                  projectLink={"/project_page_Two"}
                 />
                 <SoftwareProject
                   title={'Web Apps'}
@@ -149,7 +149,7 @@ function Projects() {
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
                   skill_4={'Firebase'}
-                  link_page={"/project_page_Three"}
+                  projectLink={"/project_page_Three"}
                 />
                 <SoftwareProject
                   title={'ASIST-PROY'}
@@ -158,7 +158,7 @@ function Projects() {
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
                   skill_4={'Firebase'}
-                  link_page={"/project_page_Four"}
+                  projectLink={"/project_page_Four"}
                 />
                 <SoftwareProject
                   title={'Proyecto CMO'}
@@ -167,7 +167,7 @@ function Projects() {
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
                   skill_4={'Firebase'}
-                  link_page={"/project_page_Five"}
+                  projectLink={"/project_page_Five"}
                 />
                 <SoftwareProject
                   title={'Proyecto Bonafont'}
@@ -176,7 +176,7 @@ function Projects() {
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
                   skill_4={'Firebase'}
-                  link_page={"/project_page_Six"}
+                  projectLink={"/project_page_Six"}
                 />
 
                 <a href="/pagePrincipal" className=" py-1 px-4 border rounded-lg bg-text-blue">
