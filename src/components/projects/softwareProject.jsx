@@ -1,66 +1,48 @@
 import React, { useState } from "react";
 import { FaFolderOpen } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
-function SoftwareProject({ link_page }) {
-  const [active, setActive] = useState(false);
-
+function SoftwareProject({ link_page, title, description, skill_1, skill_2, skill_3, skill_4}) {
   return (
     <>
-      <div className="border bg-card hover:bg-opacity-80 hover:-translate-y-1 transition-all duration-300 ease-in-out border-text-general border-opacity-10 rounded-xl font-poppins">
+      <div className="border bg-slate-900 hover:bg-opacity-80 hover:-translate-y-1 transition-all duration-300 ease-in-out border-text-general border-opacity-20 rounded-xl font-poppins">
         <div className="p-5">
           <div>
             <div className="flex flex-col items-center space-x-4">
               <div className="w-full flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <FaFolderOpen className="text-3xl text-text-white-gray" />
-                  <h1 className="text-text-white-gray font-bold text-lg">
-                    Jarsdev Website
-                  </h1>
+                  <FaFolderOpen className="text-5xl text-text-white-gray" />
+                  <div className="flex items-center">
+                    <h1 className="text-text-white-gray font-bold text-2xl">
+                      { title }
+                    </h1>
+                  </div>
                 </div>
                 <div>
                   <a href={link_page}>
-                    <FiGithub className="text-xl text-text-white-gray" />
+                    <FaExternalLinkAlt className="text-xl text-text-white-gray" />
                   </a>
                 </div>
               </div>
               <p className="w-full flex justify-start text-sm mt-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus animi perferendis beatae corporis nesciunt commodi
-                quibusdam natus esse odio a ratione sint error, aliquam iure
-                unde laudantium consequuntur veritatis quam?
+                { description }
               </p>
-              {
-                active ? (
-                  <div className="w-full flex justify-start text-sm mt-3">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus animi perferendis beatae corporis nesciunt commodi
-                    quibusdam natus esse odio a ratione sint error, aliquam iure
-                    unde laudantium consequuntur veritatis quam?
-                  </div>
-                ) : null
-              }
               <div className="w-full flex justify-end mt-5">
                 <ul className="flex space-x-2 text-xs text-text-general">
-                  <li>VS Code</li>
+                  <li>{skill_1}</li>
                   <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
                     &#8226;
                   </h1>
-                  <li>React</li>
+                  <li>{skill_2}</li>
                   <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
                     &#8226;
                   </h1>
-                  <li>Tailwind</li>
+                  <li>{skill_3}</li>
                   <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
                     &#8226;
                   </h1>
-                  <li>Node</li>
+                  <li>{skill_4}</li>
                 </ul>
-              </div>
-              <div className="w-full flex justify-start">
-                <button onClick={ () => setActive(!active) } className="bg-text-blue px-6 py-1 rounded-lg bg-opacity-25 text-sm">
-                  { active ? "Cerrar" : "Ver más"}
-                </button>
               </div>
             </div>
           </div>
