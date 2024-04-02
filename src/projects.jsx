@@ -124,22 +124,58 @@ function Projects() {
           <ProjectSection>
             <div className="mb-20 content-wrapped block mx-auto">
               <div className="grid grid-cols-3 gap-4">
-                <SoftwareProject 
+                <SoftwareProject
+                  title={'JarsWebsite'}
+                  description={'Sitio web de la empresa Jars, especializada en el desarrollo de software.'}
+                  skill_1={'TailwindCSS'}
+                  skill_2={'ReactJS'}
+                  skill_3={'NextJS'}
+                  skill_4={'Firebase'}
                   link_page={"/project_page"}
                 />
-                <SoftwareProject 
+                <SoftwareProject
+                  title={'Legacyier Express'}
+                  description={'Plataforma de gestión de proyectos para empresas de desarrollo de software.'}
+                  skill_1={'TailwindCSS'}
+                  skill_2={'ReactJS'}
+                  skill_3={'NextJS'}
+                  skill_4={'Firebase'}
                   link_page={"/project_page_Two"}
                 />
-                <SoftwareProject 
+                <SoftwareProject
+                  title={'Web Apps'}
+                  description={'Aplicaciones web para empresas de desarrollo de software.'}
+                  skill_1={'TailwindCSS'}
+                  skill_2={'ReactJS'}
+                  skill_3={'NextJS'}
+                  skill_4={'Firebase'}
                   link_page={"/project_page_Three"}
                 />
-                <SoftwareProject 
+                <SoftwareProject
+                  title={'ASIST-PROY'}
+                  description={'Sistema de gestión de proyectos para empresas de desarrollo de software.'}
+                  skill_1={'TailwindCSS'}
+                  skill_2={'ReactJS'}
+                  skill_3={'NextJS'}
+                  skill_4={'Firebase'}
                   link_page={"/project_page_Four"}
                 />
-                <SoftwareProject 
+                <SoftwareProject
+                  title={'Proyecto CMO'}
+                  description={'Sistema de gestión de proyectos para empresas de desarrollo de software.'}
+                  skill_1={'TailwindCSS'}
+                  skill_2={'ReactJS'}
+                  skill_3={'NextJS'}
+                  skill_4={'Firebase'}
                   link_page={"/project_page_Five"}
                 />
-                <SoftwareProject 
+                <SoftwareProject
+                  title={'Proyecto Bonafont'}
+                  description={'Sistema de gestión de proyectos para empresas de desarrollo de software.'}
+                  skill_1={'TailwindCSS'}
+                  skill_2={'ReactJS'}
+                  skill_3={'NextJS'}
+                  skill_4={'Firebase'}
                   link_page={"/project_page_Six"}
                 />
 
