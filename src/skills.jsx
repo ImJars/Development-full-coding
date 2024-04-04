@@ -262,9 +262,7 @@ function Skills() {
                                         text-text-general text-base space-y-6"
                 >
                   <h1>
-                    I started my career as a web developer about 7 years ago.
-                    I've tried some programming languages and tech stack, both
-                    Back-End, and Front-End.
+                    Comencé mi carrera en la tecnologia hace unos 10 años. Probe muchos lenguajes de programación y tecnologías, tanto Back-End como Front-End.
                   </h1>
                   <h2>
                     Even though the scope of web development is broad, I was
