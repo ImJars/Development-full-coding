@@ -265,9 +265,7 @@ function Skills() {
                     Comencé mi carrera en la tecnologia hace unos 10 años. Probe muchos lenguajes de programación y tecnologías, tanto Back-End como Front-End.
                   </h1>
                   <h2>
-                    Even though the scope of web development is broad, I was
-                    very interested and focused on Front-End Development and
-                    UI/UX Design.
+                    Pero en los últimos años, me he centrado en el desarrollo Web, ya que el alcance del desarrollo web es muy amplio y siempre hay algo nuevo que aprender.
                   </h2>
                 </div>
                 <div ref={refAnimateScroll}>
