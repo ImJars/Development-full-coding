@@ -274,31 +274,28 @@ function Skills() {
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate} className="mt-10">
                     <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
-                      Front-End Developer
+                      Desarrollador Font-End
                     </h1>
                     <h2 className="text-text-general text-base tracking-wide mt-5">
-                      I love creating something that is clean and minimalistic,
-                      attractive and has value, and of course, easy to use.
+                      Me encanta crear algo que sea limpio, minimalista, atractivo y por supuesto, facil de usar para los usuarios.
                     </h2>
                     <div className="mt-5 text-text-general text-base tracking-wide">
                       <h1 className="mb-5">
-                        I really enjoy creating websites with rich UI
-                        components, including:
+                        Realmente disfruto creando interfaces de usuario, adaptando las tecnologias y componentes a los proyectos que estoy trabajando. Incluyendo:
                       </h1>
                       <ul className="list-disc ml-5 space-y-2">
-                        <li>Web application,</li>
-                        <li>Documentation pages,</li>
-                        <li>CMS contents layout</li>
-                        <li>Dashboard layout,</li>
-                        <li>and others.</li>
+                        <li>Aplicaciones Web,</li>
+                        <li>Paginas de Documentacion e informativas,</li>
+                        <li>Paneles de Admistracion,</li>
+                        <li>Diseño de contenido CMS</li>
+                        <li>Diseño de Dashboard,</li>
+                        <li>y otros.</li>
                       </ul>
                     </div>
                   </div>
                   <div className="text-text-general text-base tracking-wide mt-5">
                     <p>
-                      But I still like to make simple website pages like landing
-                      pages. So, what tools did I feel comfortable using during
-                      the website creation?
+                      Tambien me gusta crear paginas sencillas, asi mismo me gusta estar involucrado en proyectos grandes y pequeños pero... ¿Con que herramientas me siento mas comodo a la hora de desarrollar un proyecto?
                     </p>
                   </div>
                   <div>
