@@ -265,8 +265,11 @@ function Skills() {
                     Comencé mi carrera en la tecnologia hace unos 10 años. Probe muchos lenguajes de programación y tecnologías, tanto Back-End como Front-End.
                   </h1>
                   <h2>
-                    Pero en los últimos años, me he centrado en el desarrollo Web, ya que el alcance del desarrollo web es muy amplio y siempre hay algo nuevo que aprender.
+                    Pero en los últimos años, me he centrado en el desarrollo Web, ya que el alcance del desarrollo web es muy amplio y siempre hay algo nuevo que aprender, que crear y que mejorar.
                   </h2>
+                  <h3>
+                    La experiencia de diseño de usuario es una de las cosas que siempre tengo en cuenta en el desarrollo de cualquier proyecto, ya que la experiencia de usuario es uno de los puntos más importante en cualquier proyecto.
+                  </h3>
                 </div>
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate} className="mt-10">
