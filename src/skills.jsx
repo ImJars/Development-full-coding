@@ -262,13 +262,21 @@ function Skills() {
                                         text-text-general text-base space-y-6"
                 >
                   <h1>
-                    Comencé mi carrera en la tecnologia hace unos 10 años. Probe muchos lenguajes de programación y tecnologías, tanto Back-End como Front-End.
+                    Comencé mi carrera en la tecnologia hace unos 10 años. Probe
+                    muchos lenguajes de programación y tecnologías, tanto
+                    Back-End como Front-End.
                   </h1>
                   <h2>
-                    Pero en los últimos años, me he centrado en el desarrollo Web, ya que el alcance del desarrollo web es muy amplio y siempre hay algo nuevo que aprender, que crear y que mejorar.
+                    Pero en los últimos años, me he centrado en el desarrollo
+                    Web, ya que el alcance del desarrollo web es muy amplio y
+                    siempre hay algo nuevo que aprender, que crear y que
+                    mejorar.
                   </h2>
                   <h3>
-                    La experiencia de diseño de usuario es una de las cosas que siempre tengo en cuenta en el desarrollo de cualquier proyecto, ya que la experiencia de usuario es uno de los puntos más importante en cualquier proyecto.
+                    La experiencia de diseño de usuario es una de las cosas que
+                    siempre tengo en cuenta en el desarrollo de cualquier
+                    proyecto, ya que la experiencia de usuario es uno de los
+                    puntos más importante en cualquier proyecto.
                   </h3>
                 </div>
                 <div ref={refAnimateScroll}>
@@ -277,11 +285,14 @@ function Skills() {
                       Desarrollador Font-End
                     </h1>
                     <h2 className="text-text-general text-base tracking-wide mt-5">
-                      Me encanta crear algo que sea limpio, minimalista, atractivo y por supuesto, facil de usar para los usuarios.
+                      Me encanta crear algo que sea limpio, minimalista,
+                      atractivo y por supuesto, facil de usar para los usuarios.
                     </h2>
                     <div className="mt-5 text-text-general text-base tracking-wide">
                       <h1 className="mb-5">
-                        Realmente disfruto creando interfaces de usuario, adaptando las tecnologias y componentes a los proyectos que estoy trabajando. Incluyendo:
+                        Realmente disfruto creando interfaces de usuario,
+                        adaptando las tecnologias y componentes a los proyectos
+                        que estoy trabajando. Incluyendo:
                       </h1>
                       <ul className="list-disc ml-5 space-y-2">
                         <li>Aplicaciones Web,</li>
@@ -295,7 +306,10 @@ function Skills() {
                   </div>
                   <div className="text-text-general text-base tracking-wide mt-5">
                     <p>
-                      Tambien me gusta crear paginas sencillas, asi mismo me gusta estar involucrado en proyectos grandes y pequeños pero... ¿Con que herramientas me siento mas comodo a la hora de desarrollar un proyecto?
+                      Tambien me gusta crear paginas sencillas, asi mismo me
+                      gusta estar involucrado en proyectos grandes y pequeños
+                      pero... ¿Con que herramientas me siento mas comodo a la
+                      hora de desarrollar un proyecto?
                     </p>
                   </div>
                   <div>
@@ -303,10 +317,10 @@ function Skills() {
                       <Skill
                         title={"TypeScript"}
                         description_1={
-                          "First of all, the programming language. I'm very used to using TypeScript, although website creation can be done using PHP, Python, etc."
+                          "Una de las ultimas actualizaciones que he empezado a aprender y a especializarme ya que Typescript es un superconjunto de JavaScript que se solicita mucho en las empresas. Hasta ahora creo que se me da bastante bien. Espero mejorar aun mas en el futuro."
                         }
                         description_2={
-                          "The JavaScript superset—TypeScript—has accompanied me for about 5 years."
+                          "He estado capacitandome en TypeScript desde hace un mes, pero creo que es una herramienta muy poderosa y que me ayudara a mejorar mi codigo en el futuro."
                         }
                       />
                     </div>
