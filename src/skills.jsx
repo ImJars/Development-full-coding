@@ -326,11 +326,11 @@ function Skills() {
                     </div>
                     <div ref={refAnimate3}>
                       <Skill
-                        title={"React"}
+                        title={"ReactJS"}
                         description_1={
-                          "I really enjoy building single page application websites and React is my go-to library."
+                          "El desarrollo web y la libreria de React me han acompañado estos ultimos años desarrollando sitios web o aplicaciones web, y me he vuelto bastante competente con ella."
                         }
-                        description_2={`I've been using it since 2018 (5 years) and have become quite proficient with it.`}
+                        description_2={`Eh usado la libreria de ReactJS estos ultimos 2 años y creo que es una de las mejores librerias para el desarrollo web. Aunque tambien me gustaria especializarme en otras librerias como VueJS o Angular.`}
                       />
                     </div>
                     <div ref={refAnimate4}>
