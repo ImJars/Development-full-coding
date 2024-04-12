@@ -336,8 +336,8 @@ function Skills() {
                     <div ref={refAnimate4}>
                       <Skill
                         title={"Tailwind CSS"}
-                        description_1={`For now, I love using Tailwind CSS for styling, even though I've been using SCSS for a longer time (4 years).`}
-                        description_2={`I'm still new to Tailwind CSS, but I'm really comfortable using it and I think it's a great tool.`}
+                        description_1={`Por ahora, me encanta usar Tailwind CSS para diseñar, aunque he estado usando SCSS y CSS puro, creo que Tailwind CSS es una herramienta muy poderosa y facil de usar. Me siento muy comodo usandola.`}
+                        description_2={`Siempre hay cosas nuevas que aprender, y Tailwind CSS es una de esas cosas que me gustaria seguir aprendiendo y mejorando. Tanto como componentes, como personalizacion y diseño.`}
                       />
                     </div>
                     <div ref={refAnimate5}>
