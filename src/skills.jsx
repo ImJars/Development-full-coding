@@ -364,48 +364,51 @@ function Skills() {
                   <div>
                     <div ref={refAnimate9}>
                       <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
-                        Programming Languages
+                        Lenguajes de Programación
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
-                        <Languajes title={"TypeScript"} />
-                        <Languajes title={"JavaScript"} />
-                        <Languajes title={"React"} />
+                        <Languajes title={"Javascript"} />
+                        <Languajes title={"ReactJS"} />
                         <Languajes title={"HTML"} />
-                        <Languajes title={"Tailwind CSS"} />
                         <Languajes title={"NodeJS"} />
-                        <Languajes title={"Solidity"} />
+                        <Languajes title={"Java"} />
+                        <Languajes title={"NodeJS"} />
+                        <Languajes title={"ViteJS"} />
+                        <Languajes title={"GatsbyJS"} />
+                        <Languajes title={".Net"} />
+                        <Languajes title={"VBA Excel"} />
                       </div>
                     </div>
                     <div ref={refAnimate10}>
                       <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
-                        Technologies
+                        Tecnologias
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
-                        <Technologies title={"Next.js"} />
-                        <Technologies title={"Material UI"} />
-                        <Technologies title={"React"} />
+                        <Technologies title={"SQL Server"} />
+                        <Technologies title={"MySQL"} />
+                        <Technologies title={"Tailwind CSS"} />
+                        <Technologies title={"Styled Components"} />
                         <Technologies title={"Framer Motion"} />
-                        <Technologies title={"Redux"} />
-                        <Technologies title={"Webpack"} />
-                        <Technologies title={"Backbone.js"} />
-                        <Technologies title={"Marionette.js"} />
-                        <Technologies title={"WordPress"} />
-                        <Technologies title={"Express"} />
-                        <Technologies title={"MongoDB"} />
+                        <Technologies title={"Bootstrap"} />
+                        <Technologies title={"Material UI"} />
                       </div>
                     </div>
                     <div ref={refAnimate11}>
                       <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
-                        Softwares and Tools
+                        Softwares y Herramientas
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
-                        <Tools title={"VS Code"} />
-                        <Tools title={"Node.js"} />
+                        <Tools title={"Visual Studio Code"} />
+                        <Tools title={"Visual Studio"} />
+                        <Tools title={"Microsoft Project"} />
                         <Tools title={"Git"} />
-                        <Tools title={"Sourcetree"} />
-                        <Tools title={"Figma"} />
-                        <Tools title={"Inkscape"} />
+                        <Tools title={"Github"} />
                         <Tools title={"Photoshop"} />
+                        <Tools title={"Figma"} />
+                        <Tools title={"InVision"} />
+                        <Tools title={"Sony Vegas Pro"} />
+                        <Tools title={"Slack"} />
+                        <Tools title={"Office"} />
                       </div>
                     </div>
                   </div>
@@ -419,9 +422,9 @@ function Skills() {
                 subtitle_4={"Framer Motion"}
                 subtitle_5={"Styled Components"}
                 title_2={"Diseñador UI/UX"}
-                subtitle_6={"Programming Languages"}
-                subtitle_7={"Technologies"}
-                subtitle_8={"Softwares and Tools"}
+                subtitle_6={"Lenguajes de Programación"}
+                subtitle_7={"Tecnologias"}
+                subtitle_8={"Softwares y Herramientas"}
                 animate_1={animate1}
                 animate_2={animate2}
                 animate_3={animate3}
