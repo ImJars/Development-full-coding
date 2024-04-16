@@ -355,10 +355,10 @@ function Skills() {
                   </div>
                   <div ref={refAnimate7} className="mt-10">
                     <MainSkill
-                      title={"UI/UX Designer"}
-                      description_1={`Designing user interfaces is something I'm really good at and I've been a UI/UX designer from 2018 to 2021 (3 years).`}
-                      description_2={`I'm always thinking about how to create the best possible user experience, in addition to creating visually appealing user interfaces.`}
-                      description_3={`The biggest challenge is finding the balance between creating a great user interface and an amazing user experience.`}
+                      title={"Diseñador UI/UX"}
+                      description_1={`Diseñar interfaces de usuario es un trabajo en el que soy muy bueno y he sido diseñador desde hace varios años atras, no solamente en el desarrollo web, sino tambien en desarrollo movil y de escritorio.`}
+                      description_2={`Siempre estoy pensando en cómo crear la mejor experiencia de usuario posible, además de crear interfaces de usuario visualmente atractivas.`}
+                      description_3={`El mayor desafío es encontrar el equilibrio entre la creación de una excelente interfaz de usuario y una experiencia de usuario increíble. Que se adapte a las necesidades de los usuarios y que al mismo tiempo no sea invasiva visualmente.`}
                     />
                   </div>
                   <div>
@@ -412,13 +412,13 @@ function Skills() {
                 </div>
               </div>
               <IndexSkill
-                title_1={"Front-End Developer"}
+                title_1={"Desarrollador Font-End"}
                 subtitle_1={"TypeScript"}
                 subtitle_2={"React"}
                 subtitle_3={"Tailwind CSS"}
                 subtitle_4={"Framer Motion"}
-                subtitle_5={"Next.js"}
-                title_2={"UI/UX Designer"}
+                subtitle_5={"Styled Components"}
+                title_2={"Diseñador UI/UX"}
                 subtitle_6={"Programming Languages"}
                 subtitle_7={"Technologies"}
                 subtitle_8={"Softwares and Tools"}
