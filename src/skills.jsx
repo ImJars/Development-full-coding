@@ -348,8 +348,8 @@ function Skills() {
                     </div>
                     <div ref={refAnimate6}>
                       <Skill
-                        title={"Next.js"}
-                        description_1={`I've been using CRA for a few years, but since discovering Next.js, I don't think I would want to use any other web framework. It's just that good!.`}
+                        title={"Styled Components"}
+                        description_1={`Styled Components es una herramienta que me gusta usar para crear componentes reutilizables y personalizados en mis proyectos. Es una herramienta muy poderosa y facil de usar. Ya que conjunto a ReactJS, me permite crear componentes aun mas personalizados.`}
                       />
                     </div>
                   </div>
