@@ -73,7 +73,7 @@ function Skills() {
     triggerOnce: false,
   });
   const { ref: refAnimateScroll, inView: viewAnimateScroll } = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
     triggerOnce: false,
   });
 
@@ -343,7 +343,7 @@ function Skills() {
                     <div ref={refAnimate5}>
                       <Skill
                         title={"Framer Motion"}
-                        description_1={`For animations, I am more comfortable using Framer Motion. Creating animations using JavaScript has never been as easy as using Framer Motion.`}
+                        description_1={`Cuando se trata de las animaciones me gusta utlizar Framer Motion, crear animaciones para Javascript nunca habia sido tan facil y divertido. Me encanta usarlo y crear animaciones para mis proyectos. Es una herramienta muy poderosa y facil de usar.`}
                       />
                     </div>
                     <div ref={refAnimate6}>
