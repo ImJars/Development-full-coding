@@ -197,9 +197,16 @@ function Experience() {
                                             text-text-general text-base space-y-6"
                 >
                   <h1 className="mt-5">
-                    I started my professional career as a web developer around
-                    2016. In 2021, I resigned from my job to focus on completing
-                    college matters while taking on some freelance projects.
+                    Comence mi carrera profecional con una empresa llamada
+                    SQDesarrollo en 2019 que nos dio la oportunidad de trabajar
+                    en proyectos de alta gama con empresas de gran renombre. En
+                    2020 junto a un equipo de trabajo creamos una empresa donde
+                    seguimos atendiendo proyectos de alta gama. En 2021 estuve
+                    una pasantia de 1 año en una empresa de Desarrollo Web,
+                    donde encontre mi pasion por el desarrollo web, sin embargo
+                    en 2022 decidi seguir mi carrera como Freelance y Autonomo,
+                    dandome la oportunidad de trabajar y seguir aprendiendo
+                    nuevas tecnologias para mi desarrollo.
                   </h1>
                 </div>
                 <div ref={refAnimateScroll}>
