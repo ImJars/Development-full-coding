@@ -4,7 +4,7 @@ function List({ description }) {
   return (
     <>
         <li className="flex space-x-2 mb-2">
-            <font className="text-xl">
+            <font className="text-xl text-text-purple">
                 &#8226;
             </font>
             <p>

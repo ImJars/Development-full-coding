@@ -212,19 +212,28 @@ function Experience() {
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate}>
                     <Content
-                      title={"Self-employed"}
-                      company={"Hemat.id"}
-                      date={"(Jun 2022 - Jul 2022)"}
+                      title={"Freelancer"}
+                      company={"Legacyier"}
+                      date={"(Enero 2022 – abril 2023)"}
                       description={
                         <ol>
                           <List
-                            description={`Improving the UI & UX of Femicam's desktop application based on React Electron and Material UI.`}
+                            description={`Administración de proyectos (Arquitectura de software, MVC, análisis de requerimientos y control de versiones).`}
                           />
                           <List
-                            description={`Designing and creating React components for the application dashboard.`}
+                            description={`Desarrollo, construccion y programacion de interfaces.`}
                           />
                           <List
-                            description={`Creating an image editor using Sharp.js.`}
+                            description={`Mantenimiento y ensamblado de equipo de cómputo`}
+                          />
+                          <List
+                            description={`Instalación y soporte de software.`}
+                          />
+                          <List
+                            description={`Auxiliar avanzado en entorno Office.`}
+                          />
+                          <List
+                            description={`Capacitacion constante en nuevas tecnologias.`}
                           />
                         </ol>
                       }
