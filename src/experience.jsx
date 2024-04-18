@@ -338,8 +338,8 @@ function Experience() {
                 </div>
               </div>
               <Index
-                subtitle_1={"Self-Employed"}
-                subtitle_2={"Freelance"}
+                subtitle_1={"Freelancer"}
+                subtitle_2={"Trabajo Profesional"}
                 subtitle_3={"Professional Work"}
                 subtitle_4={"What They Say"}
                 animate_1={animate1}
