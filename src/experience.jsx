@@ -224,7 +224,7 @@ function Experience() {
                             description={`Desarrollo, construccion y programacion de interfaces.`}
                           />
                           <List
-                            description={`Mantenimiento y ensamblado de equipo de cómputo`}
+                            description={`Mantenimiento y ensamblado de equipo de cómputo.`}
                           />
                           <List
                             description={`Instalación y soporte de software.`}
@@ -242,28 +242,43 @@ function Experience() {
                   <div ref={refAnimate2}>
                     <Content
                       display={true}
-                      title={"Freelance"}
-                      company={"1928.id"}
-                      date={"(Jun 2022 - Jul 2022)"}
+                      title={"Trabajo Profesional"}
+                      company={"Bliss DDM"}
+                      date={"(Enero 2021 – noviembre 2021)"}
                       description={
                         <ol>
                           <List
-                            description={`Created main site navigation (menu, footer, mobile drawer) using Tailwind CSS.`}
+                            description={`Colaboré en el desarrollo y soporte de sitios web, asegurando la ejecución acorde a la visión
+                            empresarial.`}
                           />
                           <List
-                            description={`Created product tiles, promotion cards, and other small components using Tailwind CSS.`}
+                            description={`Realicé actualizaciones diarias y correcciones de diseño utilizando tecnologías de control de versiones.`}
+                          />
+                          <List
+                            description={`Demostré habilidades de autoaprendizaje y adaptabilidad, contribuyendo al éxito continuo de los
+                            proyectos web.`}
                           />
                         </ol>
                       }
-                      company_2={"Hemat.id"}
-                      date_2={"(Jun 2022 - Jul 2022)"}
+                      company_2={"Raxe-Tech"}
+                      date_2={"(Agosto – diciembre 2020)"}
                       description_2={
                         <ol>
                           <List
-                            description={`Improving the UI & UX of Femicam's desktop application based on React Electron and Material UI.`}
+                            description={`Trabaje en colaboración con un equipo de desarrollo, implementando con precisión los requisitos
+                            establecidos por el equipo de diseño.`}
                           />
                           <List
-                            description={`Designing and creating React components for the application dashboard.`}
+                            description={`Proporcioné mejoras y diseñé estratégicamente interfaces intuitivas para el Administrador, empleados
+                            y usuarios, optimizando la experiencia de uso.`}
+                          />
+                          <List
+                            description={`Trabaje en el desarrollo de software de control de versiones para proyectos personales o
+                            empresariales.`}
+                          />
+                          <List
+                            description={`Creación y desarrollo de base de datos para carga masiva en archivos Excel, desarrollo de interfaces y
+                            documentación.`}
                           />
                         </ol>
                       }

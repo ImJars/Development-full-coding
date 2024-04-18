@@ -22,7 +22,7 @@ function Content({ title, company, date, description, display, company_2, date_2
           {display === true ? (
             <>
               <div className="flex gap-1 items-center text-text-general my-5">
-                <h2 className="font-semibold text-text-general text-base tracking-wide">
+                <h2 className="font-semibold text-text-white-gray text-base tracking-wide">
                   {company_2}
                 </h2>
                 <AiOutlineMore />
