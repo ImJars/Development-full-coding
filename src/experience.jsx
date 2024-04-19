@@ -285,6 +285,35 @@ function Experience() {
                         </ol>
                       }
                     />
+                    <Content
+                      company={"SQDesarrollo"}
+                      date={"(Enero – diciembre 2019)"}
+                      description={
+                        <ol>
+                          <List
+                            description={`Contribución en la programación, desarrollo de interfaces y cálculos para la exportación de informes.`}
+                          />
+                          <List
+                            description={`Líder en análisis y construcción de bases de datos para usuarios y datos masivos.`}
+                          />
+                          <List
+                            description={`Estrategia, implementación y desarrollo de seguridad para usuarios, administradores y directivos.`}
+                          />
+                          <List
+                            description={`Propuesta y diseño de informes finales resultantes del software.`}
+                          />
+                          <List
+                            description={`Análisis y contribución con el equipo de desarrollo para elección de mejor arquitectura de software.`}
+                          />
+                          <List
+                            description={`Análisis de la base de datos para cumplir los requerimientos en el desarrollo.`}
+                          />
+                          <List
+                            description={`Construcción de interfaces y programación de macros.`}
+                          />
+                        </ol>
+                      }
+                    />
                   </div>
                   <div ref={refAnimate3}>
                     <Content
