@@ -212,6 +212,7 @@ function Experience() {
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate}>
                     <Content
+                      extraClass={'py-14 border-b border-text-general border-opacity-20'}
                       title={"Freelancer"}
                       company={"Legacyier"}
                       date={"(Enero 2022 – abril 2023)"}
@@ -239,9 +240,8 @@ function Experience() {
                       }
                     />
                   </div>
-                  <div ref={refAnimate2}>
+                  <div ref={refAnimate2} className="py-14 border-b border-text-general border-opacity-20">
                     <Content
-                      display={true}
                       title={"Trabajo Profesional"}
                       company={"Bliss DDM"}
                       date={"(Enero 2021 – noviembre 2021)"}
@@ -260,9 +260,11 @@ function Experience() {
                           />
                         </ol>
                       }
-                      company_2={"Raxe-Tech"}
-                      date_2={"(Agosto – diciembre 2020)"}
-                      description_2={
+                    />
+                    <Content
+                      company={"Raxe-Tech"}
+                      date={"(Agosto – diciembre 2020)"}
+                      description={
                         <ol>
                           <List
                             description={`Trabaje en colaboración con un equipo de desarrollo, implementando con precisión los requisitos
