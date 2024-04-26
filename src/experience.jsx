@@ -275,6 +275,7 @@ function Experience() {
                     <Content
                       company={"Raxe-Tech"}
                       date={"(Agosto – diciembre 2020)"}
+                      description__text={'Raxe-Tech fue uno de mis primeros equipos de desarrollo durante algunos años y diferentes proyectos profesionales.'}
                       description={
                         <ol>
                           <List
