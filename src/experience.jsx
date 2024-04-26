@@ -212,10 +212,16 @@ function Experience() {
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate}>
                     <Content
-                      extraClass={'py-14 border-b border-text-general border-opacity-20'}
+                      extraClass={
+                        "py-14 border-b border-text-general border-opacity-20"
+                      }
                       title={"Freelancer"}
                       company={"Legacyier"}
                       date={"(Enero 2022 – abril 2023)"}
+                      description__text={
+                        "Legacyier es una marca de mi autoria, donde me dedico a la creacion de aplicaciones web y moviles, asi como tambien a la creacion " +
+                        "de sitios web y tiendas online. En Legacyier me dedico a dar soporte tanto de hardware como de software en equipos de computo y moviles. "
+                      }
                       description={
                         <ol>
                           <List
@@ -240,7 +246,10 @@ function Experience() {
                       }
                     />
                   </div>
-                  <div ref={refAnimate2} className="py-14 border-b border-text-general border-opacity-20">
+                  <div
+                    ref={refAnimate2}
+                    className="py-14 border-b border-text-general border-opacity-20"
+                  >
                     <Content
                       title={"Trabajo Profesional"}
                       company={"Bliss DDM"}
