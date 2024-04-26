@@ -254,6 +254,8 @@ function Experience() {
                       title={"Trabajo Profesional"}
                       company={"Bliss DDM"}
                       date={"(Enero 2021 – noviembre 2021)"}
+                      description__text={'Bliss DDM es una empresa de desarrollo web, donde me dedique a la colaboracion en el desarrollo de sitios web y aplicaciones web. Donde me especialice en algunas de las tecnologias ' +
+                      'mas usadas en el desarrollo web, como lo son React, NodeJS, NextJS, MongoDB, entre otras.'}
                       description={
                         <ol>
                           <List
