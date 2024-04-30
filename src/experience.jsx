@@ -39,19 +39,14 @@ function Experience() {
     threshold: 0.5,
     triggerOnce: false,
   });
-  const { ref: refAnimate4, inView: inViewAnimate4 } = useInView({
-    threshold: 0.5,
-    triggerOnce: false,
-  });
   const { ref: refAnimateScroll, inView: viewAnimateScroll } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: false,
   });
 
   const animate1 = useAnimation();
   const animate2 = useAnimation();
   const animate3 = useAnimation();
-  const animate4 = useAnimation();
   const animateScroll = useAnimation();
 
   useEffect(() => {
@@ -59,10 +54,9 @@ function Experience() {
       inViewAnimate,
       inViewAnimate2,
       inViewAnimate3,
-      inViewAnimate4,
     ];
 
-    const animations = [animate1, animate2, animate3, animate4];
+    const animations = [animate1, animate2, animate3];
 
     for (let i = 0; i < animations.length; i++) {
       const animation = animations[i];
@@ -105,8 +99,6 @@ function Experience() {
     animate2,
     inViewAnimate3,
     animate3,
-    inViewAnimate4,
-    animate4,
     viewAnimateScroll,
     animateScroll,
   ]);
@@ -196,18 +188,23 @@ function Experience() {
                   className="border-b pb-14 border-text-general border-opacity-20
                                             text-text-general text-base space-y-6"
                 >
-                  <h1 className="mt-5">
+                  <p className="mt-5">
                     Comence mi carrera profecional con una empresa llamada
                     SQDesarrollo en 2019 que nos dio la oportunidad de trabajar
-                    en proyectos de alta gama con empresas de gran renombre. En
+                    en proyectos de alta gama con empresas de gran renombre. 
+                  </p>
+                  <p className="mt-2">
+                  En
                     2020 junto a un equipo de trabajo creamos una empresa donde
-                    seguimos atendiendo proyectos de alta gama. En 2021 estuve
-                    una pasantia de 1 año en una empresa de Desarrollo Web,
-                    donde encontre mi pasion por el desarrollo web, sin embargo
-                    en 2022 decidi seguir mi carrera como Freelance y Autonomo,
-                    dandome la oportunidad de trabajar y seguir aprendiendo
-                    nuevas tecnologias para mi desarrollo.
-                  </h1>
+                    seguimos atendiendo proyectos de alta gama.
+                  </p>
+                  <p className="mt-2">
+                    En 2021 estuve una pasantia de 1 año en una empresa de
+                    Desarrollo Web, donde encontre mi pasion por el desarrollo
+                    web, sin embargo en 2022 decidi seguir mi carrera como
+                    Freelance y Autonomo, dandome la oportunidad de trabajar y
+                    seguir aprendiendo nuevas tecnologias para mi desarrollo.
+                  </p>
                 </div>
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate}>
@@ -254,8 +251,10 @@ function Experience() {
                       title={"Trabajo Profesional"}
                       company={"Bliss DDM"}
                       date={"(Enero 2021 – noviembre 2021)"}
-                      description__text={'Bliss DDM es una empresa de desarrollo web, donde me dedique a la colaboracion en el desarrollo de sitios web y aplicaciones web. Donde me especialice en algunas de las tecnologias ' +
-                      'mas usadas en el desarrollo web, como lo son React, NodeJS, NextJS, MongoDB, entre otras.'}
+                      description__text={
+                        "Bliss DDM es una empresa de desarrollo web, donde me dedique a la colaboracion en el desarrollo de sitios web y aplicaciones web. Donde me especialice en algunas de las tecnologias " +
+                        "mas usadas en el desarrollo web, como lo son React, NodeJS, NextJS, MongoDB, entre otras."
+                      }
                       description={
                         <ol>
                           <List
@@ -275,7 +274,9 @@ function Experience() {
                     <Content
                       company={"Raxe-Tech"}
                       date={"(Agosto – diciembre 2020)"}
-                      description__text={'Raxe-Tech fue uno de mis primeros equipos de desarrollo durante algunos años y diferentes proyectos profesionales.'}
+                      description__text={
+                        "Raxe-Tech fue uno de mis primeros equipos de desarrollo durante algunos años y diferentes proyectos profesionales."
+                      }
                       description={
                         <ol>
                           <List
@@ -328,67 +329,17 @@ function Experience() {
                     />
                   </div>
                   <div ref={refAnimate3}>
-                    <Content
-                      title={"Professional Work"}
-                      company={"Ciptaloka"}
-                      date={"(Jul 2016 - Jun 2021)"}
-                      description={
-                        <>
-                          <div className="space-y-6">
-                            <p>
-                              My first and (currently) only professional work is
-                              at Ciptaloka. At Ciptaloka, I do many types of
-                              work, such as developing desktop, mobile, and web
-                              applications.
-                            </p>
-                            <p>
-                              However, my work there is primarily focused on web
-                              development, and around the last 2 years I worked
-                              there, I have learned a lot about React,
-                              particularly when creating the v2 design editor.
-                            </p>
-                            <div className="space-y-4">
-                              <h1>
-                                Here are the details of the work I did at
-                                Ciptaloka:
-                              </h1>
-                              <ol>
-                                <List
-                                  description={`Created the v2 design editor layout using React.`}
-                                />
-                                <List
-                                  description={`Redesigned the website's front page from vanilla CSS to use Foundation 6.`}
-                                />
-                                <List
-                                  description={`Developed interactive UI on mobile editor using Framework7, Backbone.js, and Marionette.js.`}
-                                />
-                                <List
-                                  description={`Created e-mail marketing design templates using Foundation for E-mails.`}
-                                />
-                                <List
-                                  description={`Customized the blog.ciptaloka.com WordPress theme to match the looks and feels of the main site.`}
-                                />
-                              </ol>
-                            </div>
-                          </div>
-                        </>
-                      }
-                    />
-                  </div>
-                  <div ref={refAnimate4}>
-                    <Content title={"What They Say"} company={"-"} date={"-"} />
+                    <Content extraClass={"py-14"} title={"Proxima experiencia..."} company={"-"} date={"-"} />
                   </div>
                 </div>
               </div>
               <Index
                 subtitle_1={"Freelancer"}
                 subtitle_2={"Trabajo Profesional"}
-                subtitle_3={"Professional Work"}
-                subtitle_4={"What They Say"}
+                subtitle_3={"Proxima experiencia..."}
                 animate_1={animate1}
                 animate_2={animate2}
                 animate_3={animate3}
-                animate_4={animate4}
                 animate_scroll={animateScroll}
               />
             </div>
