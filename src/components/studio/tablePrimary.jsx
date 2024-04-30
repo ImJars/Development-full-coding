@@ -17,20 +17,20 @@ function TablePrimary() {
           </thead>
           <tbody className="text-text-general text-sm tracking-wide font-normal">
             <tr>
-              <td className="px-6 py-2">Model</td>
-              <td className="px-6 py-2">Mi Curved Monitor 34"</td>
+              <td className="px-6 py-2">Modelo</td>
+              <td className="px-6 py-2">Gigabyte G27FC A</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Resolutions</td>
-              <td className="px-6 py-2">3440x1440</td>
+              <td className="px-6 py-2">Resolucion</td>
+              <td className="px-6 py-2">1920x1080</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Aspect ratio</td>
+              <td className="px-6 py-2">Relacion de Aspecto</td>
               <td className="px-6 py-2">21:9</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Refresh rate</td>
-              <td className="px-6 py-2">144 Hz</td>
+              <td className="px-6 py-2">Frecuencia de Actualizacion</td>
+              <td className="px-6 py-2">165 Hz</td>
             </tr>
           </tbody>
         </table>

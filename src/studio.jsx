@@ -258,28 +258,29 @@ function Studio() {
                 <div className="mt-10">
                   <div ref={ref2}>
                     <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
-                      Display
+                      Monitores
                     </h1>
                     <p className="text-text-general">
-                      The dual monitor setup maximizes my web development
-                      workflow. I can code on one screen while previewing live
-                      on the other — no more Alt + Tab necessary for faster,
-                      more efficient work!
+                      La configuración de monitor dual maximiza mi flujo de
+                      trabajo de desarrollo web. Puedo codificar en una pantalla
+                      mientras obtengo una vista previa en vivo en la otra: ¡ya
+                      no es necesario Alt + Tab para un trabajo más rápido y
+                      eficiente!
                     </p>
                     <p className="text-text-general mt-5">
-                      Need a website with extra wide breakpoint? I've got you
-                      covered with my ultrawide monitor.
+                      ¿Necesita un sitio web con una vista mas amplia? Lo tengo
+                      cubierto con mi monitor ultraancho.
                     </p>
                   </div>
                   <div ref={ref3}>
                     <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Primary
+                      Primario
                     </h1>
                     <TablePrimary />
                   </div>
                   <div ref={ref4}>
                     <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Secondary
+                      Secundario
                     </h1>
                     <TableSecondary />
                   </div>
