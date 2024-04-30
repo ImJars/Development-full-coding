@@ -60,7 +60,7 @@ function Studio() {
     triggerOnce: false,
   });
   const { ref: refScroll, inView: inViewScroll } = useInView({
-    threshold: 0.25,
+    threshold: 0.05,
     triggerOnce: false,
   });
 
@@ -227,10 +227,7 @@ function Studio() {
           </StudioSection>
           <StudioSection>
             <div className="content-wrapped mx-auto flex space-x-14">
-              <div
-                ref={refScroll}
-                className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20"
-              >
+              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20">
                 <div>
                   <div className="my-20 border p-32 border-text-general border-opacity-20 mb-10" />
                   <p className="text-text-general tracking-wide">
@@ -239,68 +236,70 @@ function Studio() {
                     comencemos con mi dispositivo principal: la computadora.
                   </p>
                 </div>
-                <div ref={ref1} className="mt-14">
-                  <h1 className="text-4xl font-bold text-text-white-gray tracking-wide my-10">
-                    Computadora
-                  </h1>
-                  <TableComputer />
-                  <p className="text-text-general">
-                    Puede que esta computadora no tenga las últimas
-                    especificaciones, ¡pero funciona increíblemente rápido y sin
-                    problemas! Es perfecto para desarrollo web, incluso para
-                    proyectos más grandes o pesados.
-                  </p>
-                  <p className="text-text-general mt-5">
-                    ¡Los 16 GB de RAM también garantizan que realizar múltiples
-                    tareas sea muy sencillo!
-                  </p>
-                </div>
-                <div className="mt-10">
-                  <div ref={ref2}>
-                    <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
-                      Monitores
+                <div ref={refScroll}>
+                  <div ref={ref1} className="mt-14">
+                    <h1 className="text-4xl font-bold text-text-white-gray tracking-wide my-10">
+                      Computadora
                     </h1>
+                    <TableComputer />
                     <p className="text-text-general">
-                      La configuración de monitor dual maximiza mi flujo de
-                      trabajo de desarrollo web. Puedo codificar en una pantalla
-                      mientras obtengo una vista previa en vivo en la otra: ¡ya
-                      no es necesario Alt + Tab para un trabajo más rápido y
-                      eficiente!
+                      Puede que esta computadora no tenga las últimas
+                      especificaciones, ¡pero funciona increíblemente rápido y
+                      sin problemas! Es perfecto para desarrollo web, incluso
+                      para proyectos más grandes o pesados.
                     </p>
                     <p className="text-text-general mt-5">
-                      ¿Necesita un sitio web con una vista mas amplia? Lo tengo
-                      cubierto con mi monitor ultraancho.
+                      ¡Los 16 GB de RAM también garantizan que realizar
+                      múltiples tareas sea muy sencillo!
                     </p>
                   </div>
-                  <div ref={ref3}>
-                    <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Primario
-                    </h1>
-                    <TablePrimary />
-                  </div>
-                  <div ref={ref4}>
-                    <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Secundario
-                    </h1>
-                    <TableSecondary />
-                  </div>
-                  <div ref={ref5}>
-                    <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Periféricos
-                    </h1>
-                    <TablePeripherals />
-                  </div>
-                  <div ref={ref6}>
-                    <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Dispositivos de conferencia
-                    </h1>
-                    <TableConferencingDevices />
-                  </div>
-                  <div ref={ref7}>
-                    <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Otros
-                    </h1>
-                    <TableOthers />
+                  <div className="mt-10">
+                    <div ref={ref2}>
+                      <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
+                        Monitores
+                      </h1>
+                      <p className="text-text-general">
+                        La configuración de monitor dual maximiza mi flujo de
+                        trabajo de desarrollo web. Puedo codificar en una
+                        pantalla mientras obtengo una vista previa en vivo en la
+                        otra: ¡ya no es necesario Alt + Tab para un trabajo más
+                        rápido y eficiente!
+                      </p>
+                      <p className="text-text-general mt-5">
+                        ¿Necesita un sitio web con una vista mas amplia? Lo
+                        tengo cubierto con mi monitor ultraancho.
+                      </p>
+                    </div>
+                    <div ref={ref3}>
+                      <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
+                        Primario
+                      </h1>
+                      <TablePrimary />
+                    </div>
+                    <div ref={ref4}>
+                      <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
+                        Secundario
+                      </h1>
+                      <TableSecondary />
+                    </div>
+                    <div ref={ref5}>
+                      <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
+                        Periféricos
+                      </h1>
+                      <TablePeripherals />
+                    </div>
+                    <div ref={ref6}>
+                      <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
+                        Dispositivos de conferencia
+                      </h1>
+                      <TableConferencingDevices />
+                    </div>
+                    <div ref={ref7}>
+                      <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
+                        Otros
+                      </h1>
+                      <TableOthers />
+                    </div>
                   </div>
                 </div>
               </div>

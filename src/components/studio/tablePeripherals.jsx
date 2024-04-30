@@ -8,10 +8,10 @@ function TablePeripherals() {
           <thead className=" text-text-white-gray text-sm font-bold tracking-wide">
             <tr className="border-b border-text-general border-opacity-10">
               <th scope="col" className="px-6 py-3 text-start">
-                Name
+                Nombre
               </th>
               <th scope="col" className="px-6 py-3 text-start">
-                Detail
+                Detalles
               </th>
             </tr>
           </thead>
