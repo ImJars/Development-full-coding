@@ -18,23 +18,23 @@ function TableComputer() {
           <tbody className="text-text-general text-sm tracking-wide font-normal">
             <tr>
               <td className="px-6 py-2">OS</td>
-              <td className="px-6 py-2">Windows 11 pro</td>
+              <td className="px-6 py-2">Windows 11 Pro</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Proccessor</td>
-              <td className="px-6 py-2">Intel Core i3-12100 12th Gen</td>
+              <td className="px-6 py-2">Procesador</td>
+              <td className="px-6 py-2">AMD Ryzen 5 5600G</td>
             </tr>
             <tr>
               <td className="px-6 py-2">RAM</td>
-              <td className="px-6 py-2">32GB 3600Mhz DDR4</td>
+              <td className="px-6 py-2">16GB DDR4</td>
             </tr>
             <tr>
               <td className="px-6 py-2">GPU</td>
-              <td className="px-6 py-2">RTX 3060 12GB GDDR6</td>
+              <td className="px-6 py-2">GForce RTX 3060 8GB GDDR6</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Storage</td>
-              <td className="px-6 py-2">VMe M.2 1TB Gen4x4</td>
+              <td className="px-6 py-2">Memoria</td>
+              <td className="px-6 py-2">M.2 1TB</td>
             </tr>
           </tbody>
         </table>

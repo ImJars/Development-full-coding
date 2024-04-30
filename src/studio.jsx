@@ -232,26 +232,27 @@ function Studio() {
                 className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20"
               >
                 <div>
-                  <div className="mt-5 border p-32 border-text-general border-opacity-20 mb-10" />
+                  <div className="my-20 border p-32 border-text-general border-opacity-20 mb-10" />
                   <p className="text-text-general tracking-wide">
-                    One of the most important things for me when working from
-                    home is having the right tools. So, let's start with my main
-                    device - the computer.
+                    Una de las cosas más importantes para mí cuando trabajo
+                    desde casa es tener las herramientas adecuadas. Entonces,
+                    comencemos con mi dispositivo principal: la computadora.
                   </p>
                 </div>
-                <div ref={ref1} className="mt-10">
-                  <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
-                    Computer
+                <div ref={ref1} className="mt-14">
+                  <h1 className="text-4xl font-bold text-text-white-gray tracking-wide my-10">
+                    Computadora
                   </h1>
                   <TableComputer />
                   <p className="text-text-general">
-                    This computer may not have the latest specs, but it runs
-                    incredibly fast and smooth! It's perfect for web
-                    development, even for larger or heavier projects like React
-                    Electron.
+                    Puede que esta computadora no tenga las últimas
+                    especificaciones, ¡pero funciona increíblemente rápido y sin
+                    problemas! Es perfecto para desarrollo web, incluso para
+                    proyectos más grandes o pesados.
                   </p>
                   <p className="text-text-general mt-5">
-                    The 32GB of RAM also ensures that multitasking is a breeze!
+                    ¡Los 16 GB de RAM también garantizan que realizar múltiples
+                    tareas sea muy sencillo!
                   </p>
                 </div>
                 <div className="mt-10">
