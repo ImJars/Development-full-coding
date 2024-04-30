@@ -18,7 +18,7 @@ function TableSecondary() {
           <tbody className="text-text-general text-sm tracking-wide font-normal">
             <tr>
               <td className="px-6 py-2">Modelo</td>
-              <td className="px-6 py-2">Mi Desktop Monitor 27"</td>
+              <td className="px-6 py-2">FIODIO AF11F</td>
             </tr>
             <tr>
               <td className="px-6 py-2">Resolucion</td>

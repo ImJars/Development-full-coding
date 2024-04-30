@@ -17,16 +17,16 @@ function TablePeripherals() {
           </thead>
           <tbody className="text-text-general text-sm tracking-wide font-normal">
             <tr>
-              <td className="px-6 py-2">Keyboard</td>
-              <td className="px-6 py-2">Rexus Daiva RX-D68</td>
+              <td className="px-6 py-2">Teclado</td>
+              <td className="px-6 py-2">HyperX</td>
             </tr>
             <tr>
               <td className="px-6 py-2">Mouse</td>
-              <td className="px-6 py-2">Rexus Xierra X15</td>
+              <td className="px-6 py-2">Razer Deathadder Essential</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Pen Tablet</td>
-              <td className="px-6 py-2">One by Wacom</td>
+              <td className="px-6 py-2">Tableta gráfica</td>
+              <td className="px-6 py-2">Huion</td>
             </tr>
           </tbody>
         </table>

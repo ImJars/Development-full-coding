@@ -286,32 +286,32 @@ function Studio() {
                   </div>
                   <div ref={ref5}>
                     <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Peripherals
+                      Periféricos
                     </h1>
                     <TablePeripherals />
                   </div>
                   <div ref={ref6}>
                     <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Conferencing Devices
+                      Dispositivos de conferencia
                     </h1>
                     <TableConferencingDevices />
                   </div>
                   <div ref={ref7}>
                     <h1 className="text-2xl font-bold text-text-white-gray tracking-wide mt-5">
-                      Others
+                      Otros
                     </h1>
                     <TableOthers />
                   </div>
                 </div>
               </div>
               <IndexStudio
-                subtitle_1={"Computer"}
-                subtitle_2={"Display"}
-                description_1={"Primary"}
-                description_2={"Secondary"}
-                subtitle_3={"Peripherals"}
-                subtitle_4={"Conferencing Devices"}
-                subtitle_5={"Others"}
+                subtitle_1={"Computadora"}
+                subtitle_2={"Monitores"}
+                description_1={"Primario"}
+                description_2={"Secundario"}
+                subtitle_3={"Periféricos"}
+                subtitle_4={"Dispositivos de conferencia"}
+                subtitle_5={"Otros"}
                 animate_1={animate1}
                 animate_2={animate2}
                 animate_3={animate3}

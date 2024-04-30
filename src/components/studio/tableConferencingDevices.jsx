@@ -17,16 +17,16 @@ function TableConferencingDevices() {
           </thead>
           <tbody className="text-text-general text-sm tracking-wide font-normal">
             <tr>
-              <td className="px-6 py-2">Microphone</td>
-              <td className="px-6 py-2">Rode Podmic (Dynamic)</td>
+              <td className="px-6 py-2">Microfono</td>
+              <td className="px-6 py-2">MAONO FIFINE</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Headphone</td>
-              <td className="px-6 py-2">Samson SR850</td>
+              <td className="px-6 py-2">Camara Web</td>
+              <td className="px-6 py-2">Logitech Brio 4k</td>
             </tr>
             <tr>
-              <td className="px-6 py-2">Audio interface</td>
-              <td className="px-6 py-2">EVO 4 by Audient</td>
+              <td className="px-6 py-2">Interfaz de Audio</td>
+              <td className="px-6 py-2">OBS Studio</td>
             </tr>
           </tbody>
         </table>
