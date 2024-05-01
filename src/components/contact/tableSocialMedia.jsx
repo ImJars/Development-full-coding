@@ -9,10 +9,10 @@ function TableSocialMedia() {
           <thead className=" text-text-white-gray text-sm font-bold">
             <tr className="border-b border-text-general border-opacity-10">
               <th scope="col" className="px-3 sm:px-6 text-start">
-                Name
+                Nombre
               </th>
               <th scope="col" className="px-0 sm:px-6 py-3 text-start">
-                Detail
+                Detalles
               </th>
             </tr>
           </thead>
@@ -33,7 +33,7 @@ function TableSocialMedia() {
               </td>
             </tr>
             <tr>
-              <td className="px-3 sm:px-6 py-2 text-xs sm:text-sm">Twitter</td>
+              <td className="px-3 sm:px-6 py-2 text-xs sm:text-sm">X (Twitter)</td>
               <td className="px-0 sm:px-6 py-2">
                 <a 
                     href="https://twitter.com/Im_Jars" 

@@ -213,16 +213,15 @@ function Contact() {
                   className="mt-10 space-y-5 text-text-general text-base tracking-wide"
                 >
                   <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
-                    Social Media
+                    Redes
                   </h1>
                   <p>
-                    If you want to find me on social media, just search for
-                    @enjidev. That's my username on almost all platforms, so it
-                    should be easy to find me.
+                    Si quieres encontrarme en las redes sociales, te dejo mis
+                    principales medios de comunicacion.
                   </p>
                   <p>
-                    But if you're short on time, I've included some links to the
-                    social media platforms I use most frequently below.
+                    A continuación he incluido algunos enlaces a las plataformas
+                    de redes sociales que uso con más frecuencia.
                   </p>
                   <TableSocialMedia />
                 </div>
