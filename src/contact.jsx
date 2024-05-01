@@ -186,12 +186,13 @@ function Contact() {
                               text-text-general text-base space-y-6"
                 >
                   <p className="mt-5 text-text-general tracking-wide w-full h-full">
-                    Just a friendly reminder that the information provided here
-                    is for business purposes only. If you have any questions,
-                    feel free to chat with me directly on my social media.
+                    Sólo un recordatorio amistoso de que la información
+                    proporcionada aquí es únicamente para fines comerciales. Si
+                    tienes alguna pregunta, no dudes en chatear conmigo
+                    directamente en mis redes sociales.
                   </p>
                   <p className="text-text-general tracking-wide">
-                    I appreciate your understanding in using this responsibly.
+                    Agradezco su comprensión al usar esto de manera responsable.
                   </p>
                 </div>
                 <div
@@ -199,12 +200,12 @@ function Contact() {
                   className="mt-8 border-b border-text-general border-opacity-20 pb-10"
                 >
                   <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
-                    Contact
+                    Contacto
                   </h1>
                   <TableContact />
                   <h1 className="text-text-general text-base tracking-wide mt-5">
-                    If you need any further information, such as my phone
-                    number, please do not hesitate to send me an email first.
+                    Si necesita más información, como mi número de teléfono, no
+                    dude en enviarme un correo electrónico primero.
                   </h1>
                 </div>
                 <div
