@@ -97,7 +97,7 @@ function Contact() {
     triggerOnce: false,
   });
   const { ref: refScroll, inView: inViewScroll } = useInView({
-    threshold: 0.6,
+    threshold: 0.5,
     triggerOnce: false,
   });
 
@@ -179,7 +179,7 @@ function Contact() {
             <div className="content-wrapped mx-auto flex space-x-14">
               <div
                 ref={refScroll}
-                className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-20"
+                className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-10"
               >
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
@@ -213,7 +213,7 @@ function Contact() {
                   className="mt-10 space-y-5 text-text-general text-base tracking-wide"
                 >
                   <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
-                    Redes
+                    Redes Sociales
                   </h1>
                   <p>
                     Si quieres encontrarme en las redes sociales, te dejo mis
@@ -223,8 +223,8 @@ function Contact() {
                     A continuación he incluido algunos enlaces a las plataformas
                     de redes sociales que uso con más frecuencia.
                   </p>
-                  <TableSocialMedia />
                 </div>
+                <TableSocialMedia />
               </div>
               <IndexContact
                 subtitle_1={"Contact"}
