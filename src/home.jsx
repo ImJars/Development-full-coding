@@ -271,7 +271,7 @@ function Home({ refHome }) {
               </div>
             </div>
           </HomeSection>
-          <HomeSection className="-mt-10 pb-24 mx-1 sm:mx-0">
+          <HomeSection className="-mt-10 pb-24 mx-4 sm:mx-0">
             <div className="content-wrapped block mx-auto">
               <Cards>
                 <CardHome
@@ -301,7 +301,7 @@ function Home({ refHome }) {
               </Cards>
             </div>
           </HomeSection>
-          <HomeSection className="-mt-16 pb-24 mx-1 sm:mx-0">
+          <HomeSection className="-mt-16 pb-24 mx-4 sm:mx-0">
             <div className="content-wrapped mx-auto">
               <TextHome
                 text={
@@ -310,7 +310,7 @@ function Home({ refHome }) {
               />
             </div>
           </HomeSection>
-          <HomeSection className="-mt-16 pb-24 mx-1 sm:mx-0">
+          <HomeSection className="-mt-16 pb-24 mx-4 sm:mx-0">
             <section className="content-wrapped mx-auto">
               <div>
                 <SubHome
