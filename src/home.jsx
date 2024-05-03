@@ -128,9 +128,9 @@ function Home({ refHome }) {
     <>
       <HomeWraped>
         <div ref={refHome} className="static text-white font-poppins z-10">
-          <HomeSection className="mx-1 sm:mx-0">
+          <HomeSection className="mx-4 sm:mx-0">
           <div className="flex justify-end">
-            <img className="absolute object-cover w-3/5 sm:w-2/5 xl:w-2/6 transform top-40 xl:top-20" src="cube.png" alt="" />
+            <img className="absolute object-cover w-3/5 sm:w-2/5 xl:w-2/6 transform top-40 xl:top-20 hidden sm:block" src="cube.png" alt="" />
           </div>
             <div className="content-wrapped block mx-auto pt-52 pb-28">
               <div className="relative">
@@ -147,7 +147,7 @@ function Home({ refHome }) {
                     Hola!
                   </motion.h1>
                   <motion.div
-                    className="text-text-white-gray font-outfit leading-none font-bold mb-2"
+                    className="text-text-white-gray font-outfit leading-none font-bold mb-3"
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate_Name"
@@ -156,13 +156,13 @@ function Home({ refHome }) {
                     }}
                   >
                     <h2 className="name">
-                      Soy &nbsp;
+                      Soy&nbsp;
                       <font className="text-text-purple">Angel</font>
                       &nbsp;Ramirez
                     </h2>
                   </motion.div>
                   <motion.h3
-                    className="font-outfit job text-text-general w-1/2"
+                    className="font-outfit job text-text-general"
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate_Subtitle"

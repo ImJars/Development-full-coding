@@ -47,7 +47,7 @@ function Header({ animateIcon, animateDiagon }) {
               : "navbar border-0 border-opacity-0 border-text-general"
           }
         >
-          <div className="w-full flex justify-between font-poppins items-center px-2 md:px-4 pt-4 pb-2">
+          <div className="w-full flex justify-between font-poppins items-center px-4 md:px-4 pt-4 pb-2">
             <div className="flex space-x-3 items-center">
               <div className="sm:mr-8 flex justify-center items-center">
                 <a href="/" className="flex justify-center items-center">
@@ -79,7 +79,6 @@ function Header({ animateIcon, animateDiagon }) {
                 headerLink={"/projects"}
                 linkText={"Proyectos"}
               />
-              <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
               <HeaderLink
                 classNames={
                   "text-header-purple hover:text-purple-300 focus:text-purple-300"
@@ -87,13 +86,12 @@ function Header({ animateIcon, animateDiagon }) {
                 headerLink={"/blog"}
                 linkText={"Blog"}
               />
-              <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
               <HeaderLink
                 classNames={
                   "text-header-purple hover:text-purple-300 focus:text-purple-300"
                 }
                 headerLink={"/til"}
-                linkText={"Aprendizaje"}
+                linkText={"T.I.L."}
               />
               <HeaderFlowbite />
               <div className="space-x-3 hidden xl:flex">

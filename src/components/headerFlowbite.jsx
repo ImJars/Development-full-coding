@@ -33,7 +33,8 @@ function HeaderFlowbite() {
       });
       animateFlowbite.start({
         opacity: 1,
-        y: 0,
+        y: 10,
+        display: "block",
         transition: {
           type: "spring",
           duration: 0.5,
@@ -48,11 +49,12 @@ function HeaderFlowbite() {
         },
       });
       animateFlowbite.start({
-        opacity: 0,
+        opacity: 1,
+        display: "none",
         y: -10,
         transition: {
           type: "spring",
-          duration: 0.5,
+          duration: 2,
         },
       });
     }
@@ -64,7 +66,7 @@ function HeaderFlowbite() {
         <div>
           <button
             className="text-text-blue flex items-center space-x-1 bg-text-blue bg-opacity-20
-                   py-2 px-4 rounded-full pointer-events-auto xl:pointer-events-none"
+                   py-2 px-3 rounded-2xl pointer-events-auto xl:pointer-events-none"
             onClick={() => setActive(!active)}
           >
             <h1 className="text-xs font-semibold">Trabajo</h1>
@@ -81,7 +83,7 @@ function HeaderFlowbite() {
           </button>
           <motion.div
             animate={animateFlowbite}
-            className="opacity-0 absolute border-text-general border-opacity-20 top-16 flex w-[150px] flex-col rounded-2xl border p-2 bg-secondary/95 xl:hidden"
+            className="fixed border-text-general border-opacity-20 top-16 flex w-[150px] flex-col rounded-2xl border p-2 bg-secondary/95 xl:hidden backdrop-blur"
           >
             <div className="">
               <a href={"/skills"}>
