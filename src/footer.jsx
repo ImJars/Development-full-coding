@@ -15,13 +15,13 @@ function Footer() {
   return (
     <>
       <footer className="text-white font-poppins">
-        <FooterSection className="mx-1 sm:mx-0">
+        <FooterSection className="mx-0">
           <div className="content-wrapped block mx-auto">
             <div>
               <div>
-                <h1 className="text-2xl font-bold">Contacto</h1>
+                <h1 className="text-2xl font-bold mx-4">Contacto</h1>
                 <div>
-                  <h1 className="text-text-white-gray text-sm mt-2 w-2/3 sm:w-1/3">
+                  <h1 className="text-text-white-gray text-sm mt-2 w-2/3 sm:w-1/3 mx-4">
                     Si desea ponerse en contacto conmigo, puede enviarme un
                     correo electrónico a <a href="mailto:" />
                   </h1>
@@ -33,7 +33,7 @@ function Footer() {
                     <a href="/" className="flex items-center">
                       <div className="flex sm:text-xl font-bold space-x-1 ">
                         <div className="block">
-                          <div className=" font-outfit flex text-2xl">
+                          <div className=" font-outfit flex text-2xl mx-4">
                             <h1>&nbsp;Jars</h1>
                             <h2 className="text-text-purple">dev</h2>
                           </div>
