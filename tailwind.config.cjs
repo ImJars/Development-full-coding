@@ -29,6 +29,8 @@ module.exports = {
         "solidity-icon": "#616161",
         "vs-code-icon": "#127BC6",
         "framer-icon": "#41A0EB",
+        "typescript-icon": "#2F74C0",
+        "angular-icon": "#D6002F",
 
         'update_primary': '#17181D',
         'update_secondary': '#F21E4E',

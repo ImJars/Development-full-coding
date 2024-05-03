@@ -4,11 +4,11 @@ import {
   SiJavascript,
   SiReact,
   SiTailwindcss,
-  SiPython,
-  SiSolidity,
   SiVisualstudiocode,
   SiFramer,
+  SiTypescript,
 } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import IconHome from "./components/home/icon-home";
 import { RiHomeGearFill } from "react-icons/ri";
@@ -248,12 +248,12 @@ function Home({ refHome }) {
                       icon={<SiTailwindcss />}
                     />
                     <IconHome
-                      classNames={"hover:text-python-icon"}
-                      icon={<SiPython />}
+                      classNames={"hover:text-typescript-icon"}
+                      icon={<SiTypescript />}
                     />
                     <IconHome
-                      classNames={"hover:text-solidity-icon"}
-                      icon={<SiSolidity />}
+                      classNames={"hover:text-angular-icon"}
+                      icon={<FaAngular />}
                     />
                     <li className="text-xl text-text-general">
                       <HiOutlineDotsVertical />
