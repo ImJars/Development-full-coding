@@ -26,6 +26,8 @@ import PagePrincipal from './components/projects/pagePrincipal.jsx'
 
 import BlogPageOne from './components/blog/blog-page-one.jsx'
 
+import BlogProfile from './blog_profile.jsx'
+
 function App() {
   const { ref: refHome, inView: inViewHome } = useInView({
     threshold: 0.2,
@@ -71,7 +73,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={ <Home refHome={refHome}/> } />
           <Route path='/projects' element={ <Projects /> } />
-          <Route path='/blog' element={ <Blog /> } />
+          <Route path='/blog' element={ <BlogProfile /> } />
           <Route path='/til' element={ <Til /> } />
           <Route path='/skills' element={ <Skills /> } />
           <Route path='/experience' element={ <Experience /> } />
