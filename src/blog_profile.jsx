@@ -2,6 +2,8 @@ import React from "react";
 import { MdVerified, MdOutlineWorkOutline } from "react-icons/md";
 import { FiMapPin } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
+import SectionProfile from "./components/blog/sectionProfile";
+
 import Card from "./components/blog/card";
 import PinedCard from "./components/blog/pined-card";
 import Wraped from "./components/wraped";
@@ -55,7 +57,7 @@ function BlogProfile() {
               </div>
             </section>
             {/* Imagen de Perfil e Informacion principal*/}
-            <section className="content-wrapped mx-auto flex justify-between">
+            <section className="content-wrapped mx-auto flex justify-between -mb-10">
               <div className="flex items-center space-x-10 transform -translate-y-12 translate-x-8">
                 <div>
                   <img
@@ -91,6 +93,16 @@ function BlogProfile() {
                     <h1>En una relación con Paulette Hernandez</h1>
                   </div>
                 </div>
+              </div>
+            </section>
+            <section className="content-wrapped mx-auto rounded-lg">
+              <div className="flex gap-2">
+                <SectionProfile>
+                  <h1>Hola</h1>
+                </SectionProfile>
+                <SectionProfile>
+                  <h1>Dos</h1>
+                </SectionProfile>
               </div>
             </section>
           </BlogSection>
