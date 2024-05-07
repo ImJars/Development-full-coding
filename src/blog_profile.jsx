@@ -97,7 +97,7 @@ function BlogProfile() {
             </section>
             <section className="content-wrapped mx-auto rounded-lg font-sans">
               <div className="flex gap-2">
-                <div className="flex-1">
+                <div className="flex flex-col flex-1 gap-4">
                   <SectionProfile>
                     <h1 className="font-bold text-xl mb-1">
                       Publicaciones
@@ -107,6 +107,9 @@ function BlogProfile() {
                       <FaEye className="mt-1"/>
                       <h2 className="mt-1 text-sm">Vista de Actividad</h2>
                     </div>
+                  </SectionProfile>
+                  <SectionProfile>
+
                   </SectionProfile>
                 </div>
                 <div className="flex-1">
