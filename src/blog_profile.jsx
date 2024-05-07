@@ -1,7 +1,7 @@
 import React from "react";
 import { MdVerified, MdOutlineWorkOutline } from "react-icons/md";
 import { FiMapPin } from "react-icons/fi";
-import { FaRegHeart } from "react-icons/fa";
+import { FaRegHeart, FaEye } from "react-icons/fa";
 import SectionProfile from "./components/blog/sectionProfile";
 
 import Card from "./components/blog/card";
@@ -81,28 +81,39 @@ function BlogProfile() {
               <div className="flex font-sans text-text-general mt-8">
                 <div>
                   <div className="flex items-center space-x-1">
-                    <MdOutlineWorkOutline className="font-semibold"/>
+                    <MdOutlineWorkOutline className="font-semibold" />
                     <h1>Software developer/Programmer/Software engineer</h1>
                   </div>
                   <div className="flex items-center space-x-1">
-                    <FiMapPin/>
+                    <FiMapPin />
                     <h1>Pachuca de Soto, Hidalgo</h1>
                   </div>
                   <div className="flex items-center space-x-1">
-                    <FaRegHeart/>
+                    <FaRegHeart />
                     <h1>En una relación con Paulette Hernandez</h1>
                   </div>
                 </div>
               </div>
             </section>
-            <section className="content-wrapped mx-auto rounded-lg">
+            <section className="content-wrapped mx-auto rounded-lg font-sans">
               <div className="flex gap-2">
-                <SectionProfile>
-                  <h1>Hola</h1>
-                </SectionProfile>
-                <SectionProfile>
-                  <h1>Dos</h1>
-                </SectionProfile>
+                <div className="flex-1">
+                  <SectionProfile>
+                    <h1 className="font-bold text-xl mb-1">
+                      Publicaciones
+                    </h1>
+                    <div className="border-t border-opacity-20 border-text-general"/>
+                    <div className="flex text-text-general items-center space-x-1 justify-center mt-1 -mb-2">
+                      <FaEye className="mt-1"/>
+                      <h2 className="mt-1 text-sm">Vista de Actividad</h2>
+                    </div>
+                  </SectionProfile>
+                </div>
+                <div className="flex-1">
+                  <SectionProfile>
+                    <h1>Dos</h1>
+                  </SectionProfile>
+                </div>
               </div>
             </section>
           </BlogSection>
