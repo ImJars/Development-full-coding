@@ -1,5 +1,7 @@
 import React from "react";
-import { MdVerified } from "react-icons/md";
+import { MdVerified, MdOutlineWorkOutline } from "react-icons/md";
+import { FiMapPin } from "react-icons/fi";
+import { FaRegHeart } from "react-icons/fa";
 import Card from "./components/blog/card";
 import PinedCard from "./components/blog/pined-card";
 import Wraped from "./components/wraped";
@@ -74,15 +76,18 @@ function BlogProfile() {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="flex font-sans text-text-general mt-8">
                 <div>
-                  <div>
+                  <div className="flex items-center space-x-1">
+                    <MdOutlineWorkOutline className="font-semibold"/>
                     <h1>Software developer/Programmer/Software engineer</h1>
                   </div>
-                  <div>
+                  <div className="flex items-center space-x-1">
+                    <FiMapPin/>
                     <h1>Pachuca de Soto, Hidalgo</h1>
                   </div>
-                  <div>
+                  <div className="flex items-center space-x-1">
+                    <FaRegHeart/>
                     <h1>En una relación con Paulette Hernandez</h1>
                   </div>
                 </div>
