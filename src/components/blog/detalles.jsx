@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 function Detalles() {
   return (
@@ -14,16 +15,38 @@ function Detalles() {
             among whales 🦈💸
           </p>
         </div>
-        <div className="mt-8">
+        <div className="mt-8 space-y-6">
           <div className="flex space-x-2 items-center">
-            <FaInstagram className="text-2xl text-text-general" />
+            <TbWorld className="text-2xl text-text-general" />
             <a
               href="https://www.instagram.com/jars.little/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-sans text-text-blue font-semibold"
             >
-              jars.little
+              jars.dev
+            </a>
+          </div>
+          <div className="flex space-x-2 items-center">
+            <FaLinkedin className="text-2xl text-text-general" />
+            <a
+              href="https://www.linkedin.com/in/imjars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-text-blue font-semibold"
+            >
+              ImJars
+            </a>
+          </div>
+          <div className="flex space-x-2 items-center">
+            <FaGithub className="text-2xl text-text-general" />
+            <a
+              href="https://github.com/ImJars"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-text-blue font-semibold"
+            >
+              ImJars
             </a>
           </div>
           <div className="flex space-x-2 items-center">
@@ -38,29 +61,19 @@ function Detalles() {
             </a>
           </div>
           <div className="flex space-x-2 items-center">
-            <FaLinkedin className="text-2xl text-text-general"/>
+            <FaInstagram className="text-2xl text-text-general" />
             <a
-              href="https://www.linkedin.com/in/imjars/"
+              href="https://www.instagram.com/jars.little/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-sans text-text-blue font-semibold"
             >
-              ImJars
+              jars.little
             </a>
           </div>
+
           <div className="flex space-x-2 items-center">
-            <FaGithub className="text-2xl text-text-general"/>
-            <a
-              href="https://github.com/ImJars"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-sans text-text-blue font-semibold"
-            >
-              ImJars
-            </a>
-          </div>
-          <div className="flex space-x-2 items-center">
-            <FaWhatsapp className="text-2xl text-text-general"/>
+            <FaWhatsapp className="text-2xl text-text-general" />
             <a
               href="https://api.whatsapp.com/send?phone=5217731511761&text=Hola!%20Bienvenido%20a%20mi%20Whatsapp%20%F0%9F%91%8B"
               target="_blank"

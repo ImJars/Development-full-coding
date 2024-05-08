@@ -98,9 +98,9 @@ function BlogProfile() {
               </div>
             </section>
             <section className="content-wrapped mx-auto rounded-lg font-sans">
-              <div className="flex gap-2">
-                <div className="flex flex-col flex-1 gap-4">
-                  <SectionProfile>
+              <div className="flex gap-5">
+                <div className="w-7/12 flex flex-col gap-5 h-full">
+                  <SectionProfile classNames={'py-5'}>
                     <h1 className="font-bold text-xl mb-1">
                       Publicaciones
                     </h1>
@@ -110,15 +110,27 @@ function BlogProfile() {
                       <h2 className="mt-1 text-sm">Vista de Actividad</h2>
                     </div>
                   </SectionProfile>
-                  <SectionProfile>
+                  <SectionProfile classNames={'py-5'}>
+                    <Status 
+                      text={'Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz.'}
+                      date={'28 May. 2024'}
+                    />
+                  </SectionProfile>
+                  <SectionProfile classNames={'py-5'}>
+                    <Status 
+                      text={'Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz.'}
+                      date={'28 May. 2024'}
+                    />
+                  </SectionProfile>
+                  <SectionProfile classNames={'py-5'}>
                     <Status 
                       text={'Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz.'}
                       date={'28 May. 2024'}
                     />
                   </SectionProfile>
                 </div>
-                <div className="flex-1">
-                  <SectionProfile>
+                <div className="w-5/12">
+                  <SectionProfile classNames={'pt-4'}>
                     <Detalles />
                   </SectionProfile>
                 </div>
