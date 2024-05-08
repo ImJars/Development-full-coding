@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import FooterWraped from "./components/footerWraped";
 import Status from "./components/blog/status";
+import Detalles from "./components/blog/detalles";
 
 const BlogSection = styled.section`
   display: block;
@@ -118,7 +119,7 @@ function BlogProfile() {
                 </div>
                 <div className="flex-1">
                   <SectionProfile>
-                    <h1>Dos</h1>
+                    <Detalles />
                   </SectionProfile>
                 </div>
               </div>
