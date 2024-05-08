@@ -71,7 +71,10 @@ module.exports = {
       },
       width: {
         '1920px': '120rem',
-      }
+      },
+      margin: {
+        '5px': '5px',
+      },
     },
   },
   plugins: [],
