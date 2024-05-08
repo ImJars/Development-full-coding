@@ -11,6 +11,7 @@ import Footter from "./footer";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import FooterWraped from "./components/footerWraped";
+import Status from "./components/blog/status";
 
 const BlogSection = styled.section`
   display: block;
@@ -109,7 +110,10 @@ function BlogProfile() {
                     </div>
                   </SectionProfile>
                   <SectionProfile>
-
+                    <Status 
+                      text={'Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz.'}
+                      date={'28 May. 2024'}
+                    />
                   </SectionProfile>
                 </div>
                 <div className="flex-1">
