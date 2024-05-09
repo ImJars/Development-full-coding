@@ -13,6 +13,7 @@ import styled from "styled-components";
 import FooterWraped from "./components/footerWraped";
 import Status from "./components/blog/status";
 import Detalles from "./components/blog/detalles";
+import Fotos from "./components/blog/fotos";
 
 const BlogSection = styled.section`
   display: block;
@@ -100,38 +101,45 @@ function BlogProfile() {
             <section className="content-wrapped mx-auto rounded-lg font-sans">
               <div className="flex gap-5">
                 <div className="w-7/12 flex flex-col gap-5 h-full">
-                  <SectionProfile classNames={'py-5'}>
-                    <h1 className="font-bold text-xl mb-1">
-                      Publicaciones
-                    </h1>
-                    <div className="border-t border-opacity-20 border-text-general"/>
+                  <SectionProfile classNames={"py-5"}>
+                    <h1 className="font-bold text-xl mb-1">Publicaciones</h1>
+                    <div className="border-t border-opacity-20 border-text-general" />
                     <div className="flex text-text-general items-center space-x-1 justify-center mt-1 -mb-2">
-                      <FaEye className="mt-1"/>
+                      <FaEye className="mt-1" />
                       <h2 className="mt-1 text-sm">Vista de Actividad</h2>
                     </div>
                   </SectionProfile>
-                  <SectionProfile classNames={'py-5'}>
-                    <Status 
-                      text={'Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz.'}
-                      date={'28 May. 2024'}
+                  <SectionProfile classNames={"py-5"}>
+                    <Status
+                      text={
+                        "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
+                      }
+                      date={"28 May. 2024"}
                     />
                   </SectionProfile>
-                  <SectionProfile classNames={'py-5'}>
-                    <Status 
-                      text={'Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz.'}
-                      date={'28 May. 2024'}
+                  <SectionProfile classNames={"py-5"}>
+                    <Status
+                      text={
+                        "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
+                      }
+                      date={"28 May. 2024"}
                     />
                   </SectionProfile>
-                  <SectionProfile classNames={'py-5'}>
-                    <Status 
-                      text={'Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz.'}
-                      date={'28 May. 2024'}
+                  <SectionProfile classNames={"py-5"}>
+                    <Status
+                      text={
+                        "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
+                      }
+                      date={"28 May. 2024"}
                     />
                   </SectionProfile>
                 </div>
-                <div className="w-5/12">
-                  <SectionProfile classNames={'pt-4'}>
+                <div className="w-5/12 flex flex-col gap-5 h-full">
+                  <SectionProfile classNames={"pt-4"}>
                     <Detalles />
+                  </SectionProfile>
+                  <SectionProfile classNames={"pt-4"}>
+                    <Fotos />
                   </SectionProfile>
                 </div>
               </div>
