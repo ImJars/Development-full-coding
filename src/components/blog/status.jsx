@@ -4,6 +4,7 @@ import { FaStar, FaShare } from "react-icons/fa";
 
 import {  getFirestore, doc, getDoc, updateDoc, addDoc, collection, setDoc } from "firebase/firestore";
 import { db } from "../../Firebase/firebase";
+import Star from "./star";
 
 function Status({ idContador, text, date }) {
   const [contador, setContador] = useState(0);
@@ -63,6 +64,7 @@ function Status({ idContador, text, date }) {
               <div className="flex items-center space-x-1">
               <FaStar className="text-text-general text-xl" />
               <span className="text-sm">{contador}</span>
+              <Star />
               </div>
             </button>
             <button onClick={decrementar} className="flex-1 bg-text-blue bg-opacity-10 flex justify-center py-2 rounded-lg">
