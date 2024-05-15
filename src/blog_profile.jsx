@@ -111,6 +111,7 @@ function BlogProfile() {
                   </SectionProfile>
                   <SectionProfile classNames={"py-5"}>
                     <Status
+                      idContador={"postOne"}
                       text={
                         "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
                       }
@@ -119,6 +120,7 @@ function BlogProfile() {
                   </SectionProfile>
                   <SectionProfile classNames={"py-5"}>
                     <Status
+                      idContador={"postTwo"}
                       text={
                         "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
                       }
@@ -127,6 +129,7 @@ function BlogProfile() {
                   </SectionProfile>
                   <SectionProfile classNames={"py-5"}>
                     <Status
+                      idContador={"postThree"}
                       text={
                         "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
                       }
