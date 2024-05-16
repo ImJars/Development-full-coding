@@ -59,7 +59,7 @@ html {
 }
 
 .fav:not(.favd):hover .stableHeart {
-  stroke: #60A5FA;
+  stroke:#60A5FA;
   opacity: 0.75;
 }
 
@@ -93,14 +93,6 @@ html {
     top: -150%;
     opacity: 0;
   }
-}
-
-.animate-button {
-  transition: transform 0.3s ease-in-out;
-}
-
-.animate-svg {
-  transition: fill 0.3s ease-in-out;
 }
 
 .no-seleccionable {

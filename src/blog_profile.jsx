@@ -109,14 +109,20 @@ function BlogProfile() {
                       <h2 className="mt-1 text-sm">Vista de Actividad</h2>
                     </div>
                   </SectionProfile>
+
+                  {/* // AQUI COMIENZAN LOS ESTADOS // */}
+
                   <SectionProfile classNames={"py-5"}>
-                    <Status
-                      idContador={"postOne"}
-                      text={
-                        "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
-                      }
-                      date={"28 May. 2024"}
-                    />
+                    <Status idContador={"postOne"} date={"10 May. 2024"}
+                      text={'He conocido una de las mejores librerias para los ' +
+                      'amantes de TailwindCSS como yo, se llama AceternityUI y ' +
+                      'tiene muchos componentes que te pueden ayudar a mejorar ' +
+                      'tu diseño web, ademas que son muy faciles de implementar ' +
+                      'y muy interactivos con tu web. Lo estare probando para ' +
+                      'algun proyecto y veremos que tal va. 😲​'}
+                    >
+                      <img src="aceternity.jpg" className="rounded-lg"/>
+                    </Status>
                   </SectionProfile>
                   <SectionProfile classNames={"py-5"}>
                     <Status
@@ -130,11 +136,8 @@ function BlogProfile() {
                   <SectionProfile classNames={"py-5"}>
                     <Status
                       idContador={"postThree"}
-                      text={
-                        "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
-                      }
                       date={"28 May. 2024"}
-                    />
+                    ></Status>
                   </SectionProfile>
                 </div>
                 <div className="w-5/12 flex flex-col gap-5 h-full">

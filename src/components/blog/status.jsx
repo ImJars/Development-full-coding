@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { MdVerified } from "react-icons/md";
 
-import {  getFirestore, doc, getDoc, updateDoc, addDoc, collection, setDoc } from "firebase/firestore";
+import {  doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
 import { db } from "../../Firebase/firebase";
 import Star from "./star";
 
-function Status({ idContador, text, date }) {
+function Status({ children,idContador, text, date }) {
   const [contador, setContador] = useState(0);
   
     useEffect(() => {
@@ -54,11 +54,12 @@ function Status({ idContador, text, date }) {
           </div>
           <div className="text-text-general no-seleccionable">{date}</div>
         </div>
-        <div className="mt-3">
-          <p className="ml-12 font-sans">{text}</p>
+        <div className="mt-5">
+          <p className="text-text-white-gray text-sm font-sans mb-4">{text}</p>
+          {children}
         </div>
-        <div className="mt-4">
-          <div className="flex justify-between gap-3">
+        <div className="mt-8">
+          <div className="flex justify-between gap-3 border-t border-opacity-20 border-text-general">
             <Star incrementar={incrementar} decrementar={decrementar} contador={contador} />
           </div>
         </div>
