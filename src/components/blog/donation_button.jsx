@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MdAttachMoney, MdOutlineClose } from "react-icons/md";
 import { motion, useAnimation } from "framer-motion";
-import { FaBitcoin } from "react-icons/fa";
+import { FaBitcoin, FaEthereum } from "react-icons/fa";
 
 function DonationButton() {
   const [active, setActive] = useState(false);
@@ -35,7 +35,9 @@ function DonationButton() {
   }, [active, mainFlowbite]);
 
   const textoRef = useRef(null);
+  const textoRefEther = useRef(null);
   const [copiado, setCopiado] = useState(false);
+  const [copiadoEther, setCopiadoEther] = useState(false);
 
   const copiarContenido = async () => {
     try {
@@ -46,6 +48,20 @@ function DonationButton() {
       // Hacer que el mensaje "Copiado" desaparezca después de 3 segundos
       setTimeout(() => {
         setCopiado(false);
+      }, 4000);
+    } catch (err) {
+      console.error("Error al copiar: ", err);
+    }
+  };
+  const copiarContenidoEther = async () => {
+    try {
+      await navigator.clipboard.writeText(textoRefEther.current.innerText);
+      console.log("Contenido copiado al portapapeles");
+      setCopiadoEther(true);
+
+      // Hacer que el mensaje "Copiado" desaparezca después de 3 segundos
+      setTimeout(() => {
+        setCopiadoEther(false);
       }, 4000);
     } catch (err) {
       console.error("Error al copiar: ", err);
@@ -79,28 +95,49 @@ function DonationButton() {
                 <h1>Enviar a:&nbsp;</h1>
                 <h2 className="font-bold">@Im_Jars</h2>
               </div>
-              <div className="mt-8">
+              <div className="mt-8 flex flex-col gap-3">
                 <div className="flex items-center space-x-8">
                   <div className="flex items-center space-x-2">
                     <span ref={textoRef} id="miTexto" className="hidden">
                       bc1qvwwwnlwq9zkffuysdm2669gp4prkmeee8p423g
                     </span>
                     <FaBitcoin className="text-lg text-text-general" />
-                    <h1 className="text-sm font-semibold">
+                    <h1
+                      onClick={copiarContenido}
+                      className="text-sm font-semibold cursor-pointer"
+                    >
                       Direccion de Bitcoin
                     </h1>
                   </div>
                   <div className="space-x-4">
-                    <button
-                      className="btn bg-text-blue bg-opacity-20 py-1 px-3 rounded-md"
-                      onClick={copiarContenido}
+                    <div>
+                      {copiado && (
+                        <span className="text-xs font-semibold text-text-blue">
+                          ¡Direccion copiada en el portapapeles!
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-8">
+                  <div className="flex items-center space-x-2">
+                    <span ref={textoRefEther} id="miTexto" className="hidden">
+                      0xb64e56010218907e12aF9ac294Be29376999559a
+                    </span>
+                    <FaEthereum className="text-lg text-text-general" />
+                    <h1
+                      onClick={copiarContenidoEther}
+                      className="text-sm font-semibold cursor-pointer"
                     >
-                      <span className="text-text-blue text-xs font-bold">
-                        {" "}
-                        Copiar direccion
+                      Direccion de Ethereum
+                    </h1>
+                  </div>
+                  <div>
+                    {copiadoEther && (
+                      <span className="text-xs font-semibold text-text-blue">
+                        ¡Direccion copiada en el portapapeles!
                       </span>
-                    </button>
-                    {copiado && <span className="text-xs">¡Direccion copiada en el portapapeles!</span>}
+                    )}
                   </div>
                 </div>
               </div>
