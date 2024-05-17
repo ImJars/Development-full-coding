@@ -14,6 +14,7 @@ import FooterWraped from "./components/footerWraped";
 import Status from "./components/blog/status";
 import Detalles from "./components/blog/detalles";
 import Fotos from "./components/blog/fotos";
+import DonationButton from "./components/blog/donation_button";
 
 const BlogSection = styled.section`
   display: block;
@@ -81,7 +82,10 @@ function BlogProfile() {
                   </div>
                 </div>
               </div>
-              <div className="flex font-sans text-text-general mt-8">
+              <div className="flex font-sans text-text-general mt-8 space-x-4">
+                <div className="">
+                  <DonationButton />
+                </div>
                 <div>
                   <div className="flex items-center space-x-1">
                     <MdOutlineWorkOutline className="font-semibold" />
