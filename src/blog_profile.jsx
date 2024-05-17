@@ -117,31 +117,34 @@ function BlogProfile() {
                   {/* // AQUI COMIENZAN LOS ESTADOS // */}
 
                   <SectionProfile classNames={"py-5"}>
-                    <Status idContador={"postOne"} date={"10 May. 2024"}
-                      text={'He conocido una de las mejores librerias para los ' +
-                      'amantes de TailwindCSS como yo, se llama AceternityUI y ' +
-                      'tiene muchos componentes que te pueden ayudar a mejorar ' +
-                      'tu diseño web, ademas que son muy faciles de implementar ' +
-                      'y muy interactivos con tu web. Lo estare probando para ' +
-                      'algun proyecto y veremos que tal va. 😲​'}
+                    <Status
+                      idContador={"postOne"}
+                      date={"10 May. 2024"}
+                      text={
+                        "He conocido una de las mejores librerias para los " +
+                        "amantes de TailwindCSS como yo, se llama AceternityUI y " +
+                        "tiene muchos componentes que te pueden ayudar a mejorar " +
+                        "tu diseño web, ademas que son muy faciles de implementar " +
+                        "y muy interactivos con tu web. Lo estare probando para " +
+                        "algun proyecto y veremos que tal va. 😲​"
+                      }
                     >
-                      <img src="aceternity.jpg" className="rounded-lg"/>
+                      <img src="aceternity.jpg" className="rounded-lg" />
                     </Status>
                   </SectionProfile>
                   <SectionProfile classNames={"py-5"}>
                     <Status
                       idContador={"postTwo"}
                       text={
-                        "Nunca es demasiado tarde para empezar de nuevo. Nunca es demasiado tarde para ser feliz."
+                        "'Una palabra de aliento puede ser suficiente para despertar la motivación de alguien para continuar con un desafío difícil'"
                       }
-                      date={"28 May. 2024"}
+                      date={"01 May. 2024"}
                     />
                   </SectionProfile>
                   <SectionProfile classNames={"py-5"}>
-                    <Status
-                      idContador={"postThree"}
-                      date={"28 May. 2024"}
-                    ></Status>
+                    <Status idContador={"postThree"} date={"28 Abr. 2024"} text={'¡Contratado! JAJAJA'}>
+                      <img src="meme_1.jpg" className="rounded-lg" />
+                    </Status>
                   </SectionProfile>
                 </div>
                 <div className="w-5/12 flex flex-col gap-5 h-full">

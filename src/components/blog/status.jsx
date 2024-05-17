@@ -56,7 +56,9 @@ function Status({ children,idContador, text, date }) {
         </div>
         <div className="mt-5">
           <p className="text-text-white-gray text-sm font-sans mb-4">{text}</p>
+          <div className="flex justify-center">
           {children}
+          </div>
         </div>
         <div className="mt-8">
           <div className="flex justify-between gap-3 border-t border-opacity-20 border-text-general">
