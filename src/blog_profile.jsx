@@ -4,7 +4,7 @@ import { FiMapPin } from "react-icons/fi";
 import { FaRegHeart, FaEye } from "react-icons/fa";
 import SectionProfile from "./components/blog/sectionProfile";
 
-import Wrapped from "./components/wraped";
+import HomeWraped from "./components/homeWraped";
 import Footter from "./footer";
 import styled from "styled-components";
 import FooterWraped from "./components/footerWraped";
@@ -48,7 +48,7 @@ const TitleSection = styled.div`
 function BlogProfile() {
   return (
     <>
-      <Wrapped>
+      <HomeWraped>
         <section className="w-full h-full text-white text-text">
           <BlogSection>
             {/* Section del Banner */}
@@ -159,7 +159,7 @@ function BlogProfile() {
             <Footter />
           </FooterWraped>
         </section>
-      </Wrapped>
+      </HomeWraped>
     </>
   );
 }

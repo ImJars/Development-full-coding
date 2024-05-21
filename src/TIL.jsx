@@ -1,6 +1,6 @@
 import React from "react";
 import TodayComponent from "./components/TIL/todayComponent";
-import Wrapped from "./components/wraped";
+import HomeWraped from "./components/homeWraped";
 import Footer from "./footer";
 import { motion } from "framer-motion";
 import styled from "styled-components";
@@ -52,7 +52,7 @@ function Til() {
 
   return (
     <>
-      <Wrapped>
+      <HomeWraped>
         <div className="w-full h-full text-white">
           <TilSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
@@ -162,7 +162,7 @@ function Til() {
             <Footer />
           </FooterWraped>
         </div>
-      </Wrapped>
+      </HomeWraped>
     </>
   );
 }

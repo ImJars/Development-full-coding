@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import IndexContact from "./components/contact/indexContact";
 import TableContact from "./components/contact/tableContact";
 import TableSocialMedia from "./components/contact/tableSocialMedia";
-import Wrapped from "./components/wraped";
+import HomeWraped from "./components/homeWraped"
 import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -148,7 +148,7 @@ function Contact() {
 
   return (
     <>
-      <Wrapped>
+      <HomeWraped>
         <section id="contact" ref={ref} className="w-full h-full text-white">
           <ContactSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
@@ -239,7 +239,7 @@ function Contact() {
             <Footer />
           </div>
         </section>
-      </Wrapped>
+      </HomeWraped>
     </>
   );
 }
