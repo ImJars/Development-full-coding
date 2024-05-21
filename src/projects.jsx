@@ -56,7 +56,7 @@ function Projects() {
   return (
     <>
       <Wraped>
-        <section className="w-full h-full text-white font-poppins">
+        <div className="w-full h-full text-white font-poppins">
           <ProjectSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-1 sm:mx-0">
@@ -216,7 +216,7 @@ function Projects() {
           <FooterWraped>
             <Footer />
           </FooterWraped>
-        </section>
+        </div>
       </Wraped>
     </>
   );
