@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ContentWraped = styled.div`
+const ContentWrapped = styled.div`
   width: auto;
   height: auto;
   position: relative;
@@ -35,13 +35,13 @@ const BackgroundCuad = styled.div`
  * @param {ReactNode} props.children - The children elements to be wrapped.
  * @returns {JSX.Element} The wrapped component.
  */
-function Wraped({ children }) {
+function Wrapped({ children }) {
   return (
-    <ContentWraped className="text-white font-poppins">
+    <ContentWrapped className="text-white font-poppins">
       <BackgroundCuad />
       {children}
-    </ContentWraped>
+    </ContentWrapped>
   );
 }
 
-export default Wraped;
+export default Wrapped;

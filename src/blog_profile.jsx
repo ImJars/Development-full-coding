@@ -4,11 +4,8 @@ import { FiMapPin } from "react-icons/fi";
 import { FaRegHeart, FaEye } from "react-icons/fa";
 import SectionProfile from "./components/blog/sectionProfile";
 
-import Card from "./components/blog/card";
-import PinedCard from "./components/blog/pined-card";
-import Wraped from "./components/wraped";
+import Wrapped from "./components/wraped";
 import Footter from "./footer";
-import { motion } from "framer-motion";
 import styled from "styled-components";
 import FooterWraped from "./components/footerWraped";
 import Status from "./components/blog/status";
@@ -51,7 +48,7 @@ const TitleSection = styled.div`
 function BlogProfile() {
   return (
     <>
-      <Wraped>
+      <Wrapped>
         <section className="w-full h-full text-white text-text">
           <BlogSection>
             {/* Section del Banner */}
@@ -162,7 +159,7 @@ function BlogProfile() {
             <Footter />
           </FooterWraped>
         </section>
-      </Wraped>
+      </Wrapped>
     </>
   );
 }

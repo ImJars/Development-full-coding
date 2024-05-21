@@ -1,6 +1,6 @@
 import React from "react";
 import CardProject from "./components/projects/cardProject";
-import Wraped from "./components/wraped";
+import Wrapped from "./components/wraped";
 import Footer from "./footer";
 import { FaGithub, FaUserFriends, FaProjectDiagram } from "react-icons/fa";
 import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -55,7 +55,7 @@ function Projects() {
   };
   return (
     <>
-      <Wraped>
+      <Wrapped>
         <div className="w-full h-full text-white font-poppins">
           <ProjectSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
@@ -217,7 +217,7 @@ function Projects() {
             <Footer />
           </FooterWraped>
         </div>
-      </Wraped>
+      </Wrapped>
     </>
   );
 }

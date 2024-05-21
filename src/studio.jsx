@@ -6,7 +6,7 @@ import TableOthers from "./components/studio/tableOthers";
 import TablePeripherals from "./components/studio/tablePeripherals";
 import TablePrimary from "./components/studio/tablePrimary";
 import TableSecondary from "./components/studio/tableSecondary";
-import Wraped from "./components/wraped";
+import Wrapped from "./components/wraped";
 import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -183,7 +183,7 @@ function Studio() {
 
   return (
     <>
-      <Wraped>
+      <Wrapped>
         <section id="studio" className="w-full h-full text-white">
           <StudioSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
@@ -326,7 +326,7 @@ function Studio() {
             <Footer />
           </div>
         </section>
-      </Wraped>
+      </Wrapped>
     </>
   );
 }

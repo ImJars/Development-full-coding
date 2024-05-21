@@ -4,7 +4,7 @@ import MainSkill from "./components/skills/mainSkill";
 import Skill from "./components/skills/skill";
 import Technologies from "./components/skills/technologies";
 import Tools from "./components/skills/tools";
-import Wraped from "./components/wraped";
+import Wrapped from "./components/wraped";
 import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -212,7 +212,7 @@ function Skills() {
 
   return (
     <>
-      <Wraped>
+      <Wrapped>
         <section id="skills" className="w-full h-full text-white">
           <SkillSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
@@ -443,7 +443,7 @@ function Skills() {
             <Footer />
           </div>
         </section>
-      </Wraped>
+      </Wrapped>
     </>
   );
 }

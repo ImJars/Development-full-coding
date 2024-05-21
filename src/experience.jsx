@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Index from "./components/experience";
 import Content from "./components/experience/content";
 import List from "./components/experience/list";
-import Wraped from "./components/wraped";
+import Wrapped from "./components/wraped";
 import Footer from "./footer";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -139,7 +139,7 @@ function Experience() {
 
   return (
     <>
-      <Wraped>
+      <Wrapped>
         <section id="experience" className="w-full h-full text-white">
           <ExperienceSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
@@ -348,7 +348,7 @@ function Experience() {
             <Footer />
           </div>
         </section>
-      </Wraped>
+      </Wrapped>
     </>
   );
 }
