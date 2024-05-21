@@ -26,6 +26,14 @@ const ContentWraped = styled.section`
   }
 `;
 
+/**
+ * A component that wraps its children with additional styling and elements.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {ReactNode} props.children - The children elements to be wrapped.
+ * @returns {JSX.Element} The wrapped component.
+ */
 function Wraped({ children }) {
   return (
     <>
