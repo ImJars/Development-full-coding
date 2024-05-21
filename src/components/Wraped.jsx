@@ -15,15 +15,16 @@ const ContentWraped = styled.div`
     rgba(15, 23, 42, 1) 60%,
     rgba(12, 18, 34, 1) 100%
   );
-  .background-cuad {
-    background-image: url("descarga.svg");
-    background-repeat: repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -10;
-    opacity: 0.3199;
-  }
+`;
+
+const BackgroundCuad = styled.div`
+  background-image: url("descarga.svg");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  opacity: 0.3199;
 `;
 
 /**
@@ -36,12 +37,10 @@ const ContentWraped = styled.div`
  */
 function Wraped({ children }) {
   return (
-    <>
-      <ContentWraped className="text-white font-poppins">
-        <div className="background-cuad" />
-        {children}
-      </ContentWraped>
-    </>
+    <ContentWraped className="text-white font-poppins">
+      <BackgroundCuad />
+      {children}
+    </ContentWraped>
   );
 }
 
