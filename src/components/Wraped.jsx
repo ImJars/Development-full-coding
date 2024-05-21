@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ContentWraped = styled.section`
+const ContentWraped = styled.div`
   width: auto;
   height: auto;
   position: relative;
