@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import Header from './components/header'
 import Home from './home'
-import Blog from './blog'
 import {
   BrowserRouter,
   Routes,
@@ -23,8 +22,6 @@ import PageProjectFive from './components/projects/project_page_Five.jsx'
 import PageProjectSix from './components/projects/project_page_Six.jsx'
 
 import PagePrincipal from './components/projects/pagePrincipal.jsx'
-
-import BlogPageOne from './components/blog/blog-page-one.jsx'
 
 import BlogProfile from './blog_profile.jsx'
 
@@ -89,9 +86,6 @@ function App() {
           <Route path='/project_page_Six' element={ <PageProjectSix /> } />
 
           <Route path='/pagePrincipal' element={ <PagePrincipal /> } />
-
-          {/* Links to the Blog */}
-          <Route path='/blog-page-one' element={ <BlogPageOne /> } />
 
         </Routes>
       </BrowserRouter>
