@@ -4,7 +4,7 @@ function CardProject({ icon, title, text }) {
   return (
     <>
         <div
-            className='bg-secondary flex justify-center
+            className='bg-card flex justify-center
                         items-center rounded-2xl p-5 mb-5
                         border border-text-general border-opacity-10 font-poppins'
         >
@@ -14,7 +14,7 @@ function CardProject({ icon, title, text }) {
                 <div
                     className='mr-4'                >
                     <h1
-                        className='text-6xl font-bold text-text-general opacity-50'
+                        className='text-6xl font-bold text-text-general opacity-80'
                     >
                         { icon }
                     </h1>

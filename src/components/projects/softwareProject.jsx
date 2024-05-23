@@ -22,22 +22,22 @@ function SoftwareProject({
               <div className="flex flex-col items-center space-x-4">
                 <div className="w-full flex items-center justify-between">
                   <div className="flex items-center space-x-2">
-                    <FaFolderOpen className="text-5xl text-text-white-gray" />
+                    <FaFolderOpen className="text-3xl text-text-white-gray" />
                     <div className="flex items-center">
-                      <h1 className="text-text-white-gray font-bold text-2xl">
+                      <h1 className="text-text-white-gray font-bold text-xl">
                         {title}
                       </h1>
                     </div>
                   </div>
                   <div>
-                    <FaExternalLinkAlt className="text-xl text-text-white-gray" />
+                    <FaExternalLinkAlt className="text-base text-text-white-gray" />
                   </div>
                 </div>
-                <p className="w-full flex justify-start text-sm mt-3">
+                <p className="w-full flex justify-start text-sm mt-3 text-text-general">
                   {description}
                 </p>
                 <div className="w-full flex justify-end mt-5">
-                  <ul className="flex space-x-2 text-xs text-text-general">
+                  <ul className="flex space-x-2 text-xs text-text-purple text-opacity-80">
                     <li>{skill_1}</li>
                     <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
                       &#8226;
