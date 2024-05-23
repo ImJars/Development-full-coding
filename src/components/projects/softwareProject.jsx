@@ -14,17 +14,15 @@ function SoftwareProject({
   return (
     <>
       <a href={projectLink} className="group">
-        <div
-          className='border bg-slate-900 group-hover:bg-table-color group-hover:bg-opacity-80 group-hover:scale-105 group-hover:transition-all group-hover:duration-800 group-hover:ease-linear border-text-general border-opacity-20 rounded-xl font-sans'
-        >
-          <div className="p-5">
+        <div className="border bg-slate-900 group-hover:bg-table-color group-hover:bg-opacity-80 group-hover:scale-105 group-hover:transition-all group-hover:duration-800 group-hover:ease-linear border-text-general border-opacity-20 rounded-xl font-sans">
+          <div className="p-4">
             <div>
               <div className="flex flex-col items-center space-x-4">
                 <div className="w-full flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <div className="flex items-center">
-                    <FaFolderOpen className="group-hover:opacity-100 opacity-0 ml-1.5 text-4xl text-text-white-gray group-hover:transition-all group-hover:duration-800 group-hover:ease-in-out absolute" />
-                    <FaFolder className="group-hover:opacity-0 ml-1.5 text-3xl text-text-white-gray group-hover:transition-all group-hover:duration-800 group-hover:ease-in-out absolute" />
+                      <FaFolderOpen className="group-hover:opacity-100 opacity-0 ml-1.5 text-4xl text-text-white-gray group-hover:transition-all group-hover:duration-800 group-hover:ease-in-out absolute" />
+                      <FaFolder className="group-hover:opacity-0 ml-1.5 text-3xl text-text-white-gray group-hover:transition-all group-hover:duration-800 group-hover:ease-in-out absolute" />
                     </div>
                     <div className="flex items-center">
                       <h1 className="ml-10 text-text-white-gray font-bold text-xl">

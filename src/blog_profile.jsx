@@ -58,32 +58,34 @@ function BlogProfile() {
               </div>
             </section>
             {/* Imagen de Perfil e Informacion principal*/}
-            <section className="content-wrapped mx-auto flex justify-between -mb-10">
-              <div className="flex items-center space-x-10 transform -translate-y-12 translate-x-8">
+            <section className="content-wrapped mx-auto sm:flex sm:justify-between -mb-10">
+              <div className="flex items-center space-x-2 sm:space-x-10 transform -translate-y-8 sm:-translate-y-12 translate-x-1 sm:translate-x-8">
                 <div>
                   <img
                     src="perfil.jpg"
                     alt=""
-                    className="profile__design w-44 h-44 rounded-full border-4 border-slate-900"
+                    className="profile__design w-28 h-28 sm:w-44 sm:h-44 rounded-full border-4 border-slate-900"
                   />
                 </div>
                 <div>
-                  <div className="mt-10 flex items-center space-x-2">
-                    <h1 className="text-3xl font-bold font-sans">
+                  <div className="mt-8 sm:mt-10 flex items-center space-x-1 sm:space-x-2">
+                    <h1 className="text-xl sm:text-3xl font-bold font-sans">
                       Angel Ramirez
                     </h1>
-                    <MdVerified className="text-text-blue text-xl" />
+                    <MdVerified className="text-text-blue text-xs sm:text-xl" />
                   </div>
-                  <div className="mt-1">
-                    <h2 className="font-sans text-text-general">@Im_Jars</h2>
+                  <div className="mt-0 sm:mt-1">
+                    <h2 className="font-sans text-text-general text-xs sm:text-base">
+                      @Im_Jars
+                    </h2>
                   </div>
                 </div>
               </div>
-              <div className="flex font-sans text-text-general mt-8 space-x-4">
-                <div className="">
+              <div className="flex justify-between sm:justify-start font-sans text-text- -mt-4 sm:mt-8 space-x-0 sm:space-x-4 mx-4">
+                <div className="order-2 sm:order-1 flex items-center sm:items-start">
                   <DonationButton />
                 </div>
-                <div>
+                <div className="text-xs sm:text-base order-1 sm:order-2">
                   <div className="flex items-center space-x-1">
                     <MdOutlineWorkOutline className="font-semibold" />
                     <h1>Software developer/Programmer/Software engineer</h1>
@@ -99,10 +101,10 @@ function BlogProfile() {
                 </div>
               </div>
             </section>
-            <section className="content-wrapped mx-auto rounded-lg font-sans">
-              <div className="flex gap-5">
-                <div className="w-7/12 flex flex-col gap-5 h-full">
-                  <SectionProfile classNames={"py-5"}>
+            <section className="content-wrapped mx-auto rounded-lg font-sans mt-16 sm:mt-0">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 mx-4 sm:mx-0">
+                <div className="w-full sm:w-7/12 flex flex-col gap-3 sm:gap-5 h-full">
+                  <SectionProfile classNames={"py-3 sm:py-5"}>
                     <h1 className="font-bold text-xl mb-1">Publicaciones</h1>
                     <div className="border-t border-opacity-20 border-text-general" />
                     <div className="flex text-text-general items-center space-x-1 justify-center mt-1 -mb-2">
@@ -113,7 +115,7 @@ function BlogProfile() {
 
                   {/* // AQUI COMIENZAN LOS ESTADOS // */}
 
-                  <SectionProfile classNames={"py-5"}>
+                  <SectionProfile classNames={"py-3 sm:py-5"}>
                     <Status
                       idContador={"postOne"}
                       date={"10 May. 2024"}
@@ -139,12 +141,16 @@ function BlogProfile() {
                     />
                   </SectionProfile>
                   <SectionProfile classNames={"py-5"}>
-                    <Status idContador={"postThree"} date={"28 Abr. 2024"} text={'¡Contratado! JAJAJA'}>
+                    <Status
+                      idContador={"postThree"}
+                      date={"28 Abr. 2024"}
+                      text={"¡Contratado! JAJAJA"}
+                    >
                       <img src="meme_1.jpg" className="rounded-lg" />
                     </Status>
                   </SectionProfile>
                 </div>
-                <div className="w-5/12 flex flex-col gap-5 h-full">
+                <div className="w-full sm:w-5/12 flex flex-col gap-3 sm:gap-5 h-full">
                   <SectionProfile classNames={"pt-4"}>
                     <Detalles />
                   </SectionProfile>

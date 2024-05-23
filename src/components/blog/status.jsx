@@ -39,28 +39,28 @@ function Status({ children,idContador, text, date }) {
   return (
     <>
       <div>
-        <div key={idContador} className="flex space-x-2 justify-between">
+        <div key={idContador} className="flex space-x-2 justify-between items-center">
           <div className="flex items-center space-x-2">
             <div>
               <img src="perfil.jpg" alt="" className="w-10 h-10 rounded-full no-seleccionable" />
             </div>
             <div>
               <div className="flex items-center space-x-1">
-                <h1 className="font-bold text-base no-seleccionable">Angel Ramirez</h1>
-                <MdVerified className="text-sm text-text-blue" />
+                <h1 className="font-bold text-sm sm:text-base no-seleccionable">Angel Ramirez</h1>
+                <MdVerified className="text-xs sm:text-sm text-text-blue" />
               </div>
-              <h2 className="text-sm text-text-general no-seleccionable">@Im_Jars</h2>
+              <h2 className="text-xs sm:text-sm text-text-general no-seleccionable">@Im_Jars</h2>
             </div>
           </div>
-          <div className="text-text-general no-seleccionable">{date}</div>
+          <div className="text-text-general no-seleccionable text-xs sm:text-base">{date}</div>
         </div>
-        <div className="mt-5">
-          <p className="text-text-white-gray text-sm font-sans mb-4">{text}</p>
+        <div className="mt-3 sm:mt-5">
+          <p className="text-text-white-gray text-xs sm:text-sm font-sans mb-2.5 sm:mb-4">{text}</p>
           <div className="flex justify-center">
           {children}
           </div>
         </div>
-        <div className="mt-8">
+        <div className="mt-4 sm:mt-8">
           <div className="flex justify-between gap-3 border-t border-opacity-20 border-text-general">
             <Star incrementar={incrementar} decrementar={decrementar} contador={contador} />
           </div>
