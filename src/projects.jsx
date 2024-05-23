@@ -59,7 +59,7 @@ function Projects() {
         <div className="w-full h-full text-white font-poppins">
           <ProjectSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TitleSection className="mx-1 sm:mx-0">
+              <TitleSection className="mx-4 sm:mx-0">
                 <motion.h1
                   className="text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide mb-2"
                   variants={fadeInAnimationVariants}
@@ -85,14 +85,14 @@ function Projects() {
               </TitleSection>
             </div>
             <div className="mt-20 content-wrapped block mx-auto">
-              <TitleSection className="mx-1 sm:mx-0">
+              <TitleSection className="mx-4 sm:mx-0">
                 <h1 className="text-xs sm:text-sm text-text-purple font-bold tracking-wide mb-1">
                   Interfaces de usuario basadas en TailwindCSS
                 </h1>
                 <h2 className="dynamic-text font-bold tracking-wide">
                   Software intuitivo es atractivo para los usuarios
                 </h2>
-                <h3 className="text-text-general text-sm sm:text-base mt-1 sm:w-1/2">
+                <h3 className="text-text-general text-xs sm:text-base mt-1 sm:w-1/2">
                   El desarrollo de software es un proceso complejo que requiere
                   de un equipo de trabajo con habilidades y conocimientos
                   específicos. En mi caso, ultimamente me he especializado en el
@@ -123,7 +123,7 @@ function Projects() {
           </ProjectSection>
           <ProjectSection>
             <div className="mb-20 content-wrapped block mx-auto">
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 gap-3 mx-4 sm:mx-0">
                 <SoftwareProject
                   title={'JarsWebsite'}
                   description={'Sitio web de la empresa Jars, especializada en el desarrollo de software.'}
@@ -187,7 +187,7 @@ function Projects() {
               </div>
             </div>
             <div className="mb-20 content-wrapped block mx-auto">
-              <TitleSection className="mx-1 sm:mx-0">
+              <TitleSection className="mx-4 sm:mx-0">
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-4 gap-y-0">
                   <CardProject
                     icon={<FaGithub />}
