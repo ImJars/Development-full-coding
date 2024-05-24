@@ -64,7 +64,7 @@ function BlogProfile() {
                   <img
                     src="perfil.jpg"
                     alt=""
-                    className="profile__design w-28 h-28 sm:w-44 sm:h-44 rounded-full border-4 border-slate-900"
+                    className="profile__design w-28 h-28 sm:w-44 sm:h-44 rounded-full border-4 border-secondary"
                   />
                 </div>
                 <div>

@@ -78,10 +78,10 @@ function DonationButton() {
       </button>
       <motion.section
         animate={mainFlowbite}
-        className="inset-0 fixed invisible flex w-full min-h-full p-3 transition-all duration-200 ease-in-out z-50"
+        className="inset-0 fixed invisible flex w-full min-h-full p-0 sm:p-3 transition-all duration-200 ease-in-out z-50"
       >
         <div className="w-full h-full flex justify-center items-end">
-          <div className=" text-white backdrop-blur bg-secondary/100 w-1/2 border border-opacity-25 rounded-lg border-text-general font-sans">
+          <div className=" text-white bg-secondary/100 w-full sm:w-1/2 border border-opacity-25 rounded-lg border-text-general font-sans mx-4">
             <div className="p-4">
               <div className="flex justify-end">
                 <button
