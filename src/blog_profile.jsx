@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdVerified, MdOutlineWorkOutline } from "react-icons/md";
 import { FiMapPin } from "react-icons/fi";
 import { FaRegHeart, FaEye } from "react-icons/fa";
+import {HiCursorClick} from "react-icons/hi";
 import SectionProfile from "./components/blog/sectionProfile";
 
 import HomeWraped from "./components/homeWraped";
@@ -46,6 +47,8 @@ const TitleSection = styled.div`
 `;
 
 function BlogProfile() {
+  const [active, setActive] = useState(false);
+
   return (
     <>
       <HomeWraped>
@@ -107,50 +110,56 @@ function BlogProfile() {
                   <SectionProfile classNames={"py-3 sm:py-5"}>
                     <h1 className="font-bold text-xl mb-1">Publicaciones</h1>
                     <div className="border-t border-opacity-20 border-text-general" />
-                    <div className="flex text-text-general items-center space-x-1 justify-center mt-1 -mb-2">
+                    <button
+                      onClick={() => setActive(!active)}
+                      className="w-full flex sm:text-text-general items-center space-x-1 justify-center mt-1 -mb-2 pointer-events-auto sm:pointer-events-none text-text-blue focus:text-text-blue no-seleccionable"
+                    >
                       <FaEye className="mt-1" />
-                      <h2 className="mt-1 text-sm">Vista de Actividad</h2>
-                    </div>
+                      <h2 className="mt-1 text-sm">Vista de <span>{active ? 'Informacion': 'Publicaciones'}</span></h2>
+                      <HiCursorClick className="mt-1 block sm:hidden" />
+                    </button>
                   </SectionProfile>
 
                   {/* // AQUI COMIENZAN LOS ESTADOS // */}
 
-                  <SectionProfile classNames={"py-3 sm:py-5"}>
-                    <Status
-                      idContador={"postOne"}
-                      date={"10 May. 2024"}
-                      text={
-                        "He conocido una de las mejores librerias para los " +
-                        "amantes de TailwindCSS como yo, se llama AceternityUI y " +
-                        "tiene muchos componentes que te pueden ayudar a mejorar " +
-                        "tu diseño web, ademas que son muy faciles de implementar " +
-                        "y muy interactivos con tu web. Lo estare probando para " +
-                        "algun proyecto y veremos que tal va. 😲​"
-                      }
-                    >
-                      <img src="aceternity.jpg" className="rounded-lg" />
-                    </Status>
-                  </SectionProfile>
-                  <SectionProfile classNames={"py-5"}>
-                    <Status
-                      idContador={"postTwo"}
-                      text={
-                        "'Una palabra de aliento puede ser suficiente para despertar la motivación de alguien para continuar con un desafío difícil'"
-                      }
-                      date={"01 May. 2024"}
-                    />
-                  </SectionProfile>
-                  <SectionProfile classNames={"py-5"}>
-                    <Status
-                      idContador={"postThree"}
-                      date={"28 Abr. 2024"}
-                      text={"¡Contratado! JAJAJA"}
-                    >
-                      <img src="meme_1.jpg" className="rounded-lg" />
-                    </Status>
-                  </SectionProfile>
+                  <div className={`flex flex-col gap-3 ${active ? 'hidden sm:block' : 'block'}`}>
+                    <SectionProfile classNames={"py-3 sm:py-5"}>
+                      <Status
+                        idContador={"postOne"}
+                        date={"10 May. 2024"}
+                        text={
+                          "He conocido una de las mejores librerias para los " +
+                          "amantes de TailwindCSS como yo, se llama AceternityUI y " +
+                          "tiene muchos componentes que te pueden ayudar a mejorar " +
+                          "tu diseño web, ademas que son muy faciles de implementar " +
+                          "y muy interactivos con tu web. Lo estare probando para " +
+                          "algun proyecto y veremos que tal va. 😲​"
+                        }
+                      >
+                        <img src="aceternity.jpg" className="rounded-lg" />
+                      </Status>
+                    </SectionProfile>
+                    <SectionProfile classNames={"py-5"}>
+                      <Status
+                        idContador={"postTwo"}
+                        text={
+                          "'Una palabra de aliento puede ser suficiente para despertar la motivación de alguien para continuar con un desafío difícil'"
+                        }
+                        date={"01 May. 2024"}
+                      />
+                    </SectionProfile>
+                    <SectionProfile classNames={"py-5"}>
+                      <Status
+                        idContador={"postThree"}
+                        date={"28 Abr. 2024"}
+                        text={"¡Contratado! JAJAJA"}
+                      >
+                        <img src="meme_1.jpg" className="rounded-lg" />
+                      </Status>
+                    </SectionProfile>
+                  </div>
                 </div>
-                <div className="w-full sm:w-5/12 flex flex-col gap-3 sm:gap-5 h-full">
+                <div className={`w-full sm:w-5/12 flex flex-col gap-3 sm:gap-5 h-full ${active ? 'block' : 'hidden sm:block'}`}>
                   <SectionProfile classNames={"pt-4"}>
                     <Detalles />
                   </SectionProfile>
