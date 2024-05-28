@@ -28,17 +28,17 @@ function TodayComponent({
 }) {
   return (
     <>
-      <TilSectionTitle>
-        <div className="py-10 font-poppins">
+      <TilSectionTitle className="bg-table_activate font-sans rounded-lg">
+        <div className="py-4 px-4">
           <div className="flex">
             <div className="flex justify-center items-center space-x-2">
               <BsCheck2Square className="text-base sm:text-2xl text-text-white-gray" />
-              <h1 className="Subtitle-Text text-text-white-gray text-lg sm:text-4xl font-bold">
+              <h1 className="Subtitle-Text text-text-white-gray text-sm sm:text-4xl font-bold">
                 {title}
               </h1>
             </div>
           </div>
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 my-2 sm:my-0">
             <h1
               className="text-text-purple text-xs flex justify-center items-center bg-text-purple bg-opacity-10 px-2 rounded-full
                             font-light underline"
@@ -58,7 +58,7 @@ function TodayComponent({
               {tag_3}
             </h3>
           </div>
-          <h2 className="text-text-general text-sm sm:text-lg mt-1">
+          <h2 className="text-text-general text-xs sm:text-lg mt-1">
             {description}
           </h2>
           <div className="flex space-x-2 mt-2 sm:mt-2 items-center">

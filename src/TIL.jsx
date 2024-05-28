@@ -56,7 +56,7 @@ function Til() {
         <div className="w-full h-full text-white">
           <TilSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TilSectionTitle className="mx-1 sm:mx-0">
+              <TilSectionTitle className="mx-4 xl:mx-0">
                 <motion.h1
                   className="text-text-white-gray Title-Name opacity-0 transform -translate-x-10 font-bold tracking-wide"
                   variants={fadeInAnimationVariants}
@@ -84,42 +84,42 @@ function Til() {
           </TilSection>
           <TilSection>
             <div className="mb-20 content-wrapped block mx-auto">
-              <TilSectionTitle className="mx-1 sm:mx-0 flex">
-                <div className="md:w-1/3 border-l border-text-general border-opacity-20"></div>
-                <div className="flex-1">
+              <TilSectionTitle className="mx-4 xl:mx-0 flex">
+                <div className="md:w-1/3 border-l border-text-general border-opacity-20 hidden md:block"/>
+                <div className="flex-1 sm:ml-0 flex flex-col gap-4">
                   <TodayComponent
-                    title="Typescript en poco tiempo y de forma sencilla"
+                    title="Typescript de forma sencilla"
                     tag_1="#Javascript"
                     tag_2="#Typescript"
                     tag_3="#Aprendizaje"
-                    description="Curso de Typescript, donde aprendo todo lo más relevante de este super lenguaje, que le da todo ese poder a JavaScript. Typescript es un superconjunto de JavaScript que añade tipado estático y objetos basados en clases."
+                    description="Iniciando en Typescript, aprendo todo lo más relevante de este super lenguaje, que le da todo ese poder a JavaScript. Typescript es un superconjunto de JavaScript que añade tipado estático y objetos basados en clases."
                     link_1="Udemy"
                     link_2="Manuel Muñoz"
                     link1={'https://www.udemy.com/'}
                     link2={'https://www.udemy.com/user/manuel-munoz-mir-2/'}
                   />
                   <TodayComponent
-                    title="Pagina web personal con React y Tailwind CSS ━ 2023"
+                    title="React y Tailwind CSS ━ 2024"
                     tag_1="#ReactJS"
                     tag_2="#TailwindCSS"
                     tag_3="#Personal"
-                    description="El desarrollo de mi página web personal, donde muestro mis habilidades y proyectos. Utilizando ReactJS y Tailwind CSS, dos tecnologías que me encantan. Siendo esta la actualizacion de la pagina web personal principal."
+                    description="El desarrollo de mi sitio web, donde muestro mis habilidades y proyectos. Utilizando ReactJS y Tailwind CSS, dos tecnologías que me encantan. Siendo esta la actualizacion de la pagina web personal principal."
                     link_1="Boceto Principal"
                     link_2="Actualizacion"
                     link1={'https://elegant-kitten-f26e46.netlify.app/'}
                     link2={'/'}
                   />
                   <TodayComponent
-                    title="Javascript is a programming language"
+                    title="Javascript es muy popular en el mundo"
                     tag_1="#JavaScript"
                     tag_2="#Programming"
                     tag_3="#Language"
-                    description="JavaScript is a programming language that conforms to the ECMAScript specification."
+                    description="JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones de JavaScript pueden mejorar la experiencia del usuario de un sitio web."
                     link_1="Credits"
                     link_2="Official Docs"
                   />
                   <TodayComponent
-                    title="HTML is a markup language"
+                    title="El Lenguaje de Marcado de Hipertexto (HTML)"
                     tag_1="#HTML"
                     tag_2="#Markup"
                     tag_3="#Language"

@@ -24,7 +24,7 @@ const BackgroundCuad = styled.div`
   height: 100%;
   position: absolute;
   z-index: -10;
-  opacity: 0.3199;
+  opacity: 1;
 `;
 
 /**
