@@ -216,7 +216,7 @@ function Skills() {
         <section id="skills" className="w-full h-full text-white">
           <SkillSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <SkillsSectionTitle className="pb-20 mx-5 sm:mx-0">
+              <SkillsSectionTitle className="pb-20 mx-4 sm:mx-0">
                 <motion.p
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
                   variants={fadeInAnimationVariants}
@@ -256,10 +256,10 @@ function Skills() {
           </SkillSection>
           <SkillSection>
             <div className="content-wrapped mx-auto flex space-x-14">
-              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-20">
+              <div className="border-l sm:pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
-                                        text-text-general text-base space-y-6"
+                                        text-text-general text-sm sm:text-base space-y-6 mx-4 sm:mx-0"
                 >
                   <h1>
                     Comencé mi carrera en la tecnologia hace unos 10 años. Probe
@@ -280,15 +280,15 @@ function Skills() {
                   </h3>
                 </div>
                 <div ref={refAnimateScroll}>
-                  <div ref={refAnimate} className="mt-10">
-                    <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
+                  <div ref={refAnimate} className="mt-10 mx-4 sm:mx-0">
+                    <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide">
                       Desarrollador Font-End
                     </h1>
-                    <h2 className="text-text-general text-base tracking-wide mt-5">
+                    <h2 className="text-text-general text-sm sm:text-base tracking-wide mt-5">
                       Me encanta crear algo que sea limpio, minimalista,
                       atractivo y por supuesto, facil de usar para los usuarios.
                     </h2>
-                    <div className="mt-5 text-text-general text-base tracking-wide">
+                    <div className="mt-5 text-text-general text-sm sm:text-base tracking-wide">
                       <h1 className="mb-5">
                         Realmente disfruto creando interfaces de usuario,
                         adaptando las tecnologias y componentes a los proyectos
@@ -304,7 +304,7 @@ function Skills() {
                       </ul>
                     </div>
                   </div>
-                  <div className="text-text-general text-base tracking-wide mt-5">
+                  <div className="text-text-general text-sm sm:text-base tracking-wide mt-5 mx-4 sm:mx-0">
                     <p>
                       Tambien me gusta crear paginas sencillas, asi mismo me
                       gusta estar involucrado en proyectos grandes y pequeños
@@ -362,8 +362,8 @@ function Skills() {
                     />
                   </div>
                   <div>
-                    <div ref={refAnimate9}>
-                      <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
+                    <div ref={refAnimate9} className="mx-4 sm:mx-0">
+                      <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
                         Lenguajes de Programación
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
@@ -379,8 +379,8 @@ function Skills() {
                         <Languajes title={"VBA Excel"} />
                       </div>
                     </div>
-                    <div ref={refAnimate10}>
-                      <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
+                    <div ref={refAnimate10} className="mx-4 sm:mx-0">
+                      <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
                         Tecnologias
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
@@ -393,8 +393,8 @@ function Skills() {
                         <Technologies title={"Material UI"} />
                       </div>
                     </div>
-                    <div ref={refAnimate11}>
-                      <h1 className="text-text-white-gray text-2xl font-bold tracking-wide mt-10">
+                    <div ref={refAnimate11} className="mx-4 sm:mx-0">
+                      <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
                         Softwares y Herramientas
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
