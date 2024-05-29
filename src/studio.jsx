@@ -187,7 +187,7 @@ function Studio() {
         <section id="studio" className="w-full h-full text-white">
           <StudioSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TitleSection className="mx-5 sm:mx-0">
+              <TitleSection className="mx-4 xl:mx-0">
                 <motion.h1
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
                   variants={fadeInAnimationVariants}
@@ -227,45 +227,45 @@ function Studio() {
           </StudioSection>
           <StudioSection>
             <div className="content-wrapped mx-auto flex space-x-14">
-              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20">
-                <div>
+              <div className="border-l sm:pl-24 border-text-general border-opacity-20">
+                <div className="mx-4 xl:mx-0">
                   <div className="my-20 border p-32 border-text-general border-opacity-20 mb-10" />
-                  <p className="text-text-general tracking-wide">
+                  <p className="text-text-general tracking-wide text-sm sm:text-base">
                     Una de las cosas más importantes para mí cuando trabajo
                     desde casa es tener las herramientas adecuadas. Entonces,
                     comencemos con mi dispositivo principal: la computadora.
                   </p>
                 </div>
                 <div ref={refScroll}>
-                  <div ref={ref1} className="mt-14">
-                    <h1 className="text-4xl font-bold text-text-white-gray tracking-wide my-10">
+                  <div ref={ref1} className="mt-14 mx-4 xl:mx-0">
+                    <h1 className="text-2xl sm:text-3xl font-bold text-text-white-gray tracking-wide my-10">
                       Computadora
                     </h1>
                     <TableComputer />
-                    <p className="text-text-general">
+                    <p className="text-text-general text-sm sm:text-base">
                       Puede que esta computadora no tenga las últimas
                       especificaciones, ¡pero funciona increíblemente rápido y
                       sin problemas! Es perfecto para desarrollo web, incluso
                       para proyectos más grandes o pesados.
                     </p>
-                    <p className="text-text-general mt-5">
+                    <p className="text-text-general mt-5 text-sm sm:text-base">
                       ¡Los 16 GB de RAM también garantizan que realizar
                       múltiples tareas sea muy sencillo!
                     </p>
                   </div>
-                  <div className="mt-10">
+                  <div className="mt-10 mx-4 xl:mx-0">
                     <div ref={ref2}>
-                      <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-5">
+                      <h1 className="text-2xl sm:text-3xl font-bold text-text-white-gray tracking-wide mb-5">
                         Monitores
                       </h1>
-                      <p className="text-text-general">
+                      <p className="text-text-general text-sm sm:text-base">
                         La configuración de monitor dual maximiza mi flujo de
                         trabajo de desarrollo web. Puedo codificar en una
                         pantalla mientras obtengo una vista previa en vivo en la
                         otra: ¡ya no es necesario Alt + Tab para un trabajo más
                         rápido y eficiente!
                       </p>
-                      <p className="text-text-general mt-5">
+                      <p className="text-text-general mt-5 text-sm sm:text-base">
                         ¿Necesita un sitio web con una vista mas amplia? Lo
                         tengo cubierto con mi monitor ultraancho.
                       </p>

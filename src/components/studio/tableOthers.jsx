@@ -3,7 +3,7 @@ import React from "react";
 function TableOthers() {
   return (
     <>
-      <div className="relative overflow-x-auto rounded-lg border border-text-general border-opacity-10 my-10">
+      <div className="relative overflow-x-auto rounded-lg border border-text-general border-opacity-10 mt-5 mb-10">
         <table className="w-full">
           <thead className=" text-text-white-gray text-sm font-bold tracking-wide">
             <tr className="border-b border-text-general border-opacity-10">
