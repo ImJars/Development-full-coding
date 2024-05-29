@@ -152,7 +152,7 @@ function Contact() {
         <section id="contact" ref={ref} className="w-full h-full text-white">
           <ContactSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TitleSection className="mx-5 sm:mx-0">
+              <TitleSection className="mx-4 xl:mx-0">
                 <motion.h1
                   animate={animateMiniTitleContact}
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
@@ -179,11 +179,11 @@ function Contact() {
             <div className="content-wrapped mx-auto flex space-x-14">
               <div
                 ref={refScroll}
-                className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-10"
+                className="border-l sm:pl-24 border-text-general border-opacity-20 pb-10"
               >
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
-                              text-text-general text-base space-y-6"
+                              text-text-general text-sm sm:text-base space-y-6 mx-4 xl:mx-0"
                 >
                   <p className="mt-5 text-text-general tracking-wide w-full h-full">
                     Sólo un recordatorio amistoso de que la información
@@ -197,29 +197,29 @@ function Contact() {
                 </div>
                 <div
                   ref={ref1}
-                  className="mt-8 border-b border-text-general border-opacity-20 pb-10"
+                  className="mt-8 border-b border-text-general border-opacity-20 pb-10 mx-4 xl:mx-0"
                 >
-                  <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
+                  <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide">
                     Contacto
                   </h1>
                   <TableContact />
-                  <h1 className="text-text-general text-base tracking-wide mt-5">
+                  <h1 className="text-text-general text-sm sm:text-base tracking-wide mt-5">
                     Si necesita más información, como mi número de teléfono, no
                     dude en enviarme un correo electrónico primero.
                   </h1>
                 </div>
                 <div
                   ref={ref2}
-                  className="mt-10 space-y-5 text-text-general text-base tracking-wide"
+                  className="mt-10 space-y-5 text-text-general text-base tracking-wide mx-4 xl:mx-0"
                 >
-                  <h1 className="text-text-white-gray text-3xl font-bold tracking-wide">
+                  <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide">
                     Redes Sociales
                   </h1>
-                  <p>
+                  <p className="text-sm sm:text-base">
                     Si quieres encontrarme en las redes sociales, te dejo mis
                     principales medios de comunicacion.
                   </p>
-                  <p>
+                  <p className="text-sm sm:text-base">
                     A continuación he incluido algunos enlaces a las plataformas
                     de redes sociales que uso con más frecuencia.
                   </p>
