@@ -143,7 +143,7 @@ function Experience() {
         <section id="experience" className="w-full h-full text-white">
           <ExperienceSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <TitleSection className="mx-5 sm:mx-0">
+              <TitleSection className="mx-4 xl:mx-0">
                 <motion.h1
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
                   variants={fadeInAnimationVariants}
@@ -183,10 +183,10 @@ function Experience() {
           </ExperienceSection>
           <ExperienceSection>
             <div className="content-wrapped mx-auto flex space-x-14">
-              <div className="border-l pl-5 sm:pl-24 border-text-general border-opacity-20 pb-20">
+              <div className="border-l sm:pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
-                                            text-text-general text-base space-y-6"
+                                            text-text-general text-sm sm:text-base space-y-6 mx-4 xl:mx-0"
                 >
                   <p className="mt-5">
                     Comence mi carrera profecional con una empresa llamada

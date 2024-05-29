@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaArrowUp } from "react-icons/fa";
 
 function Index({
   subtitle_1,
@@ -22,7 +23,7 @@ function Index({
           >
             <div className="py-3 px-4 border-b border-text-general border-opacity-10 flex justify-between items-center">
               <h1 className="text-text-white-gray text-xs xl:text-sm font-bold tracking-wide">
-                Table of Contents
+                Contenido
               </h1>
               <motion.div
                 className="opacity-0 transform translate-x-10"
@@ -30,9 +31,10 @@ function Index({
               >
                 <a
                   href="#experience"
-                  className="text-xs text-text-blue border border-text-blue border-opacity-20 px-2 py-1 rounded-full"
+                  className="text-xs text-text-blue border border-text-blue border-opacity-20 px-3 py-1 rounded-lg flex items-center space-x-1"
                 >
-                  scroll to top
+                    <span>Scroll</span>
+                    <FaArrowUp className="text-xs" />
                 </a>
               </motion.div>
             </div>

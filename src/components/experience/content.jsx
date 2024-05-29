@@ -11,9 +11,9 @@ function Content({
 }) {
   return (
     <>
-      <div className={`${extraClass}`}>
+      <div className={`${extraClass} mx-4 xl:mx-0`}>
         <div className="flex flex-col">
-          <h1 className="text-4xl font-bold text-text-white-gray tracking-wide mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-text-white-gray tracking-wide mb-8">
             {title}
           </h1>
           <section className="my-1">
@@ -27,11 +27,11 @@ function Content({
               </h3>
             </div>
             <div>
-              <h3 className="text-text-general text-bas mb-4">
+              <h3 className="text-text-general tracking-wide text-sm sm:text-base mb-4">
                 {description__text}
               </h3>
             </div>
-            <div className="text-text-general text-base">{description}</div>
+            <div className="text-text-general tracking-wide text-sm sm:text-base">{description}</div>
           </section>
         </div>
       </div>
