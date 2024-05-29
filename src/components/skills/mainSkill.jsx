@@ -4,7 +4,7 @@ function MainSkill({ title, description_1, description_2, description_3 }) {
   return (
     <>
       <div
-        className='border-t border-b border-text-general border-opacity-20 mx-4 sm:mx-0'
+        className='border-t border-b border-text-general border-opacity-20 mx-4 xl:mx-0'
       >
         <div
           className='py-10'

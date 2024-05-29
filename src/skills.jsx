@@ -216,7 +216,7 @@ function Skills() {
         <section id="skills" className="w-full h-full text-white">
           <SkillSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
-              <SkillsSectionTitle className="pb-20 mx-4 sm:mx-0">
+              <SkillsSectionTitle className="pb-20 mx-4 xl:mx-0">
                 <motion.p
                   className="Subtitle-Text opacity-0 transform -translate-x-10 text-text-blue text-2xl tracking-wide font-bold"
                   variants={fadeInAnimationVariants}
@@ -240,7 +240,7 @@ function Skills() {
                   Habilidades y herramientas
                 </motion.h1>
                 <motion.h2
-                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
+                  className="Subtitle-Text opacity-0 transform -translate-x-10 w-full lg:w-2/3 text-text-general mt-4"
                   variants={fadeInAnimationVariants}
                   initial="initial"
                   whileInView="animate_Subtitle"
@@ -259,7 +259,7 @@ function Skills() {
               <div className="border-l sm:pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
-                                        text-text-general text-sm sm:text-base space-y-6 mx-4 sm:mx-0"
+                                        text-text-general text-sm sm:text-base space-y-6 mx-4 xl:mx-0"
                 >
                   <h1>
                     Comencé mi carrera en la tecnologia hace unos 10 años. Probe
@@ -280,7 +280,7 @@ function Skills() {
                   </h3>
                 </div>
                 <div ref={refAnimateScroll}>
-                  <div ref={refAnimate} className="mt-10 mx-4 sm:mx-0">
+                  <div ref={refAnimate} className="mt-10 mx-4 xl:mx-0">
                     <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide">
                       Desarrollador Font-End
                     </h1>
@@ -304,7 +304,7 @@ function Skills() {
                       </ul>
                     </div>
                   </div>
-                  <div className="text-text-general text-sm sm:text-base tracking-wide mt-5 mx-4 sm:mx-0">
+                  <div className="text-text-general text-sm sm:text-base tracking-wide mt-5 mx-4 xl:mx-0">
                     <p>
                       Tambien me gusta crear paginas sencillas, asi mismo me
                       gusta estar involucrado en proyectos grandes y pequeños
@@ -362,7 +362,7 @@ function Skills() {
                     />
                   </div>
                   <div>
-                    <div ref={refAnimate9} className="mx-4 sm:mx-0">
+                    <div ref={refAnimate9} className="mx-4 xl:mx-0">
                       <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
                         Lenguajes de Programación
                       </h1>
@@ -379,7 +379,7 @@ function Skills() {
                         <Languajes title={"VBA Excel"} />
                       </div>
                     </div>
-                    <div ref={refAnimate10} className="mx-4 sm:mx-0">
+                    <div ref={refAnimate10} className="mx-4 xl:mx-0">
                       <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
                         Tecnologias
                       </h1>
@@ -393,7 +393,7 @@ function Skills() {
                         <Technologies title={"Material UI"} />
                       </div>
                     </div>
-                    <div ref={refAnimate11} className="mx-4 sm:mx-0">
+                    <div ref={refAnimate11} className="mx-4 xl:mx-0">
                       <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
                         Softwares y Herramientas
                       </h1>

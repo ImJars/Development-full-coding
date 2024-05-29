@@ -4,7 +4,7 @@ function Skill({ title, description_1, description_2 }) {
   return (
     <>
         <div
-            className='mt-10 mx-4 sm:mx-0'
+            className='mt-10 mx-4 xl:mx-0'
         >
             <h1
                 className='text-2xl sm:text-3xl font-bold text-text-white-gray tracking-wide'
