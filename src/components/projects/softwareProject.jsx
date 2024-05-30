@@ -14,7 +14,7 @@ function SoftwareProject({
   return (
     <>
       <a href={projectLink} className="group">
-        <div className="border bg-slate-900 group-hover:bg-table-color group-hover:bg-opacity-80 group-hover:scale-105 group-hover:transition-all group-hover:duration-800 group-hover:ease-linear border-text-general border-opacity-20 rounded-xl font-sans">
+        <div className="border bg-slate-900 group-hover:bg-table-color group-hover:bg-opacity-80 group-hover:-translate-y-2 group-hover:transition-all group-hover:duration-800 group-hover:ease-linear border-text-general border-opacity-20 rounded-xl font-sans">
           <div className="p-4">
             <div>
               <div className="flex flex-col items-center space-x-4">

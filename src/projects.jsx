@@ -125,17 +125,17 @@ function Projects() {
             <div className="mb-20 content-wrapped block mx-auto">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 gap-3 mx-4 sm:mx-0">
                 <SoftwareProject
-                  title={'JarsWebsite'}
-                  description={'Sitio web de la empresa Jars, especializada en el desarrollo de software.'}
-                  skill_1={'TailwindCSS'}
-                  skill_2={'ReactJS'}
-                  skill_3={'NextJS'}
-                  skill_4={'Firebase'}
+                  title={'Jarsdev Website'}
+                  description={'Sitio web personal construido desde cero que me permite mostrar mis habilidades, experiencia y un sitio donde me pueden conocer un poco mejor.'}
+                  skill_1={'ReactJs'}
+                  skill_2={'ViteJs'}
+                  skill_3={'Firebase'}
+                  skill_4={'TailwindCSS'}
                   projectLink={"/project_page"}
                 />
                 <SoftwareProject
                   title={'Legacyier Express'}
-                  description={'Plataforma de gestión de proyectos para empresas de desarrollo de software.'}
+                  description={'Legacyier express es un sitio web donde se ofrecian servicios de desarrollo de software, diseño web y marketing digital como la empresa Legacyier.'}
                   skill_1={'TailwindCSS'}
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
