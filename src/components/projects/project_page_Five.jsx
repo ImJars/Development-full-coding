@@ -4,6 +4,7 @@ import Languajes from "../skills/languajes";
 import Footer from "../../footer";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { SlDoc } from "react-icons/sl";
 
 const ProjectSection = styled.section`
   display: inline-block;
@@ -38,7 +39,7 @@ const BackgroundSection = styled.div`
     height: 100%;
     position: absolute;
     z-index: 1;
-    opacity: 0.3199;
+    opacity: 1;
   }
 `;
 const TitleSection = styled.div`
@@ -58,7 +59,7 @@ function PageProjectFive() {
     <>
       <BackgroundSection>
         <div className="background-cuad" />
-        <section className=" text-white">
+        <section className="font-sans">
           <ProjectSection>
             <div className="content-wrapped pt-20 sm:pt-32">
               <div className="flex">
@@ -66,56 +67,152 @@ function PageProjectFive() {
                   <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
                 </button>
               </div>
-              <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
+              <TitleSection className="mx-4 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
-                  Proyecto Bonafont
+                  Proyecto CMO
                 </h1>
               </TitleSection>
-              <div className="border-l px-5 pb-28 md:pl-24 border-text-general border-opacity-20">
-                <div>
-                  <p className="text-text-general my-8 text-justify sm:text-left">
-                    Jarsdev es uno de los ultimos proyectos en los que he
-                    trabajado, es un proyecto que me ha encantado hacer. Este
-                    proyecto es un sitio web personal construido desde cero que
-                    me permite mostrar mis habilidades y proyectos a futuros
-                    empleadores y clientes. Cada vez mejorando y enfocandome en
-                    la experiencia de usuario, eficiencia, tecnologias empleadas
-                    y sobre todo que sea atrayente para el usuario. Poniendo en
-                    practica uno de mis verdaderos objetivos que es la
-                    simplicidad pero con un toque de elegancia.
+              <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
+                <div className="mx-4">
+                  <p className="text-text-general my-8 sm:text-left">
+                    Proyecto CMO es un proyecto realizado para el grupo Holcim
+                    Mexico que tuvo como objetivo el desarrollo de un software
+                    con interfaz gráfica que sea capaz de calcular el
+                    costo-beneficio de la mano de obra de procesos por medio de
+                    proyectos y que nos valore varias opciones para poder
+                    determinar qué proyecto es más factible.
                   </p>
+                  <p className="text-text-general my-4 text-justify sm:text-left">
+                    Algunos de los requirimientos especificos para este proyecto
+                    fueron:
+                  </p>
+                  <ul className="text-text-general my-4 sm:text-left flex flex-col gap-2">
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Un software con interfaz gráfica intuitivo y
+                        familiarizado con la empresa.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Software capaz de calcular la mano de obra con
+                        diferentes variables.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Que el software de varias opciones de las propuestas
+                        obtenidas.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Sistema de seguridad mediante usuario y contraseña para
+                        el ingreso al sistema.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Que el software sea capaz de conectarse a una base de
+                        datos cliente-servidor.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Software compatible con el S.O. Windows 10 (en todas sus
+                        versiones).
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Compatibilidad con el manejador de base de datos MySQL
+                        8.0
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        El software se debe adaptar a cualquier tipo de division
+                        del Grupo Holcim para poder realizar.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        El software debe ser un sistema mano de obra para
+                        Rolling Forecast en simulación
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        El software deberá consultar información real de la
+                        empresa para generar una simulación de las propuestas,
+                        sin tener que generar una acción o cambios a la base de
+                        datos actual.
+                      </p>
+                    </li>
+                  </ul>
                   <div className="flex flex-col justify-center my-8">
                     <img
-                      src="legacyier-express.png"
-                      alt="img_legacyier-express"
-                      className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
+                      src="proyectoCMO.png"
+                      alt="img_proyectoCMO"
+                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto rounded-lg"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
-                      p. Pagina de Inicio de sitio web Jarsdev
+                      p. Pagina de inicio de sesion software CMO
                     </p>
                   </div>
                   <p className="text-text-general my-8">
-                    Este proyecto fue inspirado en el dicho de Bill Gates: "Si
-                    tu negocio no está en internet, tu negocio no existe", y es
-                    por eso que decidí crear este sitio web para mostrar al
-                    mundo lo que puedo hacer y lo que puedo ofrecer, aunque lo
-                    más importante es para que las personas puedan encontrarme y
-                    contactarme.
+                    El software para la empresa Grupo Holcim cumplio con las
+                    necesidades ya descrita en los requerimientos de igual
+                    manera en base al análisis realizador se detecto, corrigio y
+                    sugirieron herramientas o procedimientos que ayudaron con el
+                    proceso de mejora.
                   </p>
+                  <p className="text-text-general my-8">
+                    Si requieres más información sobre este proyecto, puedes
+                    consultarlo en los siguientes enlaces:
+                  </p>
+                  <div className="flex justify-center space-x-14">
+                    <div className="inline-block group">
+                      <a href="proyectoCMO.docx" download={"proyectoCMO.docx"}>
+                        <div className="flex justify-center">
+                          <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
+                        </div>
+                        <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
+                          proyectoCMO.docx
+                        </h1>
+                      </a>
+                    </div>
+                    <div className="inline-block group">
+                      <a href="ProyectoCMO.pptx" download={"ProyectoCMO.pptx"} className="flex flex-col">
+                        <div className="flex justify-center">
+                          <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
+                        </div>
+                        <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
+                          ProyectoCMO.pptx
+                        </h1>
+                      </a>
+                    </div>
+                  </div>
                   <p className="text-text-general tracking-wide my-8">
                     Algunas de las tecnologias utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
-                    <Languajes title="HTML5" />
-                    <Languajes title="TailwindCSS" />
-                    <Languajes title="StyledComponents" />
-                    <Languajes title="JavaScript" />
-                    <Languajes title="ReactJS" />
-                    <Languajes title="Vite" />
-                    <Languajes title="Framer Motion" />
-                    <Languajes title="React Router" />
-                    <Languajes title="React Icons" />
-                    <Languajes title="VSCode" />
+                    <Languajes title="MySQL" />
+                    <Languajes title="Visual Basic .NET" />
+                    <Languajes title="Excel" />
+                    <Languajes title="Microsoft Project" />
+                    <Languajes title="Google Drive" />
+                    <Languajes title="Slack" />
                     <Languajes title="Git / Github" />
                   </div>
                 </div>
