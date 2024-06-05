@@ -162,7 +162,7 @@ function Projects() {
                 />
                 <SoftwareProject
                   title={'Proyecto CMO'}
-                  description={'Sistema de gestión de proyectos para empresas de desarrollo de software.'}
+                  description={'Software para calcular la mano de obra de procesos en proyectos y que nos valore varias opciones para poder determinar qué proyecto es más factible.'}
                   skill_1={'TailwindCSS'}
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
