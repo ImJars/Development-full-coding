@@ -172,14 +172,13 @@ function PageProjectFive() {
                   </div>
                   <p className="text-text-general my-8">
                     El software para la empresa Grupo Holcim cumplio con las
-                    necesidades ya descrita en los requerimientos de igual
-                    manera en base al análisis realizador se detecto, corrigio y
+                    necesidades ya descritas en los requerimientos de igual
+                    manera en base al análisis realizado se detecto, corrigio y
                     sugirieron herramientas o procedimientos que ayudaron con el
                     proceso de mejora.
                   </p>
                   <p className="text-text-general my-8">
-                    Si requieres más información sobre este proyecto, puedes
-                    consultarlo en los siguientes enlaces:
+                    Mas información sobre este proyecto en los siguientes enlaces:
                   </p>
                   <div className="flex justify-center space-x-14">
                     <div className="inline-block group">

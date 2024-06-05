@@ -38,7 +38,7 @@ const BackgroundSection = styled.div`
     height: 100%;
     position: absolute;
     z-index: 1;
-    opacity: 0.3199;
+    opacity: 1;
   }
 `;
 const TitleSection = styled.div`
@@ -54,7 +54,7 @@ const TitleSection = styled.div`
 `;
 
 function PageProjectThree() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <BackgroundSection>
@@ -62,62 +62,129 @@ function PageProjectThree() {
         <section className=" text-white">
           <ProjectSection>
             <div className="content-wrapped pt-20 sm:pt-32">
-              <div className="flex">
+              <div className="flex mx-4 sm:mx-0">
                 <button onClick={() => navigate(-1)} className="">
                   <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
                 </button>
               </div>
-              <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
+              <TitleSection className="mx-4 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
-                  Proyecto CMO
+                  Garden WEB
                 </h1>
               </TitleSection>
-              <div className="border-l px-5 pb-28 md:pl-24 border-text-general border-opacity-20">
-                <div>
-                  <p className="text-text-general my-8 text-justify sm:text-left">
-                    Jarsdev es uno de los ultimos proyectos en los que he
-                    trabajado, es un proyecto que me ha encantado hacer. Este
-                    proyecto es un sitio web personal construido desde cero que
-                    me permite mostrar mis habilidades y proyectos a futuros
-                    empleadores y clientes. Cada vez mejorando y enfocandome en
-                    la experiencia de usuario, eficiencia, tecnologias empleadas
-                    y sobre todo que sea atrayente para el usuario. Poniendo en
-                    practica uno de mis verdaderos objetivos que es la
-                    simplicidad pero con un toque de elegancia.
+              <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
+                <div className="mx-4">
+                  <p className="text-text-general my-8 sm:text-left">
+                    La creacion de una plataforma administrativa web para el
+                    Colegio Taxhuada la cual administra los procesos mas
+                    relevantes para el control de la información, de las
+                    finanzas, personal, eventos, alumnos, padres de familia y en
+                    base a esto se toman decisiones importante, asì mismo
+                    brindar una experiencia a los padres de familia y/o tutores
+                    diferente y de calidad que la competencia en el ámbito del
+                    cuidado de los niños; brindando información importante y que
+                    los tutores desean conocer de los niños como es su
+                    comportamiento, el conocimiento de donde se encuentran como
+                    saber el ingreso y la salida de los niños.
                   </p>
+                  <p className="text-text-general my-4 text-justify sm:text-left">
+                    Algunos de los requirimientos especificos para este proyecto
+                    fueron:
+                  </p>
+                  <ul className="text-text-general my-4 sm:text-left flex flex-col gap-2">
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Una plataforma administrativa web con Front-End y
+                        Back-End.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Jerarquías entre usuarios en base a una tabla usuarios.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Control de acceso en base a un usuario y contraseña.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Base de datos en base a los requerimientos.</p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Un módulo para dar de alta niños, tutores y educadores.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Un espacio para visualizar la información de cada niño.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Implementar un sistema que administre pagos y gastos.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Un módulo para efectuar los pagos de colegiatura.</p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Un módulo para visualizar y subir los eventos próximos.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Modulo para visualizar y subir el menú semanal.</p>
+                    </li>
+                  </ul>
                   <div className="flex flex-col justify-center my-8">
                     <img
-                      src="legacyier-express.png"
-                      alt="img_legacyier-express"
-                      className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
+                      src="gardenWeb.jpg"
+                      alt="img_garden_web"
+                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto rounded-lg"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
-                      p. Pagina de Inicio de sitio web Jarsdev
+                      p. Pagina de Administrador v1.0
                     </p>
                   </div>
                   <p className="text-text-general my-8">
-                    Este proyecto fue inspirado en el dicho de Bill Gates: "Si
-                    tu negocio no está en internet, tu negocio no existe", y es
-                    por eso que decidí crear este sitio web para mostrar al
-                    mundo lo que puedo hacer y lo que puedo ofrecer, aunque lo
-                    más importante es para que las personas puedan encontrarme y
-                    contactarme.
+                    Se beneficio tanto la optimización de tiempos de respuesta
+                    para conocer el estatus tanto general como cualquier area en
+                    especifico existente en el colegio, para brindar un mejor
+                    control financiero de pagos de colegiaturas y gastos
+                    existentes en la Guardería, teniendo a la mano esta
+                    informacion recabada de la base de datos.
+                  </p>
+                  <p className="text-text-general my-4">
+                    Además de ello se pudo brindar una experiencia de usuario
+                    (cliente) personalizada y de calidad, brindando información
+                    de los niños, eventos existentes en el colegio, control de
+                    conocimiento de comidas y seguridad en el ingreso y salida
+                    de los niños.
                   </p>
                   <p className="text-text-general tracking-wide my-8">
                     Algunas de las tecnologias utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
                     <Languajes title="HTML5" />
-                    <Languajes title="TailwindCSS" />
-                    <Languajes title="StyledComponents" />
+                    <Languajes title="CSS" />
                     <Languajes title="JavaScript" />
-                    <Languajes title="ReactJS" />
-                    <Languajes title="Vite" />
-                    <Languajes title="Framer Motion" />
-                    <Languajes title="React Router" />
-                    <Languajes title="React Icons" />
+                    <Languajes title="PHP" />
+                    <Languajes title="MySQL" />
                     <Languajes title="VSCode" />
                     <Languajes title="Git / Github" />
+                    <Languajes title="Google Drive" />
                   </div>
                 </div>
               </div>

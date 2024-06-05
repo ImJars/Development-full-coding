@@ -143,8 +143,8 @@ function Projects() {
                   projectLink={"/project_page_Two"}
                 />
                 <SoftwareProject
-                  title={'Web Apps'}
-                  description={'Aplicaciones web para empresas de desarrollo de software.'}
+                  title={'Garden WEB'}
+                  description={'Plataforma web la cual administra información, finanzas, personal, eventos, etc. En base a la informacion se toman decisiones.'}
                   skill_1={'TailwindCSS'}
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
@@ -153,7 +153,7 @@ function Projects() {
                 />
                 <SoftwareProject
                   title={'ASIST-PROY'}
-                  description={'Sistema de gestión de proyectos para empresas de desarrollo de software.'}
+                  description={'Plataforma web la cual administra información, finanzas, personal, eventos, etc. En base a la informacion se toman decisiones.'}
                   skill_1={'TailwindCSS'}
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
