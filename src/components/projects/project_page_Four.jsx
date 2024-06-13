@@ -117,17 +117,14 @@ function PageProjectFour() {
                     Algunas de las tecnologias utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
-                    <Languajes title="HTML5" />
-                    <Languajes title="TailwindCSS" />
-                    <Languajes title="StyledComponents" />
-                    <Languajes title="JavaScript" />
-                    <Languajes title="ReactJS" />
-                    <Languajes title="Vite" />
-                    <Languajes title="Framer Motion" />
-                    <Languajes title="React Router" />
-                    <Languajes title="React Icons" />
-                    <Languajes title="VSCode" />
+                    <Languajes title="Visual Basic .NET" />
+                    <Languajes title="Excel Macros" />
+                    <Languajes title="Power BI" />
+                    <Languajes title="Tableu" />
+                    <Languajes title="MySQL" />
+                    <Languajes title="Visual Studio" />
                     <Languajes title="Git / Github" />
+                    <Languajes title="Google Drive" />
                   </div>
                 </div>
               </div>
