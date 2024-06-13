@@ -87,12 +87,22 @@ function PageProjectFour() {
                   </p>
                   <div className="flex flex-col justify-center my-8">
                     <img
-                      src="legacyier-express.png"
-                      alt="img_legacyier-express"
+                      src="asistProy.png"
+                      alt="img_asistProy"
                       className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
-                      p. Pagina de Inicio de sitio web Jarsdev
+                      p. Pagina de Inicio de acceso ASIST-PROY
+                    </p>
+                  </div>
+                  <div className="flex flex-col justify-center my-8">
+                    <img
+                      src="asistProy_reporte.png"
+                      alt="img_asistProy_reporte"
+                      className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
+                    />
+                    <p className="flex justify-center text-xs text-text-white-gray">
+                      p. Reporte final en excel; tableu, power bi.
                     </p>
                   </div>
                   <p className="text-text-general my-8">
