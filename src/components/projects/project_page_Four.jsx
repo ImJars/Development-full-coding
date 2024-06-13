@@ -38,7 +38,7 @@ const BackgroundSection = styled.div`
     height: 100%;
     position: absolute;
     z-index: 1;
-    opacity: 0.3199;
+    opacity: 1;
   }
 `;
 const TitleSection = styled.div`
