@@ -238,22 +238,22 @@ function PageProjectFour() {
                   </p>
                   <div className="flex justify-center space-x-14">
                     <div className="inline-block group">
-                      <a href="proyectoCMO.docx" download={"proyectoCMO.docx"}>
+                      <a href="ASIST-PROY_doc.pdf" download={"ASIST-PROY_doc.pdf"}>
                         <div className="flex justify-center">
                           <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
                         </div>
                         <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
-                          proyectoCMO.docx
+                          ASIST-PROY.pdf
                         </h1>
                       </a>
                     </div>
                     <div className="inline-block group">
-                      <a href="ProyectoCMO.pptx" download={"ProyectoCMO.pptx"} className="flex flex-col">
+                      <a href="ASIST-PROY_presentacion.pptx" download={"ASIST-PROY_presentacion.pptx"} className="flex flex-col">
                         <div className="flex justify-center">
                           <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
                         </div>
                         <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
-                          ProyectoCMO.pptx
+                          ASIST-PROY_presentacion.pptx
                         </h1>
                       </a>
                     </div>
