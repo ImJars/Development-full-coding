@@ -153,7 +153,7 @@ function Projects() {
                 />
                 <SoftwareProject
                   title={'ASIST-PROY'}
-                  description={'Plataforma web la cual administra información, finanzas, personal, eventos, etc. En base a la informacion se toman decisiones.'}
+                  description={'El proyecto de ASIST-PROY nace de una investigación profunda sobre calidad, eficiencia, optimización y rentabilidad de diversos softwares'}
                   skill_1={'TailwindCSS'}
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}

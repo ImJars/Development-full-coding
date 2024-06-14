@@ -65,17 +65,17 @@ function PageProjectFour() {
             <div className="content-wrapped pt-20 sm:pt-32">
               <div className="flex">
                 <button onClick={() => navigate(-1)} className="">
-                  <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
+                  <MdOutlineKeyboardBackspace className="mx-4 sm:mx-0 text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
                 </button>
               </div>
-              <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
+              <TitleSection className="mx-4 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                   ASIST-PROY
                 </h1>
               </TitleSection>
               <div className="border-l px-5 pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div>
-                  <p className="text-text-general my-8 text-justify sm:text-left">
+                  <p className="text-text-general my-8 sm:text-left">
                     El proyecto de ASIST-PROY nace de una investigación profunda
                     sobre calidad, eficiencia, optimización y rentabilidad de
                     diversos softwares para la gestión de proyectos
@@ -154,7 +154,7 @@ function PageProjectFour() {
                     <img
                       src="asistProy.png"
                       alt="img_asistProy"
-                      className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
+                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto rounded-lg"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
                       p. Pagina de Inicio de acceso ASIST-PROY
@@ -164,7 +164,7 @@ function PageProjectFour() {
                     <img
                       src="asistProy_reporte.png"
                       alt="img_asistProy_reporte"
-                      className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
+                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto rounded-lg"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
                       p. Reporte final en excel, tableu y power bi.
