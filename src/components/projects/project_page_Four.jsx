@@ -4,6 +4,7 @@ import Languajes from "../skills/languajes";
 import Footer from "../../footer";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { SlDoc } from "react-icons/sl";
 
 const ProjectSection = styled.section`
   display: inline-block;
@@ -75,16 +76,80 @@ function PageProjectFour() {
               <div className="border-l px-5 pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div>
                   <p className="text-text-general my-8 text-justify sm:text-left">
-                    Jarsdev es uno de los ultimos proyectos en los que he
-                    trabajado, es un proyecto que me ha encantado hacer. Este
-                    proyecto es un sitio web personal construido desde cero que
-                    me permite mostrar mis habilidades y proyectos a futuros
-                    empleadores y clientes. Cada vez mejorando y enfocandome en
-                    la experiencia de usuario, eficiencia, tecnologias empleadas
-                    y sobre todo que sea atrayente para el usuario. Poniendo en
-                    practica uno de mis verdaderos objetivos que es la
-                    simplicidad pero con un toque de elegancia.
+                    El proyecto de ASIST-PROY nace de una investigación profunda
+                    sobre calidad, eficiencia, optimización y rentabilidad de
+                    diversos softwares para la gestión de proyectos
+                    empresariales, los software actuales en el mercado marcan
+                    mucha demanda pero algo elevados en costos de membresia asi
+                    mismo se han tomando referencias para la optimización,
+                    diseño y elaboración en nuestro software, creando módulos
+                    adaptados a las necesidades de desarrollo de proyectos de
+                    las empresas, con base a la organización de los tiempos se
+                    contempla la primera versión del software, desarrollado por
+                    RAXE-TECH, enfocándose primordialmente en BI, costes del
+                    proyectos, actividades y los cronogramas, haciendo que este
+                    en base a una suscripción entre en el entorno competitivo
+                    con diversos softwares del mercado haciéndolo una gran
+                    elección para las diversas empresas ya sean nacionales o
+                    internacionales.
                   </p>
+                  <p className="text-text-general my-4 text-justify sm:text-left">
+                    Algunos de los requirimientos especificos para este proyecto
+                    fueron:
+                  </p>
+                  <ul className="text-text-general my-4 sm:text-left flex flex-col gap-2">
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Que el software organice los tiempos del proyecto y así
+                        tener un mejor control de versiones del proyecto.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        El software nos ayude a planificar con flexibilidad las
+                        actividades y tareas en general del proyecto.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Que el software ayude a la toma de decisiones con las
+                        técnicas de B.I.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Sistema de seguridad mediante usuario y contraseña para
+                        el ingreso al sistema.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        El software proporcionara una vista en general de todas
+                        las actividades del proyecto.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        El software mejora el rendimiento del equipo con datos
+                        visuales en tiempo real y así que el equipo puede
+                        emplear.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Que el software ayude a administrar diferentes proyectos
+                        existentes en una empresa para el control y la gestión
+                        de los mismos.
+                      </p>
+                    </li>
+                  </ul>
                   <div className="flex flex-col justify-center my-8">
                     <img
                       src="asistProy.png"
@@ -102,17 +167,97 @@ function PageProjectFour() {
                       className="w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
-                      p. Reporte final en excel; tableu, power bi.
+                      p. Reporte final en excel, tableu y power bi.
                     </p>
                   </div>
                   <p className="text-text-general my-8">
-                    Este proyecto fue inspirado en el dicho de Bill Gates: "Si
-                    tu negocio no está en internet, tu negocio no existe", y es
-                    por eso que decidí crear este sitio web para mostrar al
-                    mundo lo que puedo hacer y lo que puedo ofrecer, aunque lo
-                    más importante es para que las personas puedan encontrarme y
-                    contactarme.
+                    Este proyecto desarrollado en su totalidad por RAXE-TECH y
+                    fue dirigido para las empresas que buscan una solución a la
+                    gestión de proyectos de forma eficiente y rentable, con el
+                    fin de mejorar la productividad y la toma de decisiones en
+                    el entorno empresarial.
                   </p>
+                  <p className="text-text-general my-8">
+                    Con este proyecto se busca que las empresas opten por el uso
+                    de administradores de proyectos para tener un mejor control
+                    y gestión de sus procesos dentro de un proyecto y asi
+                    evitar:
+                  </p>
+                  <ul className="text-text-general my-4 sm:text-left flex flex-col gap-2">
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Falta de organización.</p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Déficits en los costes de proyecto.</p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        No contar con un control del equipo de trabajo
+                        involucrado en el proyecto.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Falta de control en las tareas a realizar en el día a
+                        día.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Asignación inadecuada de recursos.</p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Incumplimiento de fechas de entrega de proyectos
+                        (retardos).
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>
+                        Poca integración para solución de problemas existentes
+                        en el proyecto.
+                      </p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Desventaja competitiva.</p>
+                    </li>
+                    <li className="flex space-x-2">
+                      <span className="text-text-purple">&#8226;</span>
+                      <p>Pérdida de oportunidades de toma de decisiones.</p>
+                    </li>
+                  </ul>
+                  <p className="text-text-general my-8">
+                    Mas información sobre este proyecto en los siguientes enlaces:
+                  </p>
+                  <div className="flex justify-center space-x-14">
+                    <div className="inline-block group">
+                      <a href="proyectoCMO.docx" download={"proyectoCMO.docx"}>
+                        <div className="flex justify-center">
+                          <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
+                        </div>
+                        <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
+                          proyectoCMO.docx
+                        </h1>
+                      </a>
+                    </div>
+                    <div className="inline-block group">
+                      <a href="ProyectoCMO.pptx" download={"ProyectoCMO.pptx"} className="flex flex-col">
+                        <div className="flex justify-center">
+                          <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
+                        </div>
+                        <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
+                          ProyectoCMO.pptx
+                        </h1>
+                      </a>
+                    </div>
+                  </div>
                   <p className="text-text-general tracking-wide my-8">
                     Algunas de las tecnologias utilizadas en este proyecto son:
                   </p>
