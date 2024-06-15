@@ -171,7 +171,7 @@ function Projects() {
                 />
                 <SoftwareProject
                   title={'Proyecto Bonafont'}
-                  description={'Sistema de gestión de proyectos para empresas de desarrollo de software.'}
+                  description={'Radix Aguas fue desarrollado para la empresa Bonafont del grupo Danone realizaba la captura de KPI´s manualmente mediante archivos de Excel.'}
                   skill_1={'TailwindCSS'}
                   skill_2={'ReactJS'}
                   skill_3={'NextJS'}
