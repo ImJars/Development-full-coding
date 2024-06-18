@@ -62,7 +62,7 @@ function PageProjectThree() {
         <section className=" text-white">
           <ProjectSection>
             <div className="content-wrapped pt-20 sm:pt-32">
-              <div className="flex mx-4 sm:mx-0">
+              <div className="flex mx-4 xl:mx-0">
                 <button onClick={() => navigate(-1)} className="">
                   <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
                 </button>
@@ -74,7 +74,7 @@ function PageProjectThree() {
               </TitleSection>
               <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div className="mx-4">
-                  <p className="text-text-general my-8 sm:text-left">
+                  <p className="text-text-general my-8 text-left">
                     La creacion de una plataforma administrativa web para el
                     Colegio Taxhuada la cual administra los procesos mas
                     relevantes para el control de la información, de las

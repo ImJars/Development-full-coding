@@ -136,54 +136,48 @@ function Projects() {
                 <SoftwareProject
                   title={'Legacyier Express'}
                   description={'Legacyier express es un sitio web donde se ofrecian servicios de desarrollo de software, diseño web y marketing digital como la empresa Legacyier.'}
-                  skill_1={'TailwindCSS'}
+                  skill_1={'GatsbyJS'}
                   skill_2={'ReactJS'}
-                  skill_3={'NextJS'}
-                  skill_4={'Firebase'}
+                  skill_3={'TailwindCSS'}
+                  skill_4={'Github'}
                   projectLink={"/project_page_Two"}
                 />
                 <SoftwareProject
                   title={'Garden WEB'}
                   description={'Plataforma web la cual administra información, finanzas, personal, eventos, etc. En base a la informacion se toman decisiones.'}
-                  skill_1={'TailwindCSS'}
-                  skill_2={'ReactJS'}
-                  skill_3={'NextJS'}
-                  skill_4={'Firebase'}
+                  skill_1={'Javascript'}
+                  skill_2={'CSS'}
+                  skill_3={'PHP'}
+                  skill_4={'MySQL'}
                   projectLink={"/project_page_Three"}
                 />
                 <SoftwareProject
                   title={'ASIST-PROY'}
                   description={'El proyecto de ASIST-PROY nace de una investigación profunda sobre calidad, eficiencia, optimización y rentabilidad de diversos softwares'}
-                  skill_1={'TailwindCSS'}
-                  skill_2={'ReactJS'}
-                  skill_3={'NextJS'}
-                  skill_4={'Firebase'}
+                  skill_1={'Visual Basic .NET'}
+                  skill_2={'Power BI'}
+                  skill_3={'Tableu'}
+                  skill_4={'MySQL'}
                   projectLink={"/project_page_Four"}
                 />
                 <SoftwareProject
                   title={'Proyecto CMO'}
                   description={'Software para calcular la mano de obra de procesos en proyectos y que nos valore varias opciones para poder determinar qué proyecto es más factible.'}
-                  skill_1={'TailwindCSS'}
-                  skill_2={'ReactJS'}
-                  skill_3={'NextJS'}
-                  skill_4={'Firebase'}
+                  skill_1={'Visual Basic .NET'}
+                  skill_2={'Excel'}
+                  skill_3={'MySQL'}
+                  skill_4={'Github'}
                   projectLink={"/project_page_Five"}
                 />
                 <SoftwareProject
                   title={'Proyecto Bonafont'}
-                  description={'Radix Aguas fue desarrollado para la empresa Bonafont del grupo Danone realizaba la captura de KPI´s manualmente mediante archivos de Excel.'}
-                  skill_1={'TailwindCSS'}
-                  skill_2={'ReactJS'}
-                  skill_3={'NextJS'}
-                  skill_4={'Firebase'}
+                  description={'Radix Aguas fue desarrollado para la empresa Bonafont del grupo Danone  realizaba la captura de KPI´s manualmente mediante archivos de Excel.'}
+                  skill_1={'Visual Basic'}
+                  skill_2={'Macros Excel'}
+                  skill_3={'Drive'}
+                  skill_4={'SQL Server'}
                   projectLink={"/project_page_Six"}
                 />
-
-                <a href="/pagePrincipal" className=" py-1 px-4 border rounded-lg bg-text-blue">
-                  <button>
-                    Prueba
-                  </button>
-                </a>
               </div>
             </div>
             <div className="mb-20 content-wrapped block mx-auto">

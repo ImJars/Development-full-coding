@@ -74,7 +74,7 @@ function PageProject() {
               </TitleSection>
               <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div className="mx-4 xl:mx-0">
-                  <p className="text-text-general my-8 text-justify sm:text-left">
+                  <p className="text-text-general my-8 text-left">
                     Jarsdev es uno de los ultimos proyectos en los que he
                     trabajado, es un proyecto que me ha encantado hacer. Este
                     proyecto es un sitio web personal construido desde cero que
@@ -89,7 +89,7 @@ function PageProject() {
                     <img
                       src="legacyier-express.png"
                       alt="img_legacyier-express"
-                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
+                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto rounded-lg"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
                       p. Pagina de Inicio de sitio web Jarsdev

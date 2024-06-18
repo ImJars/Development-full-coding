@@ -62,7 +62,7 @@ function PageProjectFive() {
         <section className="font-sans">
           <ProjectSection>
             <div className="content-wrapped pt-20 sm:pt-32">
-              <div className="flex">
+              <div className="flex mx-4 xl:mx-0">
                 <button onClick={() => navigate(-1)} className="">
                   <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
                 </button>

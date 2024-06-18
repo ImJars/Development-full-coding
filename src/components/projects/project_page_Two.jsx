@@ -75,7 +75,7 @@ function PageProjectTwo() {
               </TitleSection>
               <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div className="mx-4 xl:mx-0">
-                  <p className="text-text-general my-8 text-justify sm:text-left">
+                  <p className="text-text-general my-8 text-left">
                     Legacyier Express es un proyecto donde se ofrecen servicios
                     de Desarrollo de Software como Freelancer donde se pueden
                     encontrar servicios de Desarrollo Web, Desarrollo de
@@ -87,7 +87,7 @@ function PageProjectTwo() {
                     <img
                       src="LegacyierExpress.png"
                       alt="img_legacyier-express"
-                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto"
+                      className="w-full sm:w-2/3 shadow-2xl shadow-text-purple/50 flex justify-center mx-auto rounded-lg"
                     />
                     <p className="flex justify-center text-xs text-text-white-gray">
                       p. Pagina de Inicio de sitio web Jarsdev
@@ -96,21 +96,26 @@ function PageProjectTwo() {
                   <div className="inline-block group mt-5">
                     <a
                       href="https://elegant-kitten-f26e46.netlify.app/"
-                      className=" items-center space-x-1 text-sm text-text-general group-hover:text-text-purple transition-all duration-300 ease-in-out flex"
+                      className=" items-center space-x-1 text-sm text-text-blue group-hover:text-text-purple transition-all duration-300 ease-in-out flex"
+                      target={"_blank"}
+                      rel="noreferrer"
                     >
                       <span>v2.1 del sitio web Legacyier Express</span>
-                      <FaExternalLinkAlt className="text-xs text-text-general group-hover:text-text-purple transition-all duration-300 ease-in-out" />
+                      <FaExternalLinkAlt className="text-xs text-text-blue group-hover:text-text-purple transition-all duration-300 ease-in-out" />
                     </a>
                   </div>
                   <p className="text-text-general mb-8 mt-4">
-                    Este proyecto fue construido para ofrecer servicios de consultoria y desarrollo de software a la medida.
-                    Tanto para negocios locales como para empresas nacionales. La actualizacion y reconstruccion a una nueva version del sitio web ya esta disponible.
+                    Este proyecto fue construido para ofrecer servicios de
+                    consultoria y desarrollo de software a la medida. Tanto para
+                    negocios locales como para empresas nacionales. La
+                    actualizacion y reconstruccion a una nueva version del sitio
+                    web ya esta disponible.
                   </p>
                   <p className="text-text-general tracking-wide my-4">
                     Algunas de las tecnologias utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
-                  <Languajes title="GatsbyJS" />
+                    <Languajes title="GatsbyJS" />
                     <Languajes title="HTML5" />
                     <Languajes title="TailwindCSS" />
                     <Languajes title="StyledComponents" />

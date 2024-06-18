@@ -68,13 +68,13 @@ function PageProjectSix() {
                   <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
                 </button>
               </div>
-              <TitleSection className="mx-5 sm:mx-0 my-20 flex justify-center">
+              <TitleSection className="mx-4 sm:mx-0 my-20 flex justify-center">
                 <h1 className="Title-Name text-text-white-gray text-7xl font-bold tracking-wide">
                   Radix Aguas
                 </h1>
               </TitleSection>
               <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
-                <div className="mx-4 sm:mx-0">
+                <div className="mx-4">
                   <p className="text-text-general my-8 sm:text-left">
                     El proyecto Radix Aguas fue desarrollado por el hecho que la
                     empresa Bonafont del grupo Danone realizaba la captura de

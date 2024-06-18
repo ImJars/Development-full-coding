@@ -63,9 +63,9 @@ function PageProjectFour() {
         <section className=" text-white">
           <ProjectSection>
             <div className="content-wrapped pt-20 sm:pt-32">
-              <div className="flex">
+              <div className="flex mx-4 xl:mx-0">
                 <button onClick={() => navigate(-1)} className="">
-                  <MdOutlineKeyboardBackspace className="mx-4 sm:mx-0 text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
+                  <MdOutlineKeyboardBackspace className="text-4xl text-text-general hover:scale-90 transition-all duration-300 ease-in-out" />
                 </button>
               </div>
               <TitleSection className="mx-4 sm:mx-0 my-20 flex justify-center">
@@ -75,7 +75,7 @@ function PageProjectFour() {
               </TitleSection>
               <div className="border-l px-5 pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div>
-                  <p className="text-text-general my-8 sm:text-left">
+                  <p className="text-text-general my-8 text-left">
                     El proyecto de ASIST-PROY nace de una investigación profunda
                     sobre calidad, eficiencia, optimización y rentabilidad de
                     diversos softwares para la gestión de proyectos
