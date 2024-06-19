@@ -7,7 +7,7 @@ import { MdWork, MdVerified } from "react-icons/md";
 function SubHome({ subtitleOne, text }) {
   return (
     <>
-      <div className="text-text-white-gray font-sans border p-4 border-text-general border-opacity-25 rounded-2xl bg-primary/25 backdrop-blur-sm">
+      <div className="text-text-white-gray font-sans border p-4 border-text-general border-opacity-30 rounded-2xl bg-primary/25 backdrop-blur-xs">
         <div className="flex items-center space-x-2 mt-2 mb-4">
             <div>
               <img src="perfil.jpg" alt="" className="w-12 h-12 sm:w-14 sm:h-14 rounded-full no-seleccionable" />
