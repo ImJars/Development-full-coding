@@ -59,8 +59,7 @@ const Buttonned = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 16px;
 `;
 
 const fadeInAnimationVariants = {
@@ -128,7 +127,7 @@ function Home({ refHome }) {
     <>
       <HomeWraped>
         <div ref={refHome} className="static text-white font-poppins z-10">
-          <HomeSection className="mx-4 sm:mx-0">
+          <HomeSection className="mx-4 xl:mx-0">
           <div className="flex justify-end">
             <img className="absolute object-cover w-3/5 sm:w-2/5 xl:w-2/6 transform top-40 xl:top-20 hidden sm:block" src="cube.png" alt="" />
           </div>
@@ -271,15 +270,15 @@ function Home({ refHome }) {
               </div>
             </div>
           </HomeSection>
-          <HomeSection className="-mt-10 pb-24 mx-4 sm:mx-0">
+          <HomeSection className="-mt-10 pb-24 mx-4 xl:mx-0">
             <div className="content-wrapped block mx-auto">
-              <Cards>
+              <Cards className="grid-cols-1 sm:grid-cols-3">
                 <CardHome
                   extraClassIcon={"bg-card-icon-one"}
                   icon={<HiUser />}
                   title={"Conocimiento & Experiencia"}
                   description={
-                    "Especialista en Desarrollo de Software enfocado en la eficiencia y calidad"
+                    "Especialista en Desarrollo de Software enfocado en la eficiencia y calidad."
                   }
                 />
                 <CardHome
@@ -287,15 +286,15 @@ function Home({ refHome }) {
                   icon={<RiHomeGearFill />}
                   title={"Innovación & Creatividad"}
                   description={
-                    "Apasionado por la ingeniería de software y la optimización de procesos "
+                    "Apasionado por la ingeniería de software y la optimización de procesos."
                   }
                 />
                 <CardHome
                   extraClassIcon={"bg-card-icon-three"}
                   icon={<AiFillStar />}
-                  title={"Compromiso & Responsabilidad"}
+                  title={"Liderazgo & Trabajo en Equipo"}
                   description={
-                    "Liderando equipos de desarrollo para proyectos exitosos"
+                    "Liderando equipos de desarrollo para proyectos exitosos."
                   }
                 />
               </Cards>
