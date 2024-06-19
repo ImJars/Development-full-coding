@@ -306,15 +306,6 @@ function Home({ refHome }) {
               </Cards>
             </div>
           </HomeSection>
-          <HomeSection className="-mt-16 pb-24 mx-4 sm:mx-0">
-            <div className="content-wrapped mx-auto">
-              <TextHome
-                text={
-                  "Una persona con una idea nueva es un loco hasta que la idea triunfa."
-                }
-              />
-            </div>
-          </HomeSection>
           <HomeSection className="-mt-16 pb-24 mx-4 xl:mx-0">
             <section className="content-wrapped mx-auto">
               <div>
@@ -325,6 +316,33 @@ function Home({ refHome }) {
                 />
               </div>
             </section>
+          </HomeSection>
+          <HomeSection className="-mt-16 pb-24 mx-4 xl:mx-0">
+            <div className="content-wrapped mx-auto">
+              <TextHome
+                text={
+                  "Una persona con una idea nueva es un loco hasta que la idea triunfa."
+                }
+              />
+              <a
+                href="/blog"
+                className="mt-4 bg-text-purple/10 hover:bg-text-purple/25 hover:text-text-white-gray text-text-purple font-semibold px-4 sm:px-8 py-2 sm:py-3 rounded-lg transition-all duration-200 ease-in-out border border-text-purple/20"
+              >
+                <button className="inline-block">
+                  <div className="flex items-center space-x-1">
+                    <span className="animate-pulse">Blog personal</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="h-3 w-3 animate-pulse"
+                    >
+                      <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path>
+                    </svg>
+                  </div>
+                </button>
+              </a>
+            </div>
           </HomeSection>
         </div>
         <FooterWraped>

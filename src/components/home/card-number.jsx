@@ -6,7 +6,7 @@ function CardNumber({ number, title, text }) {
             <div
                 className='bg-table-color flex justify-center
                             items-center rounded-2xl py-8
-                            border border-text-general border-opacity-25'
+                            border border-text-general border-opacity-10'
             >
                 <div
                     className='flex flex-col items-center justify-center'
