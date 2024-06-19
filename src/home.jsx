@@ -126,11 +126,15 @@ function Home({ refHome }) {
   return (
     <>
       <HomeWraped>
-        <div ref={refHome} className="static text-white font-poppins z-10">
+        <div ref={refHome} className="static text-white font-sans z-10">
           <HomeSection className="mx-4 xl:mx-0">
-          <div className="flex justify-end">
-            <img className="absolute object-cover w-3/5 sm:w-2/5 xl:w-2/6 transform top-40 xl:top-20 hidden sm:block" src="cube.png" alt="" />
-          </div>
+            <div className="flex justify-end">
+              <img
+                className="absolute object-cover w-3/5 sm:w-2/5 xl:w-2/6 transform top-40 xl:top-20 hidden sm:block"
+                src="cube.png"
+                alt=""
+              />
+            </div>
             <div className="content-wrapped block mx-auto pt-52 pb-28">
               <div className="relative">
                 <TitleSection className="relative z-10">
@@ -169,19 +173,21 @@ function Home({ refHome }) {
                       once: true,
                     }}
                   >
-                    <font className="font-bold text-text-white-gray">Constructor Digital:</font> Edificando el Mundo a través del
-                    Desarrollo de Software
+                    <font className="font-semibold text-text-white-gray">
+                      Constructor Digital:&nbsp;
+                    </font>
+                    Edificando el Mundo a través del Desarrollo de Software.
                   </motion.h3>
                 </TitleSection>
                 <div className="flex mt-8">
-                  <a 
+                  <a
                     href="Angel_Ramirez_CV.pdf"
                     // download="cv.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <motion.button
-                      className=" bg-text-purple text-white rounded-lg px-5 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
+                      className=" bg-text-purple hover:bg-text-purple/90 text-white rounded-lg px-5 py-1 sm:px-8 sm:py-2 font-semibold text-sm"
                       variants={fadeInAnimationVariants}
                       initial="initial"
                       whileInView="animate_Button"
@@ -205,7 +211,7 @@ function Home({ refHome }) {
                   >
                     <div className="relative text-3xl">
                       &#8226;
-                      <div className="absolute top-0 ">
+                      <div className="absolute -top-1 ">
                         <Ping>
                           <h1 className="text-3xl">&#8226;</h1>
                         </Ping>
@@ -309,19 +315,12 @@ function Home({ refHome }) {
               />
             </div>
           </HomeSection>
-          <HomeSection className="-mt-16 pb-24 mx-4 sm:mx-0">
+          <HomeSection className="-mt-16 pb-24 mx-4 xl:mx-0">
             <section className="content-wrapped mx-auto">
               <div>
                 <SubHome
-                  title={"Hola!"}
-                  subtitleOne={"Mi nombre es"}
-                  subtitleTwo={"Angel Ramirez"}
                   text={
-                    "Y soy un desarrollador de ingeniería de software con más de 3 años de experiencia, a lo " +
-                    "largo de mi carrera me he especializado en el desarrollo de aplicaciones y software " +
-                    "empresarial, así como soluciones de alta calidad. He tenido la oportunidad de trabajar con " +
-                    "una amplia variedad de tecnologías y lenguajes de programación, lo que me ha permitido " +
-                    "adaptarme a diversas demandas tecnológicas."
+                    "Soy un desarrollador de software especializado en la creación de aplicaciones web, móviles y de escritorio. Mi objetivo es ayudar a las empresas a mejorar sus procesos y a los emprendedores a llevar sus ideas al siguiente nivel. Me apasiona la tecnología y la innovación, y me encanta trabajar en equipo para lograr grandes cosas. Si estás buscando un desarrollador con experiencia y habilidades técnicas, ¡no dudes en contactarme!"
                   }
                 />
               </div>

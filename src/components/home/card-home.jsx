@@ -3,7 +3,7 @@ import React from "react";
 function CardHome({ extraClassIcon, icon, title, description }) {
   return (
     <>
-      <div className="font-sans border-text-general relative z-10 flex-1 rounded-2xl border border-opacity-25 border-divider-dark bg-primary/75 backdrop-blur-3xl">
+      <div className="font-sans border-text-general relative z-10 flex-1 rounded-2xl border border-opacity-25 border-divider-dark bg-primary/25 backdrop-blur-sm">
         <div className="border-text-general border-opacity-10 absolute inset-x-0 inset-y-8 z-[-1] border-t border-divider-dark"></div>
         <div className="border-text-general border-opacity-10 absolute inset-y-0 inset-x-8 z-[-1] border-l border-divider-dark"></div>
         <div className="-mt-0.5">

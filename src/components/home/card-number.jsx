@@ -4,9 +4,9 @@ function CardNumber({ number, title, text }) {
     return (
         <>
             <div
-                className='bg-secondary flex justify-center
+                className='bg-table-color flex justify-center
                             items-center rounded-2xl py-8
-                            border border-text-general border-opacity-10'
+                            border border-text-general border-opacity-25'
             >
                 <div
                     className='flex flex-col items-center justify-center'
