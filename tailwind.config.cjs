@@ -31,6 +31,8 @@ module.exports = {
         "framer-icon": "#41A0EB",
         "typescript-icon": "#2F74C0",
         "angular-icon": "#D6002F",
+        "java-icon": "#E10B10",
+        "mysql-icon": "#08668E",
 
         'update_primary': '#17181D',
         'update_secondary': '#F21E4E',

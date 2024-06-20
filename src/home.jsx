@@ -8,12 +8,13 @@ import {
   SiFramer,
   SiTypescript,
 } from "react-icons/si";
-import { FaAngular } from "react-icons/fa";
+import { FaAngular, FaJava } from "react-icons/fa";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import IconHome from "./components/home/icon-home";
 import { RiHomeGearFill } from "react-icons/ri";
 import { HiUser } from "react-icons/hi";
 import { AiFillStar } from "react-icons/ai";
+import { GrMysql } from "react-icons/gr";
 import TextHome from "./components/home/text-home";
 import SubHome from "./components/home/sub-home";
 import FooterWraped from "./components/footerWraped";
@@ -201,7 +202,7 @@ function Home({ refHome }) {
                     </motion.button>
                   </a>
                   <motion.div
-                    className="flex items-center ml-4 text-text-white-gray"
+                    className="flex items-center ml-6 text-text-white-gray space-x-1"
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate_Pinned"
@@ -209,20 +210,16 @@ function Home({ refHome }) {
                       once: true,
                     }}
                   >
-                    <div className="relative text-3xl flex items-center transform -translate-y-0.5 no-seleccionable">
-                      <div className="transform translate-y-0.5">
-                        <h1 className="text-text-purple">&#8226;</h1>
-                      </div>
-                      <div className="absolute top-0 left-0">
-                        <Ping>
-                          <h1 className="text-3xl text-text-purple">&#8226;</h1>
-                        </Ping>
-                      </div>
+                    <div className="relative text-3xl flex items-center no-seleccionable">
+                    <span className="flex absolute h-2 w-2 top-0 right-0 -mt-1 -mr-1">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-text-purple opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-text-purple"></span>
+                      </span>
                     </div>
                     <span className="flex">
                       <Available
                         href="/contact"
-                        className="font-sans font-semibold text-2xl pt-1"
+                        className="font-sans font-semibold text-2xl"
                       >
                         &nbsp; ¡Disponible aqui!
                       </Available>
@@ -255,12 +252,12 @@ function Home({ refHome }) {
                       icon={<SiTailwindcss />}
                     />
                     <IconHome
-                      classNames={"hover:text-typescript-icon"}
-                      icon={<SiTypescript />}
+                      classNames={"hover:text-java-icon"}
+                      icon={<FaJava />}
                     />
                     <IconHome
-                      classNames={"hover:text-angular-icon"}
-                      icon={<FaAngular />}
+                      classNames={"hover:text-mysql-icon"}
+                      icon={<GrMysql />}
                     />
                     <li className="text-xl text-text-general">
                       <HiOutlineDotsVertical />
