@@ -40,18 +40,8 @@ const TitleSection = styled.div`
     font-size: clamp(0.875rem, 0.503rem + 1.4881vw, 1.5rem);
   }
 `;
-const Ping = styled.div`
-  animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
-  @keyframes ping {
-    75%,
-    100% {
-      transform: scale(4);
-      opacity: 0;
-    }
-  }
-`;
 const Available = styled.a`
-  font-size: clamp(0.5rem, 0.3512rem + 0.5952vw, 0.75rem);
+  font-size: clamp(0.5rem, 0.55rem + 0.5952vw, 0.8rem);
 `;
 const Buttonned = styled.div`
   font-size: clamp(0.625rem, 0.4762rem + 0.5952vw, 0.875rem);
@@ -60,6 +50,16 @@ const Buttonned = styled.div`
 const Cards = styled.div`
   display: grid;
   gap: 16px;
+`;
+const Ping = styled.div`
+  animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
 `;
 
 const fadeInAnimationVariants = {
@@ -179,7 +179,7 @@ function Home({ refHome }) {
                     Edificando el Mundo a través del Desarrollo de Software.
                   </motion.h3>
                 </TitleSection>
-                <div className="flex mt-8">
+                <div className="flex mt-6 items-center">
                   <a
                     href="Angel_Ramirez_CV.pdf"
                     // download="cv.pdf"
@@ -209,20 +209,22 @@ function Home({ refHome }) {
                       once: true,
                     }}
                   >
-                    <div className="relative text-3xl">
-                      &#8226;
-                      <div className="absolute -top-1 ">
+                    <div className="relative text-3xl flex items-center transform -translate-y-0.5 no-seleccionable">
+                      <div className="transform translate-y-0.5">
+                        <h1 className="text-text-purple">&#8226;</h1>
+                      </div>
+                      <div className="absolute top-0 left-0">
                         <Ping>
-                          <h1 className="text-3xl">&#8226;</h1>
+                          <h1 className="text-3xl text-text-purple">&#8226;</h1>
                         </Ping>
                       </div>
                     </div>
                     <span className="flex">
                       <Available
-                        href="#"
-                        className="uppercase font-outfit font-bold text-xs tracking-wider"
+                        href="/contact"
+                        className="font-sans font-semibold text-2xl pt-1"
                       >
-                        &nbsp; Disponible aqui
+                        &nbsp; ¡Disponible aqui!
                       </Available>
                     </span>
                   </motion.div>
@@ -236,7 +238,7 @@ function Home({ refHome }) {
                     once: true,
                   }}
                 >
-                  <h1 className="text-xs tracking-wider text-text-general">
+                  <h1 className="text-sm font-sans font-semibold text-text-general">
                     Herramientas tecnológicas favoritas:
                   </h1>
                   <ul className="flex items-center mt-4 space-x-2 sm:space-x-3">
@@ -317,7 +319,7 @@ function Home({ refHome }) {
               </div>
             </section>
           </HomeSection>
-          <HomeSection className="-mt-16 pb-24 mx-4 xl:mx-0">
+          <HomeSection className="-mt-10 pb-14 mb-36 bg-secondary shadow-3xl shadow-secondary">
             <div className="content-wrapped mx-auto">
               <TextHome
                 text={
@@ -326,7 +328,7 @@ function Home({ refHome }) {
               />
               <a
                 href="/blog"
-                className="mt-4 bg-text-purple/10 hover:bg-text-purple/25 hover:text-text-white-gray text-text-purple font-semibold px-4 sm:px-8 py-2 sm:py-3 rounded-lg transition-all duration-200 ease-in-out border border-text-purple/20"
+                className="mx-4 xl:mx-0 mt-4 bg-text-purple/0 hover:bg-text-purple/10 hover:text-text-white-gray text-text-purple font-semibold px-4 sm:px-8 py-2 sm:py-3 rounded-lg transition-all duration-200 ease-in-out border border-text-purple/20"
               >
                 <button className="inline-block">
                   <div className="flex items-center space-x-1">
