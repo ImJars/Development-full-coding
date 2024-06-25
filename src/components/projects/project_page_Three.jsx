@@ -75,11 +75,11 @@ function PageProjectThree() {
               <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div className="mx-4">
                   <p className="text-text-general my-8 text-left">
-                    La creacion de una plataforma administrativa web para el
-                    Colegio Taxhuada la cual administra los procesos mas
+                    La creación de una plataforma administrativa web para el
+                    Colegio Taxhuada la cual administra los procesos más
                     relevantes para el control de la información, de las
-                    finanzas, personal, eventos, alumnos, padres de familia y en
-                    base a esto se toman decisiones importante, asì mismo
+                    finanzas, personal, eventos, alumnos, padres de familia y
+                    con base en esto se toman decisiones importantes, así mismo
                     brindar una experiencia a los padres de familia y/o tutores
                     diferente y de calidad que la competencia en el ámbito del
                     cuidado de los niños; brindando información importante y que
@@ -88,7 +88,7 @@ function PageProjectThree() {
                     saber el ingreso y la salida de los niños.
                   </p>
                   <p className="text-text-general my-4 text-justify sm:text-left">
-                    Algunos de los requirimientos especificos para este proyecto
+                    Algunos de los requerimientos específicos para este proyecto
                     fueron:
                   </p>
                   <ul className="text-text-general my-4 sm:text-left flex flex-col gap-2">
@@ -102,23 +102,24 @@ function PageProjectThree() {
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
                       <p>
-                        Jerarquías entre usuarios en base a una tabla usuarios.
+                        Jerarquías entre usuarios con base en una tabla
+                        usuarios.
                       </p>
                     </li>
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
                       <p>
-                        Control de acceso en base a un usuario y contraseña.
+                        Control de acceso con base en un usuario y contraseña.
                       </p>
                     </li>
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
-                      <p>Base de datos en base a los requerimientos.</p>
+                      <p>Base de datos con base en los requerimientos.</p>
                     </li>
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
                       <p>
-                        Un módulo para dar de alta niños, tutores y educadores.
+                        Un módulo para dar de alta, niños, tutores y educadores.
                       </p>
                     </li>
                     <li className="flex space-x-2">
@@ -145,7 +146,7 @@ function PageProjectThree() {
                     </li>
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
-                      <p>Modulo para visualizar y subir el menú semanal.</p>
+                      <p>Módulo para visualizar y subir el menú semanal.</p>
                     </li>
                   </ul>
                   <div className="flex flex-col justify-center my-8">
@@ -159,12 +160,12 @@ function PageProjectThree() {
                     </p>
                   </div>
                   <p className="text-text-general my-8">
-                    Se beneficio tanto la optimización de tiempos de respuesta
-                    para conocer el estatus tanto general como cualquier area en
-                    especifico existente en el colegio, para brindar un mejor
+                    Se benefició tanto la optimización de tiempos de respuesta
+                    para conocer el estatus tanto general como cualquier área en
+                    específico existente en el colegio, para brindar un mejor
                     control financiero de pagos de colegiaturas y gastos
                     existentes en la Guardería, teniendo a la mano esta
-                    informacion recabada de la base de datos.
+                    información recabada de la base de datos.
                   </p>
                   <p className="text-text-general my-4">
                     Además de ello se pudo brindar una experiencia de usuario
@@ -174,7 +175,7 @@ function PageProjectThree() {
                     de los niños.
                   </p>
                   <p className="text-text-general tracking-wide my-8">
-                    Algunas de las tecnologias utilizadas en este proyecto son:
+                    Algunas de las tecnologías utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
                     <Languajes title="HTML5" />

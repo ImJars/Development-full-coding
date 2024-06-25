@@ -101,3 +101,13 @@ html {
   -ms-user-select: none;
   user-select: none; 
 }
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.dynamic-text {
+  font-size: clamp(1.125rem, 0.6539rem + 2.2167vw, 2.25rem);
+}

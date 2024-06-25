@@ -76,14 +76,14 @@ function PageProjectFive() {
                 <div className="mx-4">
                   <p className="text-text-general my-8 sm:text-left">
                     Proyecto CMO es un proyecto realizado para el grupo Holcim
-                    Mexico que tuvo como objetivo el desarrollo de un software
+                    México que tuvo como objetivo el desarrollo de un software
                     con interfaz gráfica que sea capaz de calcular el
                     costo-beneficio de la mano de obra de procesos por medio de
                     proyectos y que nos valore varias opciones para poder
                     determinar qué proyecto es más factible.
                   </p>
                   <p className="text-text-general my-4 text-justify sm:text-left">
-                    Algunos de los requirimientos especificos para este proyecto
+                    Algunos de los requerimientos específicos para este proyecto
                     fueron:
                   </p>
                   <ul className="text-text-general my-4 sm:text-left flex flex-col gap-2">
@@ -139,7 +139,7 @@ function PageProjectFive() {
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
                       <p>
-                        El software se debe adaptar a cualquier tipo de division
+                        El software se debe adaptar a cualquier tipo de división
                         del Grupo Holcim para poder realizar.
                       </p>
                     </li>
@@ -171,14 +171,15 @@ function PageProjectFive() {
                     </p>
                   </div>
                   <p className="text-text-general my-8">
-                    El software para la empresa Grupo Holcim cumplio con las
-                    necesidades ya descritas en los requerimientos de igual
-                    manera en base al análisis realizado se detecto, corrigio y
-                    sugirieron herramientas o procedimientos que ayudaron con el
-                    proceso de mejora.
+                    El software para la empresa Grupo Holcim cumplió con las
+                    necesidades ya descritas en los requerimientos, de igual
+                    manera basándonos en el análisis realizado, se detectó,
+                    corrigió y sugirieron herramientas o procedimientos que
+                    ayudaron con el proceso de mejora.
                   </p>
                   <p className="text-text-general my-8">
-                    Mas información sobre este proyecto en los siguientes enlaces:
+                    Más información sobre este proyecto en los siguientes
+                    enlaces:
                   </p>
                   <div className="flex justify-center space-x-14">
                     <div className="inline-block group">
@@ -192,7 +193,11 @@ function PageProjectFive() {
                       </a>
                     </div>
                     <div className="inline-block group">
-                      <a href="ProyectoCMO.pptx" download={"ProyectoCMO.pptx"} className="flex flex-col">
+                      <a
+                        href="ProyectoCMO.pptx"
+                        download={"ProyectoCMO.pptx"}
+                        className="flex flex-col"
+                      >
                         <div className="flex justify-center">
                           <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
                         </div>
@@ -203,7 +208,7 @@ function PageProjectFive() {
                     </div>
                   </div>
                   <p className="text-text-general tracking-wide my-8">
-                    Algunas de las tecnologias utilizadas en este proyecto son:
+                    Algunas de las tecnologías utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
                     <Languajes title="MySQL" />

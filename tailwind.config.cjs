@@ -79,7 +79,7 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0 70px 120px -30px rgba(0, 0, 0, 0.8)',
-      }
+      },
     },
   },
   plugins: [],

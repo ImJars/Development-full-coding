@@ -75,14 +75,14 @@ function PageProject() {
               <div className="border-l pb-28 md:pl-24 border-text-general border-opacity-20">
                 <div className="mx-4 xl:mx-0">
                   <p className="text-text-general my-8 text-left">
-                    Jarsdev es uno de los ultimos proyectos en los que he
+                    Jarsdev es uno de los últimos proyectos en los que he
                     trabajado, es un proyecto que me ha encantado hacer. Este
                     proyecto es un sitio web personal construido desde cero que
                     me permite mostrar mis habilidades y proyectos a futuros
-                    empleadores y clientes. Cada vez mejorando y enfocandome en
-                    la experiencia de usuario, eficiencia, tecnologias empleadas
+                    empleadores y clientes. Cada vez mejorando y enfocándome en
+                    la experiencia de usuario, eficiencia, tecnologías empleadas
                     y sobre todo que sea atrayente para el usuario. Poniendo en
-                    practica uno de mis verdaderos objetivos que es la
+                    práctica uno de mis verdaderos objetivos que es la
                     simplicidad pero con un toque de elegancia.
                   </p>
                   <div className="flex flex-col justify-center my-8">
@@ -104,7 +104,7 @@ function PageProject() {
                     contactarme y conocerme mejor.
                   </p>
                   <p className="text-text-general tracking-wide my-8">
-                    Algunas de las tecnologias utilizadas en este proyecto son:
+                    Algunas de las tecnologías utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
                     <Languajes title="HTML5" />

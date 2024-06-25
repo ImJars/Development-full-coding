@@ -78,32 +78,32 @@ function PageProjectSix() {
                   <p className="text-text-general my-8 sm:text-left">
                     El proyecto Radix Aguas fue desarrollado por el hecho que la
                     empresa Bonafont del grupo Danone realizaba la captura de
-                    KPI´s manualmente mediante archivos de Excel que eran
-                    enviados por correo y estos a su vez contaban con un tamaño
-                    alrededor de +23,000 KB para lo cual se trata de archivos
-                    demasiado pesados, haciendo que los correos y computadoras
-                    se saturen ademas que el tiempo de envio era demasiado
-                    prolongado, algunas veces se volvian inoperables las
-                    computadora; esto hace que el proceso sea muy laborioso para
-                    la creación del reportes gráficos basados de la información
-                    mandada por los distintos CBU (países donde se encuentra la
-                    empresa Bonafont) los cuales se tratan de México, Argentina,
-                    Brasil, Colombia, Uruguay.
+                    KPI manualmente mediante archivos de Excel que eran enviados
+                    por correo y estos a su vez contaban con un tamaño alrededor
+                    de +23,000 kB para lo cual se trata de archivos demasiado
+                    pesados, haciendo que los correos y computadoras se saturen
+                    además que el tiempo de envío era demasiado prolongado,
+                    algunas veces se volvían inoperables las computadoras; esto
+                    hace que el proceso sea muy laborioso para la creación de
+                    los reportes gráficos basados de la información mandada por
+                    los distintos CBU (países donde se encuentra la empresa
+                    Bonafont) los cuales se tratan de México, Argentina, Brasil,
+                    Colombia, Uruguay.
                   </p>
                   <p className="text-text-general my-4 text-justify sm:text-left">
-                    Algunos de los requirimientos especificos para este proyecto
+                    Algunos de los requerimientos específicos para este proyecto
                     fueron:
                   </p>
                   <ul className="text-text-general my-4 sm:text-left flex flex-col gap-2">
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
-                      <p>Migracion de información a una base de datos.</p>
+                      <p>Migración de información a una base de datos.</p>
                     </li>
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
                       <p>
                         Crear un control de acceso a la captura y visualización
-                        de la información mediante usuarios y contraseñas para
+                        de la información mediante usuarios y contraseñas, para
                         los cuales solo ciertos usuarios puedan capturar
                         información y otros usuarios solo puedan visualizar la
                         misma.
@@ -119,7 +119,7 @@ function PageProjectSix() {
                     <li className="flex space-x-2">
                       <span className="text-text-purple">&#8226;</span>
                       <p>
-                        Reducir los tiempos de captura y visualización de KPI´s.
+                        Reducir los tiempos de captura y visualización de KPI.
                       </p>
                     </li>
                     <li className="flex space-x-2">
@@ -165,27 +165,31 @@ function PageProjectSix() {
                     </li>
                   </ul>
                   <p className="text-text-general my-8">
-                    El sistema fue desarrollado a la medida, acoplandose a las
+                    El sistema fue desarrollado a la medida, acoplándose a las
                     necesidades de la empresa y se utilizaron recursos que la
-                    empresa tenia a su disposicion por el hecho de que el
-                    proyecto a realizar no existe en el mercado y se tomo como
+                    empresa tenía a su disposición por el hecho de que el
+                    proyecto a realizar no existe en el mercado y se tomó como
                     un sistema RP privado.
                   </p>
                   <p className="text-text-general my-8">
-                    Un poco de informacion detallada en el siguiente enlace:
+                    Un poco de información detallada en el siguiente enlace:
                   </p>
                   <div className="inline-block group">
-                      <a href="radixAguas.docx" download={"radixAguas.docx"} className="flex flex-col">
-                        <div className="flex justify-center">
-                          <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
-                        </div>
-                        <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
+                    <a
+                      href="radixAguas.docx"
+                      download={"radixAguas.docx"}
+                      className="flex flex-col"
+                    >
+                      <div className="flex justify-center">
+                        <SlDoc className="text-3xl text-text-purple group-hover:text-purple-400 transition-all duration-200 ease-in-out" />
+                      </div>
+                      <h1 className="text-text-purple text-sm mt-2 group-hover:text-purple-400 transition-all duration-200 ease-in-out">
                         radixAguas.docx
-                        </h1>
-                      </a>
-                    </div>
+                      </h1>
+                    </a>
+                  </div>
                   <p className="text-text-general tracking-wide my-8">
-                    Algunas de las tecnologias utilizadas en este proyecto son:
+                    Algunas de las tecnologías utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
                     <Languajes title="SQL Server" />
@@ -197,11 +201,11 @@ function PageProjectSix() {
                   </div>
                   <p className="text-text-general my-8 font-mono">
                     ***El proyecto fue tomado como un proyecto privado y
-                    cualquier detalle o informacion sobre grupo Danone se
-                    tomaran acciones legales, no se puede mostrar el codigo
-                    fuente, interfaces, bases de datos, informacion personal, correos
-                    electronicos, productos, ingredientes, proveedores, cartera
-                    de clientes, archivos XML, archivos Excel, ni la
+                    cualquier detalle o información sobre grupo Danone se
+                    tomaran acciones legales, no se puede mostrar el código
+                    fuente, interfaces, bases de datos, información personal,
+                    correos electrónicos, productos, ingredientes, proveedores,
+                    cartera de clientes, archivos XML, archivos Excel, ni la
                     documentación oficial del mismo.***
                   </p>
                 </div>

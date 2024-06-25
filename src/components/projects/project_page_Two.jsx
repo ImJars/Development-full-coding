@@ -79,8 +79,8 @@ function PageProjectTwo() {
                     Legacyier Express es un proyecto donde se ofrecen servicios
                     de Desarrollo de Software como Freelancer donde se pueden
                     encontrar servicios de Desarrollo Web, Desarrollo de
-                    Aplicaciones Moviles, Desarrollo de Software a la medida,
-                    entre otros. Asi mismo aproveche este pequeño proyexto para
+                    Aplicaciones Móviles, Desarrollo de Software a la medida,
+                    entre otros. Así mismo aproveché este pequeño proyecto para
                     practicar y mejorar mis habilidades en el desarrollo web.
                   </p>
                   <div className="flex flex-col justify-center my-8">
@@ -106,13 +106,13 @@ function PageProjectTwo() {
                   </div>
                   <p className="text-text-general mb-8 mt-4">
                     Este proyecto fue construido para ofrecer servicios de
-                    consultoria y desarrollo de software a la medida. Tanto para
+                    consultoría y desarrollo de software a la medida. Tanto para
                     negocios locales como para empresas nacionales. La
-                    actualizacion y reconstruccion a una nueva version del sitio
-                    web ya esta disponible.
+                    actualización y reconstrucción a una nueva versión del sitio
+                    web ya está disponible.
                   </p>
                   <p className="text-text-general tracking-wide my-4">
-                    Algunas de las tecnologias utilizadas en este proyecto son:
+                    Algunas de las tecnologías utilizadas en este proyecto son:
                   </p>
                   <div className="flex flex-wrap gap-4 mt-5">
                     <Languajes title="GatsbyJS" />
