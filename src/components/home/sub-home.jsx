@@ -41,7 +41,7 @@ function SubHome({ subtitleOne, text }) {
             />
             <CardNumber
               number={<AiFillCode />}
-              title={"+50000 lineas de codigo"}
+              title={"+50000 líneas de código"}
             />
             <CardNumber
               number={<MdWork />}
