@@ -58,7 +58,7 @@ function TodayComponent({
               {tag_3}
             </h3>
           </div>
-          <h2 className="text-text-general text-xs sm:text-lg mt-1">
+          <h2 className="text-text-general text-xs sm:text-lg mt-1 font-normal">
             {description}
           </h2>
           <div className="flex space-x-2 mt-2 sm:mt-2 items-center">
