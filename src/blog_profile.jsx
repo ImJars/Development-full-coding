@@ -135,12 +135,7 @@ function BlogProfile() {
                         idContador={"postOne"}
                         date={"10 May. 2024"}
                         text={
-                          "He conocido una de las mejores librerias para los " +
-                          "amantes de TailwindCSS como yo, se llama AceternityUI y " +
-                          "tiene muchos componentes que te pueden ayudar a mejorar " +
-                          "tu diseño web, ademas que son muy faciles de implementar " +
-                          "y muy interactivos con tu web. Lo estare probando para " +
-                          "algun proyecto y veremos que tal va. 😲​"
+                          "He conocido una de las mejores librerías para los amantes de TailwindCSS como yo, se llama AceternityUI y tiene muchos componentes que te pueden ayudar a mejorar tu diseño web, además que son muy fáciles de implementar y muy interactivos con tu web. Lo estaré probando para algún proyecto y veremos que tal va. 😲​"
                         }
                       >
                         <img src="aceternity.jpg" className="rounded-lg" />

@@ -49,7 +49,7 @@ function Header({ animateIcon, animateDiagon }) {
         >
           <div className="w-full flex justify-between font-poppins items-center px-4 md:px-4 pt-4 pb-2">
             <div className="flex space-x-3 items-center">
-              <div className="sm:mr-8 flex justify-center items-center">
+              <div className="sm:mr-8 flex justify-center items-center mr-2">
                 <a href="/" className="flex justify-center items-center">
                   <div className="flex sm:text-xl font-bold space-x-0.5 ">
                     <motion.div
@@ -79,6 +79,9 @@ function Header({ animateIcon, animateDiagon }) {
                 headerLink={"/projects"}
                 linkText={"Proyectos"}
               />
+              <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
+                &#8226;
+              </h1>
               <HeaderLink
                 classNames={
                   "text-header-purple hover:text-purple-300 focus:text-purple-300"
@@ -86,6 +89,9 @@ function Header({ animateIcon, animateDiagon }) {
                 headerLink={"/blog"}
                 linkText={"Blog"}
               />
+              <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
+                &#8226;
+              </h1>
               <HeaderLink
                 classNames={
                   "text-header-purple hover:text-purple-300 focus:text-purple-300"
@@ -102,7 +108,9 @@ function Header({ animateIcon, animateDiagon }) {
                   headerLink={"/skills"}
                   linkText={"Habilidades"}
                 />
-                <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
+                <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
+                  &#8226;
+                </h1>
                 <HeaderLink
                   classNames={
                     "text-text-blue hover:text-blue-300 focus:text-blue-300"
@@ -110,7 +118,9 @@ function Header({ animateIcon, animateDiagon }) {
                   headerLink={"/experience"}
                   linkText={"Experiencia"}
                 />
-                <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
+                <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
+                  &#8226;
+                </h1>
                 <HeaderLink
                   classNames={
                     "text-text-blue hover:text-blue-300 focus:text-blue-300"
@@ -118,7 +128,9 @@ function Header({ animateIcon, animateDiagon }) {
                   headerLink={"/studio"}
                   linkText={"Estudio"}
                 />
-                <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">&#8226;</h1>
+                <h1 className="text-xs opacity-50 cursor-default text-text-white-gray">
+                  &#8226;
+                </h1>
                 <HeaderLink
                   classNames={
                     "text-text-blue hover:text-blue-300 focus:text-blue-300"
