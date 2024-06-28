@@ -52,16 +52,6 @@ const Cards = styled.div`
   display: grid;
   gap: 16px;
 `;
-const Ping = styled.div`
-  animation: ping 1s cubic-bezier(0, 0, 0.5, 1) infinite;
-  @keyframes ping {
-    75%,
-    100% {
-      transform: scale(3);
-      opacity: 0;
-    }
-  }
-`;
 
 const fadeInAnimationVariants = {
   initial: {
@@ -139,7 +129,7 @@ function Home({ refHome }) {
             <div className="content-wrapped block mx-auto pt-52 pb-28">
               <div className="relative">
                 <TitleSection className="relative z-10">
-                  <motion.h1
+                  <motion.div
                     className="font-outfit greeting text-text-general"
                     variants={fadeInAnimationVariants}
                     initial="initial"
@@ -148,8 +138,9 @@ function Home({ refHome }) {
                       once: true,
                     }}
                   >
-                    ¡Hola!👋
-                  </motion.h1>
+                    <span>¡Hola!</span>
+                    <span className="text-sm sm:text-xl md:text-2xl">👋</span>
+                  </motion.div>
                   <motion.div
                     className="text-text-white-gray font-outfit leading-none font-bold mb-3"
                     variants={fadeInAnimationVariants}

@@ -25,7 +25,7 @@ import BlogProfile from './blog_profile.jsx'
 
 function App() {
   const { ref: refHome, inView: inViewHome } = useInView({
-    threshold: 0.2,
+    threshold: 0,
     triggerOnce: false,
   });
   const animateIcon = useAnimation()
