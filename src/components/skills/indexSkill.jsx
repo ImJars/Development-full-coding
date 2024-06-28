@@ -9,11 +9,18 @@ function IndexSkill({
   subtitle_3,
   subtitle_4,
   subtitle_5,
+  title_3,
+  subtitle_back2,
+  subtitle_back3,
+  subtitle_back4,
+  animate_back,
+  animate_back2,
+  animate_back3,
+  animate_back4,
   title_2,
   subtitle_6,
   subtitle_7,
   subtitle_8,
-
   animate_1,
   animate_2,
   animate_3,
@@ -101,6 +108,32 @@ function IndexSkill({
                 >
                   {subtitle_5}
                 </motion.a>
+                <motion.a
+                  href="#uiux"
+                  animate={animate_back}
+                  whileHover={{ color: "#60A5FA" }}
+                  className="p-2 text-text-white-gray font-semibold"
+                >
+                  {title_3}
+                </motion.a>
+                <motion.a
+                  href="#framer"
+                  animate={animate_back2}
+                  whileHover={{ color: "#60A5FA" }}
+                  className="px-5 py-1"
+                >{subtitle_back2}</motion.a>
+                <motion.a
+                  href="#type"
+                  animate={animate_back3}
+                  whileHover={{ color: "#60A5FA" }}
+                  className="px-5 py-1"
+                >{subtitle_back3}</motion.a>
+                <motion.a
+                  href="#type"
+                  animate={animate_back4}
+                  whileHover={{ color: "#60A5FA" }}
+                  className="px-5 py-1"
+                >{subtitle_back4}</motion.a>
                 <motion.a
                   href="#uiux"
                   animate={animate_7}

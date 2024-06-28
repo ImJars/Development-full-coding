@@ -4,7 +4,7 @@ import MainSkill from "./components/skills/mainSkill";
 import Skill from "./components/skills/skill";
 import Technologies from "./components/skills/technologies";
 import Tools from "./components/skills/tools";
-import HomeWraped from "./components/homeWraped"
+import HomeWraped from "./components/homeWraped";
 import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -76,6 +76,22 @@ function Skills() {
     threshold: 0.1,
     triggerOnce: false,
   });
+  const { ref: refAnimateBack, inView: viewAnimateBack } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const { ref: refAnimateBack2, inView: viewAnimateBack2 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const { ref: refAnimateBack3, inView: viewAnimateBack3 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const { ref: refAnimateBack4, inView: viewAnimateBack4 } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
 
   const animate1 = useAnimation();
   const animate2 = useAnimation();
@@ -88,6 +104,10 @@ function Skills() {
   const animate10 = useAnimation();
   const animate11 = useAnimation();
   const animateScroll = useAnimation();
+  const animateBack = useAnimation();
+  const animateBack2 = useAnimation();
+  const animateBack3 = useAnimation();
+  const animateBack4 = useAnimation();
 
   useEffect(() => {
     const animationViews = [
@@ -101,6 +121,10 @@ function Skills() {
       viewAnimate9,
       viewAnimate10,
       viewAnimate11,
+      viewAnimateBack,
+      viewAnimateBack2,
+      viewAnimateBack3,
+      viewAnimateBack4,
     ];
 
     const animations = [
@@ -114,6 +138,10 @@ function Skills() {
       animate9,
       animate10,
       animate11,
+      animateBack,
+      animateBack2,
+      animateBack3,
+      animateBack4,
     ];
 
     for (let i = 0; i < animations.length; i++) {
@@ -162,6 +190,7 @@ function Skills() {
     viewAnimate9,
     viewAnimate10,
     viewAnimate11,
+    viewAnimateBack,
     animate1,
     animate2,
     animate3,
@@ -173,6 +202,10 @@ function Skills() {
     animate10,
     animate11,
     animateScroll,
+    animateBack,
+    animateBack2,
+    animateBack3,
+    animateBack4,
     viewAnimateScroll,
   ]);
 
@@ -213,7 +246,7 @@ function Skills() {
   return (
     <>
       <HomeWraped>
-        <section id="skills" className="w-full h-full text-white">
+        <section id="skills" className="w-full h-full text-white font-sans">
           <SkillSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <SkillsSectionTitle className="pb-20 mx-4 xl:mx-0">
@@ -262,21 +295,17 @@ function Skills() {
                                         text-text-general text-sm sm:text-base space-y-6 mx-4 xl:mx-0"
                 >
                   <h1>
-                    Comencé mi carrera en la tecnologia hace unos 10 años. Probe
-                    muchos lenguajes de programación y tecnologías, tanto
-                    Back-End como Front-End.
+                    Empecé mi carrera en tecnología hace unos 10 años. He
+                    explorado diversos lenguajes de programación y tecnologías,
+                    tanto en el Back-End como en el Front-End. En los últimos
+                    años, me he especializado en el desarrollo web, fascinado
+                    por su amplio alcance y la constante oportunidad de
+                    aprender, crear y mejorar.
                   </h1>
-                  <h2>
-                    Pero en los últimos años, me he centrado en el desarrollo
-                    Web, ya que el alcance del desarrollo web es muy amplio y
-                    siempre hay algo nuevo que aprender, que crear y que
-                    mejorar.
-                  </h2>
                   <h3>
-                    La experiencia de diseño de usuario es una de las cosas que
-                    siempre tengo en cuenta en el desarrollo de cualquier
-                    proyecto, ya que la experiencia de usuario es uno de los
-                    puntos más importante en cualquier proyecto.
+                    La experiencia de usuario es fundamental en todos mis
+                    proyectos, ya que considero que es crucial para el éxito de
+                    cualquier iniciativa.
                   </h3>
                 </div>
                 <div ref={refAnimateScroll}>
@@ -284,32 +313,56 @@ function Skills() {
                     <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide">
                       Desarrollador Font-End
                     </h1>
-                    <h2 className="text-text-general text-sm sm:text-base tracking-wide mt-5">
-                      Me encanta crear algo que sea limpio, minimalista,
-                      atractivo y por supuesto, facil de usar para los usuarios.
-                    </h2>
                     <div className="mt-5 text-text-general text-sm sm:text-base tracking-wide">
                       <h1 className="mb-5">
-                        Realmente disfruto creando interfaces de usuario,
-                        adaptando las tecnologias y componentes a los proyectos
-                        que estoy trabajando. Incluyendo:
+                        Me apasiona crear interfaces que combinen limpieza,
+                        minimalismo y atractivo visual, asegurando al mismo
+                        tiempo una excelente experiencia de usuario. Disfruto
+                        enormemente adaptando tecnologías y componentes a una
+                        variedad de proyectos, que abarcan desde:
                       </h1>
-                      <ul className="list-disc ml-5 space-y-2">
-                        <li>Aplicaciones Web,</li>
-                        <li>Paginas de Documentacion e informativas,</li>
-                        <li>Paneles de Admistracion,</li>
-                        <li>Diseño de contenido CMS</li>
-                        <li>Diseño de Dashboard,</li>
-                        <li>y otros.</li>
+                      <ul className="list-none space-y-2 ">
+                        <li className="space-x-2">
+                          <font className="text-text-blue">&#8226;</font>
+                          <span>Aplicaciones web dinámicas.</span>
+                        </li>
+                        <li className="space-x-2">
+                          <font className="text-text-blue">&#8226;</font>
+                          <span>
+                            Páginas informativas y de documentación claras y
+                            accesibles.
+                          </span>
+                        </li>
+                        <li className="space-x-2">
+                          <font className="text-text-blue">&#8226;</font>
+                          <span>Complejos paneles de administración.</span>
+                        </li>
+                        <li className="space-x-2">
+                          <font className="text-text-blue">&#8226;</font>
+                          <span>
+                            Diseño de contenido para sistemas de gestión de
+                            contenidos (CMS).
+                          </span>
+                        </li>
+                        <li className="space-x-2">
+                          <font className="text-text-blue">&#8226;</font>
+                          <span>
+                            Elaboración de dashboards intuitivos y funcionales.
+                          </span>
+                        </li>
+                        <li className="space-x-2">
+                          <font className="text-text-blue">&#8226;</font>
+                          <span>Y otros desafíos creativos.</span>
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div className="text-text-general text-sm sm:text-base tracking-wide mt-5 mx-4 xl:mx-0">
                     <p>
-                      Tambien me gusta crear paginas sencillas, asi mismo me
-                      gusta estar involucrado en proyectos grandes y pequeños
-                      pero... ¿Con que herramientas me siento mas comodo a la
-                      hora de desarrollar un proyecto?
+                      Me siento igualmente cómodo trabajando en proyectos
+                      simples como en iniciativas más ambiciosas. ¿Cuáles son
+                      mis herramientas preferidas para llevar a cabo estos
+                      desarrollos con éxito?
                     </p>
                   </div>
                   <div>
@@ -317,10 +370,7 @@ function Skills() {
                       <Skill
                         title={"TypeScript"}
                         description_1={
-                          "Una de las ultimas actualizaciones que he empezado a aprender y a especializarme ya que Typescript es un superconjunto de JavaScript que se solicita mucho en las empresas. Hasta ahora creo que se me da bastante bien. Espero mejorar aun mas en el futuro."
-                        }
-                        description_2={
-                          "He estado capacitandome en TypeScript desde hace un mes, pero creo que es una herramienta muy poderosa y que me ayudara a mejorar mi codigo en el futuro."
+                          "He estado dedicando tiempo últimamente a aprender y especializarme en TypeScript, dado que es un superconjunto de JavaScript muy solicitado en el ámbito laboral. Hasta ahora, creo que estoy progresando bastante bien. Espero seguir mejorando en el futuro, ya que veo en TypeScript una herramienta poderosa que beneficiará mi habilidad para escribir código. Llevo aproximadamente un mes capacitándome en este lenguaje, y estoy convencido de que será muy útil en mi desarrollo profesional."
                         }
                       />
                     </div>
@@ -328,37 +378,86 @@ function Skills() {
                       <Skill
                         title={"ReactJS"}
                         description_1={
-                          "El desarrollo web y la libreria de React me han acompañado estos ultimos años desarrollando sitios web o aplicaciones web, y me he vuelto bastante competente con ella."
+                          "En los últimos años, he dedicado mi tiempo al desarrollo web utilizando principalmente la biblioteca React, y he adquirido una sólida competencia en su aplicación. Durante los últimos dos años, he trabajado activamente con ReactJS y considero que es una de las herramientas más eficientes y potentes para la creación de sitios web y aplicaciones web dinámicas."
                         }
-                        description_2={`Eh usado la libreria de ReactJS estos ultimos 2 años y creo que es una de las mejores librerias para el desarrollo web. Aunque tambien me gustaria especializarme en otras librerias como VueJS o Angular.`}
+                        description_2={`Sin embargo, mi interés por seguir creciendo profesionalmente me impulsa a explorar y especializarme en otras tecnologías similares, como VueJS y Angular. Estas plataformas también tienen mucho que ofrecer en términos de flexibilidad, rendimiento y escalabilidad, y me entusiasma la idea de ampliar mis habilidades y conocimientos en estos ámbitos.`}
+                        description_3={
+                          "En resumen, mientras que React ha sido mi principal enfoque hasta ahora, estoy emocionado por explorar nuevas herramientas y aprender más sobre las diversas posibilidades que el desarrollo web moderno tiene para ofrecer."
+                        }
                       />
                     </div>
                     <div ref={refAnimate4}>
                       <Skill
                         title={"Tailwind CSS"}
-                        description_1={`Por ahora, me encanta usar Tailwind CSS para diseñar, aunque he estado usando SCSS y CSS puro, creo que Tailwind CSS es una herramienta muy poderosa y facil de usar. Me siento muy comodo usandola.`}
-                        description_2={`Siempre hay cosas nuevas que aprender, y Tailwind CSS es una de esas cosas que me gustaria seguir aprendiendo y mejorando. Tanto como componentes, como personalizacion y diseño.`}
+                        description_1={`Me encanta trabajar con Tailwind CSS para diseño. Aunque también he utilizado SCSS y CSS puro, considero que Tailwind CSS es una herramienta extremadamente poderosa y fácil de dominar. Me siento muy cómodo utilizándola.`}
+                        description_2={`Siempre estoy interesado en aprender cosas nuevas, y Tailwind CSS es una de esas herramientas que quiero seguir explorando y perfeccionando, tanto en la creación de componentes como en la personalización y el diseño.`}
                       />
                     </div>
                     <div ref={refAnimate5}>
                       <Skill
                         title={"Framer Motion"}
-                        description_1={`Cuando se trata de las animaciones me gusta utlizar Framer Motion, crear animaciones para Javascript nunca habia sido tan facil y divertido. Me encanta usarlo y crear animaciones para mis proyectos. Es una herramienta muy poderosa y facil de usar.`}
+                        description_1={`Cuando se trata de animaciones, Framer Motion se ha convertido en mi herramienta preferida. Crear animaciones para JavaScript nunca había sido tan sencillo y gratificante como con esta biblioteca. Me encanta la facilidad con la que puedo dar vida a mis proyectos mediante sus potentes capacidades. Es increíblemente accesible y versátil, permitiéndome explorar nuevas ideas y mejorar la experiencia visual de mis aplicaciones de manera fluida y eficiente.`}
                       />
                     </div>
                     <div ref={refAnimate6}>
                       <Skill
                         title={"Styled Components"}
-                        description_1={`Styled Components es una herramienta que me gusta usar para crear componentes reutilizables y personalizados en mis proyectos. Es una herramienta muy poderosa y facil de usar. Ya que conjunto a ReactJS, me permite crear componentes aun mas personalizados.`}
+                        description_1={`Styled Components se ha convertido en una herramienta fundamental en mis proyectos, gracias a su capacidad para crear componentes reutilizables y completamente personalizados. Su poder y facilidad de uso son impresionantes. Integrada con ReactJS, esta herramienta no solo simplifica la creación de componentes, sino que también potencia mi capacidad para diseñar interfaces altamente personalizadas y eficientes.`}
+                      />
+                    </div>
+                  </div>
+                  <div
+                    ref={refAnimateBack}
+                    className="mt-10 pt-10 mx-4 xl:mx-0 border-t border-text-general border-opacity-20"
+                  >
+                    <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide">
+                      Desarrollador Back-End
+                    </h1>
+                    <div className="mt-5 text-text-general text-sm sm:text-base tracking-wide">
+                      <h1 className="mb-5">
+                        Mi trabajo en el backend se centra en diseñar sistemas
+                        robustos y escalables que aseguren un rendimiento óptimo
+                        y una alta seguridad. Disfruto adaptando soluciones a
+                        una variedad de proyectos, desde aplicaciones web hasta
+                        plataformas complejas, mientras me enfoco en crear
+                        interfaces limpias y minimalistas que mejoren la
+                        experiencia del usuario. Mi objetivo es siempre
+                        optimizar el código y aplicar las mejores prácticas para
+                        garantizar la funcionalidad, la eficiencia y la
+                        seguridad del sistema.
+                      </h1>
+                    </div>
+                  </div>
+                  <div>
+                    <div ref={refAnimateBack2}>
+                      <Skill
+                        title={"Java"}
+                        description_1={
+                          "Durante mi estancia en la universidad y durante mi año de formación en ALURA he estado aprendiendo los fundamentos del lenguaje y desarrollando habilidades básicas en programación orientada a objetos. Estoy emocionado por seguir explorando Java y expandir mi conocimiento en frameworks como Spring para aplicaciones web y empresariales."
+                        }
+                      />
+                    </div>
+                    <div ref={refAnimateBack3}>
+                      <Skill
+                        title={"Firebase"}
+                        description_1={
+                          "Me apasiona trabajar con Firebase para el desarrollo de aplicaciones. Aunque he utilizado otras tecnologías como bases de datos SQL y MySQL directamente, Firebase ofrece una plataforma extremadamente poderosa y fácil de aprender. Me siento muy cómodo trabajando con sus servicios integrados como autenticación, bases de datos en tiempo real y almacenamiento en la nube. Siempre estoy motivado por aprender nuevas funcionalidades que Firebase ofrece, especialmente en la creación de aplicaciones complejas y escalables. La flexibilidad y la capacidad de personalización que proporciona Firebase hacen que sea una herramienta fascinante para mejorar la experiencia del usuario y optimizar el rendimiento de las aplicaciones."
+                        }
+                      />
+                    </div>
+                    <div ref={refAnimateBack4}>
+                      <Skill
+                        title={"SQL Server & MySQL"}
+                        description_1={
+                          "He trabajado directamente con MySQL y SQL para desarrollar aplicaciones debido a su robustez y versatilidad. Disfruto especialmente optimizando consultas y diseñando bases de datos relacionales complejas y escalables. Siempre estoy motivado por aprender nuevas técnicas que mejoren el rendimiento y la eficiencia de las aplicaciones utilizando MySQL y SQL."
+                        }
                       />
                     </div>
                   </div>
                   <div ref={refAnimate7} className="mt-10">
                     <MainSkill
                       title={"Diseñador UI/UX"}
-                      description_1={`Diseñar interfaces de usuario es un trabajo en el que soy muy bueno y he sido diseñador desde hace varios años atras, no solamente en el desarrollo web, sino tambien en desarrollo movil y de escritorio.`}
-                      description_2={`Siempre estoy pensando en cómo crear la mejor experiencia de usuario posible, además de crear interfaces de usuario visualmente atractivas.`}
-                      description_3={`El mayor desafío es encontrar el equilibrio entre la creación de una excelente interfaz de usuario y una experiencia de usuario increíble. Que se adapte a las necesidades de los usuarios y que al mismo tiempo no sea invasiva visualmente.`}
+                      description_1={`Diseñar interfaces de usuario es mi especialidad, con varios años de experiencia tanto en desarrollo web como en móvil y de escritorio. Siempre me esfuerzo por crear experiencias de usuario excepcionales y visualmente atractivas. Mi mayor desafío radica en lograr un equilibrio perfecto entre una interfaz excelente y una experiencia de usuario increíble que satisfaga las necesidades del usuario sin ser visualmente abrumadora.`}
                     />
                   </div>
                   <div>
@@ -386,7 +485,9 @@ function Skills() {
                       <div className="flex flex-wrap gap-4 mt-5">
                         <Technologies title={"SQL Server"} />
                         <Technologies title={"MySQL"} />
+                        <Technologies title={"Firebase"} />
                         <Technologies title={"Tailwind CSS"} />
+                        <Technologies title={"GSAP"} />
                         <Technologies title={"Styled Components"} />
                         <Technologies title={"Framer Motion"} />
                         <Technologies title={"Bootstrap"} />
@@ -404,6 +505,8 @@ function Skills() {
                         <Tools title={"Git"} />
                         <Tools title={"Github"} />
                         <Tools title={"Photoshop"} />
+                        <Tools title={"Illustrator"} />
+                        <Tools title={"After Effects"} />
                         <Tools title={"Figma"} />
                         <Tools title={"InVision"} />
                         <Tools title={"Sony Vegas Pro"} />
@@ -421,6 +524,14 @@ function Skills() {
                 subtitle_3={"Tailwind CSS"}
                 subtitle_4={"Framer Motion"}
                 subtitle_5={"Styled Components"}
+                title_3={"Desarrollador Back-End"}
+                subtitle_back2={"Java"}
+                subtitle_back3={"Firebase"}
+                subtitle_back4={"SQL Server & MySQL"}
+                animate_back={animateBack}
+                animate_back2={animateBack2}
+                animate_back3={animateBack3}
+                animate_back4={animateBack4}
                 title_2={"Diseñador UI/UX"}
                 subtitle_6={"Lenguajes de Programación"}
                 subtitle_7={"Tecnologias"}

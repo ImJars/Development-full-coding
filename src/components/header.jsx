@@ -48,7 +48,7 @@ function Header({ animateIcon, animateDiagon }) {
           }
         >
           <div className="w-full flex justify-between font-poppins items-center px-4 md:px-4 pt-4 pb-2">
-            <div className="flex space-x-3 items-center">
+            <div className="flex space-x-2 items-center">
               <div className="sm:mr-8 flex justify-center items-center mr-2">
                 <a href="/" className="flex justify-center items-center">
                   <div className="flex sm:text-xl font-bold space-x-0.5 ">
