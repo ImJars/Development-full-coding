@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Index from "./components/experience";
 import Content from "./components/experience/content";
 import List from "./components/experience/list";
-import HomeWraped from "./components/homeWraped"
+import HomeWraped from "./components/homeWraped";
 import Footer from "./footer";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -40,7 +40,7 @@ function Experience() {
     triggerOnce: false,
   });
   const { ref: refAnimateScroll, inView: viewAnimateScroll } = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
     triggerOnce: false,
   });
 
@@ -50,11 +50,7 @@ function Experience() {
   const animateScroll = useAnimation();
 
   useEffect(() => {
-    const animationViews = [
-      inViewAnimate,
-      inViewAnimate2,
-      inViewAnimate3,
-    ];
+    const animationViews = [inViewAnimate, inViewAnimate2, inViewAnimate3];
 
     const animations = [animate1, animate2, animate3];
 
@@ -182,28 +178,26 @@ function Experience() {
             </div>
           </ExperienceSection>
           <ExperienceSection>
-            <div className="content-wrapped mx-auto flex space-x-14">
+            <div className="content-wrapped mx-auto flex space-x-14 font-sans">
               <div className="border-l sm:pl-24 border-text-general border-opacity-20 pb-20">
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
                                             text-text-general text-sm sm:text-base space-y-6 mx-4 xl:mx-0"
                 >
                   <p className="mt-5">
-                    Comence mi carrera profecional con una empresa llamada
-                    SQDesarrollo en 2019 que nos dio la oportunidad de trabajar
-                    en proyectos de alta gama con empresas de gran renombre. 
+                    Mi carrera tecnológica hablando comenzó en 2014, donde mis
+                    estudios y trabajos me llevaron a la programación y
+                    desarrollo de software.
+                  </p>
+                  <p className="mt-5">
+                    Y así comenzó mi carrera profesional en 2018 donde tuve la
+                    oportunidad de trabajar en proyectos de alta gama y con
+                    empresas de gran renombre.
                   </p>
                   <p className="mt-2">
-                  En
-                    2020 junto a un equipo de trabajo creamos una empresa donde
-                    seguimos atendiendo proyectos de alta gama.
-                  </p>
-                  <p className="mt-2">
-                    En 2021 estuve una pasantia de 1 año en una empresa de
-                    Desarrollo Web, donde encontre mi pasion por el desarrollo
-                    web, sin embargo en 2022 decidi seguir mi carrera como
-                    Freelance y Autonomo, dandome la oportunidad de trabajar y
-                    seguir aprendiendo nuevas tecnologias para mi desarrollo.
+                    Hasta la fecha mi enfoque siempre ha sido la ingeniería de
+                    software, el desarrollo web y móvil, así como también la
+                    administración de proyectos y la creación de interfaces.
                   </p>
                 </div>
                 <div ref={refAnimateScroll}>
@@ -216,8 +210,7 @@ function Experience() {
                       company={"Legacyier"}
                       date={"(Enero 2022 – abril 2023)"}
                       description__text={
-                        "Legacyier es una marca de mi autoria, donde me dedico a la creacion de aplicaciones web y moviles, asi como tambien a la creacion " +
-                        "de sitios web y tiendas online. En Legacyier me dedico a dar soporte tanto de hardware como de software en equipos de computo y moviles. "
+                        "Legacyier es una marca de mi autoría, donde me dedico a la creación de aplicaciones web y móviles, así como también a la creación de sitios web y tiendas online. En Legacyier me dedico a dar soporte tanto de hardware como de software en equipos de cómputo y móviles."
                       }
                       description={
                         <ol>
@@ -225,7 +218,7 @@ function Experience() {
                             description={`Administración de proyectos (Arquitectura de software, MVC, análisis de requerimientos y control de versiones).`}
                           />
                           <List
-                            description={`Desarrollo, construccion y programacion de interfaces.`}
+                            description={`Desarrollo, construcción y programación de interfaces.`}
                           />
                           <List
                             description={`Mantenimiento y ensamblado de equipo de cómputo.`}
@@ -237,7 +230,7 @@ function Experience() {
                             description={`Auxiliar avanzado en entorno Office.`}
                           />
                           <List
-                            description={`Capacitacion constante en nuevas tecnologias.`}
+                            description={`Capacitación constante en nuevas tecnologías.`}
                           />
                         </ol>
                       }
@@ -252,8 +245,7 @@ function Experience() {
                       company={"Bliss DDM"}
                       date={"(Enero 2021 – noviembre 2021)"}
                       description__text={
-                        "Bliss DDM es una empresa de desarrollo web, donde me dedique a la colaboracion en el desarrollo de sitios web y aplicaciones web. Donde me especialice en algunas de las tecnologias " +
-                        "mas usadas en el desarrollo web, como lo son React, NodeJS, NextJS, MongoDB, entre otras."
+                        "Bliss DDM es una empresa de desarrollo web, donde me dedique a la colaboración en el desarrollo de sitios web y aplicaciones web. Donde me especialice en algunas de las tecnologías más usadas en el desarrollo web, como lo son React, Node.js, Next.js, MongoDB, entre otras."
                       }
                       description={
                         <ol>
@@ -329,14 +321,19 @@ function Experience() {
                     />
                   </div>
                   <div ref={refAnimate3}>
-                    <Content extraClass={"py-14"} title={"Proxima experiencia..."} company={"-"} date={"-"} />
+                    <Content
+                      extraClass={"py-14"}
+                      title={"Proxima experiencia..."}
+                      company={"-"}
+                      date={"-"}
+                    />
                   </div>
                 </div>
               </div>
               <Index
                 subtitle_1={"Freelancer"}
                 subtitle_2={"Trabajo Profesional"}
-                subtitle_3={"Proxima experiencia..."}
+                subtitle_3={"Próxima experiencia…"}
                 animate_1={animate1}
                 animate_2={animate2}
                 animate_3={animate3}

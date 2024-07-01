@@ -13,7 +13,7 @@ function Content({
     <>
       <div className={`${extraClass} mx-4 xl:mx-0`}>
         <div className="flex flex-col">
-          <h1 className="text-2xl sm:text-3xl font-bold text-text-white-gray tracking-wide mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-text-white-gray mb-8">
             {title}
           </h1>
           <section className="my-1">
