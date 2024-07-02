@@ -6,7 +6,7 @@ import TableOthers from "./components/studio/tableOthers";
 import TablePeripherals from "./components/studio/tablePeripherals";
 import TablePrimary from "./components/studio/tablePrimary";
 import TableSecondary from "./components/studio/tableSecondary";
-import HomeWraped from "./components/homeWraped"
+import HomeWraped from "./components/homeWraped";
 import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -238,15 +238,15 @@ function Studio() {
                 </div>
                 <div ref={refScroll}>
                   <div ref={ref1} className="mt-14 mx-4 xl:mx-0">
-                    <h1 className="text-2xl sm:text-3xl font-bold text-text-white-gray tracking-wide my-10">
+                    <h1 className="text-2xl sm:text-3xl font-bold text-text-white-gray tracking-wide mt-10">
                       Computadora
                     </h1>
                     <TableComputer />
                     <p className="text-text-general text-sm sm:text-base">
                       Puede que esta computadora no tenga las últimas
                       especificaciones, ¡pero funciona increíblemente rápido y
-                      sin problemas! Es perfecto para desarrollo web, incluso
-                      para proyectos más grandes o pesados.
+                      sin problemas! Es perfecto para desarrollo de software,
+                      incluso para proyectos más grandes o pesados.
                     </p>
                     <p className="text-text-general mt-5 text-sm sm:text-base">
                       ¡Los 16 GB de RAM también garantizan que realizar
@@ -260,14 +260,14 @@ function Studio() {
                       </h1>
                       <p className="text-text-general text-sm sm:text-base">
                         La configuración de monitor dual maximiza mi flujo de
-                        trabajo de desarrollo web. Puedo codificar en una
-                        pantalla mientras obtengo una vista previa en vivo en la
-                        otra: ¡ya no es necesario Alt + Tab para un trabajo más
-                        rápido y eficiente!
+                        trabajo de desarrollo. Puedo codificar en una pantalla
+                        mientras obtengo una vista previa en vivo en la otra:
+                        ¡ya no es necesario Alt + Tab para un trabajo más rápido
+                        y eficiente!
                       </p>
                       <p className="text-text-general mt-5 text-sm sm:text-base">
-                        ¿Necesita un sitio web con una vista mas amplia? Lo
-                        tengo cubierto con mi monitor ultraancho.
+                        ¿Necesita un sitio web con una vista más amplia? Lo
+                        tengo cubierto con mi monitor ultra ancho.
                       </p>
                     </div>
                     <div ref={ref3}>

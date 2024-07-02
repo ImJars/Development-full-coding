@@ -3,9 +3,9 @@ import React from "react";
 function TablePrimary() {
   return (
     <>
-      <div className="relative overflow-x-auto rounded-lg border border-text-general border-opacity-10 mt-5 mb-10">
+      <div className="relative overflow-x-auto rounded-lg border border-text-general border-opacity-25 mt-5 mb-10">
         <table className="w-full">
-          <thead className=" text-text-white-gray text-sm font-bold tracking-wide">
+          <thead className=" text-text-white-gray text-sm font-bold tracking-wide bg-table_activate">
             <tr className="border-b border-text-general border-opacity-10">
               <th scope="col" className="px-6 py-3 text-start">
                 Nombre
@@ -16,20 +16,20 @@ function TablePrimary() {
             </tr>
           </thead>
           <tbody className="text-text-general text-sm tracking-wide font-normal">
-            <tr>
+            <tr className="bg-secondary">
               <td className="px-6 py-2">Modelo</td>
               <td className="px-6 py-2">Gigabyte G27FC A</td>
             </tr>
-            <tr>
-              <td className="px-6 py-2">Resolucion</td>
+            <tr className="bg-secondary">
+              <td className="px-6 py-2">Resolución</td>
               <td className="px-6 py-2">1920x1080</td>
             </tr>
-            <tr>
-              <td className="px-6 py-2">Relacion de Aspecto</td>
+            <tr className="bg-secondary">
+              <td className="px-6 py-2">Relación de Aspecto</td>
               <td className="px-6 py-2">21:9</td>
             </tr>
-            <tr>
-              <td className="px-6 py-2">Frecuencia de Actualizacion</td>
+            <tr className="bg-secondary">
+              <td className="px-6 py-2">Frecuencia de Actualización</td>
               <td className="px-6 py-2">165 Hz</td>
             </tr>
           </tbody>
