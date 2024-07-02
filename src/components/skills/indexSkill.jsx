@@ -2,6 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaArrowUp } from "react-icons/fa";
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 function IndexSkill({
   title_1,
   subtitle_1,
@@ -49,13 +56,13 @@ function IndexSkill({
                 className="opacity-0 transform translate-x-10"
                 animate={animate_scroll}
               >
-                <a
-                  href="#skills"
-                  className="text-xs text-text-blue border border-text-blue border-opacity-20 px-3 py-1 rounded-lg flex items-center space-x-1"
+                <div
+                  onClick={scrollToTop}
+                  className="cursor-pointer text-xs text-text-blue border border-text-blue border-opacity-20 px-3 py-1 rounded-lg flex items-center space-x-1"
                 >
                   <span>Scroll</span>
                   <FaArrowUp className="text-xs" />
-                </a>
+                </div>
               </motion.div>
             </div>
             <div className="py-4">

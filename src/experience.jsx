@@ -136,7 +136,7 @@ function Experience() {
   return (
     <>
       <HomeWraped>
-        <section id="experience" className="w-full h-full text-white">
+        <section id="experience" className="w-full h-full text-white font-sans">
           <ExperienceSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-4 xl:mx-0">
