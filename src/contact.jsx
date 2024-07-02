@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import IndexContact from "./components/contact/indexContact";
 import TableContact from "./components/contact/tableContact";
 import TableSocialMedia from "./components/contact/tableSocialMedia";
-import HomeWraped from "./components/homeWraped"
+import HomeWraped from "./components/homeWraped";
 import Footer from "./footer";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -97,7 +97,7 @@ function Contact() {
     triggerOnce: false,
   });
   const { ref: refScroll, inView: inViewScroll } = useInView({
-    threshold: 0.5,
+    threshold: 0.6,
     triggerOnce: false,
   });
 
@@ -149,7 +149,11 @@ function Contact() {
   return (
     <>
       <HomeWraped>
-        <section id="contact" ref={ref} className="w-full h-full text-white">
+        <section
+          id="contact"
+          ref={ref}
+          className="w-full h-full text-white font-sans"
+        >
           <ContactSection className="pb-10 sm:pb-20 pt-40">
             <div className="content-wrapped block mx-auto">
               <TitleSection className="mx-4 xl:mx-0">
@@ -170,7 +174,7 @@ function Contact() {
                   className="Subtitle-Text opacity-0 transform -translate-x-10 w-full sm:w-2/3 text-text-general mt-4"
                 >
                   Ponte en contacto conmigo en cualquier momento, a través de
-                  las redes sociales, correo electrónico o número de teléfono.
+                  las redes sociales o correo electrónico.
                 </motion.h3>
               </TitleSection>
             </div>
@@ -186,7 +190,7 @@ function Contact() {
                               text-text-general text-sm sm:text-base space-y-6 mx-4 xl:mx-0"
                 >
                   <p className="mt-5 text-text-general tracking-wide w-full h-full">
-                    Sólo un recordatorio amistoso de que la información
+                    Solo un recordatorio amistoso de que la información
                     proporcionada aquí es únicamente para fines comerciales. Si
                     tienes alguna pregunta, no dudes en chatear conmigo
                     directamente en mis redes sociales.
@@ -217,7 +221,7 @@ function Contact() {
                   </h1>
                   <p className="text-sm sm:text-base">
                     Si quieres encontrarme en las redes sociales, te dejo mis
-                    principales medios de comunicacion.
+                    principales medios de comunicación.
                   </p>
                   <p className="text-sm sm:text-base">
                     A continuación he incluido algunos enlaces a las plataformas
