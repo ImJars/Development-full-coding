@@ -24,8 +24,8 @@ function IndexContact({
             className="bg-table-color border border-text-general border-opacity-10 
                                         rounded-xl"
           >
-            <div className="py-3 px-5 border-b border-text-general border-opacity-10 flex justify-between items-center">
-              <h1 className="text-text-white-gray text-sm font-bold tracking-wide">
+            <div className="py-3 px-4 border-b border-text-general border-opacity-10 flex justify-between items-center">
+              <h1 className="text-text-white-gray text-base font-bold tracking-wide">
                 Contenido
               </h1>
               <motion.div
@@ -45,13 +45,13 @@ function IndexContact({
               <ol className="flex flex-col text-text-general text-sm">
                 <motion.li
                   animate={animate_1}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {subtitle_1}
                 </motion.li>
                 <motion.li
                   animate={animate_2}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {subtitle_2}
                 </motion.li>

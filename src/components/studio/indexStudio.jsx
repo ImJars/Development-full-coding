@@ -35,7 +35,7 @@ function IndexStudio({
                                         rounded-xl"
           >
             <div className="py-3 px-4 border-b border-text-general border-opacity-10 flex justify-between items-center">
-              <h1 className="text-text-white-gray text-xs xl:text-sm font-bold tracking-wide">
+              <h1 className="text-text-white-gray text-xs xl:text-base font-bold tracking-wide">
                 Contenido
               </h1>
               <motion.div
@@ -55,37 +55,37 @@ function IndexStudio({
               <ol className="flex flex-col text-text-general text-sm">
                 <motion.li
                   animate={animate_1}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable" 
                 >
                   {subtitle_1}
                 </motion.li>
                 <motion.li
                   animate={animate_2}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {subtitle_2}
                 </motion.li>
-                <motion.li animate={animate_3} className="px-5 py-2">
+                <motion.li animate={animate_3} className="px-5 py-2 no-seleccionable">
                   {description_1}
                 </motion.li>
-                <motion.li animate={animate_4} className="px-5 py-2">
+                <motion.li animate={animate_4} className="px-5 py-2 no-seleccionable">
                   {description_2}
                 </motion.li>
                 <motion.li
                   animate={animate_5}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {subtitle_3}
                 </motion.li>
                 <motion.li
                   animate={animate_6}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {subtitle_4}
                 </motion.li>
                 <motion.li
                   animate={animate_7}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {subtitle_5}
                 </motion.li>

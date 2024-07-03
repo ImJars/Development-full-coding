@@ -23,7 +23,7 @@ function Detalles() {
           <div className="flex space-x-2 items-center">
             <TbWorld className="text-2xl text-text-general" />
             <a
-              href="https://www.instagram.com/jars.little/"
+              href="https://jarsdev.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-sans text-text-blue font-semibold"

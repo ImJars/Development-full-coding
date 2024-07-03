@@ -76,71 +76,60 @@ function IndexSkill({
               <ol className="flex flex-col text-text-general text-sm">
                 <motion.li
                   animate={animate_1}
-                  whileHover={{ color: "#60A5FA" }}
                   className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {title_1}
                 </motion.li>
                 <motion.li
                   animate={animate_2}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_1}
                 </motion.li>
                 <motion.li
                   animate={animate_3}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_2}
                 </motion.li>
                 <motion.li
                   animate={animate_4}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_3}
                 </motion.li>
                 <motion.li
                   animate={animate_5}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_4}
                 </motion.li>
                 <motion.li
                   animate={animate_6}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_5}
                 </motion.li>
                 <motion.li
                   animate={animate_back}
-                  whileHover={{ color: "#60A5FA" }}
                   className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {title_3}
                 </motion.li>
                 <motion.li
                   animate={animate_back2}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >{subtitle_back2}</motion.li>
                 <motion.li
                   animate={animate_back3}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >{subtitle_back3}</motion.li>
                 <motion.li
                   animate={animate_back4}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >{subtitle_back4}</motion.li>
                 <motion.li
                   animate={animate_7}
-                  whileHover={{ color: "#60A5FA" }}
                   className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {title_2}
@@ -148,21 +137,18 @@ function IndexSkill({
                 <motion.li
                   onClick={() => scrollToSection("programming")}
                   animate={animate_9}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 text-start no-seleccionable"
                 >
                   {subtitle_6}
                 </motion.li>
                 <motion.li
                   animate={animate_10}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_7}
                 </motion.li>
                 <motion.li
                   animate={animate_11}
-                  whileHover={{ color: "#60A5FA" }}
                   className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_8}

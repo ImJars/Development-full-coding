@@ -488,7 +488,7 @@ function Skills() {
                   <div>
                     <div ref={refAnimate9} className="mx-4 xl:mx-0">
                       <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
-                        Lenguajes de Programación
+                        Programación
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
                         <Languajes title={"Javascript"} />
@@ -496,10 +496,9 @@ function Skills() {
                         <Languajes title={"HTML"} />
                         <Languajes title={"NodeJS"} />
                         <Languajes title={"Java"} />
-                        <Languajes title={"NodeJS"} />
                         <Languajes title={"ViteJS"} />
                         <Languajes title={"GatsbyJS"} />
-                        <Languajes title={".Net"} />
+                        <Languajes title={"Visual Basic .Net"} />
                         <Languajes title={"VBA Excel"} />
                       </div>
                     </div>
