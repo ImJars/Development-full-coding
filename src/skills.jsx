@@ -30,6 +30,13 @@ const SkillsSectionTitle = styled.div`
   }
 `;
 
+const scrollToSection = (programming) => {
+  const section = document.getElementById(programming);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
 function Skills() {
   //Observer y animaciones de indexSkill
   const { ref: refAnimate, inView: viewAnimate } = useInView({
@@ -307,9 +314,8 @@ function Skills() {
                     proyectos, ya que considero que es crucial para el éxito de
                     cualquier iniciativa.
                   </h3>
-                  <button className="group mt-4 bg-text-purple text-white px-4 sm:px-8 py-2 sm:py-3 rounded-lg bg-opacity-10 backdrop-blur-xs group-hover:bg-text-purple/5">
+                  <button onClick={() => scrollToSection("programming")} className="group mt-4 bg-text-purple text-white px-4 sm:px-8 py-2 sm:py-3 rounded-lg bg-opacity-10 backdrop-blur-xs group-hover:bg-text-purple/5">
                   <a
-                    href="#programming"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center text-xs sm:text-sm text-text-purple font-semibold space-x-1 group-hover:text-text-white-gray group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"

@@ -9,6 +9,13 @@ const scrollToTop = () => {
   });
 };
 
+const scrollToSection = (programming) => {
+  const section = document.getElementById(programming);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
 function IndexSkill({
   title_1,
   subtitle_1,
@@ -49,7 +56,7 @@ function IndexSkill({
                                         rounded-xl"
           >
             <div className="py-3 px-4 border-b border-text-general border-opacity-10 flex justify-between items-center">
-              <h1 className="text-text-white-gray text-xs xl:text-sm font-bold tracking-wide">
+              <h1 className="text-text-white-gray text-xs xl:text-base font-bold tracking-wide">
                 Contenido
               </h1>
               <motion.div
@@ -67,112 +74,99 @@ function IndexSkill({
             </div>
             <div className="py-4">
               <ol className="flex flex-col text-text-general text-sm">
-                <motion.a
-                  href="#frontend"
+                <motion.li
                   animate={animate_1}
                   whileHover={{ color: "#60A5FA" }}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {title_1}
-                </motion.a>
-                <motion.a
-                  href="#typescript"
+                </motion.li>
+                <motion.li
                   animate={animate_2}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_1}
-                </motion.a>
-                <motion.a
-                  href="#react"
+                </motion.li>
+                <motion.li
                   animate={animate_3}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_2}
-                </motion.a>
-                <motion.a
-                  href="#tailwind"
+                </motion.li>
+                <motion.li
                   animate={animate_4}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_3}
-                </motion.a>
-                <motion.a
-                  href="#framer"
+                </motion.li>
+                <motion.li
                   animate={animate_5}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_4}
-                </motion.a>
-                <motion.a
-                  href="#nextjs"
+                </motion.li>
+                <motion.li
                   animate={animate_6}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_5}
-                </motion.a>
-                <motion.a
-                  href="#uiux"
+                </motion.li>
+                <motion.li
                   animate={animate_back}
                   whileHover={{ color: "#60A5FA" }}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {title_3}
-                </motion.a>
-                <motion.a
-                  href="#framer"
+                </motion.li>
+                <motion.li
                   animate={animate_back2}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
-                >{subtitle_back2}</motion.a>
-                <motion.a
-                  href="#type"
+                  className="px-5 py-1 no-seleccionable"
+                >{subtitle_back2}</motion.li>
+                <motion.li
                   animate={animate_back3}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
-                >{subtitle_back3}</motion.a>
-                <motion.a
-                  href="#type"
+                  className="px-5 py-1 no-seleccionable"
+                >{subtitle_back3}</motion.li>
+                <motion.li
                   animate={animate_back4}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
-                >{subtitle_back4}</motion.a>
-                <motion.a
-                  href="#uiux"
+                  className="px-5 py-1 no-seleccionable"
+                >{subtitle_back4}</motion.li>
+                <motion.li
                   animate={animate_7}
                   whileHover={{ color: "#60A5FA" }}
-                  className="p-2 text-text-white-gray font-semibold"
+                  className="p-2 text-text-white-gray font-semibold no-seleccionable"
                 >
                   {title_2}
-                </motion.a>
-                <motion.a
-                  href="#programming"
+                </motion.li>
+                <motion.li
+                  onClick={() => scrollToSection("programming")}
                   animate={animate_9}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 text-start no-seleccionable"
                 >
                   {subtitle_6}
-                </motion.a>
-                <motion.a
-                  href="#technologies"
+                </motion.li>
+                <motion.li
                   animate={animate_10}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_7}
-                </motion.a>
-                <motion.a
-                  href="#softwares"
+                </motion.li>
+                <motion.li
                   animate={animate_11}
                   whileHover={{ color: "#60A5FA" }}
-                  className="px-5 py-1"
+                  className="px-5 py-1 no-seleccionable"
                 >
                   {subtitle_8}
-                </motion.a>
+                </motion.li>
               </ol>
             </div>
           </nav>

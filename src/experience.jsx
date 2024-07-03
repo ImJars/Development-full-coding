@@ -190,7 +190,7 @@ function Experience() {
                     desarrollo de software.
                   </p>
                   <p className="mt-5">
-                    Y así comenzó mi carrera profesional en 2018 donde tuve la
+                    Y así comenzó mi carrera profesional en 2019 donde tuve la
                     oportunidad de trabajar en proyectos de alta gama y con
                     empresas de gran renombre.
                   </p>
