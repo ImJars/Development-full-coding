@@ -141,19 +141,13 @@ function Header({ animateIcon, animateDiagon }) {
               </div>
             </div>
             <div className="flex space-x-4 items-center">
-              <div className="hidden items-center sm:flex">
+              <div className="hidden items-center md:flex">
                 <a
                   href="https://x.com/Im_Jars"
                   className="text-xl hover:bg-card hover:bg-opacity-50 rounded-xl px-3 py-1"
                 >
                   𝕏
                 </a>
-                {/* <a
-                href="#"
-                className="text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2"
-              >
-                <BsTwitter />
-              </a> */}
                 <a
                   href="https://github.com/ImJars"
                   className="text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2"
