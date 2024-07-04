@@ -89,7 +89,7 @@ function MainFlowbite() {
               <div className="fixed left-2 right-2 bottom-0 top-14 flex flex-col gap-6 md:left-auto md:right-6 md:top-24 md:w-[320px]">
                 <div className="flex flex-col gap-2 mx-2">
                   <div className="text-xl font-bold">Centro de acción</div>
-                  <div className="flex h-24 gap-4">
+                  <div className="flex h-20 gap-6">
                     <button
                       onClick={() => handleDarkMode()}
                       className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-slate-700 no-seleccionable cursor-not-allowed"
@@ -155,7 +155,7 @@ function MainFlowbite() {
                   </div>
                 </div>
               </div>
-              <div className="fixed left-2 right-2 top-[54%]  flex flex-col gap-2 md:left-6 md:top-24 md:w-[320px]">
+              <div className="fixed left-2 right-2 top-[57%]  flex flex-col gap-2 md:left-6 md:top-24 md:w-[320px]">
                 <div className="flex flex-col">
                   <div className="px-2 text-lg sm:text-xl font-bold">
                     Nota / Aviso
