@@ -229,7 +229,7 @@ function Studio() {
             <div className="content-wrapped mx-auto flex space-x-14">
               <div className="border-l sm:pl-24 border-text-general border-opacity-20">
                 <div className="mx-4 xl:mx-0">
-                  <div className="my-20 border p-32 border-text-general border-opacity-20 mb-10" />
+                  <img src="Estudio.jpeg" className="my-10 shadow-2xl shadow-text-purple/50 rounded-lg" />
                   <p className="text-text-general tracking-wide text-sm sm:text-base">
                     Una de las cosas más importantes para mí cuando trabajo
                     desde casa es tener las herramientas adecuadas. Entonces,
