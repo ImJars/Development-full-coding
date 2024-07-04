@@ -14,7 +14,7 @@ function NoteComponent({ title, date, description}) {
                   <span className="text-sm">{title}</span>
                   <span>{date}</span>
                 </div>
-                <div className="text-sm flex flex-wrap items-baseline gap-x-1">
+                <div className="text-xs sm:text-sm flex flex-wrap items-baseline gap-x-1">
                   <span>
                     {description}
                   </span>

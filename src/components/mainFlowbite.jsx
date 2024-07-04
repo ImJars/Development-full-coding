@@ -86,7 +86,7 @@ function MainFlowbite() {
                   <AiOutlineClose />
                 </button>
               </div>
-              <div className="fixed left-2 right-2 bottom-0 top-20 flex flex-col gap-6 md:left-auto md:right-6 md:top-24 md:w-[320px]">
+              <div className="fixed left-2 right-2 bottom-0 top-14 flex flex-col gap-6 md:left-auto md:right-6 md:top-24 md:w-[320px]">
                 <div className="flex flex-col gap-2 mx-2">
                   <div className="text-xl font-bold">Centro de acción</div>
                   <div className="flex h-24 gap-4">
@@ -108,9 +108,7 @@ function MainFlowbite() {
                         )}
                       </div>
                       <div className="text-left text-[14px] font-normal tracking-wider">
-                        {
-                          darkMode ? "Modo Claro" : "Modo Oscuro"
-                        }
+                        {darkMode ? "Modo Claro" : "Modo Oscuro"}
                       </div>
                     </button>
                     <button className="relative flex flex-1 flex-col justify-between rounded-xl p-4 transition-colors bg-slate-700 no-seleccionable cursor-not-allowed">
@@ -118,7 +116,7 @@ function MainFlowbite() {
                         <AiFillEye className="text-xl" />
                       </div>
                       <div className="text-left text-[14px] font-medium dark:font-normal tracking-wider">
-                        Focus:
+                        Enfocar
                       </div>
                     </button>
                   </div>
@@ -157,21 +155,25 @@ function MainFlowbite() {
                   </div>
                 </div>
               </div>
-              <div className="fixed left-2 right-2 top-[57%]  flex flex-col gap-2 md:left-6 md:top-24 md:w-[320px]">
+              <div className="fixed left-2 right-2 top-[54%]  flex flex-col gap-2 md:left-6 md:top-24 md:w-[320px]">
                 <div className="flex flex-col">
                   <div className="px-2 text-lg sm:text-xl font-bold">
                     Nota / Aviso
                   </div>
                 </div>
-                <NoteComponent 
+                <NoteComponent
                   title={"Aviso"}
                   date={"20 Jun. 2024"}
-                  description={"Próximamente, estará disponible el centro de acción del menú principal, ya que se encuentra en rediseño y optimización. 😄 Por el momento se encuentra deshabilitado.​​"}
+                  description={
+                    "Próximamente, estará disponible el centro de acción del menú principal, ya que se encuentra en rediseño y optimización. 😄 Por el momento se encuentra deshabilitado.​​"
+                  }
                 />
-                <NoteComponent 
+                <NoteComponent
                   title={"Aviso"}
                   date={"10 May. 2024"}
-                  description={"Se ha implementado una nueva versión del sitio web que corrige errores, optimiza funcionalidades y amplía el contenido informativo disponible.​​"}
+                  description={
+                    "Se ha implementado una nueva versión del sitio web que corrige errores, optimiza funcionalidades y amplía el contenido informativo disponible.​​"
+                  }
                 />
               </div>
             </div>

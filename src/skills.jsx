@@ -33,7 +33,7 @@ const SkillsSectionTitle = styled.div`
 const scrollToSection = (programming) => {
   const section = document.getElementById(programming);
   if (section) {
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
 
@@ -314,23 +314,26 @@ function Skills() {
                     proyectos, ya que considero que es crucial para el éxito de
                     cualquier iniciativa.
                   </h3>
-                  <button onClick={() => scrollToSection("programming")} className="group mt-4 bg-text-purple text-white px-4 sm:px-8 py-2 sm:py-3 rounded-lg bg-opacity-10 backdrop-blur-xs group-hover:bg-text-purple/5">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center text-xs sm:text-sm text-text-purple font-semibold space-x-1 group-hover:text-text-white-gray group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
+                  <button
+                    onClick={() => scrollToSection("programming")}
+                    className="group mt-4 bg-text-purple text-white px-4 sm:px-8 py-2 sm:py-3 rounded-lg bg-opacity-10 backdrop-blur-xs group-hover:bg-text-purple/5"
                   >
-                    <h1>Resumen Habilidades</h1>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-3 w-3"
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center text-xs sm:text-sm text-text-purple font-semibold space-x-1 group-hover:text-text-white-gray group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
                     >
-                      <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path>
-                    </svg>
-                  </a>
-                </button>
+                      <h1>Resumen Habilidades</h1>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="h-3 w-3"
+                      >
+                        <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"></path>
+                      </svg>
+                    </a>
+                  </button>
                 </div>
                 <div ref={refAnimateScroll}>
                   <div ref={refAnimate} className="mt-10 mx-4 xl:mx-0">
@@ -482,7 +485,7 @@ function Skills() {
                     <MainSkill
                       title={"Diseñador UI/UX"}
                       description_1={`Diseñar interfaces de usuario es mi especialidad, con varios años de experiencia tanto en desarrollo web como en móvil y de escritorio. Siempre me esfuerzo por crear experiencias de usuario excepcionales y visualmente atractivas. Mi mayor desafío radica en lograr un equilibrio perfecto entre una interfaz excelente y una experiencia de usuario increíble que satisfaga las necesidades del usuario sin ser visualmente abrumadora.`}
-                        id_bottom={'programming'}
+                      id_bottom={"programming"}
                     />
                   </div>
                   <div>
@@ -504,7 +507,7 @@ function Skills() {
                     </div>
                     <div ref={refAnimate10} className="mx-4 xl:mx-0">
                       <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
-                        Tecnologias
+                        Tecnologías
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
                         <Technologies title={"SQL Server"} />
@@ -520,7 +523,7 @@ function Skills() {
                     </div>
                     <div ref={refAnimate11} className="mx-4 xl:mx-0">
                       <h1 className="text-text-white-gray text-2xl sm:text-3xl font-bold tracking-wide mt-10">
-                        Softwares y Herramientas
+                        Software y Herramientas
                       </h1>
                       <div className="flex flex-wrap gap-4 mt-5">
                         <Tools title={"Visual Studio Code"} />
