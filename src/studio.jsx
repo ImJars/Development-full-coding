@@ -322,7 +322,7 @@ function Studio() {
               />
             </div>
           </StudioSection>
-          <div className="mt-20">
+          <div className="mt-14">
             <Footer />
           </div>
         </section>

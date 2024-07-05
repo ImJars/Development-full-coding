@@ -4,7 +4,7 @@ import { HiExternalLink } from "react-icons/hi";
 function TableSocialMedia() {
   return (
     <>
-      <div className="relative overflow-x-auto rounded-lg border border-text-general border-opacity-25 my-10 mx-4 xl:mx-0">
+      <div className="relative overflow-x-auto rounded-lg border border-text-general border-opacity-25 mt-10 mx-4 xl:mx-0">
         <table className="w-full">
           <thead className=" text-text-white-gray text-sm font-bold bg-table_activate">
             <tr className="border-b border-text-general border-opacity-10">

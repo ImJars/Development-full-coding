@@ -52,7 +52,7 @@ function BlogProfile() {
   return (
     <>
       <HomeWraped>
-        <section className="w-full h-full text-white text-text">
+        <section className="w-full h-full text-white text-text mb-14">
           <BlogSection>
             {/* Section del Banner */}
             <section className="content-wrapped mx-auto">
@@ -176,10 +176,10 @@ function BlogProfile() {
               </div>
             </section>
           </BlogSection>
-          <FooterWraped className="mt-20">
-            <Footter />
-          </FooterWraped>
         </section>
+        <FooterWraped>
+          <Footter />
+        </FooterWraped>
       </HomeWraped>
     </>
   );

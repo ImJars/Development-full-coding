@@ -183,7 +183,7 @@ function Contact() {
             <div className="content-wrapped mx-auto flex space-x-14">
               <div
                 ref={refScroll}
-                className="border-l sm:pl-24 border-text-general border-opacity-20 pb-10"
+                className="border-l sm:pl-24 border-text-general border-opacity-20"
               >
                 <div
                   className="border-b pb-14 border-text-general border-opacity-20
@@ -239,7 +239,7 @@ function Contact() {
               />
             </div>
           </ContactSection>
-          <div className="mt-20">
+          <div className="mt-14">
             <Footer />
           </div>
         </section>

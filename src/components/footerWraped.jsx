@@ -15,7 +15,7 @@ const FooterContentWraped = styled.section`
 function FooterWraped({ children }) {
   return (
     <>
-      <FooterContentWraped className="mt-5 w-full">{children}</FooterContentWraped>
+      <FooterContentWraped className="w-full">{children}</FooterContentWraped>
     </>
   );
 }

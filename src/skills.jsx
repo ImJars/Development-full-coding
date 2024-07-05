@@ -577,7 +577,7 @@ function Skills() {
               />
             </div>
           </SkillSection>
-          <div className="mt-20">
+          <div className="mt-14">
             <Footer />
           </div>
         </section>

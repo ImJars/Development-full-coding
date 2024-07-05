@@ -83,7 +83,7 @@ function Til() {
             </div>
           </TilSection>
           <TilSection>
-            <div className="mb-20 content-wrapped block mx-auto">
+            <div className="mb-14 content-wrapped block mx-auto">
               <TilSectionTitle className="mx-4 xl:mx-0 flex">
                 <div className="md:w-1/3 border-l border-text-general border-opacity-20 hidden md:block"/>
                 <div className="flex-1 sm:ml-0 flex flex-col gap-4">
