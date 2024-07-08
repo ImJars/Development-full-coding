@@ -164,7 +164,7 @@ function PageProjectThree() {
                     para conocer el estatus tanto general como cualquier área en
                     específico existente en el colegio, para brindar un mejor
                     control financiero de pagos de colegiaturas y gastos
-                    existentes en la Guardería, teniendo a la mano esta
+                    existentes, teniendo a la mano esta
                     información recabada de la base de datos.
                   </p>
                   <p className="text-text-general my-4">

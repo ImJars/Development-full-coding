@@ -145,12 +145,16 @@ function Header({ animateIcon, animateDiagon }) {
                 <a
                   href="https://x.com/Im_Jars"
                   className="text-xl hover:bg-card hover:bg-opacity-50 rounded-xl px-3 py-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   𝕏
                 </a>
                 <a
                   href="https://github.com/ImJars"
                   className="text-lg hover:bg-card hover:bg-opacity-50 rounded-xl p-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <BsGithub />
                 </a>

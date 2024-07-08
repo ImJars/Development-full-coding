@@ -173,7 +173,7 @@ function Home({ refHome }) {
                 </TitleSection>
                 <div className="flex mt-6 items-center">
                   <a
-                    href="Angel_Ramirez_CV.pdf"
+                    href="AngelRamirez_CV.pdf"
                     // download="cv.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -301,7 +301,7 @@ function Home({ refHome }) {
               <div>
                 <SubHome
                   text={
-                    "Soy un desarrollador de software especializado en la creación de aplicaciones web, móviles y de escritorio. Mi objetivo es ayudar a las empresas a mejorar sus procesos y a los emprendedores a llevar sus ideas al siguiente nivel. Me apasiona la tecnología y la innovación, y me encanta trabajar en equipo para lograr grandes cosas. Si estás buscando un desarrollador con experiencia y habilidades técnicas, ¡no dudes en contactarme!"
+                    "Soy un desarrollador de software especializado en la creación de aplicaciones web, móviles y de escritorio. Mi objetivo es ayudar a mejorar los procesos y llevar las ideas al siguiente nivel. Me apasiona la tecnología y la innovación, me encanta trabajar en equipo para lograr grandes cosas. Si estás buscando un desarrollador con experiencia y habilidades técnicas, ¡no dudes en contactarme!"
                   }
                 />
               </div>
